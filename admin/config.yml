@@ -7,9 +7,9 @@ backend:
   auth_options:
       domain: mariowindsor.auth0.com
       client_id: yxhSBtJVhmHZmXicSZAtpUVG7t1nFi2X
-  #     audience: your-auth0-api-identifier  # Optional, if you're using an API
-  #     scope: openid profile email
-  #     redirect_uri: https://your-cms-url.com/admin/callback
+      audience: 6879072dc594ecdc8a46c5d0  # Optional, if you're using an API
+      scope: openid profile email
+      redirect_uri: https://google.com
 
 # when using the default proxy server port
 local_backend: true
