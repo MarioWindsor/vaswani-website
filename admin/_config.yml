@@ -1,0 +1,105 @@
+
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to main)
+  repo: MarioWindsor/bgc-smart-cat
+
+# when using the default proxy server port
+local_backend: true
+
+# publish_mode: editorial_workflow
+media_folder: "/media/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/media/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "settings"
+        label: "Settings Page"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Database (categories.json)", name: "categoriesfile", widget: "file" }
+          - label: Menu
+            name: menu
+            widget: list
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Path", name: "path", widget: "string" }
+      - name: "home"
+        label: "Home Page"
+        file: "_data/home.json"
+        fields:
+          - { label: "Intro Video YouTube ID", name: "introvideoid", widget: "string" }
+          - { label: "Brand Video YouTube ID", name: "brandvideoid", widget: "string" }
+          - { label: "Helpdesk Timing", name: "helpdesktiming", widget: "string" }
+      - name: "awards"
+        label: "Awards Page"
+        file: "_data/awards.json"
+        fields:
+          - label: Award
+            name: award
+            widget: list
+            fields:
+              - { label: "Award Name", name: "name", widget: "string" }
+              - { label: "Award Date", name: "date", widget: "datetime", default: "{{now}}" }
+              - { label: "Award Photo", name: "image", widget: "image" }
+              - { label: "Award Description", name: "description", widget: "text" }
+  - name: "articles" # Used in routes, e.g., /admin/collections/articles
+    label: "Articles" # Used in the UI
+    folder: "articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["articles"] }
+      - { label: "Publish Date", name: "date", widget: "datetime", default: "{{now}}"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Cover Image", name: "coverimage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "review" # Used in routes, e.g., /admin/collections/review
+    label: "Reviews" # Used in the UI
+    folder: "reviews" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortable_fields: ['reviewdate', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["reviews"] }
+      # - { label: "Review Date", name: "reviewdate", widget: "datetime", default: "{{now}}", format: "LL"}
+      - { label: "Review Date", name: "reviewdate", widget: "datetime", default: "{{now}}", date_format: "YYYY/MM/DD"}
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "faqs" # Used in routes, e.g., /admin/collections/faqs
+    label: "FAQs" # Used in the UI
+    folder: "faqs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["faqs"] }
+      - { label: "Publish Date", name: "date", widget: "datetime", default: "{{now}}"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "brands" # Used in routes, e.g., /admin/collections/brands
+    label: "Brands" # Used in the UI
+    folder: "brands" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["brands"] }
+      - { label: "Publish Date", name: "date", widget: "datetime", default: "{{now}}"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Brand Website URL", name: "path", widget: "string" }
+      - { label: "Brand Image", name: "thumbnail", widget: "image" }
+  - name: "videos" # Used in routes, e.g., /admin/collections/videos
+    label: "Videos" # Used in the UI
+    folder: "videos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["videos"] }
+      - { label: "Publish Date", name: "date", widget: "datetime", default: "{{now}}"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "YouTube Video ID", name: "videoid", widget: "string" }
