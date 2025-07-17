@@ -3,6 +3,13 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to main)
   repo: MarioWindsor/bgc-smart-cat
+  auth_type: oauth
+  auth_options:
+      domain: mariowindsor.auth0.com
+      client_id: yxhSBtJVhmHZmXicSZAtpUVG7t1nFi2X
+  #     audience: your-auth0-api-identifier  # Optional, if you're using an API
+  #     scope: openid profile email
+  #     redirect_uri: https://your-cms-url.com/admin/callback
 
 # when using the default proxy server port
 local_backend: true
