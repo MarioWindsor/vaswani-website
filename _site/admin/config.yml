@@ -16,11 +16,38 @@ collections:
     folder: "projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # The Path to the File/Data/URL
+    editor:
+      preview: false
     sortable_fields: ['date', 'title']
     fields: # The fields for each document, usually in front matter
       - { label: "Tags", name: "tags", widget: "hidden", default: ["projects"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Heading", name: "heading", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Project Title (Name)", name: "title", widget: "string" }
+      - { label: "Vaswani Prefix Title", name: "prefix-title", widget: "boolean", default: true }
+      - label: "General"
+        name: "general"
+        widget: "object"
+        collapsed: false
+        fields:
+        - { label: "Project label", name: "project-label", widget: "string", required: false }
+        - { label: "Starting at Price", name: "starting-price", widget: "string", required: false }
+        - { label: "Unit Size", name: "unit-size", widget: "string", required: false }
+        - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false }
+        - label: "Featured Image"
+          name: "thumbnail"
+          widget: "image"
+          choose_url: true
+          media_library:
+            config:
+                multiple: true
+      - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+      - label: "Address"
+        name: "address"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - {label: "Street Address", name: "street", widget: "string"}
+          - {label: "City", name: "city", widget: "string"}
+          - {label: "Postal Code", name: "post-code", widget: "string"}
+      # - { label: "Body", name: "body", widget: "markdown", required: false }
 
