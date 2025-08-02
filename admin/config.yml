@@ -23,31 +23,172 @@ collections:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["projects"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Project Title (Name)", name: "title", widget: "string" }
-      - { label: "Vaswani Prefix Title", name: "prefix-title", widget: "boolean", default: true }
-      - label: "General"
-        name: "general"
-        widget: "object"
-        collapsed: false
-        fields:
-        - { label: "Project label", name: "project-label", widget: "string", required: false }
-        - { label: "Starting at Price", name: "starting-price", widget: "string", required: false }
-        - { label: "Unit Size", name: "unit-size", widget: "string", required: false }
-        - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false }
-        - label: "Featured Image"
-          name: "thumbnail"
-          widget: "image"
-          choose_url: true
-          media_library:
-            config:
-                multiple: true
-      - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
-      - label: "Address"
-        name: "address"
+      - { label: "Prefix Title with Vaswani", name: "prefix-title", widget: "boolean", default: true }
+      - label: "Overview"
+        name: "overview"
         widget: "object"
         collapsed: true
-        fields: 
-          - {label: "Street Address", name: "street", widget: "string"}
-          - {label: "City", name: "city", widget: "string"}
-          - {label: "Postal Code", name: "post-code", widget: "string"}
+        fields:
+        - { label: "Project label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
+        - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
+        - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
+        - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, WHITEFIELD" }
+        - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.image}} {{fields.caption}}'
+            fields: 
+              - { label: Image, name: image, widget: image, choose_url: false }
+              - { label: Caption, name: caption, widget: string, required: false }
+          - { label: "Logo", name: "logo", widget: "image", choose_url: false, required: false }
+          - { label: "Video ID", name: "video", widget: "string", choose_url: false, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+      - label: "Intro"
+        name: "intro"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+      - label: "Site Plan"
+        name: "siteplan"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+          - label: "Master Plan"
+            name: "masterplan"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.image}} {{fields.caption}}'
+            fields: 
+              - { label: Title, name: title, widget: string, }
+              - { label: Image, name: image, widget: image, choose_url: false }
+          - label: "Floor Plan"
+            name: "floorplan"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.title}} {{fields.image}}'
+            fields: 
+              - { label: Title, name: title, widget: string, }
+              - { label: Image, name: image, widget: image, choose_url: false }
+      - label: "Amenities"
+        name: "amenities"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: Cover Image, name: cover-image, widget: image, choose_url: false, required: false, hint: "Dimensions: 1200 x 400 pixels" }
+          - label: "Amenity"
+            name: "amenity"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.name}} {{fields.icon}}'
+            fields: 
+              - { label: Name, name: name, widget: string, }
+              - { label: Icon, name: icon, widget: image, choose_url: false }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.image}} {{fields.caption}}'
+            fields: 
+              - { label: Image, name: image, widget: image, choose_url: false }
+              - { label: Caption, name: caption, widget: string, required: false }
+      - label: "Brochure"
+        name: "brochure"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: Background Image, name: image, widget: image, required: false, choose_url: false, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: PDF File, name: pdf, widget: file, required: false, choose_url: false }
+      - label: "Location"
+        name: "location"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: Map, name: map, widget: string, required: false, hint: 'Eg: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.907211381899!2d77.73506491144487!3d12.9777862872854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1754159728105!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' }
+          - label: "Places Nearby"
+            name: "places"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.name}}'
+            fields: 
+              - { label: Place Group Name, name: name, widget: string, required: false, hint: "Eg: Schools" }
+              - label: "Place"
+                name: "place"
+                widget: "list"
+                required: false
+                minimize_collapsed: true
+                summary: '{{fields.name}} {{fields.distance}}'
+                fields: 
+                  - { label: Place Name, name: name, widget: string, required: false, hint: "Eg: Mallya Aditi International School" }
+                  - { label: Distance, name: distance, widget: string, required: false, hint: "Eg: 4.0 Km" }
+      - label: "Progress"
+        name: "progress"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - label: "Entry"
+            name: "entry"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.title}}'
+            fields: 
+              - { label: Title, name: title, widget: string, required: false, hint: "Eg: Feb 2025" }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                required: false
+                minimize_collapsed: true
+                summary: '{{fields.image}} {{fields.caption}}'
+                fields: 
+                  - { label: Image, name: image, widget: image, choose_url: false }
+                  - { label: Caption, name: caption, widget: string, required: false }
+      - label: "Banner"
+        name: "banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: "Feature 1"
+            name: "feature-1"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
+              - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+          - label: "Feature 2"
+            name: "feature-2"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
+              - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+          
       # - { label: "Body", name: "body", widget: "markdown", required: false }
 

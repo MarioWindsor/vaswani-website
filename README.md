@@ -4,7 +4,7 @@
 
 - [x] Header Section 
 - [ ] Intro Video Banner Section
-- [ ] Bento Grid Section
+- [x] Bento Grid Section
 - [x] Project Listing Section [Active]
 - [x] Contact Form Section
 - [ ] About Vaswnani Section
