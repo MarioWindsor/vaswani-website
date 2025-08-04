@@ -11,6 +11,9 @@ local_backend: true
 media_folder: "/media/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/media/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
+
+
+
   - name: "projects" # Used in routes, e.g., /admin/collections/faqs
     label: "Projects" # Used in the UI
     folder: "projects" # The path to the folder where the documents are stored
@@ -23,22 +26,38 @@ collections:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["projects"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Project Title (Name)", name: "title", widget: "string" }
-      - { label: "Prefix Title with Vaswani", name: "prefix-title", widget: "boolean", default: true }
+      - label: "Config"
+        name: "config"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Prefix Title with Vaswani", name: "prefix-title", widget: "boolean", default: true }
+          - { label: "Archive (Inactive Project)", name: "archive", widget: "boolean", default: false }
+          - label: "Type"
+            name: "type"
+            widget: "select"
+            multiple: false
+            options:
+              - { label: "Residential", value: "residential" }
+              - { label: "Commercial", value: "commercial" }
+            default: residential
       - label: "Overview"
         name: "overview"
         widget: "object"
         collapsed: true
         fields:
-        - { label: "Project label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
-        - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
-        - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
-        - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, WHITEFIELD" }
-        - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
+          - { label: "Project label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
+          - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
+          - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
+          - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, WHITEFIELD" }
+          - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
         collapsed: true
         fields:
+          - { label: "Logo", name: "logo", widget: "image", choose_url: false, required: false }
+          - { label: "Video ID", name: "video", widget: "string", choose_url: false, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
           - label: "Images"
             name: "images"
             widget: "list"
@@ -48,8 +67,6 @@ collections:
             fields: 
               - { label: Image, name: image, widget: image, choose_url: false }
               - { label: Caption, name: caption, widget: string, required: false }
-          - { label: "Logo", name: "logo", widget: "image", choose_url: false, required: false }
-          - { label: "Video ID", name: "video", widget: "string", choose_url: false, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
       - label: "Intro"
         name: "intro"
         widget: "object"
@@ -189,6 +206,78 @@ collections:
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
               - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
-          
-      # - { label: "Body", name: "body", widget: "markdown", required: false }
+
+
+
+  - name: "articles" # Used in routes, e.g., /admin/collections/faqs
+    label: "Articles" # Used in the UI
+    folder: "articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # The Path to the File/Data/URL
+    editor:
+      preview: false
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["articles"] }
+      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "content", widget: "markdown" }
+
+
+
+  - name: "testimonials" # Used in routes, e.g., /admin/collections/faqs
+    label: "Testimonials" # Used in the UI
+    folder: "testimonials" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # The Path to the File/Data/URL
+    editor:
+      preview: false
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["testimonials"] }
+      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Rating", name: "rating", widget: "number", min: 0, max: 5, value_type: "int" }
+      - { label: "Content", name: "content", widget: "text" }
+
+
+
+  - name: "awards" # Used in routes, e.g., /admin/collections/faqs
+    label: "Awards" # Used in the UI
+    folder: "awards" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # The Path to the File/Data/URL
+    editor:
+      preview: false
+    sortable_fields: ['date', 'title']
+    fields: # The fields for each document, usually in front matter
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["awards"] }
+      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Award Title", name: "title", widget: "string" }
+      - { label: "Awarded By", name: "awarder", widget: "string" }
+      - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
+
+
+
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "menu"
+        label: "Menu"
+        file: "_data/menu.json"
+        fields:
+          - label: "link"
+            name: "link"
+            widget: "list"
+            summary: '{{fields.title}} → {{fields.path}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Path", name: "path", widget: "string" }
+      - name: "home"
+        label: "Home Page"
+        file: "_data/home.json"
+        fields:
+          - { label: "Intro Video YouTube ID", name: "introvideoid", widget: "string" }
+          - { label: "Brand Video YouTube ID", name: "brandvideoid", widget: "string" }
+          - { label: "Helpdesk Timing", name: "helpdesktiming", widget: "string" }
 
