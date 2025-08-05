@@ -26,13 +26,12 @@ collections:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["projects"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Project Title (Name)", name: "title", widget: "string" }
-      - label: "Config"
-        name: "config"
+      - label: "Overview"
+        name: "overview"
         widget: "object"
         collapsed: true
         fields:
           - { label: "Prefix Title with Vaswani", name: "prefix-title", widget: "boolean", default: true }
-          - { label: "Archive (Inactive Project)", name: "archive", widget: "boolean", default: false }
           - label: "Type"
             name: "type"
             widget: "select"
@@ -41,12 +40,16 @@ collections:
               - { label: "Residential", value: "residential" }
               - { label: "Commercial", value: "commercial" }
             default: residential
-      - label: "Overview"
-        name: "overview"
-        widget: "object"
-        collapsed: true
-        fields:
-          - { label: "Project label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
+          - label: "Status"
+            name: "status"
+            widget: "select"
+            multiple: false
+            options:
+              - { label: "Ongoing", value: "ongoing" }
+              - { label: "Completed", value: "completed" }
+            default: ongoing
+          - { label: "Status Label", name: "status-label", widget: "string", required: false, hint: "Eg: Construction in Full Swing" }
+          - { label: "Project Label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
           - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
           - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
           - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, WHITEFIELD" }
