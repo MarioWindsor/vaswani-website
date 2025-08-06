@@ -94,6 +94,44 @@
 			</div>
 		</div>
 	</div>
+	<div class="p">
+		<!-- assign reviews_by_date = collections.reviews | sort: "data.reviewdate" | reverse -->
+		{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
+		{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
+		{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
+
+		{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
+		{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
+		{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
+
+		<div class="small text-uppercase space-100-top space-25-bottom">Ongoing Residential</div>
+		{% for project in ongoing_residential_projects %}
+			<div class="item">
+				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
+			</div>
+		{% endfor %}
+
+		<div class="small text-uppercase space-100-top space-25-bottom">Ongoing Commercial</div>
+		{% for project in ongoing_commercial_projects %}
+			<div class="item">
+				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
+			</div>
+		{% endfor %}
+
+		<div class="small text-uppercase space-100-top space-25-bottom">Completed Residential</div>
+		{% for project in completed_residential_projects %}
+			<div class="item">
+				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
+			</div>
+		{% endfor %}
+
+		<div class="small text-uppercase space-100-top space-25-bottom">Completed Commercial</div>
+		{% for project in completed_commercial_projects %}
+			<div class="item">
+				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
+			</div>
+		{% endfor %}
+	</div>
 	<div class="projects row">
 		<div class="project space-100-vertical">
 			<div class="container">

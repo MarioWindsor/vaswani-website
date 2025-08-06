@@ -18,20 +18,20 @@ collections:
     label: "Projects" # Used in the UI
     folder: "projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # The Path to the File/Data/URL
+    slug: "{{name}}" # The Path to the File/Data/URL
     editor:
       preview: false
-    sortable_fields: ['date', 'title']
+    sortable_fields: ['date', 'name']
     fields: # The fields for each document, usually in front matter
       - { label: "Tags", name: "tags", widget: "hidden", default: ["projects"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Project Title (Name)", name: "title", widget: "string" }
+      - { label: "Project Name", name: "name", widget: "string" }
       - label: "Overview"
         name: "overview"
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Prefix Title with Vaswani", name: "prefix-title", widget: "boolean", default: true }
+          - { label: "Prefix Name with Vaswani", name: "prefix-name", widget: "boolean", default: true }
           - label: "Type"
             name: "type"
             widget: "select"
@@ -40,6 +40,11 @@ collections:
               - { label: "Residential", value: "residential" }
               - { label: "Commercial", value: "commercial" }
             default: residential
+          - { label: "Project Label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
+          - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
+          - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
+          - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, WHITEFIELD" }
+          - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
           - label: "Status"
             name: "status"
             widget: "select"
@@ -49,18 +54,13 @@ collections:
               - { label: "Completed", value: "completed" }
             default: ongoing
           - { label: "Status Label", name: "status-label", widget: "string", required: false, hint: "Eg: Construction in Full Swing" }
-          - { label: "Project Label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
-          - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
-          - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
-          - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, WHITEFIELD" }
-          - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Logo", name: "logo", widget: "image", choose_url: false, required: false }
-          - { label: "Video ID", name: "video", widget: "string", choose_url: false, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+          - { label: "Logo", name: "logo", widget: "image", choose_url: true, required: false }
+          - { label: "Video ID", name: "video", widget: "string", choose_url: true, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
           - label: "Images"
             name: "images"
             widget: "list"
@@ -68,8 +68,8 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.image}} {{fields.caption}}'
             fields: 
-              - { label: Image, name: image, widget: image, choose_url: false }
-              - { label: Caption, name: caption, widget: string, required: false }
+              - { label: "Image", name: "image", widget: "image", choose_url: true }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Intro"
         name: "intro"
         widget: "object"
@@ -92,8 +92,8 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.image}} {{fields.caption}}'
             fields: 
-              - { label: Title, name: title, widget: string, }
-              - { label: Image, name: image, widget: image, choose_url: false }
+              - { label: "Title", name: "title", widget: "string", }
+              - { label: "Image", name: "image", widget: "image", choose_url: true }
           - label: "Floor Plan"
             name: "floorplan"
             widget: "list"
@@ -101,8 +101,8 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.title}} {{fields.image}}'
             fields: 
-              - { label: Title, name: title, widget: string, }
-              - { label: Image, name: image, widget: image, choose_url: false }
+              - { label: "Title", name: "title", widget: "string", }
+              - { label: "Image", name: "image", widget: "image", choose_url: true }
       - label: "Amenities"
         name: "amenities"
         widget: "object"
@@ -111,7 +111,7 @@ collections:
           - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: Cover Image, name: cover-image, widget: image, choose_url: false, required: false, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: Cover Image, name: cover-image, widget: image, choose_url: true, required: false, hint: "Dimensions: 1200 x 400 pixels" }
           - label: "Amenity"
             name: "amenity"
             widget: "list"
@@ -119,8 +119,8 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.name}} {{fields.icon}}'
             fields: 
-              - { label: Name, name: name, widget: string, }
-              - { label: Icon, name: icon, widget: image, choose_url: false }
+              - {dlabel: "Name", name: "name", widget: "string", }
+              - { label: "Icon", name: "icon", widget: "image", choose_url: true }
           - label: "Images"
             name: "images"
             widget: "list"
@@ -128,15 +128,15 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.image}} {{fields.caption}}'
             fields: 
-              - { label: Image, name: image, widget: image, choose_url: false }
-              - { label: Caption, name: caption, widget: string, required: false }
+              - { label: "Image", name: "image", widget: "image", choose_url: true }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Brochure"
         name: "brochure"
         widget: "object"
         collapsed: true
         fields:
-          - { label: Background Image, name: image, widget: image, required: false, choose_url: false, hint: "Dimensions: 1200 x 400 pixels" }
-          - { label: PDF File, name: pdf, widget: file, required: false, choose_url: false }
+          - { label: "Background Image", name: "image", widget: "image", required: false, choose_url: true, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: "PDF File", name: "pdf", widget: "file", required: false, choose_url: true }
       - label: "Location"
         name: "location"
         widget: "object"
@@ -145,7 +145,7 @@ collections:
           - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: Map, name: map, widget: string, required: false, hint: 'Eg: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.907211381899!2d77.73506491144487!3d12.9777862872854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1754159728105!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' }
+          - { label: "Map", name: "map", widget: "string", required: false, hint: 'Eg: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.907211381899!2d77.73506491144487!3d12.9777862872854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1754159728105!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' }
           - label: "Places Nearby"
             name: "places"
             widget: "list"
@@ -153,7 +153,7 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.name}}'
             fields: 
-              - { label: Place Group Name, name: name, widget: string, required: false, hint: "Eg: Schools" }
+              - { label: "Place Group Name", name: "name", widget: "string", required: false, hint: "Eg: Schools" }
               - label: "Place"
                 name: "place"
                 widget: "list"
@@ -186,8 +186,8 @@ collections:
                 minimize_collapsed: true
                 summary: '{{fields.image}} {{fields.caption}}'
                 fields: 
-                  - { label: Image, name: image, widget: image, choose_url: false }
-                  - { label: Caption, name: caption, widget: string, required: false }
+                  - { label: "Image", name: "image", widget: "image", choose_url: true }
+                  - { label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Banner"
         name: "banner"
         widget: "object"
@@ -200,7 +200,7 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
-              - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+              - { label: "Background", name: "background", widget: "image", choose_url: true, required: false }
           - label: "Feature 2"
             name: "feature-2"
             widget: "object"
@@ -208,7 +208,7 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
-              - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+              - { label: "Background", name: "background", widget: "image", choose_url: true, required: false }
 
 
 
@@ -258,7 +258,7 @@ collections:
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Award Title", name: "title", widget: "string" }
       - { label: "Awarded By", name: "awarder", widget: "string" }
-      - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
+      - { label: "Award", name: "award", widget: "image", choose_url: true, required: false }
 
 
 
