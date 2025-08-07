@@ -5,18 +5,18 @@ date: 2025-08-07T02:32:00.000+05:30
 name: Exquisite
 overview:
   project-label: 3 & 4 Bedroom Luxury Residences
+  prefix-name: true
   unit-size: 1815sqft to 2860sqft Apartments
   status: ongoing
   rera-number: PRM/KA/RERA/1251/446/PR/171015/000784
   status-label: Limited Units Available
   type: residential
   starting-price: Starting at ₹2.82Cr
-  location-label: Next to Hotel Zuri, ITPL Main Road, Whitefield
-  prefix-name: true
+  location-label: ITPL Main Road, Whitefield
 gallery:
   images:
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
-    - image: https://placeholdit.com/1200x800/F1F1F1/999999
+    - image: https://placeholdit.com/600x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999

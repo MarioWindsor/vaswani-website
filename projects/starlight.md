@@ -17,7 +17,7 @@ gallery:
   images:
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
-    - image: https://placeholdit.com/1200x800/F1F1F1/999999
+    - image: https://placeholdit.com/600x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999

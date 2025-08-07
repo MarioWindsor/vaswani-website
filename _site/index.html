@@ -197,8 +197,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <!-- Sample Section -->
-<section id="sample-section hidden" class="sample-section hidden">
+<section id="sample-section" class="sample-section hidden">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
@@ -280,180 +289,336 @@
 			<div class="columns small-12 text-center">
 				<label class="section-label">Ongoing Projects</label>
 				<h2 class="section-heading text-neutral-20 space-50-bottom">Masterpieces in the Making</h2>
-				
-				<div class="button-toggle inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<button class="text-uppercase radius-round space-75-horizontal">Residential</button>
-					<button class="text-uppercase radius-round space-75-horizontal" style="color: var(--hue-neutral-50); background: transparent;">Commercial</button>
+			</div>
+		</div>
+	</div>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="residential" id="ongoingToggleResidential" checked>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="commercial" id="ongoingToggleCommercial">
+	<!-- Project Type Toggle -->
+	<div class="type-toggle row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleResidential">Residential</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleCommercial">Commercial</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="p">
-		<!-- assign reviews_by_date = collections.reviews | sort: "data.reviewdate" | reverse -->
-		
-		
-		
-
-		
-		
-		
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Ongoing Residential</div>
-		
-			<div class="item">
-				<a href="/projects/samplest/" class="h5">Vaswani Samplest</a>
-			</div>
-		
-			<div class="item">
-				<a href="/projects/starlight/" class="h5">Vaswani Starlight</a>
-			</div>
-		
-			<div class="item">
-				<a href="/projects/exquisite/" class="h5">Vaswani Exquisite</a>
-			</div>
-		
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Ongoing Commercial</div>
-		
-			<div class="item">
-				<a href="/projects/victoria/" class="h5">Vaswani Victoria</a>
-			</div>
-		
-			<div class="item">
-				<a href="/projects/centropolis/" class="h5">Vaswani Centropolis</a>
-			</div>
-		
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Completed Residential</div>
-		
-			<div class="item">
-				<a href="/projects/bel-air/" class="h5">Vaswani Bel Air</a>
-			</div>
-		
-			<div class="item">
-				<a href="/projects/brookefield-manor/" class="h5">Brookefield Manor</a>
-			</div>
-		
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Completed Commercial</div>
-		
-			<div class="item">
-				<a href="/projects/oakmont/" class="h5">Vaswani Oakmont</a>
-			</div>
-		
-	</div>
-	<div class="projects row">
-		<div class="project space-100-vertical">
-			<div class="container">
-				<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
-					<h6 class="heading text-primary">Luxury 3 & 4 Bedroom Homes</h6>
-					<h4 class="name text-uppercase strong letter-spacing-loose-loose">Vaswani Starlight</h4>
-				</div>
-				<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-					<small class="metadata block">
-						<i class='bx bx-home p text-primary'></i>
-						<span>Starting at ₹2.82Cr</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-area p text-primary'></i>
-						<span>1970sqft to 2730sqft Apartments</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-map p text-primary'></i>
-						<span>Whitefield, BANGALORE</span>
-					</small>
-				</div>
-			</div>
-			<!-- Carousel -->
-			<div class="carousel gallery">
-				<div class="carousel-list fill-white box-shadow-red-light">
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-						<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1920x1080/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/500x500/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/640x480/F1F1F1/999999" alt="">
+	<!-- End: Project Type Toggle -->
+	<!-- Project Type List -->
+	<div class="type-list">
+		<div class="projects residential row">
+			
+			<div class="project space-100-vertical">
+				<div class="container">
+					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="/projects/starlight/">
+						<h6 class="heading text-primary">Luxury 3 & 4 Bedroom Homes</h6>
+						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">Vaswani Starlight</h4>
+					</a>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						
+						<small class="metadata block">
+							<i class='bx bx-home p text-primary'></i>
+							<span>Starting at ₹2.82Cr</span>
+						</small>
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>1970sqft to 2730sqft Apartments</span>
+						</small>
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>ECC Main Road, Whitefield</span>
+						</small>
+						
 					</div>
 				</div>
-				<div class="row">
-					<div class="carousel-controls container">
-						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list fill-white box-shadow-red-light">
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+								
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
+								
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/600x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
 					</div>
 				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="/projects/starlight/">Explore Project</a>
+				</div>
 			</div>
-			<div class="container">
-				<a class="button space-75-horizontal radius-round" href="">Explore Project</a>
+			
+			<div class="project space-100-vertical">
+				<div class="container">
+					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="/projects/exquisite/">
+						<h6 class="heading text-primary">3 & 4 Bedroom Luxury Residences</h6>
+						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">Vaswani Exquisite</h4>
+					</a>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						
+						<small class="metadata block">
+							<i class='bx bx-home p text-primary'></i>
+							<span>Starting at ₹2.82Cr</span>
+						</small>
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>1815sqft to 2860sqft Apartments</span>
+						</small>
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>ITPL Main Road, Whitefield</span>
+						</small>
+						
+					</div>
+				</div>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list fill-white box-shadow-red-light">
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+								
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Limited Units Available</small>
+								
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/600x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="/projects/exquisite/">Explore Project</a>
+				</div>
 			</div>
+			
 		</div>
-		<div class="project space-100-vertical">
-			<div class="container">
-				<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
-					<h6 class="heading text-primary">Luxury 3 & 4 Bedroom Homes</h6>
-					<h4 class="name text-uppercase strong letter-spacing-loose-loose">Vaswani Starlight</h4>
+		<div class="projects commercial row">
+			
+			<div class="project space-100-vertical">
+				<div class="container">
+					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
+						<h6 class="heading text-primary">Grade A Commercial Office Space</h6>
+						<h4 class="name text-uppercase strong letter-spacing-loose-loose">Vaswani Victoria</h4>
+					</div>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>4890sqft Super Built-up Area</span>
+						</small>
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>Xavier Layout, Victoria Road</span>
+						</small>
+						
+					</div>
 				</div>
-				<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-					<small class="metadata block">
-						<i class='bx bx-home p text-primary'></i>
-						<span>Starting at ₹2.82Cr</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-area p text-primary'></i>
-						<span>1970sqft to 2730sqft Apartments</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-map p text-primary'></i>
-						<span>Whitefield, BANGALORE</span>
-					</small>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list fill-white box-shadow-red-light">
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+								
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Available for Lease</small>
+								
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="/projects/victoria/">Explore Project</a>
 				</div>
 			</div>
-			<!-- Carousel -->
-			<div class="carousel gallery">
-				<div class="carousel-list fill-white box-shadow-red-light">
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-						<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
+			
+			<div class="project space-100-vertical">
+				<div class="container">
+					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
+						<h6 class="heading text-primary">Grade A Commercial Office Space</h6>
+						<h4 class="name text-uppercase strong letter-spacing-loose-loose">Vaswani Centropolis</h4>
 					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1920x1080/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/500x500/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/640x480/F1F1F1/999999" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="carousel-controls container">
-						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>6250sqft Super Built-up Area</span>
+						</small>
+						
+						
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>Langford Road, Richmond Town</span>
+						</small>
+						
 					</div>
 				</div>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list fill-white box-shadow-red-light">
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+								
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Ready For Fit Out</small>
+								
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="/projects/centropolis/">Explore Project</a>
+				</div>
 			</div>
-			<div class="container">
-				<a class="button space-75-horizontal radius-round" href="">Explore Project</a>
-			</div>
+			
 		</div>
 	</div>
+	<!-- End: Project Type List -->
 </section>
 <!-- End: Project Listing Section [ongoing] -->
 
@@ -612,144 +777,111 @@
 			<div class="columns small-12 text-center">
 				<label class="section-label">Completed Projects</label>
 				<h2 class="section-heading text-neutral-20 space-50-bottom">Our Legacy of Landmarks</h2>
-				
-				<div class="button-toggle inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<button class="text-uppercase radius-round space-75-horizontal">Residential</button>
-					<button class="text-uppercase radius-round space-75-horizontal" style="color: var(--hue-neutral-50); background: transparent;">Commercial</button>
+			</div>
+		</div>
+	</div>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="residential" id="completedToggleResidential" checked>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="commercial" id="completedToggleCommercial">
+	<!-- Project Type Toggle -->
+	<div class="type-toggle row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleResidential">Residential</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleCommercial">Commercial</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row space-100-vertical">
-		<!-- Carousel -->
-		<div class="carousel">
+	<!-- End: Project Type Toggle -->
+	<!-- Project Type List -->
+	<div class="type-list row space-100-vertical">
+		<div class="projects residential carousel">
 			<div class="carousel-list fill-white box-shadow-red-light">
+				
 				<div class="project carousel-list-item">
-					<div class="card space-50">
+					<a class="card space-50" href="/projects/bel-air/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
+							
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
 						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Bel Air</h6>
+						<p class="block text-neutral-50">2 & 3 Bedroom Apartments</p>
 						<div class="project-meta text-dark space-25-vertical">
+							
+							<small class="metadata block">
+								<i class='bx bx-home p text-primary'></i>
+								<span>Starting at ₹1.57Cr</span>
+							</small>
+							
+							
 							<small class="metadata block">
 								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
+								<span>1970sqft to 2730sqft Villas</span>
 							</small>
+							
+							
 							<small class="metadata block">
 								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
+								<span>ECC Main Road, WHITEFIELD</span>
 							</small>
+							
 						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
 				</div>
+				
 				<div class="project carousel-list-item">
-					<div class="card space-50">
+					<a class="card space-50" href="/projects/brookefield-manor/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
 						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Brookefield Manor</h6>
+						<p class="block text-neutral-50">4 BHK Luxury Villas</p>
 						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
+							
+							
+							
 						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
 				</div>
+				
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="projects commercial carousel">
+			<div class="carousel-list fill-white box-shadow-red-light">
+				
 				<div class="project carousel-list-item">
-					<div class="card space-50">
+					<a class="card space-50" href="/projects/oakmont/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
 						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Oakmont</h6>
+						<p class="block text-neutral-50">Grade A Commercial Office Space</p>
 						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
+							
+							
+							
 						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
 				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
+				
 			</div>
 			<div class="row">
 				<div class="carousel-controls container">
@@ -759,6 +891,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- End: Project Type List -->
 </section>
 <!-- End: Project Listing Section [completed] -->
 

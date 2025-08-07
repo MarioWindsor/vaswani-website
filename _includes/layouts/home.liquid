@@ -1,10 +1,19 @@
 {% include 'parts/head.liquid' %}
 {% include 'parts/header.liquid' %}
 
+{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
+{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
+{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
+
+{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
+{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
+{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
+
+
 
 
 <!-- Sample Section -->
-<section id="sample-section hidden" class="sample-section hidden">
+<section id="sample-section" class="sample-section hidden">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
@@ -86,164 +95,140 @@
 			<div class="columns small-12 text-center">
 				<label class="section-label">Ongoing Projects</label>
 				<h2 class="section-heading text-neutral-20 space-50-bottom">Masterpieces in the Making</h2>
-				
-				<div class="button-toggle inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<button class="text-uppercase radius-round space-75-horizontal">Residential</button>
-					<button class="text-uppercase radius-round space-75-horizontal" style="color: var(--hue-neutral-50); background: transparent;">Commercial</button>
+			</div>
+		</div>
+	</div>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="residential" id="ongoingToggleResidential" checked>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="commercial" id="ongoingToggleCommercial">
+	<!-- Project Type Toggle -->
+	<div class="type-toggle row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleResidential">Residential</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleCommercial">Commercial</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="p">
-		<!-- assign reviews_by_date = collections.reviews | sort: "data.reviewdate" | reverse -->
-		{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
-		{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
-		{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
-
-		{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
-		{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
-		{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Ongoing Residential</div>
-		{% for project in ongoing_residential_projects %}
-			<div class="item">
-				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
-			</div>
-		{% endfor %}
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Ongoing Commercial</div>
-		{% for project in ongoing_commercial_projects %}
-			<div class="item">
-				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
-			</div>
-		{% endfor %}
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Completed Residential</div>
-		{% for project in completed_residential_projects %}
-			<div class="item">
-				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
-			</div>
-		{% endfor %}
-
-		<div class="small text-uppercase space-100-top space-25-bottom">Completed Commercial</div>
-		{% for project in completed_commercial_projects %}
-			<div class="item">
-				<a href="{{ project.url }}" class="h5">{% if project.data.overview.prefix-name %}Vaswani {% endif %}{{ project.data.name }}</a>
-			</div>
-		{% endfor %}
-	</div>
-	<div class="projects row">
-		<div class="project space-100-vertical">
-			<div class="container">
-				<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
-					<h6 class="heading text-primary">Luxury 3 & 4 Bedroom Homes</h6>
-					<h4 class="name text-uppercase strong letter-spacing-loose-loose">Vaswani Starlight</h4>
-				</div>
-				<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-					<small class="metadata block">
-						<i class='bx bx-home p text-primary'></i>
-						<span>Starting at ₹2.82Cr</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-area p text-primary'></i>
-						<span>1970sqft to 2730sqft Apartments</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-map p text-primary'></i>
-						<span>Whitefield, BANGALORE</span>
-					</small>
-				</div>
-			</div>
-			<!-- Carousel -->
-			<div class="carousel gallery">
-				<div class="carousel-list fill-white box-shadow-red-light">
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-						<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1920x1080/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/500x500/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/640x480/F1F1F1/999999" alt="">
+	<!-- End: Project Type Toggle -->
+	<!-- Project Type List -->
+	<div class="type-list">
+		<div class="projects residential row">
+			{% for project in ongoing_residential_projects %}
+			<div class="project space-100-vertical">
+				<div class="container">
+					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="{{ project.url }}">
+						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
+						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+					</a>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						{% if project.data.overview.starting-price != blank %}
+						<small class="metadata block">
+							<i class='bx bx-home p text-primary'></i>
+							<span>{{ project.data.overview.starting-price }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.unit-size != blank %}
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>{{ project.data.overview.unit-size }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.location-label != blank %}
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>{{ project.data.overview.location-label }}</span>
+						</small>
+						{% endif %}
 					</div>
 				</div>
-				<div class="row">
-					<div class="carousel-controls container">
-						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list fill-white box-shadow-red-light">
+						{% for gallery in project.data.gallery.images %}
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+							{% if forloop.index == 1 %}
+								{% if project.data.overview.status-label != blank %}
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+								{% endif %}
+							{% endif %}
+						</div>
+						{% endfor %}
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
 					</div>
 				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="{{ project.url }}">Explore Project</a>
+				</div>
 			</div>
-			<div class="container">
-				<a class="button space-75-horizontal radius-round" href="">Explore Project</a>
-			</div>
+			{% endfor %}
 		</div>
-		<div class="project space-100-vertical">
-			<div class="container">
-				<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
-					<h6 class="heading text-primary">Luxury 3 & 4 Bedroom Homes</h6>
-					<h4 class="name text-uppercase strong letter-spacing-loose-loose">Vaswani Starlight</h4>
+		<div class="projects commercial row">
+			{% for project in ongoing_commercial_projects %}
+			<div class="project space-100-vertical">
+				<div class="container">
+					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
+						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
+						<h4 class="name text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+					</div>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						{% if project.data.overview.starting-price != blank %}
+						<small class="metadata block">
+							<i class='bx bx-home p text-primary'></i>
+							<span>{{ project.data.overview.starting-price }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.unit-size != blank %}
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>{{ project.data.overview.unit-size }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.location-label != blank %}
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>{{ project.data.overview.location-label }}</span>
+						</small>
+						{% endif %}
+					</div>
 				</div>
-				<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-					<small class="metadata block">
-						<i class='bx bx-home p text-primary'></i>
-						<span>Starting at ₹2.82Cr</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-area p text-primary'></i>
-						<span>1970sqft to 2730sqft Apartments</span>
-					</small>
-					<small class="metadata block">
-						<i class='bx bx-map p text-primary'></i>
-						<span>Whitefield, BANGALORE</span>
-					</small>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list fill-white box-shadow-red-light">
+						{% for gallery in project.data.gallery.images %}
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+							{% if forloop.index == 1 %}
+								{% if project.data.overview.status-label != blank %}
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+								{% endif %}
+							{% endif %}
+						</div>
+						{% endfor %}
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="{{ project.url }}">Explore Project</a>
 				</div>
 			</div>
-			<!-- Carousel -->
-			<div class="carousel gallery">
-				<div class="carousel-list fill-white box-shadow-red-light">
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-						<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/1920x1080/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/500x500/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/480x720/F1F1F1/999999" alt="">
-					</div>
-					<div class="carousel-list-item">
-						<img class="radius-25 box-shadow" src="https://placeholdit.com/640x480/F1F1F1/999999" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="carousel-controls container">
-						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<a class="button space-75-horizontal radius-round" href="">Explore Project</a>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
+	<!-- End: Project Type List -->
 </section>
 <!-- End: Project Listing Section [ongoing] -->
 
@@ -402,144 +387,110 @@
 			<div class="columns small-12 text-center">
 				<label class="section-label">Completed Projects</label>
 				<h2 class="section-heading text-neutral-20 space-50-bottom">Our Legacy of Landmarks</h2>
-				
-				<div class="button-toggle inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<button class="text-uppercase radius-round space-75-horizontal">Residential</button>
-					<button class="text-uppercase radius-round space-75-horizontal" style="color: var(--hue-neutral-50); background: transparent;">Commercial</button>
+			</div>
+		</div>
+	</div>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="residential" id="completedToggleResidential" checked>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="commercial" id="completedToggleCommercial">
+	<!-- Project Type Toggle -->
+	<div class="type-toggle row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleResidential">Residential</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleCommercial">Commercial</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row space-100-vertical">
-		<!-- Carousel -->
-		<div class="carousel">
+	<!-- End: Project Type Toggle -->
+	<!-- Project Type List -->
+	<div class="type-list row space-100-vertical">
+		<div class="projects residential carousel">
 			<div class="carousel-list fill-white box-shadow-red-light">
+				{% for project in completed_residential_projects %}
 				<div class="project carousel-list-item">
-					<div class="card space-50">
+					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							{% if project.data.overview.status-label != blank %}
+							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+							{% endif %}
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
 						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h6>
+						<p class="block text-neutral-50">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</p>
 						<div class="project-meta text-dark space-25-vertical">
+							{% if project.data.overview.starting-price != blank %}
+							<small class="metadata block">
+								<i class='bx bx-home p text-primary'></i>
+								<span>{{ project.data.overview.starting-price }}</span>
+							</small>
+							{% endif %}
+							{% if project.data.overview.unit-size != blank %}
 							<small class="metadata block">
 								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
+								<span>{{ project.data.overview.unit-size }}</span>
 							</small>
+							{% endif %}
+							{% if project.data.overview.location-label != blank %}
 							<small class="metadata block">
 								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
+								<span>{{ project.data.overview.location-label }}</span>
 							</small>
+							{% endif %}
 						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
 				</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="projects commercial carousel">
+			<div class="carousel-list fill-white box-shadow-red-light">
+				{% for project in completed_commercial_projects %}
 				<div class="project carousel-list-item">
-					<div class="card space-50">
+					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							{% if project.data.overview.status-label != blank %}
+							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+							{% endif %}
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
 						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h6>
+						<p class="block text-neutral-50">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</p>
 						<div class="project-meta text-dark space-25-vertical">
+							{% if project.data.overview.starting-price != blank %}
+							<small class="metadata block">
+								<i class='bx bx-home p text-primary'></i>
+								<span>{{ project.data.overview.starting-price }}</span>
+							</small>
+							{% endif %}
+							{% if project.data.overview.unit-size != blank %}
 							<small class="metadata block">
 								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
+								<span>{{ project.data.overview.unit-size }}</span>
 							</small>
+							{% endif %}
+							{% if project.data.overview.location-label != blank %}
 							<small class="metadata block">
 								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
+								<span>{{ project.data.overview.location-label }}</span>
 							</small>
+							{% endif %}
 						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
 				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
-				<div class="project carousel-list-item">
-					<div class="card space-50">
-						<div class="thumbnail position-relative">
-							<img class="radius-min box-shadow" src="https://placeholdit.com/500x400/F1F1F1/999999" alt="">
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">Vaswani Menlo Park</h6>
-						<p class="block text-neutral-50">3 & 4 BHK Row Houses</p>
-						<div class="project-meta text-dark space-25-vertical">
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>1970sqft to 2730sqft Apartments</span>
-							</small>
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>Whitefield, BANGALORE</span>
-							</small>
-						</div>
-						<a class="p strong text-uppercase text-primary line-height-loose-loose" href="">View Project</a>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 			<div class="row">
 				<div class="carousel-controls container">
@@ -549,6 +500,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- End: Project Type List -->
 </section>
 <!-- End: Project Listing Section [completed] -->
 
