@@ -91,9 +91,11 @@
 
 
 
-/* -- Gallery --  */
+/* -- Gallery + Big Picture --  */
 .carousel.gallery {}
-.carousel.gallery .carousel-list {
+
+.carousel.gallery .carousel-list,
+.carousel.gallery.big-picture .carousel-list {
 	grid-auto-columns: max-content;
 	grid-auto-rows: var(--card);
 	scroll-snap-type: none;
@@ -103,4 +105,15 @@
 	right: var(--column-unit);
 	text-align: right;
 	display: block;
+}
+
+@media( min-width: 1000px ) {
+	.carousel.gallery.big-picture .carousel-list {
+		grid-auto-rows: calc(var(--card) * 1.5);
+	}
+}
+@media( min-width: 1500px ) {
+	.carousel.gallery.big-picture .carousel-list {
+		grid-auto-rows: calc(var(--card) * 2);
+	}
 }

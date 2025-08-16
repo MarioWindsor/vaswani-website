@@ -10,17 +10,344 @@ eleventyComputed:
 
 
 <!-- Sample Section -->
-<section id="sample-section" class="sample-section space-200-vertical">
+<section id="sample-section" class="sample-section hidden">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
 				<!-- Stuff Goes Here -->
-				<h1>{{ name }}</h1>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- End: Sample Section -->
+
+
+
+<!-- Intro Banner Section -->
+<section id="intro-banner-section" class="intro-banner-section">
+	<div class="row">
+		<div class="video-scroll-wrapper">
+			<div class="video-width fill-dark" style="width: 100vw; padding-top: 50%;"></div>
+			<div class="scroll">
+				<span>Scroll</span>
+				dotmatrix
+			</div>
+		</div>
+			
+	</div>
+</section>
+<!-- End: Intro Banner Section -->
+
+
+
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section space-200-top space-100-bottom">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center space-25-bottom">
+				<label class="section-label">{% if overview.prefix-name == true %}Vaswani {% endif %}{{ name }}</label>
+				<h2 class="section-heading text-neutral-20 w-500 space-25-bottom">{% if intro.heading != blank %}{{ intro.heading }}{% endif %}</h2>
+				<h6 class="heading text-primary">{% if overview.project-label != blank %}{{ overview.project-label }}{% endif %}</h6>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<!-- Carousel -->
+		<div class="carousel gallery big-picture">
+			<div class="carousel-list fill-white box-shadow-red-light">
+				{% for gallery in gallery.images %}
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+				</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+		<!-- End: Carousel -->
+	</div>
+	<div class="intro row">
+		<div class="container">
+			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center space-125-top space-50-bottom">
+				<h6 class="sub-heading text-primary">{{ intro.sub-heading }}</h6>
+			</div>
+		</div>
+		<div class="container">
+			<div class="project-meta text-dark columns small-12 medium-6 large-5 large-offset-1 xlarge-4 xlarge-offset-2 space-50-bottom text-center">
+				{% if overview.starting-price != blank %}
+				<small class="metadata block">
+					<i class='bx bx-home p text-primary'></i>
+					<span>{{ overview.starting-price }}</span>
+				</small>
+				{% endif %}
+				{% if overview.unit-size != blank %}
+				<small class="metadata block">
+					<i class='bx bx-area p text-primary'></i>
+					<span>{{ overview.unit-size }}</span>
+				</small>
+				{% endif %}
+				{% if overview.location-label != blank %}
+				<small class="metadata block">
+					<i class='bx bx-map p text-primary'></i>
+					<span>{{ overview.location-label }}</span>
+				</small>
+				{% endif %}
+				{% if overview.location-label != blank %}
+				<h6 class="space-25-top">
+					<span class="text-neutral-40 w-600 text-uppercase">RERA Number</span>
+					<span class="label block">PRM/KA/RERA/1251/446/PR/180424/006808</span>
+				</h6>
+				{% endif %}
+			</div>
+			<div class="description columns small-12 medium-6 large-5 xlarge-4 text-center">
+				<p>{{ intro.description }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Intro Section -->
+
+
+
+<!-- Banner Section -->
+{% if banner.feature-1 != blank %}
+<section id="banner-section-1" class="banner-section space-100-vertical">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('{{ banner.feature-1.background }}'); height: calc(var(--card)*1.5); width: 100%;">
+					<h6 class="{{ banner.feature-1.position }}">{{ banner.feature-1.heading }}</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
+<!-- End: Banner Section -->
+
+
+
+<!-- Contact Form Section -->
+<section id="contact-form-section" class="contact-form-section space-100-vertical">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 xlarge-10 xlarge-offset-1">
+				<label class="section-label">GET IN TOUCH</label>
+				<h2 class="section-heading text-neutral-20 w-500 space-50-bottom">Exceptional Living Begins Here</h2>
+			</div>
+			<div class="columns small-12 space-50-bottom medium-4 xlarge-3 xlarge-offset-1">
+				<p class="h6">Provide your details, and our expert advisors will connect with you to tailor your next steps.</p>
+			</div>
+			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6">
+				<div class="form card row space-50">
+					<div class="form-input">
+						<label for="">
+							<span class="input-label space-min block">Full Name *</span>
+							<input class="input-field" type="text">
+
+						</label>
+					</div>
+					<div class="form-input">
+						<label for="">
+							<span class="input-label space-min block">Email Id *</span>
+							<input class="input-field" type="text">
+						</label>
+					</div>
+					<div class="form-input">
+						<label for="">
+							<span class="input-label space-min block">Phone Number *</span>
+							<input class="input-field" type="text">
+						</label>
+					</div>
+					<div class="form-input">
+						<label for="">
+							<span class="input-label space-min block">I’M Interested In</span>
+							<input class="input-field" type="text">
+						</label>
+					</div>
+					<div class="form-input">
+						<label for="">
+							<span class="input-label space-min block">City</span>
+							<input class="input-field" type="text">
+						</label>
+					</div>
+					<div class="form-input">
+						<label for="">
+							<span class="input-label space-min block">How Did You Find Us ?</span>
+							<input class="input-field" type="text">
+						</label>
+					</div>
+					<div class="form-input span-row">
+						<label for="">
+							<span class="input-label space-min block">Your Requirement</span>
+							<textarea class="input-field" name="" id=""></textarea>
+						</label>
+					</div>
+					<div class="form-input">
+						<button class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
+					</div>
+				</div>
+			</div>
+			<div class="columns or-message small-12 space-50-top medium-4 xlarge-3 xlarge-offset-1">
+				<span class="h4 text-primary">OR</span>
+				<p class="h6">Call our Help Desk <br>between 10am to 7pm IST</p>
+				<a class="h4 text-primary" href="tel:+918747987479">+91-<strong>8747987479</strong></a>
+			</div>
+			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
+		</div>
+	</div>
+</section>
+<!-- End: Contact Form Section -->
+
+
+
+<!-- About Vaswnani Section -->
+<section id="about-vaswnani-section" class="about-vaswnani-section space-100-vertical">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				ribon
+					logo
+					
+					Over the last 40 years, we have developed residential and commercial real estate across Bangalore, Mumbai, Pune and Goa.
+
+					In 1985, we embarked on a journey to offer global-standard residential solutions for the discerning home buyer as well as turnkey commercial solutions for Indian and multinational firms. From resplendent housing to upscale commercial, our equity is strengthened with a proven and credible track record having developed close to 8 million square feet of built up area in the verticals of Residential, Commercial, Retail and Hospitality. We are committed to constantly refining our skills with an ever present emphasis on transparency.
+					
+					More about us
+				ribon
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: About Vaswnani Section -->
+
+
+
+<!-- Bank Financing Section -->
+<section id="bank-financing-section" class="bank-financing-section space-100-vertical">
+	<div class="row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-9 large-7 xlarge-6">
+				<label class="section-label">Hassle-free Financing</label>
+				<h5 class="heading text-primary space-100-bottom">Many Vaswani projects are pre-approved by India's leading financial institutions.</h5>
+
+				<div class="bank-grid space-25-vertical">
+					<div class="bank-grid-track">
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-hdfc</span><img src="media/bank-hdfc.png" alt=""></a>
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-hsbc</span><img src="media/bank-hsbc.png" alt=""></a>
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-sbi</span><img src="media/bank-sbi.png" alt=""></a>
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-icici</span><img src="media/bank-icici.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-hdfc</span><img src="media/bank-hdfc.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-hsbc</span><img src="media/bank-hsbc.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-sbi</span><img src="media/bank-sbi.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-icici</span><img src="media/bank-icici.png" alt=""></a>
+					</div>
+				</div>
+				<small class="block strong text-uppercase text-neutral-30 space-100-top">and more</small>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Bank Financing Section -->
+
+
+
+<!-- Join Newsletter Section -->
+<section id="join-newsletter-section" class="join-newsletter-section space-50-top">
+	<div class="row">
+		<img class="join-newsletter-bg" src="media/newsletter-bg.png" alt="">
+		<div class="join-newsletter">
+			<div class="container text-center">
+				<div class="columns small-12">
+					<label class="section-label text-secondary">Shared Spaces</label>
+					<h2 class="section-heading text-light space-50-bottom">The Art of Architecture</h2>
+					<a class="button fill-secondary" href="">Join our Newsletter</a>
+				</div>
+			</div>
+		</div>
+		<div class="space-200-bottom fill-dark"></div>
+	</div>
+</section>
+<!-- End: Join Newsletter Section -->
+
+
+
+<!-- Blog Section -->
+<section id="blog-section" class="blog-section space-100-vertical">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				BLOG ARTICLES
+
+				Insights & Lifestyle Hub
+
+				article
+					image
+
+					We’ve won accolades – and it’s entirely thanks...
+
+					3 Weeks Ago
+					
+					Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...
+					
+					View Article
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Blog Section -->
+
+
+
+<!-- Footer Section -->
+<section id="footer-section" class="footer-section space-100-vertical">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				logo
+
+				ribon
+
+				contact
+					BANGALORE CONTACT
+					+9187479-87479
+					sales@vaswanigroup.com
+
+					BANGALORE ADDRESS
+					Vaswani Victoria, #30, Victoria Road, Bengaluru - 560 047 Karnataka, India
+
+				Social
+					insta, youtube, facebook, linkedin
+
+
+				residential
+					links
+					links
+					links
+					links
+
+				commercial
+					links
+					links
+					links
+					links
+
+				Quick Links
+					links
+					links
+					links
+					links
+					links
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Footer Section -->
+
 
 
 

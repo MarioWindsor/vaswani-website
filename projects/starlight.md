@@ -26,7 +26,7 @@ gallery:
 intro:
   sub-heading: "Discover a life that blends sophistication with convenience.
     Embrace Urban Serenity. "
-  heading: Whitefield's New Benchmark
+  heading: Whitefield's Newest Benchmark
   description: >-
     Nestled in the heart of Whitefield, Vaswani Starlight offers world-class
     amenities, thoughtfully designed living spaces, and seamless connectivity to

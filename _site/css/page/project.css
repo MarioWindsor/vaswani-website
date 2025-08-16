@@ -1,0 +1,38 @@
+/*
+ * ===============
+ * Project Page
+ * ===============
+ */
+
+ 
+@media( min-width: 1000px ) {}
+@media( min-width: 1500px ) {}
+
+.intro-section {}
+
+.intro-section .intro .project-meta .metadata {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: calc(var(--small)/2);
+}
+
+@media( min-width: 500px )  {
+	.intro-section .intro .sub-heading { font-size: var(--h5); }
+	.intro-section .intro .project-meta {
+		text-align: right;
+		padding-right: var(--space-100);
+	}
+	.intro-section .intro .project-meta .metadata {
+		justify-content: right;
+		flex-direction: row-reverse;
+	}
+	.intro-section .intro .description {
+		text-align: left;
+	}
+
+}
+@media( min-width: 1000px ) {}
+@media( min-width: 1500px ) {
+	.intro-section .intro .sub-heading { font-size: var(--h4); }
+}
