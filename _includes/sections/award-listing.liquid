@@ -1,0 +1,68 @@
+<style>
+	.awards-section { overflow: clip; }
+	.awards-section .award { position: relative; }
+	.awards-section .award:before,
+	.awards-section .award:after {
+		display: block;
+		content: '';
+		width: var(--space-150);
+		height: 0;
+		padding-top: 50%;
+		position: absolute;
+		top: 50%;
+		background-image: url('/media/laurel.svg');
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		transform: translateY(-50%) translateX(-25%);
+	}
+	.awards-section .award:before {
+		left: 0;
+	}
+	.awards-section .award:after {
+		right: 0;
+		transform: translateY(-50%) translateX(25%) scaleX(-1);
+	}
+
+	@media( min-width: 500px ) {
+		.awards-section .award:before,
+		.awards-section .award:after { width: var(--space-100); }
+
+		.awards-section .award .title { font-size: var(--h5); }
+		.awards-section .award .awarder { font-size: var(--p); }
+	}
+	@media( min-width: 1000px ) {
+		.awards-section .award:before,
+		.awards-section .award:after { width: var(--space-150); }
+
+		.awards-section .award .title { font-size: var(--h3); }
+		.awards-section .award .awarder { font-size: var(--h6); }
+
+		.awards-section .award i.h3 { font-size: var(--h2); }
+		.awards-section .award i.h5 { font-size: var(--h4); }
+	}
+</style>
+
+
+
+<section id="awards-section" class="awards-section gap">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 text-center space-25-bottom">
+				<label class="section-label">Awards</label>
+				<h2 class="section-heading text-neutral-20 w-600">Accolades of Excellence</h2>
+			</div>
+		</div>
+		<div class="awards row text-center">
+			<div class="award columns small-12 medium-11 xlarge-9 text-center space-100-vertical space-100-horizontal">
+				<h3 class="title h6 text-primary">Best Luxury Residential Project South Zone</h3>
+				<h4 class="awarder small block text-uppercase w-600 space-25">CNBC-Awaaz Real Estate Awards 2023</h4>
+				<div class="stars">
+					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
+					<i class='bx bxs-star h3 text-secondary inline-middle'></i>
+					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

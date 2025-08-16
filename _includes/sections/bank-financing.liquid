@@ -1,0 +1,73 @@
+<style>
+	.bank-financing-section .bank-grid {
+		position: relative;
+		overflow: clip;
+	}
+	.bank-financing-section .bank-grid:before ,
+	.bank-financing-section .bank-grid:after {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		width: var(--space-200);
+		background: linear-gradient(to right, var(--hue-light), transparent);
+	}
+	.bank-financing-section .bank-grid:before { left: 0; }
+	.bank-financing-section .bank-grid:after {
+		right: 0;
+		transform: rotate(180deg);
+	}
+	.bank-financing-section .bank-grid-track {
+		display: flex;
+		gap: var(--space-50);
+		width: max-content;
+		height: var(--space-50);
+		animation: marquee-move-text 10s linear infinite forwards;
+	}
+	.bank-financing-section .bank-grid .bank-link {
+		filter: grayscale(1);
+		transition: var(--transition-speed) var(--transition-ease);
+	}
+	.bank-financing-section .bank-grid .bank-link:hover { filter: grayscale(0); }
+
+	@keyframes marquee-move-text {
+		to { transform: translateX(-50%); }
+	}
+
+	@media( min-width: 1000px ) {
+		.bank-financing-section .heading { font-size: var(--h4); }
+		.bank-financing-section .bank-grid-track {
+			gap: var(--space-75);
+			height: var(--space-75);
+		}
+	}
+</style>
+
+
+
+<section id="bank-financing-section" class="bank-financing-section gap">
+	<div class="row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-9 large-7 xlarge-6">
+				<label class="section-label">Hassle-free Financing</label>
+				<h5 class="heading text-primary space-100-bottom">Many Vaswani projects are pre-approved by India's leading financial institutions.</h5>
+
+				<div class="bank-grid space-25-vertical">
+					<div class="bank-grid-track">
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-hdfc</span><img src="media/bank-hdfc.png" alt=""></a>
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-hsbc</span><img src="media/bank-hsbc.png" alt=""></a>
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-sbi</span><img src="media/bank-sbi.png" alt=""></a>
+						<a class="bank-link" href="/"><span class="visuallyhidden">bank-icici</span><img src="media/bank-icici.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-hdfc</span><img src="media/bank-hdfc.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-hsbc</span><img src="media/bank-hsbc.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-sbi</span><img src="media/bank-sbi.png" alt=""></a>
+						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-icici</span><img src="media/bank-icici.png" alt=""></a>
+					</div>
+				</div>
+				<small class="block strong text-uppercase text-neutral-30 space-100-top">and more</small>
+			</div>
+		</div>
+	</div>
+</section>

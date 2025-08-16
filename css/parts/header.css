@@ -5,10 +5,7 @@
  */
 
 
-
-/*
- * Header Section
- */
+/* -- Footer Section -- */
 
 .header-section {}
 .header-section .logo {
@@ -16,12 +13,7 @@
 	width: calc(var(--card)/2.5);
 }
 
-
-
-
-/*
- * Menu Toggle Button
- */
+/* -- Menu Toggle Button --  */
 
 .menu-toggle {
 	cursor: pointer;
@@ -66,9 +58,7 @@
 #menu-toggle-checkbox:checked ~ .menu-toggle .icon-bar:nth-child(3) { transform: translateY(calc((var(--space-min) + 2px) * -1)) rotate(-45deg); }
 
 
-/*
- * Main Nav
- */
+/* -- Main Nav -- */
 
 .main-nav {
 	position: fixed;
@@ -84,7 +74,8 @@
 
 	visibility: hidden;
 	opacity: 0;
-	transform: scale(0.95);
+	/*transform: scale(0.95);*/
+	transform: scale(1.15);
 	transition: opacity var(--transition-speed) var(--transition-ease),
 				visibility var(--transition-speed) var(--transition-ease),
 				transform var(--transition-speed) var(--transition-ease);
@@ -145,17 +136,7 @@
 	max-height: 500px;
 }
 
-
-@media( min-width: 500px )  {
-	/*.menu-toggle {
-		top: var(--space-50);
-		right: var(--space-100);
-	}*/
-
-	/*.main-nav {
-		padding: var(--space-50) var(--space-100);
-	}*/
-}
+@media( min-width: 500px )  {}
 @media( min-width: 1000px ) {}
 @media( min-width: 1500px ) {}
 

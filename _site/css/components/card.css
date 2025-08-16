@@ -1,0 +1,16 @@
+/*
+ * ==========================================================================
+ * # Components
+ * ==========================================================================
+ */
+
+/* Component Styles for Showcase */
+
+.card {
+	background: var(--hue-light);
+	overflow: hidden;
+	border-radius: var(--space-25);
+	box-shadow: 
+		0 0 var(--border-width)  color-mix(in srgb, var(--hue-primary) 25%, transparent),
+		0 var(--border-width) calc(var(--space-min)/1) color-mix(in srgb, var(--hue-primary) 25%, transparent);
+}

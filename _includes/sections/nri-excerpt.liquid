@@ -1,0 +1,36 @@
+<style>
+	.nri-excerpt-section { position: relative; }
+	.nri-excerpt-section .dotmatrix { display: none; }
+	@media( min-width: 1000px ) {
+		.nri-excerpt-section .dotmatrix {
+			display: block;
+			position: absolute;
+			z-index: -1;
+			bottom: var(--space-175);
+			left: 50%;
+			width: calc(var(--card)/1.5);
+			transform: translateX(var(--card));
+			opacity: 66.666%;
+		}
+	}
+</style>
+
+
+
+<section id="nri-excerpt-section" class="nri-excerpt-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 medium-5 large-4 large-offset-1 xlarge-3 xlarge-offset-2">
+				<img class="radius-min block box-shadow" src="https://placeholdit.com/480x720/dddddd/999999" alt="">
+			</div>
+			<div class="columns small-12 medium-6 medium-offset-1 large-5 xlarge-4 space-50-top">
+				<label class="section-label">NRI Customers</label>
+				<h2 class="section-heading text-neutral-20 w-600 space-50-bottom">Global Aspirations. Local Expertise.</h2>
+				<p class="h6 space-25-bottom">For our discerning international clients, we offer a streamlined journey to finding and owning your dream home in Bangalore.</p>
+				<p class="h6 space-50-bottom">From buying assistance to seamless handover, our dedicated NRI team ensures peace of mind.</p>
+				<a class="button fill-dark " href="">More Details</a>
+			</div>
+		</div>
+		<img class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">
+	</div>
+</section>

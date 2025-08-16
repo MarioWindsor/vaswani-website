@@ -1,0 +1,126 @@
+{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
+{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
+{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
+
+
+<section id="project-listing-section" class="project-listing-section completed gap">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 text-center">
+				<label class="section-label">Completed Projects</label>
+				<h2 class="section-heading text-neutral-20 w-600 space-50-bottom">Our Legacy of Landmarks</h2>
+			</div>
+		</div>
+	</div>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="residential" id="completedToggleResidential" checked>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="commercial" id="completedToggleCommercial">
+	<!-- Project Type Toggle -->
+	<div class="type-toggle row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleResidential">Residential</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleCommercial">Commercial</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Project Type Toggle -->
+	<!-- Project Type List -->
+	<div class="type-list row space-100-vertical">
+		<div class="projects residential carousel">
+			<div class="carousel-list">
+				{% for project in completed_residential_projects %}
+				<div class="project carousel-list-item">
+					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
+						<div class="thumbnail position-relative">
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							{% if project.data.overview.status-label != blank %}
+							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+							{% endif %}
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
+						</div>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h6>
+						<p class="block text-neutral-50">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</p>
+						<div class="project-meta text-dark space-25-vertical">
+							{% if project.data.overview.starting-price != blank %}
+							<small class="metadata block">
+								<i class='bx bx-home p text-primary'></i>
+								<span>{{ project.data.overview.starting-price }}</span>
+							</small>
+							{% endif %}
+							{% if project.data.overview.unit-size != blank %}
+							<small class="metadata block">
+								<i class='bx bx-area p text-primary'></i>
+								<span>{{ project.data.overview.unit-size }}</span>
+							</small>
+							{% endif %}
+							{% if project.data.overview.location-label != blank %}
+							<small class="metadata block">
+								<i class='bx bx-map p text-primary'></i>
+								<span>{{ project.data.overview.location-label }}</span>
+							</small>
+							{% endif %}
+						</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="projects commercial carousel">
+			<div class="carousel-list">
+				{% for project in completed_commercial_projects %}
+				<div class="project carousel-list-item">
+					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
+						<div class="thumbnail position-relative">
+							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							{% if project.data.overview.status-label != blank %}
+							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+							{% endif %}
+							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
+						</div>
+						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h6>
+						<p class="block text-neutral-50">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</p>
+						<div class="project-meta text-dark space-25-vertical">
+							{% if project.data.overview.starting-price != blank %}
+							<small class="metadata block">
+								<i class='bx bx-home p text-primary'></i>
+								<span>{{ project.data.overview.starting-price }}</span>
+							</small>
+							{% endif %}
+							{% if project.data.overview.unit-size != blank %}
+							<small class="metadata block">
+								<i class='bx bx-area p text-primary'></i>
+								<span>{{ project.data.overview.unit-size }}</span>
+							</small>
+							{% endif %}
+							{% if project.data.overview.location-label != blank %}
+							<small class="metadata block">
+								<i class='bx bx-map p text-primary'></i>
+								<span>{{ project.data.overview.location-label }}</span>
+							</small>
+							{% endif %}
+						</div>
+						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Project Type List -->
+</section>

@@ -1,0 +1,119 @@
+/*
+ *
+ *	Carousel
+ *
+ */
+
+.carousel {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.carousel .carousel-list {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	gap: var(--space-50);
+	grid-auto-flow: column;
+	grid-auto-columns: var(--card);
+	white-space: nowrap;
+	overflow-x: scroll; /* needs to be 'scroll' not 'auto' */
+	font-size: 0;
+	-webkit-overflow-scrolling: touch;
+	padding: var(--space-50) var(--column-unit);
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel .carousel-list .carousel-list-item {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	white-space: normal;
+	scroll-snap-align: center;
+}
+
+
+@media( min-width: 500px )  {
+	.carousel .carousel-list {
+		grid-auto-columns: calc(var(--card) - var(--space-25));
+	}
+}
+@media( min-width: 1000px ) {
+	.carousel .carousel-list {
+		grid-auto-columns: calc(var(--card) - (var(--space-100) / 3) );
+	}
+}
+@media( min-width: 1500px ) {
+	.carousel .carousel-list {
+		grid-auto-columns: calc(var(--card) - (var(--space-100) / 2.666) ); /* dont ask why this number - i did the math */
+	}
+}
+
+
+
+
+/* -- Controls -- */
+.carousel .carousel-controls {
+	pointer-events: none;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.carousel .carousel-controls .scroll-button {
+	position: relative;
+	width: var(--space-100);
+	height: var(--space-100);
+	pointer-events: all;
+	padding: var(--space-min);
+	font-size: 0;
+	border-radius: 100%;
+	cursor: pointer;
+	box-shadow: 0;
+	transition: var(--transition-speed) var(--transition-ease);
+}
+.carousel .carousel-controls .scroll-button:hover {
+	box-shadow: inset 0 0 0 var(--border-width) var(--hue-primary);
+}
+
+.carousel .carousel-controls .scroll-button * {
+	pointer-events: none;
+}
+.carousel .carousel-controls .scroll-button i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* -- Gallery + Big Picture --  */
+.carousel.gallery {}
+
+.carousel.gallery .carousel-list,
+.carousel.gallery.big-picture .carousel-list {
+	grid-auto-columns: max-content;
+	grid-auto-rows: var(--card);
+	scroll-snap-type: none;
+}
+.carousel.gallery .carousel-controls {
+	position: absolute;
+	right: var(--column-unit);
+	text-align: right;
+	display: block;
+}
+
+@media( min-width: 1000px ) {
+	.carousel.gallery.big-picture .carousel-list {
+		grid-auto-rows: calc(var(--card) * 1.5);
+	}
+}
+@media( min-width: 1500px ) {
+	.carousel.gallery.big-picture .carousel-list {
+		grid-auto-rows: calc(var(--card) * 2);
+	}
+}

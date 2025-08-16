@@ -1,0 +1,57 @@
+<style>
+	.join-newsletter-section { position: relative; z-index: 1; }
+	.join-newsletter-section .join-newsletter-bg { position: relative; z-index: 1; }
+	.join-newsletter-section .join-newsletter-bg:after {
+		position: absolute;
+		display: block;
+		content: '';
+		z-index: 2;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: var(--space-400);
+		background: linear-gradient(to top, var(--hue-dark), transparent);
+	}
+	.join-newsletter-section .join-newsletter {
+		position: relative;
+		z-index: 2;
+		padding-bottom: calc(var(--container-width)/4);
+	}
+	@media( min-width: 500px ) {
+		.join-newsletter-section .join-newsletter-bg:after { height: calc(var(--space-400) * 2); }
+		.join-newsletter-section .join-newsletter {
+			margin-top: calc(var(--space-100) * -1.5);
+			padding-bottom: calc(var(--container-width)/6);
+		}
+	}
+	@media( min-width: 1000px ) {
+		.join-newsletter-section .join-newsletter-bg:after { height: calc(var(--space-400) * 3); }
+		.join-newsletter-section .join-newsletter {
+			margin-top: calc(var(--space-100) * -3);
+			padding-bottom: calc(var(--container-width)/8);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.join-newsletter-section .join-newsletter-bg:after { height: calc(var(--space-400) * 4); }
+		.join-newsletter-section .join-newsletter { margin-top: calc(var(--space-100) * -4); }
+	}
+</style>
+
+
+
+<section id="join-newsletter-section" class="join-newsletter-section fill-dark gap">
+	<div class="row">
+		<div class="join-newsletter-bg fill-light">
+			<img class="block" src="media/newsletter-bg.png" alt="">
+		</div>
+		<div class="join-newsletter">
+			<div class="container text-center">
+				<div class="columns small-12">
+					<label class="section-label text-secondary">Shared Spaces</label>
+					<h2 class="section-heading text-light w-600 space-50-bottom">The Art of Architecture</h2>
+					<a class="button fill-secondary" href="">Join our Newsletter</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

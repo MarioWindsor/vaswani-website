@@ -271,13 +271,11 @@ select {
 	text-transform: uppercase;
 }
 .input-field {}
-
 .form-input:focus-within .input-label { color: var(--hue-primary); }
 .form-input:focus-within .input-field {
 	color: var(--hue-primary);
 	border-color: var(--hue-secondary);
 }
-
 
 
 
@@ -415,4 +413,28 @@ select {
 			opacity: 1;
 		}
 	}
+}
+
+
+
+
+
+/*
+ * ==========================================================================
+ * Section
+ * ==========================================================================
+ */
+
+.gap { margin-top: calc(var(--container-width)/4); }
+@media( min-width:  500px ) { .gap { margin-top: calc(var(--container-width)/6); } }
+@media( min-width: 1000px ) { .gap { margin-top: calc(var(--container-width)/8); } }
+
+.section-heading {}
+
+.section-label {
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: var(--space-25);
+	letter-spacing: calc(var(--label)/12);
 }

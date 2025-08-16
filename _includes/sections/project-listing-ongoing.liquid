@@ -1,0 +1,146 @@
+{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
+{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
+{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
+
+
+<section id="project-listing-section" class="project-listing-section ongoing gap">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 text-center">
+				<label class="section-label">Ongoing Projects</label>
+				<h2 class="section-heading text-neutral-20 w-600 space-50-bottom">Masterpieces in the Making</h2>
+			</div>
+		</div>
+	</div>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="residential" id="ongoingToggleResidential" checked>
+	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="commercial" id="ongoingToggleCommercial">
+	<!-- Project Type Toggle -->
+	<div class="type-toggle row">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleResidential">Residential</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleCommercial">Commercial</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Project Type Toggle -->
+	<!-- Project Type List -->
+	<div class="type-list">
+		<div class="projects residential row">
+			{% for project in ongoing_residential_projects %}
+			<div class="project space-100-vertical">
+				<div class="container">
+					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="{{ project.url }}">
+						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
+						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+					</a>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						{% if project.data.overview.starting-price != blank %}
+						<small class="metadata block">
+							<i class='bx bx-home p text-primary'></i>
+							<span>{{ project.data.overview.starting-price }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.unit-size != blank %}
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>{{ project.data.overview.unit-size }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.location-label != blank %}
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>{{ project.data.overview.location-label }}</span>
+						</small>
+						{% endif %}
+					</div>
+				</div>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list">
+						{% for gallery in project.data.gallery.images %}
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+							{% if forloop.index == 1 %}
+								{% if project.data.overview.status-label != blank %}
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+								{% endif %}
+							{% endif %}
+						</div>
+						{% endfor %}
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="{{ project.url }}">Explore Project</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="projects commercial row">
+			{% for project in ongoing_commercial_projects %}
+			<div class="project space-100-vertical">
+				<div class="container">
+					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
+						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
+						<h4 class="name text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+					</div>
+					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
+						{% if project.data.overview.starting-price != blank %}
+						<small class="metadata block">
+							<i class='bx bx-home p text-primary'></i>
+							<span>{{ project.data.overview.starting-price }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.unit-size != blank %}
+						<small class="metadata block">
+							<i class='bx bx-area p text-primary'></i>
+							<span>{{ project.data.overview.unit-size }}</span>
+						</small>
+						{% endif %}
+						{% if project.data.overview.location-label != blank %}
+						<small class="metadata block">
+							<i class='bx bx-map p text-primary'></i>
+							<span>{{ project.data.overview.location-label }}</span>
+						</small>
+						{% endif %}
+					</div>
+				</div>
+				<!-- Carousel -->
+				<div class="carousel gallery">
+					<div class="carousel-list">
+						{% for gallery in project.data.gallery.images %}
+						<div class="carousel-list-item">
+							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+							{% if forloop.index == 1 %}
+								{% if project.data.overview.status-label != blank %}
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+								{% endif %}
+							{% endif %}
+						</div>
+						{% endfor %}
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<a class="button space-75-horizontal radius-round" href="{{ project.url }}">Explore Project</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!-- End: Project Type List -->
+</section>

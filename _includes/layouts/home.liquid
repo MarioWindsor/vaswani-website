@@ -1,15 +1,6 @@
 {% include 'parts/head.liquid' %}
 {% include 'parts/header.liquid' %}
 
-{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
-{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
-{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
-
-{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
-{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
-{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
-
-
 
 
 <!-- Sample Section -->
@@ -27,727 +18,80 @@
 
 
 <!-- Intro Banner Section -->
-<section id="intro-banner-section" class="intro-banner-section">
-	<div class="row">
-		<div class="video-scroll-wrapper">
-			<div class="video-width fill-dark" style="width: 100vw; padding-top: 50%;"></div>
-			<div class="scroll">
-				<span>Scroll</span>
-				dotmatrix
-			</div>
-		</div>
-			
-	</div>
-</section>
+{% include 'sections/intro-banner.liquid' %}
 <!-- End: Intro Banner Section -->
 
 
 
 <!-- Bento Grid Section -->
-<section id="bento-grid-section" class="bento-grid-section space-200-top space-100-bottom">
-	<div class="container">
-		<div class="row">
-			<div class="bento-grid">
-				<div class="bento b1 card">
-					<div class="text">
-						<span class="text-1 h1 w-600">40</span> <span class="text-2 h5 w-700 text-uppercase">years</span>
-					</div>
-				</div>
-				<div class="bento b2 card">
-					<div class="text">
-						<span class="text-1"><span class="text-1-1 h1 w-600">8</span> <span class="text-1-2 h3 w-700">M+</span></span> <span class="text-2 h5 w-700 text-uppercase">Square Feet <br>Built-up Area</span> 
-					</div>
-				</div>
-				<div class="bento b3 card hide-small hide-medium">
-					<div class="image img-cover" style="background-image: url('media/DSC_8083.jpg');"></div>
-				</div>
-				<div class="bento b4 card">
-					<div class="icon img-contain" style="background-image: url('media/icon-rowhouse.svg');"></div>
-					<div class="text h5 text-uppercase">Pioneered <br><span class="text-primary">row house</span> in <br>Bangalore</div>
-				</div>
-				<div class="bento b5 card">
-					<div class="image img-cover" style="background-image: url('media/interior-designer-clients-discussing-drawings.jpg');"></div>
-				</div>
-				<div class="bento b6 card">
-					<div class="text">
-						<span class="text-1 h3 w-600 text-primary">5000+</span> <br><span class="text-2 h6 text-uppercase">Happy <br>Customers</span>
-					</div>
-				</div>
-				<div class="bento b7 card">
-					<div class="text">
-						<span class="text-1 h3 w-500 text-primary">100%</span> 
-						<span class="text-2 h1 w-600 text-primary">RERA</span> <br>
-						<span class="text-3 h3 w-700 text-uppercase">Compliance</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/bento-grid.liquid' %}
 <!-- End: Bento Grid Section -->
 
 
 
 <!-- Project Listing Section [ongoing] -->
-<section id="project-listing-section" class="project-listing-section ongoing space-100-vertical">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 text-center">
-				<label class="section-label">Ongoing Projects</label>
-				<h2 class="section-heading text-neutral-20 w-500 space-50-bottom">Masterpieces in the Making</h2>
-			</div>
-		</div>
-	</div>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="residential" id="ongoingToggleResidential" checked>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="commercial" id="ongoingToggleCommercial">
-	<!-- Project Type Toggle -->
-	<div class="type-toggle row">
-		<div class="container text-center">
-			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
-				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleResidential">Residential</label>
-					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleCommercial">Commercial</label>
-					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Project Type Toggle -->
-	<!-- Project Type List -->
-	<div class="type-list">
-		<div class="projects residential row">
-			{% for project in ongoing_residential_projects %}
-			<div class="project space-100-vertical">
-				<div class="container">
-					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="{{ project.url }}">
-						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
-						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
-					</a>
-					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-						{% if project.data.overview.starting-price != blank %}
-						<small class="metadata block">
-							<i class='bx bx-home p text-primary'></i>
-							<span>{{ project.data.overview.starting-price }}</span>
-						</small>
-						{% endif %}
-						{% if project.data.overview.unit-size != blank %}
-						<small class="metadata block">
-							<i class='bx bx-area p text-primary'></i>
-							<span>{{ project.data.overview.unit-size }}</span>
-						</small>
-						{% endif %}
-						{% if project.data.overview.location-label != blank %}
-						<small class="metadata block">
-							<i class='bx bx-map p text-primary'></i>
-							<span>{{ project.data.overview.location-label }}</span>
-						</small>
-						{% endif %}
-					</div>
-				</div>
-				<!-- Carousel -->
-				<div class="carousel gallery">
-					<div class="carousel-list fill-white box-shadow-red-light">
-						{% for gallery in project.data.gallery.images %}
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
-							{% if forloop.index == 1 %}
-								{% if project.data.overview.status-label != blank %}
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
-								{% endif %}
-							{% endif %}
-						</div>
-						{% endfor %}
-					</div>
-					<div class="row">
-						<div class="carousel-controls container">
-							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<a class="button space-75-horizontal radius-round" href="{{ project.url }}">Explore Project</a>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-		<div class="projects commercial row">
-			{% for project in ongoing_commercial_projects %}
-			<div class="project space-100-vertical">
-				<div class="container">
-					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
-						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
-						<h4 class="name text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
-					</div>
-					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-						{% if project.data.overview.starting-price != blank %}
-						<small class="metadata block">
-							<i class='bx bx-home p text-primary'></i>
-							<span>{{ project.data.overview.starting-price }}</span>
-						</small>
-						{% endif %}
-						{% if project.data.overview.unit-size != blank %}
-						<small class="metadata block">
-							<i class='bx bx-area p text-primary'></i>
-							<span>{{ project.data.overview.unit-size }}</span>
-						</small>
-						{% endif %}
-						{% if project.data.overview.location-label != blank %}
-						<small class="metadata block">
-							<i class='bx bx-map p text-primary'></i>
-							<span>{{ project.data.overview.location-label }}</span>
-						</small>
-						{% endif %}
-					</div>
-				</div>
-				<!-- Carousel -->
-				<div class="carousel gallery">
-					<div class="carousel-list fill-white box-shadow-red-light">
-						{% for gallery in project.data.gallery.images %}
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
-							{% if forloop.index == 1 %}
-								{% if project.data.overview.status-label != blank %}
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
-								{% endif %}
-							{% endif %}
-						</div>
-						{% endfor %}
-					</div>
-					<div class="row">
-						<div class="carousel-controls container">
-							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<a class="button space-75-horizontal radius-round" href="{{ project.url }}">Explore Project</a>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
-	<!-- End: Project Type List -->
-</section>
+{% include 'sections/project-listing-ongoing.liquid' %}
 <!-- End: Project Listing Section [ongoing] -->
 
 
 
 <!-- Contact Form Section -->
-<section id="contact-form-section" class="contact-form-section space-100-vertical">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 xlarge-10 xlarge-offset-1">
-				<label class="section-label">GET IN TOUCH</label>
-				<h2 class="section-heading text-neutral-20 w-500 space-50-bottom">Exceptional Living Begins Here</h2>
-			</div>
-			<div class="columns small-12 space-50-bottom medium-4 xlarge-3 xlarge-offset-1">
-				<p class="h6">Provide your details, and our expert advisors will connect with you to tailor your next steps.</p>
-			</div>
-			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6">
-				<div class="form card row space-50">
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Full Name *</span>
-							<input class="input-field" type="text">
-
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Email Id *</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Phone Number *</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">I’M Interested In</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">City</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">How Did You Find Us ?</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input span-row">
-						<label for="">
-							<span class="input-label space-min block">Your Requirement</span>
-							<textarea class="input-field" name="" id=""></textarea>
-						</label>
-					</div>
-					<div class="form-input">
-						<button class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
-					</div>
-				</div>
-			</div>
-			<div class="columns or-message small-12 space-50-top medium-4 xlarge-3 xlarge-offset-1">
-				<span class="h4 text-primary">OR</span>
-				<p class="h6">Call our Help Desk <br>between 10am to 7pm IST</p>
-				<a class="h4 text-primary" href="tel:+918747987479">+91-<strong>8747987479</strong></a>
-			</div>
-			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
-		</div>
-	</div>
-</section>
+{% include 'sections/contact-form.liquid' %}
 <!-- End: Contact Form Section -->
 
 
 
-<!-- About Vaswnani Section -->
-<section id="about-vaswnani-section" class="about-vaswnani-section space-100-vertical">
-	<div class="row">
-		<div class="ribbon"><img src="media/ribbon-green.svg" alt=""></div>
-		<div class="container about-vaswnani">
-			<div class="columns small-6 medium-4 xlarge-3 xlarge-offset-1 inline-middle">
-				<div class="logo"><img class="logo-image block" src="media/logo-color.svg" alt=""></div>
-			</div>
-			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6 inline-middle">
-				<div class="summary">
-					<h2 class="heading h6 text-primary space-50-bottom">Over the last 40 years, we have developed residential and commercial real estate across Bangalore, Mumbai, Pune and Goa.</h2>
-					<p class="description small space-50-bottom">In 1985, we embarked on a journey to offer global-standard residential solutions for the discerning home buyer as well as turnkey commercial solutions for Indian and multinational firms. From resplendent housing to upscale commercial, our equity is strengthened with a proven and credible track record having developed close to 8 million square feet of built up area in the verticals of Residential, Commercial, Retail and Hospitality. We are committed to constantly refining our skills with an ever present emphasis on transparency.</p>
-					<a href="/about" class="button fill-dark">More about us</a>
-				</div>
-			</div>
-		</div>
-		<div class="ribbon flip"><img src="media/ribbon-green.svg" alt=""></div>
-	</div>
-</section>
-<!-- End: About Vaswnani Section -->
+<!-- About Vaswani Section -->
+{% include 'sections/about-vaswani.liquid' %}
+<!-- End: About Vaswani Section -->
 
 
 
 <!-- Bank Financing Section -->
-<section id="bank-financing-section" class="bank-financing-section space-100-vertical">
-	<div class="row">
-		<div class="container text-center">
-			<div class="columns small-12 medium-9 large-7 xlarge-6">
-				<label class="section-label">Hassle-free Financing</label>
-				<h5 class="heading text-primary space-100-bottom">Many Vaswani projects are pre-approved by India's leading financial institutions.</h5>
-
-				<div class="bank-grid space-25-vertical">
-					<div class="bank-grid-track">
-						<a class="bank-link" href="/"><span class="visuallyhidden">bank-hdfc</span><img src="media/bank-hdfc.png" alt=""></a>
-						<a class="bank-link" href="/"><span class="visuallyhidden">bank-hsbc</span><img src="media/bank-hsbc.png" alt=""></a>
-						<a class="bank-link" href="/"><span class="visuallyhidden">bank-sbi</span><img src="media/bank-sbi.png" alt=""></a>
-						<a class="bank-link" href="/"><span class="visuallyhidden">bank-icici</span><img src="media/bank-icici.png" alt=""></a>
-						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-hdfc</span><img src="media/bank-hdfc.png" alt=""></a>
-						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-hsbc</span><img src="media/bank-hsbc.png" alt=""></a>
-						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-sbi</span><img src="media/bank-sbi.png" alt=""></a>
-						<a aria-hidden="true" class="bank-link" href="/"><span class="visuallyhidden">bank-icici</span><img src="media/bank-icici.png" alt=""></a>
-					</div>
-				</div>
-				<small class="block strong text-uppercase text-neutral-30 space-100-top">and more</small>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/bank-financing.liquid' %}
 <!-- End: Bank Financing Section -->
 
 
 
 <!-- Join Newsletter Section -->
-<section id="join-newsletter-section" class="join-newsletter-section fill-dark">
-	<div class="row">
-		<div class="join-newsletter-bg fill-light">
-			<img class="block" src="media/newsletter-bg.png" alt="">
-		</div>
-		<div class="join-newsletter">
-			<div class="container text-center">
-				<div class="columns small-12">
-					<label class="section-label text-secondary">Shared Spaces</label>
-					<h2 class="section-heading text-light space-50-bottom">The Art of Architecture</h2>
-					<a class="button fill-secondary" href="">Join our Newsletter</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/join-newsletter.liquid' %}
 <!-- End: Join Newsletter Section -->
 
 
 
 <!-- Project Listing Section [completed] -->
-<section id="project-listing-section" class="project-listing-section completed space-100-vertical space-200-top">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 text-center">
-				<label class="section-label">Completed Projects</label>
-				<h2 class="section-heading text-neutral-20 w-500 space-50-bottom">Our Legacy of Landmarks</h2>
-			</div>
-		</div>
-	</div>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="residential" id="completedToggleResidential" checked>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="commercial" id="completedToggleCommercial">
-	<!-- Project Type Toggle -->
-	<div class="type-toggle row">
-		<div class="container text-center">
-			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
-				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleResidential">Residential</label>
-					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleCommercial">Commercial</label>
-					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Project Type Toggle -->
-	<!-- Project Type List -->
-	<div class="type-list row space-100-vertical">
-		<div class="projects residential carousel">
-			<div class="carousel-list fill-white box-shadow-red-light">
-				{% for project in completed_residential_projects %}
-				<div class="project carousel-list-item">
-					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-							{% if project.data.overview.status-label != blank %}
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
-							{% endif %}
-							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h6>
-						<p class="block text-neutral-50">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</p>
-						<div class="project-meta text-dark space-25-vertical">
-							{% if project.data.overview.starting-price != blank %}
-							<small class="metadata block">
-								<i class='bx bx-home p text-primary'></i>
-								<span>{{ project.data.overview.starting-price }}</span>
-							</small>
-							{% endif %}
-							{% if project.data.overview.unit-size != blank %}
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>{{ project.data.overview.unit-size }}</span>
-							</small>
-							{% endif %}
-							{% if project.data.overview.location-label != blank %}
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>{{ project.data.overview.location-label }}</span>
-							</small>
-							{% endif %}
-						</div>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-			<div class="row">
-				<div class="carousel-controls container">
-					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-				</div>
-			</div>
-		</div>
-		<div class="projects commercial carousel">
-			<div class="carousel-list fill-white box-shadow-red-light">
-				{% for project in completed_commercial_projects %}
-				<div class="project carousel-list-item">
-					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-							{% if project.data.overview.status-label != blank %}
-							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
-							{% endif %}
-							<!-- <small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small> -->
-						</div>
-						<h6 class="text-primary space-50-top text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h6>
-						<p class="block text-neutral-50">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</p>
-						<div class="project-meta text-dark space-25-vertical">
-							{% if project.data.overview.starting-price != blank %}
-							<small class="metadata block">
-								<i class='bx bx-home p text-primary'></i>
-								<span>{{ project.data.overview.starting-price }}</span>
-							</small>
-							{% endif %}
-							{% if project.data.overview.unit-size != blank %}
-							<small class="metadata block">
-								<i class='bx bx-area p text-primary'></i>
-								<span>{{ project.data.overview.unit-size }}</span>
-							</small>
-							{% endif %}
-							{% if project.data.overview.location-label != blank %}
-							<small class="metadata block">
-								<i class='bx bx-map p text-primary'></i>
-								<span>{{ project.data.overview.location-label }}</span>
-							</small>
-							{% endif %}
-						</div>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Project</span>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-			<div class="row">
-				<div class="carousel-controls container">
-					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Project Type List -->
-</section>
+{% include 'sections/project-listing-completed.liquid' %}
 <!-- End: Project Listing Section [completed] -->
 
 
 
 <!-- CSR Excerpt Section -->
-<section id="csr-excerpt-section" class="csr-excerpt-section space-100-vertical">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
-				<label class="section-label">Beyond Buildings</label>
-				<h2 class="section-heading text-neutral-20 w-500 space-25-bottom">Building a Better Bangalore</h2>
-			</div>
-			<div class="columns small-12 space-50-vertical medium-5 large-4 large-offset-1 xlarge-3 xlarge-offset-2">
-				<p class="h6 space-50-bottom">Vaswani Group's commitment to sustainable development and community welfare, ensures a positive impact in Bangalore.</p>				
-				<a class="button fill-dark" href="">Explore Our CSR initiatives</a>
-			</div>
-			<div class="columns small-12 space-25-top medium-6 medium-offset-1 large-5 xlarge-4">
-				<img class="radius-min block box-shadow" src="https://placeholdit.com/800x800/dddddd/999999" alt="">
-			</div>
-		</div>
-		<img class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">
-	</div>
-</section>
+{% include 'sections/csr-excerpt.liquid' %}
 <!-- End: CSR Excerpt Section -->
 
 
 
 <!-- Testimonials Section -->
-<section id="testimonials-section" class="testimonials-section space-100-vertical">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 text-center space-25-bottom">
-				<label class="section-label">Testimonials</label>
-				<h2 class="section-heading text-neutral-20 w-500">Voices of Trust</h2>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<!-- Carousel -->
-		<div class="carousel">
-			<div class="carousel-list fill-white box-shadow-red-light">
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<div class="h5 space-25-bottom">⭐⭐⭐⭐⭐</div>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="carousel-controls container">
-					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/testimonial-listing.liquid' %}
 <!-- End: Testimonials Section -->
 
 
 
 <!-- Awards Section -->
-	
-
-<section id="awards-section" class="awards-section space-100-vertical">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 text-center space-25-bottom">
-				<label class="section-label">Awards</label>
-				<h2 class="section-heading text-neutral-20 w-500">Accolades of Excellence</h2>
-			</div>
-		</div>
-		<div class="awards row text-center">
-			<div class="award columns small-12 medium-11 xlarge-9 text-center space-100-vertical space-100-horizontal">
-				<h3 class="title h6 text-primary">Best Luxury Residential Project South Zone</h3>
-				<h4 class="awarder small block text-uppercase w-800 space-25">CNBC-Awaaz Real Estate Awards 2023</h4>
-				<div class="stars">
-					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
-					<i class='bx bxs-star h3 text-secondary inline-middle'></i>
-					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/award-listing.liquid' %}
 <!-- End: Awards Section -->
 
 
 
 <!-- NRI Excerpt Section -->
-<section id="nri-excerpt-section" class="nri-excerpt-section space-100-vertical">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 medium-5 large-4 large-offset-1 xlarge-3 xlarge-offset-2">
-				<img class="radius-min block box-shadow" src="https://placeholdit.com/480x720/dddddd/999999" alt="">
-			</div>
-			<div class="columns small-12 medium-6 medium-offset-1 large-5 xlarge-4 space-50-top">
-				<label class="section-label">NRI Customers</label>
-				<h2 class="section-heading text-neutral-20 w-500 space-50-bottom">Global Aspirations. Local Expertise.</h2>
-				<p class="h6 space-25-bottom">For our discerning international clients, we offer a streamlined journey to finding and owning your dream home in Bangalore.</p>
-				<p class="h6 space-50-bottom">From buying assistance to seamless handover, our dedicated NRI team ensures peace of mind.</p>
-				<a class="button fill-dark " href="">More Details</a>
-			</div>
-		</div>
-		<img class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">
-	</div>
-</section>
+{% include 'sections/nri-excerpt.liquid' %}
 <!-- End: NRI Excerpt Section -->
 
 
 
 <!-- Blog Section -->
-<section id="blog-section" class="blog-section space-100-vertical">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 text-center space-25-bottom">
-				<label class="section-label">Blog Articles</label>
-				<h2 class="section-heading text-neutral-20 w-500">Insights &amp; Lifestyle Hub</h2>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<!-- Carousel -->
-		<div class="carousel">
-			<div class="carousel-list fill-white box-shadow-red-light">
-				<div class="carousel-list-item">
-					<div class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative space-50-bottom">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-						</div>
-						<h5 class="text-primary space-min-bottom">We’ve won accolades – and it’s entirely thanks...</h5>
-						<small class="block text-neutral-50 space-min-bottom">3 Weeks Ago</small>
-						<p class="text-neutral-50 space-25-bottom">Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...</p>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative space-50-bottom">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-						</div>
-						<h5 class="text-primary space-min-bottom">We’ve won accolades – and it’s entirely thanks...</h5>
-						<small class="block text-neutral-50 space-min-bottom">3 Weeks Ago</small>
-						<p class="text-neutral-50 space-25-bottom">Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...</p>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative space-50-bottom">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-						</div>
-						<h5 class="text-primary space-min-bottom">We’ve won accolades – and it’s entirely thanks...</h5>
-						<small class="block text-neutral-50 space-min-bottom">3 Weeks Ago</small>
-						<p class="text-neutral-50 space-25-bottom">Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...</p>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative space-50-bottom">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-						</div>
-						<h5 class="text-primary space-min-bottom">We’ve won accolades – and it’s entirely thanks...</h5>
-						<small class="block text-neutral-50 space-min-bottom">3 Weeks Ago</small>
-						<p class="text-neutral-50 space-25-bottom">Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...</p>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative space-50-bottom">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-						</div>
-						<h5 class="text-primary space-min-bottom">We’ve won accolades – and it’s entirely thanks...</h5>
-						<small class="block text-neutral-50 space-min-bottom">3 Weeks Ago</small>
-						<p class="text-neutral-50 space-25-bottom">Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...</p>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
-						<div class="thumbnail position-relative space-50-bottom">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
-						</div>
-						<h5 class="text-primary space-min-bottom">We’ve won accolades – and it’s entirely thanks...</h5>
-						<small class="block text-neutral-50 space-min-bottom">3 Weeks Ago</small>
-						<p class="text-neutral-50 space-25-bottom">Vaswani Exquisite has been awarded the Best Luxury Residential Project South Zone Award, at the CNBC-Awaaz Real Estate Awards 2023...</p>
-						<span class="p strong text-uppercase text-primary line-height-loose-loose" href="" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="carousel-controls container">
-					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/blog-listing.liquid' %}
 <!-- End: Blog Section -->
-
 
 
 
