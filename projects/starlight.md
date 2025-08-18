@@ -36,7 +36,7 @@ intro:
     This is truly Whitefield’s chosen space. Everything you need is just around the corner, whether it’s the vibrant social scene, thriving tech parks, or lush green surroundings.
 siteplan:
   heading: Discover Your Ideal Home
-  sub-heading: Discover a life that blends
+  sub-heading: Lorem ipsum dolor sit amet
   masterplan:
     - title: Masterplan
       image: https://placeholdit.com/1200x800/F1F1F1/999999

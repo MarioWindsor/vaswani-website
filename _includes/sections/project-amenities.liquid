@@ -1,0 +1,56 @@
+<section id="project-amenities-section" class="project-amenities-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center">
+				<label class="section-label">Amenities</label>
+				{% if amenities.heading != blank %}<h2 class="section-heading text-neutral-20 w-600">{{ amenities.heading }}</h2>{% endif %}
+				{% if amenities.sub-heading != blank %}<h6 class="section-sub-heading text-primary space-25-vertical">{{ amenities.sub-heading }}</h6>{% endif %}
+			</div>
+			<div class="row">
+				<div class="columns small-12 large-5 xlarge-4 xlarge-offset-1">
+					<div class="row">
+						{% if amenities.description != blank %}
+						<div class="columns small-12 medium-10 medium-offset-1 large-12 large-offset-0 space-50-top">
+							<p class="p description">{{ amenities.description }}</p>
+						</div>
+						{% endif %}
+						{% if amenities.cover-image != blank %}
+						<div class="columns small-12 space-50-top">
+							<img class="radius-25" src="{{ amenities.cover-image }}" alt="">
+						</div>
+						{% endif %}
+					</div>
+				</div>
+				<div class="columns small-10 small-offset-1 large-6 xlarge-5">
+					{% assign amenity_count = amenities.amenity | size %}
+					{% if amenity_count > 1 %}
+					<ul class="amenities space-50-top">
+						{% for amenity in amenities.amenity %}
+						<li class="amenity">
+							<img src="{{ amenity.icon }}" alt="">
+							<span>{{ amenity.name }}</span>
+						</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Carousel -->
+	<div class="carousel gallery">
+		<div class="carousel-list">
+			{% for gallery in amenities.images %}
+			<div class="carousel-list-item">
+				<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+			</div>
+			{% endfor %}
+		</div>
+		<div class="row">
+			<div class="carousel-controls container">
+				<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+				<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+			</div>
+		</div>
+	</div>
+</section>

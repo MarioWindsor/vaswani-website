@@ -5,11 +5,10 @@
  */
 
  
-@media( min-width: 1000px ) {}
-@media( min-width: 1500px ) {}
 
+
+/* -- Project Intro Section -- */
 .project-intro-section {}
-
 .project-intro-section .project-intro .project-meta .metadata {
 	display: flex;
 	align-items: center;
@@ -27,12 +26,90 @@
 		justify-content: right;
 		flex-direction: row-reverse;
 	}
-	.project-intro-section .project-intro .description {
-		text-align: left;
-	}
-
+	.project-intro-section .project-intro .description { text-align: left; }
 }
-@media( min-width: 1000px ) {}
-@media( min-width: 1500px ) {
-	.project-intro-section .project-intro .sub-heading { font-size: var(--h4); }
+@media( min-width: 1500px ) { .project-intro-section .project-intro .sub-heading { font-size: var(--h4); } }
+
+
+
+
+/* -- Project Siteplan Section -- */
+
+.project-siteplan-section {}
+.project-siteplan-section .siteplans .siteplan {
+	position: relative;
+	overflow: clip;
+	width: 100%;
+	height: 0;
+	padding-top: 165%;
+}
+.project-siteplan-section .siteplans .siteplan iframe {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.project-siteplan-section .siteplans .select-siteplan {
+	display: inline-block;
+	width: auto;
+	padding: 0 calc(var(--p) * 3) 0 calc(var(--p) * 1.5) ;
+
+	position: absolute;
+	z-index: 3;
+	top: var(--space-100);
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url('/media/select-white.png');
+	background-size: auto 45%;
+	background-repeat: no-repeat;
+	background-position: right var(--p) center;
+}
+
+@media( min-width:  500px ) {
+	.project-siteplan-section .siteplans .siteplan {
+		padding-top: 65%;
+	}
+}
+@media( min-width: 1000px ) {
+	.project-siteplan-section .siteplans .siteplan {
+		padding-top: 50%;
+	}
+}
+@media( min-width: 1500px ) {}
+
+
+
+/* -- Project Amenities Section -- */
+
+.project-amenities-section .description { text-align: center; }
+
+.project-amenities-section .amenities {
+	list-style: none;
+	margin: 0;
+	display: block;
+}
+.project-amenities-section .amenity {
+	display: flex;
+	margin: 0;
+	align-items: center;
+	justify-content: flex-start;
+}
+.project-amenities-section .amenity img {
+	width: var(--h4);
+}
+.project-amenities-section .amenity span {
+	display: inline-block;
+	font-size: var(--label);
+	padding: var(--space-min);
+}
+@media( min-width:  500px ) {
+	.project-amenities-section .amenities {
+		columns: 2;
+	}
+}
+@media( min-width: 1000px ) {
+	.project-amenities-section .description { text-align: left; }
 }

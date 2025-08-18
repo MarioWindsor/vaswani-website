@@ -12,13 +12,13 @@
 			</div>
 		</div>
 	</div>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="residential" id="ongoingToggleResidential" checked>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="commercial" id="ongoingToggleCommercial">
-	<!-- Project Type Toggle -->
-	<div class="type-toggle row">
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="residential" id="ongoingToggleResidential" checked>
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="ongoingToggle" value="commercial" id="ongoingToggleCommercial">
+	<!-- Pair Toggle -->
+	<div class="pair-toggle row">
 		<div class="container text-center">
 			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
-				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+				<div class="pair-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
 					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleResidential">Residential</label>
 					<label class="button text-uppercase radius-round space-75-horizontal" for="ongoingToggleCommercial">Commercial</label>
 					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
@@ -26,10 +26,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- End: Project Type Toggle -->
-	<!-- Project Type List -->
-	<div class="type-list">
-		<div class="projects residential row">
+	<!-- End: Pair Toggle -->
+	<!-- Pair List -->
+	<div class="pair-list">
+		<div class="projects pair-content residential row">
 			{% for project in ongoing_residential_projects %}
 			<div class="project space-100-vertical">
 				<div class="container">
@@ -85,7 +85,7 @@
 			</div>
 			{% endfor %}
 		</div>
-		<div class="projects commercial row">
+		<div class="projects pair-content commercial row">
 			{% for project in ongoing_commercial_projects %}
 			<div class="project space-100-vertical">
 				<div class="container">
@@ -142,5 +142,5 @@
 			{% endfor %}
 		</div>
 	</div>
-	<!-- End: Project Type List -->
+	<!-- End: Pair List -->
 </section>

@@ -1,10 +1,11 @@
 ---
 tags:
   - projects
-date: 2025-08-07T03:30:00.000+05:30
+date: 2007-01-01T03:30:00.000+05:30
 name: Victoria
 overview:
   project-label: Grade A Commercial Office Space
+  prefix-name: true
   unit-size: 4890sqft Super Built-up Area
   status: ongoing
   rera-number: ""
@@ -12,7 +13,6 @@ overview:
   type: commercial
   starting-price: ""
   location-label: Xavier Layout, Victoria Road
-  prefix-name: true
 gallery:
   images:
     - image: https://placeholdit.com/1200x800/F1F1F1/999999

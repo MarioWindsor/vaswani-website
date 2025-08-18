@@ -1,0 +1,62 @@
+<section id="project-siteplan-section" class="project-siteplan-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center space-50-bottom">
+				<label class="section-label">Siteplan</label>
+				<h2 class="section-heading text-neutral-20 w-600">{% if siteplan.heading != blank %}{{ siteplan.heading }}{% endif %}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{% if siteplan.sub-heading != blank %}{{ siteplan.sub-heading }}{% endif %}</h6>
+			</div>
+		</div>
+	</div>
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="residential" id="siteplanToggleMasterplan" checked>
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="commercial" id="siteplanToggleFloorplan">
+	{% if siteplan.masterplan != blank and siteplan.floorplan != blank %}
+	<!-- Pair Toggle -->
+	<div class="pair-toggle row space-100-bottom">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
+				<div class="pair-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<label class="button text-uppercase radius-round space-75-horizontal" for="siteplanToggleMasterplan">Masterplan</label>
+					<label class="button text-uppercase radius-round space-75-horizontal" for="siteplanToggleFloorplan">Floorplan</label>
+					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Pair Toggle -->
+	{% endif %}
+	<!-- Pair List -->
+	<div class="pair-list row">
+		<div class="siteplans pair-content masterplan carousel">
+			<div class="container">
+				{% assign masterplan_count = siteplan.masterplan | size %}
+				{% if masterplan_count > 1 %}
+					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
+					{% for plan in siteplan.masterplan %}
+						<option value="{{ plan.image }}">{{ plan.title }}</option>
+					{% endfor %}
+					</select>
+				{% endif %}
+				<div class="siteplan radius-25 box-shadow-primary">
+					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="siteplans pair-content floorplan carousel">
+			<div class="container">
+				{% assign floorplan_count = siteplan.floorplan | size %}
+				{% if floorplan_count > 1 %}
+					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
+					{% for plan in siteplan.floorplan %}
+						<option value="{{ plan.image }}">{{ plan.title }}</option>
+					{% endfor %}
+					</select>
+				{% endif %}
+				<div class="siteplan radius-25 box-shadow-primary">
+					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Pair List -->
+</section>

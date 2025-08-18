@@ -436,5 +436,5 @@ select {
 	font-weight: 600;
 	text-transform: uppercase;
 	padding-bottom: var(--space-25);
-	letter-spacing: calc(var(--label)/12);
+	letter-spacing: calc(var(--label)/16);
 }

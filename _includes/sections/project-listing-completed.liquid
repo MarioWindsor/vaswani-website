@@ -12,13 +12,13 @@
 			</div>
 		</div>
 	</div>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="residential" id="completedToggleResidential" checked>
-	<input class="type-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="commercial" id="completedToggleCommercial">
-	<!-- Project Type Toggle -->
-	<div class="type-toggle row">
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="residential" id="completedToggleResidential" checked>
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="completedToggle" value="commercial" id="completedToggleCommercial">
+	<!-- Pair Toggle -->
+	<div class="pair-toggle row">
 		<div class="container text-center">
 			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
-				<div class="type-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
+				<div class="pair-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
 					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleResidential">Residential</label>
 					<label class="button text-uppercase radius-round space-75-horizontal" for="completedToggleCommercial">Commercial</label>
 					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
@@ -26,10 +26,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- End: Project Type Toggle -->
-	<!-- Project Type List -->
-	<div class="type-list row space-100-vertical">
-		<div class="projects residential carousel">
+	<!-- End: Pair Toggle -->
+	<!-- Pair List -->
+	<div class="pair-list row space-100-vertical">
+		<div class="projects pair-content residential carousel">
 			<div class="carousel-list">
 				{% for project in completed_residential_projects %}
 				<div class="project carousel-list-item">
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="projects commercial carousel">
+		<div class="projects pair-content commercial carousel">
 			<div class="carousel-list">
 				{% for project in completed_commercial_projects %}
 				<div class="project carousel-list-item">
@@ -122,5 +122,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- End: Project Type List -->
+	<!-- End: Pair List -->
 </section>

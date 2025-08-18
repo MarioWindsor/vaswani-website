@@ -1,7 +1,7 @@
 ---
 tags:
   - projects
-date: 2025-08-07T02:32:00.000+05:30
+date: 2023-01-01T02:32:00.000+05:30
 name: Exquisite
 overview:
   project-label: 3 & 4 Bedroom Luxury Residences
@@ -40,15 +40,7 @@ siteplan:
   masterplan:
     - title: Masterplan
       image: https://placeholdit.com/1200x800/F1F1F1/999999
-  floorplan:
-    - title: 3BHK + Office A
-      image: https://placeholdit.com/1200x800/F1F1F1/999999
-    - image: https://placeholdit.com/1200x800/F1F1F1/999999
-      title: 3BHK + Office B
-    - image: https://placeholdit.com/1200x800/F1F1F1/999999
-      title: 3BHK + Office C
-    - image: https://placeholdit.com/1200x800/F1F1F1/999999
-      title: 3BHK + Office D
+  floorplan: []
 amenities:
   heading: "Nebula : the Clubhouse"
   sub-heading: Limitless Moments. Endless Memories
