@@ -20,7 +20,7 @@
 	width: 50%;
 	background-color: transparent;
 	color: var(--hue-neutral-60);
-	transition: .3s ease-out;
+	transition: var(--transition-speed) var(--transition-ease);
 }
 .pair-toggle .pair-toggle-button label:hover { filter: none; }
 .pair-toggle .pair-toggle-button label:nth-child(1) { color: var(--hue-light); }
@@ -29,7 +29,7 @@
 	z-index: 1;
 	left: var(--space-25);
 	width: calc(50% - var(--space-25));
-	transition: .3s ease-out;
+	transition: var(--transition-speed) var(--transition-ease);
 }
 
 .pair-list .pair-content:nth-child(2) { display: none; }

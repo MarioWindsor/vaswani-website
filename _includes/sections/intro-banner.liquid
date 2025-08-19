@@ -1,12 +1,100 @@
+<style>
+	.intro-banner-section {
+		position: relative;
+		width: 100vw;
+		padding-top: 85vw;
+	}
+	.intro-banner-section input {
+		position: absolute;
+	}
+	.intro-banner-section .intro-video-wrapper {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100vw;
+		padding-top: 85vw;
+		transform: translateX(-50%);
+		overflow: clip;
+		border-radius: 0;
+		transition: var(--transition-speed) var(--transition-ease);
+	}
+	.intro-banner-section .intro-video-wrapper .intro-video-width {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100vw;
+		padding-top: 85vw;
+		transform: translateX(-50%);
+	}
+	.intro-banner-section .intro-video-wrapper .scroll {
+		pointer-events: none;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper {
+		width: var(--container-width);
+		border-radius: var(--space-25);
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .scroll {
+		opacity: 0;
+	}
+	@media( min-width: 500px ) {
+		.intro-banner-section ,
+		.intro-banner-section .intro-video-wrapper ,
+		.intro-banner-section .intro-video-wrapper .intro-video-width {
+			padding-top: 66vw;
+		}
+	}
+	@media( min-width: 1000px ) {
+		.intro-banner-section ,
+		.intro-banner-section .intro-video-wrapper ,
+		.intro-banner-section .intro-video-wrapper .intro-video-width {
+			padding-top: 50vw;
+		}
+	}
+</style>
+
+
+
 <section id="intro-banner-section" class="intro-banner-section">
 	<div class="row">
-		<div class="video-scroll-wrapper">
-			<div class="video-width fill-dark" style="width: 100vw; padding-top: 50%;"></div>
+		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
+		<div class="intro-video-wrapper">
+			<div class="intro-video-width fill-dark"></div>
 			<div class="scroll">
-				<span>Scroll</span>
-				dotmatrix
+				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
+				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
 		</div>
 			
 	</div>
 </section>
+
+
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', (event) => {
+	const handleScroll = () => {
+		const bannerSection = document.getElementById('intro-banner-section');
+
+		if (bannerSection) {
+			const videoCheckbox = document.getElementById('intro-video-clip');
+			const scrollPosition = window.scrollY;
+			if (scrollPosition > 0) {
+			  videoCheckbox.checked = true;
+			} else {
+			  videoCheckbox.checked = false;
+			}
+		}
+	};
+	const debouncedScrollHandler = debounce(handleScroll, 250);
+	window.addEventListener('scroll', debouncedScrollHandler);
+});
+</script>
