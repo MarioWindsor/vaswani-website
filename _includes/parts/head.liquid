@@ -105,3 +105,11 @@
 
 
 <!--  ★  MARKUP GOES HERE  ★  -->
+{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
+{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
+{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
+
+{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
+{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
+{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
+

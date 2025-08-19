@@ -1,0 +1,44 @@
+{
+  "link": [
+    {
+      "title": "About",
+      "path": "/about"
+    },
+    {
+      "title": "Contact",
+      "path": "/contact"
+    },
+    {
+      "title": "Blog",
+      "path": "/blog"
+    },
+    {
+      "title": "NRI",
+      "path": "/nri"
+    },
+    {
+      "title": "CSR",
+      "path": "/csr"
+    },
+    {
+      "title": "Awards",
+      "path": "/awards"
+    },
+    {
+      "title": "Careers",
+      "path": "/careers"
+    },
+    {
+      "title": "RERA Disclaimer",
+      "path": "/rera-disclaimer"
+    },
+    {
+      "title": "Privacy Policy",
+      "path": "/privacy-policy"
+    },
+    {
+      "title": "Channel Partner Hub",
+      "path": "/channel-partner-hub"
+    }
+  ]
+}

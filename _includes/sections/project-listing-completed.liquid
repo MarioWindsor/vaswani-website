@@ -1,7 +1,7 @@
-{% assign completed_projects = collections.projects | where: "data.overview.status", "completed" | sort: "date" | reverse %}
-{% assign completed_residential_projects = completed_projects | where: "data.overview.type", "residential" %}
-{% assign completed_commercial_projects = completed_projects | where: "data.overview.type", "commercial" %}
-
+<!-- 
+	Variables Defined in head.liquid :
+	completed_projects, completed_residential_projects, completed_commercial_projects
+ -->
 
 <section id="project-listing-section" class="project-listing-section completed gap">
 	<div class="row">

@@ -108,6 +108,7 @@
 .main-nav .menu-list a {
 	display: inline-block;
 	padding: var(--space-min);
+	white-space: nowrap;
 }
 
 .main-nav .menu-list .submenu-label {
@@ -126,14 +127,14 @@
 
 .main-nav .menu-list .sub-menu {
 	max-height: 0;
-	overflow: hidden;
+	overflow-y: clip;
 	transition: max-height var(--transition-speed) var(--transition-ease);
 	font-size: var(--p);
-	font-weight: 400;
+	color: var(--hue-dark);
 }
 
 .main-nav .menu-list .submenu-checkbox:checked ~ .sub-menu {
-	max-height: 500px;
+	max-height: 1500px;
 }
 
 @media( min-width: 500px )  {}

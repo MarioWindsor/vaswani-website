@@ -135,7 +135,7 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Background Image", name: "image", widget: "image", required: false, choose_url: true, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: "Background Image", name: "background", widget: "background", required: false, choose_url: true, hint: "Dimensions: 1200 x 400 pixels" }
           - { label: "PDF File", name: "pdf", widget: "file", required: false, choose_url: true }
       - label: "Location"
         name: "location"

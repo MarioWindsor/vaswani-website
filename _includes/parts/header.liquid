@@ -25,23 +25,23 @@
 		<li>
 			<input type="checkbox" id="residential-submenu-checkbox" class="submenu-checkbox hidden">
 			<label for="residential-submenu-checkbox" class="submenu-label">Residential</label>
-			<ul id="residential-submenu" class="sub-menu">
+			<ul id="residential-submenu" class="sub-menu space-75-right">
 				<li>
-					<input type="checkbox" id="residential-active-submenu-checkbox" class="submenu-checkbox hidden">
-					<label for="residential-active-submenu-checkbox" class="submenu-label">Active Projects</label>
-					<ul id="residential-submenu" class="sub-menu">
-						<li><a href="">Project 1</a></li>
-						<li><a href="">Project 2</a></li>
-						<li><a href="">Project 3</a></li>
+					<input type="checkbox" id="residential-ongoing-submenu-checkbox" class="submenu-checkbox hidden">
+					<label for="residential-ongoing-submenu-checkbox" class="submenu-label">Ongoing Projects</label>
+					<ul id="residential-submenu" class="sub-menu space-75-right">
+						{% for project in ongoing_residential_projects %}
+						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						{% endfor %}
 					</ul>
 				</li>
 				<li>
 					<input type="checkbox" id="residential-completed-submenu-checkbox" class="submenu-checkbox hidden">
 					<label for="residential-completed-submenu-checkbox" class="submenu-label">Completed Projects</label>
-					<ul id="residential-submenu" class="sub-menu">
-						<li><a href="">Project 1</a></li>
-						<li><a href="">Project 2</a></li>
-						<li><a href="">Project 3</a></li>
+					<ul id="residential-submenu" class="sub-menu space-75-right">
+						{% for project in completed_residential_projects %}
+						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						{% endfor %}
 					</ul>
 				</li>
 			</ul>
@@ -49,37 +49,30 @@
 		<li>
 			<input type="checkbox" id="commercial-submenu-checkbox" class="submenu-checkbox hidden">
 			<label for="commercial-submenu-checkbox" class="submenu-label">Commercial</label>
-			<ul id="commercial-submenu" class="sub-menu">
+			<ul id="commercial-submenu" class="sub-menu space-75-right">
 				<li>
-					<input type="checkbox" id="commercial-active-submenu-checkbox" class="submenu-checkbox hidden">
-					<label for="commercial-active-submenu-checkbox" class="submenu-label">Active Projects</label>
-					<ul id="commercial-submenu" class="sub-menu">
-						<li><a href="">Project 1</a></li>
-						<li><a href="">Project 2</a></li>
-						<li><a href="">Project 3</a></li>
+					<input type="checkbox" id="commercial-ongoing-submenu-checkbox" class="submenu-checkbox hidden">
+					<label for="commercial-ongoing-submenu-checkbox" class="submenu-label">Ongoing Projects</label>
+					<ul id="commercial-submenu" class="sub-menu space-75-right">
+						{% for project in ongoing_commercial_projects %}
+						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						{% endfor %}
 					</ul>
 				</li>
 				<li>
 					<input type="checkbox" id="commercial-completed-submenu-checkbox" class="submenu-checkbox hidden">
 					<label for="commercial-completed-submenu-checkbox" class="submenu-label">Completed Projects</label>
-					<ul id="commercial-submenu" class="sub-menu">
-						<li><a href="">Project 1</a></li>
-						<li><a href="">Project 2</a></li>
-						<li><a href="">Project 3</a></li>
+					<ul id="commercial-submenu" class="sub-menu space-75-right">
+						{% for project in completed_commercial_projects %}
+						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						{% endfor %}
 					</ul>
 				</li>
 			</ul>
 		</li>
-		<li><a href="">About</a></li>
-		<li><a href="">Contact</a></li>
-		<li><a href="">Blog</a></li>
-		<li><a href="">NRI</a></li>
-		<li><a href="">CSR</a></li>
-		<li><a href="">Awards</a></li>
-		<li><a href="">Careers</a></li>
-		<li><a href="">RERA Disclaimer</a></li>
-		<li><a href="">Privacy Policy</a></li>
-		<li><a href="">Channel Partner Hub</a></li>
+		{% for link in menu.link %}
+			<li><a href="{{ link.path }}">{{ link.title }}</a></li>
+		{% endfor %}
 	</ul>
 </nav>
 <!-- End: Main Nav -->

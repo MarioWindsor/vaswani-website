@@ -96,7 +96,7 @@ amenities:
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - image: https://placeholdit.com/1200x800/F1F1F1/999999
 brochure:
-  image: https://placeholdit.com/1200x400/CCCCCC/999999
+  background: https://placeholdit.com/1200x400/CCCCCC/999999
 location:
   heading: Nestled in the heart of Whitefield
   sub-heading: Everything you need is just around the corner

@@ -1,7 +1,7 @@
-{% assign ongoing_projects = collections.projects | where: "data.overview.status", "ongoing" | sort: "date" | reverse %}
-{% assign ongoing_residential_projects = ongoing_projects | where: "data.overview.type", "residential" %}
-{% assign ongoing_commercial_projects = ongoing_projects | where: "data.overview.type", "commercial" %}
-
+<!-- 
+	Variables Defined in head.liquid :
+	ongoing_projects, ongoing_residential_projects, ongoing_commercial_projects
+ -->
 
 <section id="project-listing-section" class="project-listing-section ongoing gap">
 	<div class="row">

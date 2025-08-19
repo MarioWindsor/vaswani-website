@@ -15,15 +15,16 @@
 		height: auto;
 		max-height: 0px;
 		overflow: clip;
-		transition: max-height .7s ease-in-out;
+		transition: max-height var(--transition-speed) var(--transition-ease);
 		margin: var(--space-25) 0;
 		padding-left: calc(var(--space-25) * 1.5);
 	}
+	.location-section .places .place-list .place { white-space: nowrap; }
 
 	.location-section .places .places-radio:checked + label { color: var(--hue-primary); }
 	.location-section .places .places-radio:checked + label .bx-minus { display: inline-block; }
 	.location-section .places .places-radio:checked + label .bx-plus { display: none; }
-	.location-section .places .places-radio:checked ~ .place-list { max-height: 100vh; }
+	.location-section .places .places-radio:checked ~ .place-list { max-height: 800px; }
 
 	.location-section .dotmatrix { display: none; }
 	@media( min-width: 500px ) {}

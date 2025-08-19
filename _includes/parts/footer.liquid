@@ -39,32 +39,31 @@
 			<div class="columns small-6 medium-3 medium-offset-1 large-offset-2 xlarge-offset-3">
 				<div class="foot residential">
 					<h6 class="title">Residential</h6>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
+					{% for project in ongoing_residential_projects %}
+					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					{% endfor %}
+					{% for project in completed_residential_projects %}
+					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					{% endfor %}
 				</div>
 
 				<div class="foot commercial">
 					<h6 class="title">Commercial</h6>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
+					{% for project in ongoing_commercial_projects %}
+					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					{% endfor %}
+					{% for project in completed_commercial_projects %}
+					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					{% endfor %}
 				</div>
 			</div>
 
 			<div class="columns small-6 medium-3">
 				<div class="foot quick-links">
 					<h6 class="title">Quick Links</h6>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
-					<a class="link" href="">Lorem Ipsom</a><br>
+					{% for link in menu.link %}
+						<a class="link" href="{{ link.path }}">{{ link.title }}</a><br>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
