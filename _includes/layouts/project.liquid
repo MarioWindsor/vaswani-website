@@ -48,17 +48,7 @@ eleventyComputed:
 
 <!-- Banner Section -->
 {% if banner.feature-1 != blank %}
-<section id="banner-section-1" class="banner-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('{{ banner.feature-1.background }}'); height: calc(var(--card)*1.5); width: 100%;">
-					<h6 class="{{ banner.feature-1.position }}">{{ banner.feature-1.heading }}</h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/project-banner.liquid', banner: banner.feature-1 %}
 {% endif %}
 <!-- End: Banner Section -->
 
@@ -83,28 +73,20 @@ eleventyComputed:
 
 
 <!-- Brochure Section -->
+{% include 'sections/project-brochure.liquid' %}
 <!-- END: Brochure Section -->
 
 
 
 <!-- Location Section -->
+{% include 'sections/project-location.liquid' %}
 <!-- END: Location Section -->
 
 
 
 <!-- Banner Section -->
 {% if banner.feature-2 != blank %}
-<section id="banner-section-2" class="banner-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('{{ banner.feature-2.background }}'); height: calc(var(--card)*1.5); width: 100%;">
-					<h6 class="{{ banner.feature-2.position }}">{{ banner.feature-2.heading }}</h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+{% include 'sections/project-banner.liquid', banner: banner.feature-2 %}
 {% endif %}
 <!-- End: Banner Section -->
 
