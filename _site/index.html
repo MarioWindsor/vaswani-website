@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
 
 
-	<title>Vaswani - Live the Dream</title>
+	<title>Welcome | Vaswani - Live the Dream</title>
 	<base href="/">
 
 	
@@ -41,7 +41,7 @@
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Vaswani - Live the Dream">
+	<meta property="og:title" content="Welcome">
 	<meta property="og:description" content="Developers of residential and commercial real estate across Bangalore, Mumbai, Pune and Goa.">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="">
@@ -49,7 +49,7 @@
 
 
 	<!-- Schema.org / Google+ -->
-	<meta itemprop="name" content="Vaswani - Live the Dream">
+	<meta itemprop="name" content="Welcome">
 	<meta itemprop="description" content="Developers of residential and commercial real estate across Bangalore, Mumbai, Pune and Goa.">
 	<meta itemprop="image" content="">
 
@@ -95,6 +95,11 @@
 	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 
+	<!-- Lottie Player -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+
+
 	<!-- Google Tag Manager -->
 	<!-- !!! ENTER TAG MANAGER SCRIPT HERE !!! -->
 	<!-- END: Google Tage Manager -->
@@ -105,6 +110,151 @@
 
 
 <!--  ★  MARKUP GOES HERE  ★  -->
+
+
+<!-- City Selector -->
+
+<style type="text/css">
+.city-selector-wrapper {
+	display: none;
+	position: fixed;
+	z-index: 10000;
+	background-color: #FFF;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: calc(var(--card)/2.5);
+	overflow-y: scroll;
+}
+#toggle-city-selector:checked ~ .city-selector-wrapper {
+	display: block;
+}
+.logo-animation-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: var(--card);
+	transform: translateX(-50%) translateY(-50%);
+	transition: calc(var(--transition-speed)*2) var(--transition-ease);
+}
+
+.city-selector-wrapper .container {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.city-selector-wrapper .heading {
+	opacity: 0;
+	transition: opacity calc(var(--transition-speed)*2) var(--transition-ease);
+	transition-delay: calc(var(--transition-speed)*3);
+}
+
+.city-selector-wrapper .heading .action {
+	opacity: 0;
+	transition: opacity calc(var(--transition-speed)*2) var(--transition-ease);
+	transition-delay: calc(var(--transition-speed)*5);
+}
+
+.city-selector-wrapper .city-selector {
+	display: grid;
+	gap: var(--space-100);
+	grid-template-columns: 1fr;
+	opacity: 0;
+	transition: opacity calc(var(--transition-speed)*2) var(--transition-ease);
+	transition-delay: calc(var(--transition-speed)*8);
+}
+.city-selector-wrapper .city-selector .card * { pointer-events: none; }
+.city-selector-wrapper .city-selector .card:nth-child(2) {
+	opacity: 0;
+	transition: opacity calc(var(--transition-speed)*2) var(--transition-ease);
+	transition-delay: calc(var(--transition-speed)*10);
+}
+
+#logo-animation-end:checked ~ .city-selector-wrapper .logo-animation-box {
+	width: calc(var(--card)/2.5);
+	top: 0;
+	transform: translateX(-50%) translateY(0);
+}
+
+#logo-animation-end:checked ~ .city-selector-wrapper .container,
+#logo-animation-end:checked ~ .city-selector-wrapper .heading,
+#logo-animation-end:checked ~ .city-selector-wrapper .heading .action,
+#logo-animation-end:checked ~ .city-selector-wrapper .city-selector,
+#logo-animation-end:checked ~ .city-selector-wrapper .city-selector .card:nth-child(2) { opacity: 1; }
+#logo-animation-end:checked ~ .city-selector-wrapper .city-selector .card { cursor: pointer }
+#logo-animation-end:checked ~ .city-selector-wrapper .container{ pointer-events: auto; }
+
+@media( min-width: 500px )  {
+	.city-selector-wrapper .city-selector { grid-template-columns: 1fr 1fr; }
+}
+</style>
+<input type="checkbox" id="toggle-city-selector" class="visuallyhidden" checked style="position: absolute; left: 0; z-index: 10001;">
+<input type="checkbox" id="logo-animation-end" class="visuallyhidden" style="position: absolute; left: 20px; z-index: 10001;">
+<div class="city-selector-wrapper space-50-vertical">
+	<div class="logo-animation-box"><div id="lottie-container"></div></div>
+	<div class="container">
+		<div class="row">
+			<div class="heading columns small-10 small-offset-1 text-center">
+				<h2 class="h5 space-25-vertical">Celebrating 40 Years of Real Estate Opulence</h2>
+				<label class="action section-label text-neutral-20 space-50-vertical">Select your City</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="city-selector columns small-12 xlarge-10 xlarge-offset-1 space-50">
+				<label for="toggle-city-selector" class="block card text-center">
+					<div class="title space-50">
+						<span class="p block text-uppercase w-600 text-neutral-80 letter-spacing-loose">Garden City</span>
+						<span class="h4 block text-uppercase w-600 text-neutral-80 letter-spacing-loose-loose">Bangalore</span>
+					</div>
+					<img class="block" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+					<div class="cta label text-uppercase w-600 text-primary letter-spacing-loose space-50">Enter</div>
+				</label>
+				<a href="https://google.com" target="_blank" class="block card text-center">
+					<div class="title space-50">
+						<span class="p block text-uppercase w-600 text-neutral-80 letter-spacing-loose">City of dreams</span>
+						<span class="h4 block text-uppercase w-600 text-neutral-80 letter-spacing-loose-loose">Mumbai</span>
+					</div>
+					<img class="block" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+					<div class="cta label text-uppercase w-600 text-primary letter-spacing-loose space-50">Enter</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Find the animation container
+	const lottieContainer = document.getElementById('lottie-container');
+
+	// Load the animation
+	const anim = lottie.loadAnimation({
+		container: lottieContainer,        // The div element to render into
+		renderer: 'svg',                   // The renderer to use
+		loop: false,                       // Set to false to play only once
+		autoplay: true,                    // Set to true to play on page load
+		path: 'media/logo-animation.json'       // The path to your JSON animation file
+	});
+
+	// Add an event listener for when the animation is complete
+	anim.addEventListener('complete', () => {
+		// You can hide the animation, show a button, or run any other function.
+		// --- YOUR CODE GOES HERE ---
+		const toggleCitySelectorCheckbox = document.getElementById('toggle-city-selector');
+		const logoAnimationEndCheckbox = document.getElementById('logo-animation-end');
+
+		console.log('Animation finished!');
+		logoAnimationEndCheckbox.checked = true;
+	});
+
+});
+</script>
+
+
+
+<!-- Project Collections -->
 
 
 
@@ -340,7 +490,6 @@
 				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
 		</div>
-			
 	</div>
 </section>
 
@@ -1336,7 +1485,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	</div>
 	<!-- End: Pair Toggle -->
 	<!-- Pair List -->
-	<div class="pair-list row space-100-vertical">
+	<div class="pair-list row space-100-top">
 		<div class="projects pair-content residential carousel">
 			<div class="carousel-list">
 				

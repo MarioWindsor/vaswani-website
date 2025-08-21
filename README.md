@@ -111,35 +111,22 @@
 
 ## Home Page
 ============
-- [x] Header Section 
+- [ ] Loading City Selector
+
 - [ ] Menu : Main Nav : Add some image/graphic in the empty space area.
-- [x] Intro Video Banner Section
 - [ ] Intro Video Banner Section : CMSify Video Embed with Image Fallback
-- [x] Bento Grid Section
-- [x] Project Listing Section [Ongoing]
 - [ ] Project Listing Section [Ongoing] : Gallery Images : Content
-- [x] Contact Form Section
 - [ ] Contact Form Section : Form Capture
 - [ ] Contact Form Section : ERP Integration
-- [x] About Vaswnani Section
 - [ ] About Vaswnani Section : Create Link Page
-- [x] Bank Financing Section
-- [x] Join Newsletter Section
 - [ ] Join Newsletter Section : Form Capture
 - [ ] Join Newsletter Section : ERP Integration
-- [x] Project Listing Section [Completed]
 - [ ] Project Listing Section [Completed] : Gallery Image/s : Content
-- [x] CSR Excerpt Section
 - [ ] CSR Excerpt Section : Create Link Page
-- [x] Testimonials Section
-- [x] Awards Section
-- [x] NRI Excerpt Section
 - [ ] NRI Excerpt Section : Create Link Page
-- [x] Blog Section
 - [ ] Blog Section : Create Blog Listing Page
 - [ ] Blog Section : Create Single Blog Template
 - [ ] Blog Section : Add Content
-- [x] Footer Section
 - [ ] Footer Section : Add Social Links (via CMS)
 
 
@@ -156,43 +143,59 @@
 
 ## About Page
 ===============
-- [ ] Create Page
 
 ## Contact Page
 ===============
-- [ ] Create Page
 
 ## Blog Page
 ===============
-- [ ] Create Page
 
 ## NRI Page
 ===============
-- [ ] Create Page
 
 ## CSR Page
 ===============
-- [ ] Create Page
 
 ## Awards Page
 ===============
-- [ ] Create Page
 
 ## Careers Page
 ===============
-- [ ] Create Page
 
 ## RERA Disclaimer
 ===============
-- [ ] Create Page
 
 ## Privacy Policy
 ===============
-- [ ] Create Page
 
 ## Channel Partner Hub
 ===============
-- [ ] Create Page
 
 
-### Extras
+### DONE
+- [x] Header Section 
+- [x] Intro Video Banner Section
+- [x] Bento Grid Section
+- [x] Project Listing Section [Ongoing]
+- [x] Contact Form Section
+- [x] About Vaswnani Section
+- [x] Bank Financing Section
+- [x] Join Newsletter Section
+- [x] Project Listing Section [Completed]
+- [x] CSR Excerpt Section
+- [x] Testimonials Section
+- [x] Awards Section
+- [x] NRI Excerpt Section
+- [x] Blog Section
+- [x] Footer Section
+- [x] Create About Page
+- [x] Create Contact Page
+- [x] Create Blog Page
+- [x] Create NRI Page
+- [x] Create CSR Page
+- [x] Create Awards Page
+- [x] Create Careers Page
+- [x] Create RERA Disclaimer Page
+- [x] Create Privacy Policy Page
+- [x] Create Channel Partner Hub Page
+

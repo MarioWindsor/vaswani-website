@@ -5,16 +5,37 @@
 ├── .gitignore
 ├── README.md
 ├── _data
+│   ├── menu.json
 │   └── site.json
 ├── _includes
 │   ├── layouts
 │   │   ├── home.liquid
 │   │   └── project.liquid
-│   └── parts
-│       ├── foot.liquid
-│       ├── footer.liquid
-│       ├── head.liquid
-│       └── header.liquid
+│   ├── parts
+│   │   ├── foot.liquid
+│   │   ├── footer.liquid
+│   │   ├── head.liquid
+│   │   └── header.liquid
+│   └── sections
+│       ├── about-vaswani.liquid
+│       ├── award-listing.liquid
+│       ├── bank-financing.liquid
+│       ├── bento-grid.liquid
+│       ├── blog-listing.liquid
+│       ├── contact-form.liquid
+│       ├── csr-excerpt.liquid
+│       ├── intro-banner.liquid
+│       ├── join-newsletter.liquid
+│       ├── nri-excerpt.liquid
+│       ├── project-amenities.liquid
+│       ├── project-banner.liquid
+│       ├── project-brochure.liquid
+│       ├── project-intro.liquid
+│       ├── project-listing-completed.liquid
+│       ├── project-listing-ongoing.liquid
+│       ├── project-location.liquid
+│       ├── project-siteplan.liquid
+│       └── testimonial-listing.liquid
 ├── admin
 │   ├── config.yml
 │   ├── decap-ui-optional-asterisks.js
@@ -27,18 +48,20 @@
 │   ├── 3-layout.css
 │   ├── 4-function.css
 │   ├── 5-theme.css
-│   ├── component
+│   ├── components
 │   │   ├── card.css
 │   │   ├── carousel.css
 │   │   └── video-embed.css
-│   ├── page
+│   ├── layouts
 │   │   ├── home.css
 │   │   └── project.css
-│   └── section
+│   └── parts
+│       ├── footer.css
 │       └── header.css
 ├── index.liquid
 ├── js
 │   ├── carousel.js
+│   ├── debounce.js
 │   └── video-embed.js
 ├── media
 │   ├── DSC_8083.jpg
@@ -54,27 +77,124 @@
 │   ├── laurel.svg
 │   ├── logo-color.svg
 │   ├── newsletter-bg.png
-│   └── ribbon-green.svg
+│   ├── ribbon-green.svg
+│   └── select-white.png
 ├── package-lock.json
 ├── package.json
 ├── projects
-│   ├── bel-air.md
-│   ├── brookefield-manor.md
+│   ├── astoria.md
+│   ├── augusta.md
+│   ├── brentwood.md
 │   ├── centropolis.md
 │   ├── exquisite.md
+│   ├── gods-gift.md
+│   ├── melrose.md
+│   ├── menlo-park.md
 │   ├── oakmont.md
+│   ├── pinnacle.md
+│   ├── presidio.md
 │   ├── projects.json
+│   ├── reserve.md
+│   ├── royal-orchid-suites.md
+│   ├── sasken-corporate-office.md
 │   ├── starlight.md
-│   └── victoria.md
+│   ├── victoria.md
+│   ├── villa-del-mar.md
+│   ├── walnut-creek.md
+│   ├── whispering-palms.md
+│   └── wipro-corporate-office.md
 ├── robots.txt.njk
 └── sitemap.liquid
 </code></pre>
-<h2>Front-end : Home Page Sections</h2>
+<h2>Home Page</h2>
+<p>============</p>
+<ul>
+<li>
+<p>[ ] Loading City Selector</p>
+</li>
+<li>
+<p>[ ] Menu : Main Nav : Add some image/graphic in the empty space area.</p>
+</li>
+<li>
+<p>[ ] Intro Video Banner Section : CMSify Video Embed with Image Fallback</p>
+</li>
+<li>
+<p>[ ] Project Listing Section [Ongoing] : Gallery Images : Content</p>
+</li>
+<li>
+<p>[ ] Contact Form Section : Form Capture</p>
+</li>
+<li>
+<p>[ ] Contact Form Section : ERP Integration</p>
+</li>
+<li>
+<p>[ ] About Vaswnani Section : Create Link Page</p>
+</li>
+<li>
+<p>[ ] Join Newsletter Section : Form Capture</p>
+</li>
+<li>
+<p>[ ] Join Newsletter Section : ERP Integration</p>
+</li>
+<li>
+<p>[ ] Project Listing Section [Completed] : Gallery Image/s : Content</p>
+</li>
+<li>
+<p>[ ] CSR Excerpt Section : Create Link Page</p>
+</li>
+<li>
+<p>[ ] NRI Excerpt Section : Create Link Page</p>
+</li>
+<li>
+<p>[ ] Blog Section : Create Blog Listing Page</p>
+</li>
+<li>
+<p>[ ] Blog Section : Create Single Blog Template</p>
+</li>
+<li>
+<p>[ ] Blog Section : Add Content</p>
+</li>
+<li>
+<p>[ ] Footer Section : Add Social Links (via CMS)</p>
+</li>
+</ul>
+<h2>Project Page</h2>
+<p>===============</p>
+<ul>
+<li>[ ] Feature Banner Section : CSS + CMSify</li>
+<li>[ ] Siteplan Section : CMS + Leaflet JS</li>
+<li>[ ] Amenities Section : Cover Image + Icons + Gallery</li>
+<li>[ ] Brochure Section : CSS + CMSify</li>
+<li>[ ] Brochure Section : Form Capture</li>
+<li>[ ] Brochure Section : ERP Integration</li>
+<li>[ ] Location Section : CMSify Map Embed</li>
+</ul>
+<h2>About Page</h2>
+<p>===============</p>
+<h2>Contact Page</h2>
+<p>===============</p>
+<h2>Blog Page</h2>
+<p>===============</p>
+<h2>NRI Page</h2>
+<p>===============</p>
+<h2>CSR Page</h2>
+<p>===============</p>
+<h2>Awards Page</h2>
+<p>===============</p>
+<h2>Careers Page</h2>
+<p>===============</p>
+<h2>RERA Disclaimer</h2>
+<p>===============</p>
+<h2>Privacy Policy</h2>
+<p>===============</p>
+<h2>Channel Partner Hub</h2>
+<p>===============</p>
+<h3>DONE</h3>
 <ul>
 <li>[x] Header Section</li>
-<li>[ ] Intro Video Banner Section</li>
+<li>[x] Intro Video Banner Section</li>
 <li>[x] Bento Grid Section</li>
-<li>[x] Project Listing Section [Active]</li>
+<li>[x] Project Listing Section [Ongoing]</li>
 <li>[x] Contact Form Section</li>
 <li>[x] About Vaswnani Section</li>
 <li>[x] Bank Financing Section</li>
@@ -86,8 +206,14 @@
 <li>[x] NRI Excerpt Section</li>
 <li>[x] Blog Section</li>
 <li>[x] Footer Section</li>
-</ul>
-<h3>Extras</h3>
-<ul>
-<li>[ ] Menu : Main Nav : Add some image/graphic in the empty space area.</li>
+<li>[x] Create About Page</li>
+<li>[x] Create Contact Page</li>
+<li>[x] Create Blog Page</li>
+<li>[x] Create NRI Page</li>
+<li>[x] Create CSR Page</li>
+<li>[x] Create Awards Page</li>
+<li>[x] Create Careers Page</li>
+<li>[x] Create RERA Disclaimer Page</li>
+<li>[x] Create Privacy Policy Page</li>
+<li>[x] Create Channel Partner Hub Page</li>
 </ul>
