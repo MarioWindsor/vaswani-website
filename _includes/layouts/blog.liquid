@@ -23,6 +23,48 @@
 
 
 
+<!-- Blog Grid -->
+<style>
+.blog-grid-section .blog-grid {
+	display: inline-grid;
+	gap: var(--space-50);
+	grid-template-columns: 1fr;
+}
+@media( min-width: 500px )  {
+	.blog-grid-section .blog-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media( min-width: 1000px ) {
+	.blog-grid-section .blog-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media( min-width: 1500px ) {}
+</style>
+<div id="blog-grid-section" class="blog-grid-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="blog-grid columns small-12 xlarge-10 xlarge-offset-1">
+				{% for post in collections.blog %}
+				<a href="{{ post.url }}" class="card article space-50" style="height: 100%; display: flex ; flex-direction: column;">
+					<div class="thumbnail position-relative space-50-bottom">
+						<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+					</div>
+					<h5 class="text-primary space-min-bottom">{{ post.data.title }}</h5>
+					<small class="block text-neutral-50 space-min-bottom">{{ post.date | date: "%b %d, %Y" }}</small>
+					<p class="text-neutral-50 space-25-bottom">{{ post.content | strip_html | truncate: 185, "..." }}</p>
+					<span class="p strong text-uppercase text-primary line-height-loose-loose" style="display: flex ; flex-grow: 1; align-items: flex-end;">View Article</span>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: Blog Grid -->
+
+
+
 <!-- Contact Form Section -->
 {% include 'sections/contact-form.liquid' %}
 <!-- End: Contact Form Section -->
