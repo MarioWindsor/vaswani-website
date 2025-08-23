@@ -111,7 +111,7 @@
 
 ## Home Page
 ============
-- [ ] Loading City Selector
+- [ ] City Selector : Remember Selection : Session Variable
 
 - [ ] Menu : Main Nav : Add some image/graphic in the empty space area.
 - [ ] Intro Video Banner Section : CMSify Video Embed with Image Fallback
@@ -173,6 +173,7 @@
 
 
 ### DONE
+- [x] Loading City Selector
 - [x] Header Section 
 - [x] Intro Video Banner Section
 - [x] Bento Grid Section

@@ -228,26 +228,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Find the animation container
 	const lottieContainer = document.getElementById('lottie-container');
+	const toggleCitySelectorCheckbox = document.getElementById('toggle-city-selector');
+	const logoAnimationEndCheckbox = document.getElementById('logo-animation-end');
 
-	// Load the animation
-	const anim = lottie.loadAnimation({
-		container: lottieContainer,        // The div element to render into
-		renderer: 'svg',                   // The renderer to use
-		loop: false,                       // Set to false to play only once
-		autoplay: true,                    // Set to true to play on page load
-		path: 'media/logo-animation.json'       // The path to your JSON animation file
-	});
+	if (!localStorage.getItem('visit_bangalore')) {
+		// Load the animation
+		const anim = lottie.loadAnimation({
+			container: lottieContainer,        // The div element to render into
+			renderer: 'svg',                   // The renderer to use
+			loop: false,                       // Set to false to play only once
+			autoplay: true,                    // Set to true to play on page load
+			path: 'media/logo-animation.json'       // The path to your JSON animation file
+		});
 
-	// Add an event listener for when the animation is complete
-	anim.addEventListener('complete', () => {
-		// You can hide the animation, show a button, or run any other function.
-		// --- YOUR CODE GOES HERE ---
-		const toggleCitySelectorCheckbox = document.getElementById('toggle-city-selector');
-		const logoAnimationEndCheckbox = document.getElementById('logo-animation-end');
+		// Add an event listener for when the animation is complete
+		anim.addEventListener('complete', () => {
+			// You can hide the animation, show a button, or run any other function.
+			console.log('Animation finished!');
+			logoAnimationEndCheckbox.checked = true;
 
-		console.log('Animation finished!');
-		logoAnimationEndCheckbox.checked = true;
-	});
+			toggleCitySelectorCheckbox.addEventListener('change', () => {
+				if (!toggleCitySelectorCheckbox.checked) {
+					// Save a variable to localStorage
+					localStorage.setItem('visit_bangalore', true);
+				}
+			});
+		});
+	} else {
+		// Based on variable in localStorage Toggle view City Selector per Session
+		toggleCitySelectorCheckbox.checked = false
+	}
 
 });
 </script>
