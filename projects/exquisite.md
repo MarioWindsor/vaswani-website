@@ -14,11 +14,11 @@ metadata:
   starting-price: Starting at ₹2.66Cr
   location-label: ITPL Main Road, Whitefield
 cover:
-  logo: /media/uploads/project-logo.png
+  logo: /media/uploads/exquisite_project-logo.png
   video: JytdFRIACTU
-  background: /media/uploads/DSC_8174.jpg
+  background: /media/uploads/exquisite_DSC_8174.jpg
 overview:
-  heading: Live life sky high
+  heading: Live Life Sky High
   sub-heading: A piece of sky, in the palm of your hand
   description: >-
     This is what life at the top looks like. The morning sun streams into your
@@ -39,13 +39,13 @@ overview:
 
     When you live in Vaswani Exquisite, unmatched luxury meets uncompromising connectivity. Located on ITPL Main Road in Whitefield, these spectacular apartments offer world-class amenities for an ultra-fine living experience with proximity to the best schools, hospitals, metro stations, shopping malls  and offices all within a 5-minute walking distance
   gallery:
-    - image: /media/uploads/dsc_8083.jpg
-    - image: /media/uploads/DSC_8083.jpg
-    - image: /media/uploads/DSC_8140.jpg
-    - image: /media/uploads/DSC_8290.jpg
-    - image: /media/uploads/DSC_8078.jpg
-    - image: /media/uploads/1673935424299.jpg
-    - image: /media/uploads/DSC_8071.jpg
-    - image: /media/uploads/1673935423942.jpg
-    - image: /media/uploads/DSC_8045.jpg
+    - image: /media/uploads/exquisite_dsc_8083.jpg
+    - image: /media/uploads/exquisite_DSC_8083.jpg
+    - image: /media/uploads/exquisite_DSC_8140.jpg
+    - image: /media/uploads/exquisite_DSC_8290.jpg
+    - image: /media/uploads/exquisite_DSC_8078.jpg
+    - image: /media/uploads/exquisite_1673935424299.jpg
+    - image: /media/uploads/exquisite_DSC_8071.jpg
+    - image: /media/uploads/exquisite_1673935423942.jpg
+    - image: /media/uploads/exquisite_DSC_8045.jpg
 ---

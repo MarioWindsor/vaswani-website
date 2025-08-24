@@ -195,16 +195,88 @@ collections:
             collapsed: true
             fields:
               - { label: "Heading", name: "heading", widget: "string", required: false }
-              - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
+              - label: "Align Text"
+                name: "align-text"
+                widget: "select"
+                multiple: false
+                options:
+                  - { label: "Left", value: "left" }
+                  - { label: "Right", value: "right" }
+                  - { label: "Center", value: "center" }
+                default: "left"
+                required: false
+              - label: "Position Text"
+                name: "position-text"
+                widget: "select"
+                multiple: false
+                options:
+                  - { label: "Top", value: "top" }
+                  - { label: "Bottom", value: "bottom" }
+                  - { label: "Center", value: "center" }
+                default: "top"
+                required: false
               - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+              - label: "Background Fix"
+                name: "background-fix"
+                widget: "select"
+                multiple: false
+                options:
+                  - { label: "Left Top", value: "left top" }
+                  - { label: "Center Top", value: "center top" }
+                  - { label: "Right Top", value: "right top" }
+                  - { label: "Left Center", value: "left center" }
+                  - { label: "Center Center", value: "center center" }
+                  - { label: "Right Center", value: "right center" }
+                  - { label: "Left Bottom", value: "left bottom" }
+                  - { label: "Center Bottom", value: "center bottom" }
+                  - { label: "Right Bottom", value: "right bottom" }
+                default: "center center"
+                required: false
+                hint: "Value 1 = Horizontal, Value 2 = Vertical"
           - label: "Feature 2"
             name: "feature-2"
             widget: "object"
             collapsed: true
             fields:
               - { label: "Heading", name: "heading", widget: "string", required: false }
-              - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
+              - label: "Align Text"
+                name: "align-text"
+                widget: "select"
+                multiple: false
+                options:
+                  - { label: "Left", value: "left" }
+                  - { label: "Right", value: "right" }
+                  - { label: "Center", value: "center" }
+                default: "left"
+                required: false
+              - label: "Position Text"
+                name: "position-text"
+                widget: "select"
+                multiple: false
+                options:
+                  - { label: "Top", value: "top" }
+                  - { label: "Bottom", value: "bottom" }
+                  - { label: "Center", value: "center" }
+                default: "top"
+                required: false
               - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+              - label: "Background Fix"
+                name: "background-fix"
+                widget: "select"
+                multiple: false
+                options:
+                  - { label: "Left Top", value: "left top" }
+                  - { label: "Center Top", value: "center top" }
+                  - { label: "Right Top", value: "right top" }
+                  - { label: "Left Center", value: "left center" }
+                  - { label: "Center Center", value: "center center" }
+                  - { label: "Right Center", value: "right center" }
+                  - { label: "Left Bottom", value: "left bottom" }
+                  - { label: "Center Bottom", value: "center bottom" }
+                  - { label: "Right Bottom", value: "right bottom" }
+                default: "center center"
+                required: false
+                hint: "Value 1 = Horizontal, Value 2 = Vertical"
   - name: "blog"
     label: "Blog"
     folder: "blog"

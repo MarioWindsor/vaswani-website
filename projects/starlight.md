@@ -14,8 +14,8 @@ metadata:
   starting-price: Starting at ₹2.82Cr
   location-label: ECC Main Road, Whitefield
 cover:
-  background: /media/uploads/_mg_3870-edit.jpg
-  logo: /media/uploads/starlight-logo-white-transparent.png
+  background: /media/uploads/starlight__mg_3870-edit.jpg
+  logo: /media/uploads/starlight_logo-white-transparent.png
   video: 3OyRc5eczbc
 overview:
   heading: Whitefield's Newest Benchmark
@@ -29,10 +29,23 @@ overview:
 
     This is truly Whitefield’s chosen space. Everything you need is just around the corner, whether it’s the vibrant social scene, thriving tech parks, or lush green surroundings.
   gallery:
-    - image: /media/uploads/vaswani_starlight_night.jpg
-    - image: /media/uploads/vaswani_starlight_back_day_view_02.jpg
-    - image: /media/uploads/vaswani_starlight_club_view.jpg
-    - image: /media/uploads/vaswani_starlight_dropoff_view.jpg
-    - image: /media/uploads/vaswani_starlight_aerial_09.jpg
-    - image: /media/uploads/vaswani_starlight_semi_aerial_day_highress_04.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_night.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_back_day_view_02.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_club_view.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_dropoff_view.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_aerial_09.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_semi_aerial_day_highress_04.jpg
+banner:
+  feature-1:
+    heading: A Private Home Office with Every Unit
+    background: /media/uploads/starlight_banner_bg_home_office_01.png
+    align-text: left
+    position-text: top
+    background-fix: right bottom
+  feature-2:
+    heading: 70% Green Spaces at Vaswani Starlight
+    background: /media/uploads/starlight_banner_bg_jogging_man_01.png
+    background-fix: center center
+    align-text: right
+    position-text: top
 ---
