@@ -3,7 +3,7 @@ tags:
   - projects
 date: 2017-01-01T19:13:00.000+05:30
 name: Brentwood
-overview:
+metadata:
   prefix-name: false
   type: residential
   status: completed

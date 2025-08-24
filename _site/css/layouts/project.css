@@ -8,8 +8,8 @@
 
 
 /* -- Project Intro Section -- */
-.project-intro-section {}
-.project-intro-section .project-intro .project-meta .metadata {
+.project-overview-section {}
+.project-overview-section .project-overview .project-meta .metadata {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -17,18 +17,18 @@
 }
 
 @media( min-width: 500px )  {
-	.project-intro-section .project-intro .sub-heading { font-size: var(--h5); }
-	.project-intro-section .project-intro .project-meta {
+	.project-overview-section .project-overview .sub-heading { font-size: var(--h5); }
+	.project-overview-section .project-overview .project-meta {
 		text-align: right;
 		padding-right: var(--space-100);
 	}
-	.project-intro-section .project-intro .project-meta .metadata {
+	.project-overview-section .project-overview .project-meta .metadata {
 		justify-content: right;
 		flex-direction: row-reverse;
 	}
-	.project-intro-section .project-intro .description { text-align: left; }
+	.project-overview-section .project-overview .description { text-align: left; }
 }
-@media( min-width: 1500px ) { .project-intro-section .project-intro .sub-heading { font-size: var(--h4); } }
+@media( min-width: 1500px ) { .project-overview-section .project-overview .sub-heading { font-size: var(--h4); } }
 
 
 

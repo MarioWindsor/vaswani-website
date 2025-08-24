@@ -3,7 +3,7 @@ tags:
   - projects
 date: 2015-01-01T19:14:00.000+05:30
 name: Walnut Creek
-overview:
+metadata:
   prefix-name: false
   type: residential
   status: completed

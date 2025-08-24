@@ -9,6 +9,7 @@
 	}
 	.intro-banner-section .intro-video-wrapper {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
@@ -17,18 +18,38 @@
 		overflow: clip;
 		border-radius: 0;
 		transition: var(--transition-speed) var(--transition-ease);
+		box-shadow: 0;
 	}
 	.intro-banner-section .intro-video-wrapper .intro-video-width {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
 		padding-top: 85vw;
 		transform: translateX(-50%);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.intro-banner-section .intro-video-wrapper .intro-video-width:after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--hue-dark);
+		opacity: 1;
+		mix-blend-mode: hard-light;
+		transition: opacity var(--transition-speed) var(--transition-ease);
 	}
 	.intro-banner-section .intro-video-wrapper .scroll {
 		pointer-events: none;
 		position: absolute;
+		z-index: 3;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
@@ -41,8 +62,46 @@
 	.intro-banner-section input:checked ~ .intro-video-wrapper {
 		width: var(--container-width);
 		border-radius: var(--space-25);
+		box-shadow: 
+			0 0 var(--border-width)  color-mix(in srgb, var(--hue-dark) 20%, transparent),
+			0 var(--border-width) calc(var(--space-min)*2) color-mix(in srgb, var(--hue-dark) 20%, transparent);
 	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .intro-video-width:after { opacity: 0; }
 	.intro-banner-section input:checked ~ .intro-video-wrapper .scroll {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .project-logo {
+		pointer-events: none;
+		display: block;
+		width: var(--card);
+		height: calc(var(--card)*.75);
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+		object-fit: contain;
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .project-logo {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .page-title {
+		display: inline-block;
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		font-size: var(--h4);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		letter-spacing: calc(var(--p) * 0.05);
+		line-height: 1.25;
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .page-title {
 		opacity: 0;
 	}
 	@media( min-width: 500px ) {
@@ -58,6 +117,21 @@
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 50vw;
 		}
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*1.5);
+			height: calc((var(--card)*1.5)*.75);
+			top: 40%;
+		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			font-size: var(--h3);
+			letter-spacing: calc(var(--p) * 0.1);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*2);
+			height: calc((var(--card)*2)*.75);
+		}
 	}
 </style>
 
@@ -67,11 +141,22 @@
 	<div class="row">
 		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-video-wrapper">
-			<div class="intro-video-width fill-dark"></div>
+			<div class="intro-video-width fill-dark" style="{% if cover.video == blank %}background-image: url({% if cover.background != blank %}'{{ cover.background }}'{% else %}'media/fallback.jpg'{% endif %});{% endif %}">
+				{% if cover.video != blank %}
+				<div class="video-embed-cover">
+					<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ cover.video }}?playlist={{ cover.video }}&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				{% endif %}
+			</div>
 			<div class="scroll">
 				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
 				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
+			{% if cover.logo != blank %}
+				<img class="project-logo" src="{{ cover.logo }}">
+			{% else %}
+				<h1 class="page-title w-500 text-uppercase text-light">{% if metadata.prefix-name == true %}Vaswani {% endif %}{{ name }}</h1>
+			{% endif %}
 		</div>
 	</div>
 </section>

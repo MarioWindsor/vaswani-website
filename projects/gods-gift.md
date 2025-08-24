@@ -3,7 +3,7 @@ tags:
   - projects
 date: 1995-01-01T19:07:00.000+05:30
 name: God's Gift
-overview:
+metadata:
   prefix-name: true
   type: residential
   status: completed

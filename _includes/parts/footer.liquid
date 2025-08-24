@@ -44,19 +44,19 @@
 				<div class="foot residential">
 					<h6 class="title">Residential</h6>
 					{% for project in ongoing_residential_projects %}
-					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 					{% endfor %}
 					{% for project in completed_residential_projects %}
-					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 					{% endfor %}
 				</div>
 				<div class="foot commercial">
 					<h6 class="title">Commercial</h6>
 					{% for project in ongoing_commercial_projects %}
-					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 					{% endfor %}
 					{% for project in completed_commercial_projects %}
-					<a class="link" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 					{% endfor %}
 				</div>
 			</div>

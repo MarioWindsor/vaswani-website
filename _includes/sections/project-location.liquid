@@ -62,7 +62,7 @@
 				<div class="row">
 					<div class="columns small-12 medium-5 large-12 space-50-top">
 						<h3 class="section-sub-heading h6 text-primary">{{ location.sub-heading }}</h3>
-						<p class="label space-50-top">{{ location.description }}</p>
+						<p class="label space-50-top">{{ location.description | newline_to_br }}</p>
 					</div>
 					<div class="columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-50-top">
 					{% for places in location.places %}

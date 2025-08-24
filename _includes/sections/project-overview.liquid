@@ -1,0 +1,72 @@
+<section id="project-overview-section" class="project-overview-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center">
+				<label class="section-label">{% if metadata.prefix-name == true %}Vaswani {% endif %}{{ name }}</label>
+				<h2 class="section-heading text-neutral-20 w-600">{% if overview.heading != blank %}{{ overview.heading }}{% endif %}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{% if metadata.project-label != blank %}{{ metadata.project-label }}{% endif %}</h6>
+			</div>
+		</div>
+	</div>
+	{% if overview.gallery != blank %}
+	<div class="row">
+		<!-- Carousel -->
+		<div class="carousel gallery big-picture">
+			<div class="carousel-list">
+				{% for gallery in overview.gallery %}
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+				</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+		<!-- End: Carousel -->
+	</div>
+	{% endif %}
+	<div class="project-overview row">
+		<div class="container">
+			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center space-125-top space-50-bottom">
+				<h6 class="sub-heading text-primary">{{ overview.sub-heading }}</h6>
+			</div>
+		</div>
+		<div class="container">
+			<div class="project-meta text-dark columns small-12 medium-6 large-5 large-offset-1 xlarge-4 xlarge-offset-2 space-50-bottom text-center">
+				{% if metadata.starting-price != blank %}
+				<small class="metadata block">
+					<i class='bx bx-home p text-primary'></i>
+					<span>{{ metadata.starting-price }}</span>
+				</small>
+				{% endif %}
+				{% if metadata.unit-size != blank %}
+				<small class="metadata block">
+					<i class='bx bx-area p text-primary'></i>
+					<span>{{ metadata.unit-size }}</span>
+				</small>
+				{% endif %}
+				{% if metadata.location-label != blank %}
+				<small class="metadata block">
+					<i class='bx bx-map p text-primary'></i>
+					<span>{{ metadata.location-label }}</span>
+				</small>
+				{% endif %}
+				{% if metadata.rera-number != blank %}
+				<h6 class="space-25-top">
+					<span class="text-neutral-40 w-600 text-uppercase">RERA Number</span>
+					<span class="label block">{{ metadata.rera-number }}</span>
+				</h6>
+				{% endif %}
+			</div>
+			{% if overview.description != blank %}
+			<div class="description columns small-12 medium-6 large-5 xlarge-4 text-center">
+				<p>{{ overview.description | newline_to_br }}</p>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</section>

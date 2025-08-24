@@ -34,26 +34,26 @@
 			<div class="project space-100-vertical">
 				<div class="container">
 					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="{{ project.url }}">
-						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
-						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+						<h6 class="heading text-primary">{% if project.data.metadata.project-label != blank %}{{ project.data.metadata.project-label }}{% endif %}</h6>
+						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
 					</a>
 					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-						{% if project.data.overview.starting-price != blank %}
+						{% if project.data.metadata.starting-price != blank %}
 						<small class="metadata block">
 							<i class='bx bx-home p text-primary'></i>
-							<span>{{ project.data.overview.starting-price }}</span>
+							<span>{{ project.data.metadata.starting-price }}</span>
 						</small>
 						{% endif %}
-						{% if project.data.overview.unit-size != blank %}
+						{% if project.data.metadata.unit-size != blank %}
 						<small class="metadata block">
 							<i class='bx bx-area p text-primary'></i>
-							<span>{{ project.data.overview.unit-size }}</span>
+							<span>{{ project.data.metadata.unit-size }}</span>
 						</small>
 						{% endif %}
-						{% if project.data.overview.location-label != blank %}
+						{% if project.data.metadata.location-label != blank %}
 						<small class="metadata block">
 							<i class='bx bx-map p text-primary'></i>
-							<span>{{ project.data.overview.location-label }}</span>
+							<span>{{ project.data.metadata.location-label }}</span>
 						</small>
 						{% endif %}
 					</div>
@@ -61,16 +61,33 @@
 				<!-- Carousel -->
 				<div class="carousel gallery">
 					<div class="carousel-list">
-						{% for gallery in project.data.gallery.images %}
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
-							{% if forloop.index == 1 %}
-								{% if project.data.overview.status-label != blank %}
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+						{% if project.data.overview.gallery != blank %}
+							{% for gallery in project.data.overview.gallery %}
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+								{% if forloop.index == 1 %}
+									{% if project.data.metadata.status-label != blank %}
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
+									{% endif %}
 								{% endif %}
-							{% endif %}
-						</div>
-						{% endfor %}
+							</div>
+							{% endfor %}
+						{% else %}
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="
+								{% if project.data.cover.background != blank %}
+									{{ project.data.cover.background }}
+								{% else %}
+									media/fallback.jpg
+								{% endif %}
+								" alt="">
+								{% if forloop.index == 1 %}
+									{% if project.data.metadata.status-label != blank %}
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
+									{% endif %}
+								{% endif %}
+							</div>
+						{% endif %}
 					</div>
 					<div class="row">
 						<div class="carousel-controls container">
@@ -90,26 +107,26 @@
 			<div class="project space-100-vertical">
 				<div class="container">
 					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
-						<h6 class="heading text-primary">{% if project.data.overview.project-label != blank %}{{ project.data.overview.project-label }}{% endif %}</h6>
-						<h4 class="name text-uppercase strong letter-spacing-loose-loose">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+						<h6 class="heading text-primary">{% if project.data.metadata.project-label != blank %}{{ project.data.metadata.project-label }}{% endif %}</h6>
+						<h4 class="name text-uppercase strong letter-spacing-loose-loose">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
 					</div>
 					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
-						{% if project.data.overview.starting-price != blank %}
+						{% if project.data.metadata.starting-price != blank %}
 						<small class="metadata block">
 							<i class='bx bx-home p text-primary'></i>
-							<span>{{ project.data.overview.starting-price }}</span>
+							<span>{{ project.data.metadata.starting-price }}</span>
 						</small>
 						{% endif %}
-						{% if project.data.overview.unit-size != blank %}
+						{% if project.data.metadata.unit-size != blank %}
 						<small class="metadata block">
 							<i class='bx bx-area p text-primary'></i>
-							<span>{{ project.data.overview.unit-size }}</span>
+							<span>{{ project.data.metadata.unit-size }}</span>
 						</small>
 						{% endif %}
-						{% if project.data.overview.location-label != blank %}
+						{% if project.data.metadata.location-label != blank %}
 						<small class="metadata block">
 							<i class='bx bx-map p text-primary'></i>
-							<span>{{ project.data.overview.location-label }}</span>
+							<span>{{ project.data.metadata.location-label }}</span>
 						</small>
 						{% endif %}
 					</div>
@@ -117,16 +134,33 @@
 				<!-- Carousel -->
 				<div class="carousel gallery">
 					<div class="carousel-list">
-						{% for gallery in project.data.gallery.images %}
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
-							{% if forloop.index == 1 %}
-								{% if project.data.overview.status-label != blank %}
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.overview.status-label }}</small>
+						{% if project.data.overview.gallery != blank %}
+							{% for gallery in project.data.overview.gallery %}
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+								{% if forloop.index == 1 %}
+									{% if project.data.metadata.status-label != blank %}
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
+									{% endif %}
 								{% endif %}
-							{% endif %}
-						</div>
-						{% endfor %}
+							</div>
+							{% endfor %}
+						{% else %}
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="
+								{% if project.data.cover.background != blank %}
+									{{ project.data.cover.background }}
+								{% else %}
+									media/fallback.jpg
+								{% endif %}
+								" alt="">
+								{% if forloop.index == 1 %}
+									{% if project.data.metadata.status-label != blank %}
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
+									{% endif %}
+								{% endif %}
+							</div>
+						{% endif %}
 					</div>
 					<div class="row">
 						<div class="carousel-controls container">

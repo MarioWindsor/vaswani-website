@@ -3,7 +3,7 @@ tags:
   - projects
 date: 2010-01-01T19:02:00.000+05:30
 name: Whispering Palms
-overview:
+metadata:
   prefix-name: false
   type: residential
   status: completed

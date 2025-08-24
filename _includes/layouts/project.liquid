@@ -1,25 +1,11 @@
 ---
 eleventyComputed:
-    title: "{% if overview.prefix-name %}Vaswani {% endif %}{{ name }}{% if overview.project-label %} - {{ overview.project-label }}{% endif %}"
+    title: "{% if metadata.prefix-name %}Vaswani {% endif %}{{ name }}{% if metadata.project-label %} - {{ metadata.project-label }}{% endif %}"
 ---
 
 
 {% include 'parts/head.liquid' %}
 {% include 'parts/header.liquid' %}
-
-
-
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
 
 
 
@@ -30,7 +16,9 @@ eleventyComputed:
 
 
 <!-- Project Intro Section -->
-{% include 'sections/project-intro.liquid' %}
+{% if overview != blank %}
+{% include 'sections/project-overview.liquid' %}
+{% endif %}
 <!-- End: Project Intro Section -->
 
 
@@ -44,7 +32,9 @@ eleventyComputed:
 
 
 <!-- Project Siteplan Section -->
+{% if siteplan != blank %}
 {% include 'sections/project-siteplan.liquid' %}
+{% endif %}
 <!-- End: Project Siteplan Section -->
 
 
@@ -56,19 +46,25 @@ eleventyComputed:
 
 
 <!-- Project Amenities Section -->
+{% if amenities != blank %}
 {% include 'sections/project-amenities.liquid' %}
+{% endif %}
 <!-- End: Project Amenities Section -->
 
 
 
 <!-- Brochure Section -->
+{% if brochure != blank %}
 {% include 'sections/project-brochure.liquid' %}
+{% endif %}
 <!-- END: Brochure Section -->
 
 
 
 <!-- Location Section -->
+{% if location != blank %}
 {% include 'sections/project-location.liquid' %}
+{% endif %}
 <!-- END: Location Section -->
 
 

@@ -436,6 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	.intro-banner-section .intro-video-wrapper {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
@@ -444,18 +445,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		overflow: clip;
 		border-radius: 0;
 		transition: var(--transition-speed) var(--transition-ease);
+		box-shadow: 0;
 	}
 	.intro-banner-section .intro-video-wrapper .intro-video-width {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
 		padding-top: 85vw;
 		transform: translateX(-50%);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.intro-banner-section .intro-video-wrapper .intro-video-width:after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--hue-dark);
+		opacity: 1;
+		mix-blend-mode: hard-light;
+		transition: opacity var(--transition-speed) var(--transition-ease);
 	}
 	.intro-banner-section .intro-video-wrapper .scroll {
 		pointer-events: none;
 		position: absolute;
+		z-index: 3;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
@@ -468,8 +489,46 @@ document.addEventListener('DOMContentLoaded', () => {
 	.intro-banner-section input:checked ~ .intro-video-wrapper {
 		width: var(--container-width);
 		border-radius: var(--space-25);
+		box-shadow: 
+			0 0 var(--border-width)  color-mix(in srgb, var(--hue-dark) 20%, transparent),
+			0 var(--border-width) calc(var(--space-min)*2) color-mix(in srgb, var(--hue-dark) 20%, transparent);
 	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .intro-video-width:after { opacity: 0; }
 	.intro-banner-section input:checked ~ .intro-video-wrapper .scroll {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .project-logo {
+		pointer-events: none;
+		display: block;
+		width: var(--card);
+		height: calc(var(--card)*.75);
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+		object-fit: contain;
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .project-logo {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .page-title {
+		display: inline-block;
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		font-size: var(--h4);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		letter-spacing: calc(var(--p) * 0.05);
+		line-height: 1.25;
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .page-title {
 		opacity: 0;
 	}
 	@media( min-width: 500px ) {
@@ -485,6 +544,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 50vw;
 		}
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*1.5);
+			height: calc((var(--card)*1.5)*.75);
+			top: 40%;
+		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			font-size: var(--h3);
+			letter-spacing: calc(var(--p) * 0.1);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*2);
+			height: calc((var(--card)*2)*.75);
+		}
 	}
 </style>
 
@@ -494,11 +568,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	<div class="row">
 		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-video-wrapper">
-			<div class="intro-video-width fill-dark"></div>
+			<div class="intro-video-width fill-dark" style="background-image: url('media/fallback.jpg');">
+				
+			</div>
 			<div class="scroll">
 				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
 				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
+			
+				<h1 class="page-title w-500 text-uppercase text-light"></h1>
+			
 		</div>
 	</div>
 </section>
@@ -871,39 +950,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="carousel gallery">
 					<div class="carousel-list">
 						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
 							
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/vaswani_starlight_night.jpg" alt="">
 								
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
+									
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Construction in Full Swing</small>
+									
 								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/vaswani_starlight_back_day_view_02.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/600x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/vaswani_starlight_club_view.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/vaswani_starlight_dropoff_view.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/vaswani_starlight_aerial_09.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/vaswani_starlight_semi_aerial_day_highress_04.jpg" alt="">
+								
+							</div>
 							
-						</div>
 						
 					</div>
 					<div class="row">
@@ -928,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						
 						<small class="metadata block">
 							<i class='bx bx-home p text-primary'></i>
-							<span>Starting at ₹2.82Cr</span>
+							<span>Starting at ₹2.66Cr</span>
 						</small>
 						
 						
@@ -949,39 +1030,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="carousel gallery">
 					<div class="carousel-list">
 						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
 							
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/dsc_8083.jpg" alt="">
 								
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Limited Units Available</small>
+									
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Limited Units Available</small>
+									
 								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/600x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/DSC_8083.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/DSC_8140.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/DSC_8290.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/DSC_8078.jpg" alt="">
+								
+							</div>
 							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/1673935424299.jpg" alt="">
+								
+							</div>
 							
-						</div>
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/DSC_8071.jpg" alt="">
+								
+							</div>
+							
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/1673935423942.jpg" alt="">
+								
+							</div>
+							
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="/media/uploads/DSC_8045.jpg" alt="">
+								
+							</div>
+							
 						
 					</div>
 					<div class="row">
@@ -1025,39 +1123,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="carousel gallery">
 					<div class="carousel-list">
 						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="
 								
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Ready For Fit Out</small>
+									media/fallback.jpg
 								
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
+								" alt="">
+								
+									
+									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Ready For Fit Out</small>
+									
+								
+							</div>
 						
 					</div>
 					<div class="row">
@@ -1098,39 +1175,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="carousel gallery">
 					<div class="carousel-list">
 						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
+							<div class="carousel-list-item">
+								<img class="radius-25 box-shadow" src="
 								
-								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Available for Lease</small>
+									media/fallback.jpg
 								
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
-						
-						<div class="carousel-list-item">
-							<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-							
-						</div>
+								" alt="">
+								
+							</div>
 						
 					</div>
 					<div class="row">
@@ -1502,7 +1554,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/menlo-park/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2022</small>
 							
@@ -1537,7 +1589,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/brentwood/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2017</small>
 							
@@ -1572,7 +1624,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/reserve/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2016</small>
 							
@@ -1607,7 +1659,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/walnut-creek/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2015</small>
 							
@@ -1637,7 +1689,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/astoria/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2013</small>
 							
@@ -1667,7 +1719,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/whispering-palms/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2010</small>
 							
@@ -1697,7 +1749,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/pinnacle/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2009</small>
 							
@@ -1732,7 +1784,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/melrose/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2003</small>
 							
@@ -1762,7 +1814,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/villa-del-mar/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 1996</small>
 							
@@ -1792,7 +1844,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/gods-gift/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 1995</small>
 							
@@ -1833,7 +1885,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/oakmont/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2021</small>
 							
@@ -1858,7 +1910,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/augusta/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2018</small>
 							
@@ -1883,7 +1935,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/presidio/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2011</small>
 							
@@ -1908,7 +1960,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/sasken-corporate-office/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2011</small>
 							
@@ -1933,7 +1985,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/royal-orchid-suites/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2008</small>
 							
@@ -1958,7 +2010,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="/projects/wipro-corporate-office/" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url('https://placeholdit.com/500x400/F1F1F1/999999'); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="background-image: url('media/fallback.jpg'); padding-top: 80%;"></div>
 							
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">Completed 2002</small>
 							
@@ -2027,7 +2079,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<a class="button fill-dark" href="">Explore Our CSR initiatives</a>
 			</div>
 			<div class="columns small-12 space-25-top medium-6 medium-offset-1 large-5 xlarge-4">
-				<img class="radius-min block box-shadow" src="https://placeholdit.com/800x800/dddddd/999999" alt="">
+				<img class="radius-min block box-shadow" src="media/traffic-park.png" alt="">
 			</div>
 		</div>
 		<img class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">
@@ -2210,7 +2262,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-5 large-4 large-offset-1 xlarge-3 xlarge-offset-2">
-				<img class="radius-min block box-shadow" src="https://placeholdit.com/480x720/dddddd/999999" alt="">
+				<img class="radius-min block box-shadow" src="media/nri-indian.jpg" alt="">
 			</div>
 			<div class="columns small-12 medium-6 medium-offset-1 large-5 xlarge-4 space-50-top">
 				<label class="section-label">NRI Customers</label>

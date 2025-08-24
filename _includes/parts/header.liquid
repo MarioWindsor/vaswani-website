@@ -31,7 +31,7 @@
 					<label for="residential-ongoing-submenu-checkbox" class="submenu-label">Ongoing Projects</label>
 					<ul id="residential-submenu" class="sub-menu space-75-right">
 						{% for project in ongoing_residential_projects %}
-						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						<li><a class="" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
 						{% endfor %}
 					</ul>
 				</li>
@@ -40,7 +40,7 @@
 					<label for="residential-completed-submenu-checkbox" class="submenu-label">Completed Projects</label>
 					<ul id="residential-submenu" class="sub-menu space-75-right">
 						{% for project in completed_residential_projects %}
-						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						<li><a class="" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
 						{% endfor %}
 					</ul>
 				</li>
@@ -55,7 +55,7 @@
 					<label for="commercial-ongoing-submenu-checkbox" class="submenu-label">Ongoing Projects</label>
 					<ul id="commercial-submenu" class="sub-menu space-75-right">
 						{% for project in ongoing_commercial_projects %}
-						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						<li><a class="" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
 						{% endfor %}
 					</ul>
 				</li>
@@ -64,7 +64,7 @@
 					<label for="commercial-completed-submenu-checkbox" class="submenu-label">Completed Projects</label>
 					<ul id="commercial-submenu" class="sub-menu space-75-right">
 						{% for project in completed_commercial_projects %}
-						<li><a class="" href="{{ project.url }}">{% if project.data.overview.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+						<li><a class="" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
 						{% endfor %}
 					</ul>
 				</li>

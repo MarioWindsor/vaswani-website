@@ -1,35 +1,33 @@
 
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to main)
+  branch: main
   repo: MarioWindsor/bgc-smart-cat
 
-# when using the default proxy server port
 local_backend: true
 
-# publish_mode: editorial_workflow
-media_folder: "/media/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/media/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "/media/uploads"
+public_folder: "/media/uploads"
 collections:
-  - name: "projects" # Used in routes, e.g., /admin/collections/faqs
-    label: "Projects" # Used in the UI
-    folder: "projects" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{name}}" # The Path to the File/Data/URL
+  - name: "projects"
+    label: "Projects"
+    folder: "projects"
+    create: true
+    slug: "{{name}}"
     editor:
       preview: false
     sortable_fields: ['date', 'name']
-    fields: # The fields for each document, usually in front matter
+    fields:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["projects"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Project Name", name: "name", widget: "string" }
-      - label: "Overview"
-        name: "overview"
+      - label: "Metadata"
+        name: "metadata"
         widget: "object"
         collapsed: true
         fields:
           - { label: "Prefix Name with Vaswani", name: "prefix-name", widget: "boolean", default: true }
-          - label: "Type"
+          - label: "Project Type"
             name: "type"
             widget: "select"
             multiple: false
@@ -38,10 +36,6 @@ collections:
               - { label: "Commercial", value: "commercial" }
             default: residential
           - { label: "Project Label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
-          - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
-          - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
-          - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, Whitefield" }
-          - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
           - label: "Status"
             name: "status"
             widget: "select"
@@ -51,30 +45,35 @@ collections:
               - { label: "Completed", value: "completed" }
             default: ongoing
           - { label: "Status Label", name: "status-label", widget: "string", required: false, hint: "Eg: Construction in Full Swing" }
-      - label: "Gallery"
-        name: "gallery"
+          - { label: "Starting Price", name: "starting-price", widget: "string", required: false, hint: "Eg: Starting at ₹2.82Cr" }
+          - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
+          - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, Whitefield" }
+          - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
+      - label: "Cover"
+        name: "cover"
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Logo", name: "logo", widget: "image", choose_url: true, required: false }
-          - { label: "Video ID", name: "video", widget: "string", choose_url: true, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
-          - label: "Images"
-            name: "images"
-            widget: "list"
-            required: false
-            minimize_collapsed: true
-            summary: '{{fields.image}} {{fields.caption}}'
-            fields: 
-              - { label: "Image", name: "image", widget: "image", choose_url: true }
-              - { label: "Caption", name: "caption", widget: "string", required: false }
-      - label: "Intro"
-        name: "intro"
+          - { label: "Project Logo", name: "logo", widget: "image", choose_url: false, required: false }
+          - { label: "Background Image", name: "background", widget: "image", choose_url: false, required: false }
+          - { label: "Walkthough Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+      - label: "Overview"
+        name: "overview"
         widget: "object"
         collapsed: true
         fields:
           - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "text", required: false }
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.image}} {{fields.caption}}'
+            fields:
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Site Plan"
         name: "siteplan"
         widget: "object"
@@ -88,18 +87,18 @@ collections:
             required: false
             minimize_collapsed: true
             summary: '{{fields.image}} {{fields.caption}}'
-            fields: 
+            fields:
               - { label: "Title", name: "title", widget: "string", }
-              - { label: "Image", name: "image", widget: "image", choose_url: true }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
           - label: "Floor Plan"
             name: "floorplan"
             widget: "list"
             required: false
             minimize_collapsed: true
             summary: '{{fields.title}} {{fields.image}}'
-            fields: 
+            fields:
               - { label: "Title", name: "title", widget: "string", }
-              - { label: "Image", name: "image", widget: "image", choose_url: true }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
       - label: "Amenities"
         name: "amenities"
         widget: "object"
@@ -108,32 +107,32 @@ collections:
           - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: Cover Image, name: cover-image, widget: image, choose_url: true, required: false, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: Cover Image, name: cover-image, widget: image, choose_url: false, required: false, hint: "Dimensions: 1200 x 400 pixels" }
           - label: "Amenity"
             name: "amenity"
             widget: "list"
             required: false
             minimize_collapsed: true
             summary: '{{fields.name}} {{fields.icon}}'
-            fields: 
+            fields:
               - {dlabel: "Name", name: "name", widget: "string", }
-              - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+              - { label: "Icon", name: "icon", widget: "image", choose_url: false }
           - label: "Images"
             name: "images"
             widget: "list"
             required: false
             minimize_collapsed: true
             summary: '{{fields.image}} {{fields.caption}}'
-            fields: 
-              - { label: "Image", name: "image", widget: "image", choose_url: true }
+            fields:
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
               - { label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Brochure"
         name: "brochure"
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Background Image", name: "background", widget: "background", required: false, choose_url: true, hint: "Dimensions: 1200 x 400 pixels" }
-          - { label: "PDF File", name: "pdf", widget: "file", required: false, choose_url: true }
+          - { label: "Background Image", name: "background", widget: "background", required: false, choose_url: false, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: "PDF File", name: "pdf", widget: "file", required: false, choose_url: false }
       - label: "Location"
         name: "location"
         widget: "object"
@@ -149,7 +148,7 @@ collections:
             required: false
             minimize_collapsed: true
             summary: '{{fields.name}}'
-            fields: 
+            fields:
               - { label: "Place Group Name", name: "name", widget: "string", required: false, hint: "Eg: Schools" }
               - label: "Place"
                 name: "place"
@@ -157,7 +156,7 @@ collections:
                 required: false
                 minimize_collapsed: true
                 summary: '{{fields.name}} {{fields.distance}}'
-                fields: 
+                fields:
                   - { label: Place Name, name: name, widget: string, required: false, hint: "Eg: Mallya Aditi International School" }
                   - { label: Distance, name: distance, widget: string, required: false, hint: "Eg: 4.0 Km" }
       - label: "Progress"
@@ -172,7 +171,7 @@ collections:
             required: false
             minimize_collapsed: true
             summary: '{{fields.title}}'
-            fields: 
+            fields:
               - { label: Title, name: title, widget: string, required: false, hint: "Eg: Feb 2025" }
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text", required: false }
@@ -182,8 +181,8 @@ collections:
                 required: false
                 minimize_collapsed: true
                 summary: '{{fields.image}} {{fields.caption}}'
-                fields: 
-                  - { label: "Image", name: "image", widget: "image", choose_url: true }
+                fields:
+                  - { label: "Image", name: "image", widget: "image", choose_url: false }
                   - { label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Banner"
         name: "banner"
@@ -197,7 +196,7 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
-              - { label: "Background", name: "background", widget: "image", choose_url: true, required: false }
+              - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
           - label: "Feature 2"
             name: "feature-2"
             widget: "object"
@@ -205,48 +204,48 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Position", name: "position", widget: "string", required: false, hint: "top left" }
-              - { label: "Background", name: "background", widget: "image", choose_url: true, required: false }
-  - name: "blog" # Used in routes, e.g., /admin/collections/faqs
-    label: "Blog" # Used in the UI
-    folder: "blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # The Path to the File/Data/URL
+              - { label: "Background", name: "background", widget: "image", choose_url: false, required: false }
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
     editor:
       preview: false
     sortable_fields: ['date', 'title']
-    fields: # The fields for each document, usually in front matter
+    fields:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["blog"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "testimonials" # Used in routes, e.g., /admin/collections/faqs
-    label: "Testimonials" # Used in the UI
-    folder: "testimonials" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # The Path to the File/Data/URL
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "testimonials"
+    create: true
+    slug: "{{slug}}"
     editor:
       preview: false
     sortable_fields: ['date', 'title']
-    fields: # The fields for each document, usually in front matter
+    fields:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["testimonials"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Rating", name: "rating", widget: "number", min: 0, max: 5, value_type: "int" }
       - { label: "Content", name: "content", widget: "text" }
-  - name: "awards" # Used in routes, e.g., /admin/collections/faqs
-    label: "Awards" # Used in the UI
-    folder: "awards" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # The Path to the File/Data/URL
+  - name: "awards"
+    label: "Awards"
+    folder: "awards"
+    create: true
+    slug: "{{slug}}"
     editor:
       preview: false
     sortable_fields: ['date', 'title']
-    fields: # The fields for each document, usually in front matter
+    fields:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["awards"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Award Title", name: "title", widget: "string" }
       - { label: "Awarded By", name: "awarder", widget: "string" }
-      - { label: "Award", name: "award", widget: "image", choose_url: true, required: false }
+      - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
   - name: "settings"
     label: "Settings"
     files:

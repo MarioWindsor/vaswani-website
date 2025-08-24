@@ -264,20 +264,6 @@
 
 
 
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
-
-
-
 <!-- Intro Banner Section -->
 <style>
 	.intro-banner-section {
@@ -290,6 +276,7 @@
 	}
 	.intro-banner-section .intro-video-wrapper {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
@@ -298,18 +285,38 @@
 		overflow: clip;
 		border-radius: 0;
 		transition: var(--transition-speed) var(--transition-ease);
+		box-shadow: 0;
 	}
 	.intro-banner-section .intro-video-wrapper .intro-video-width {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
 		padding-top: 85vw;
 		transform: translateX(-50%);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.intro-banner-section .intro-video-wrapper .intro-video-width:after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--hue-dark);
+		opacity: 1;
+		mix-blend-mode: hard-light;
+		transition: opacity var(--transition-speed) var(--transition-ease);
 	}
 	.intro-banner-section .intro-video-wrapper .scroll {
 		pointer-events: none;
 		position: absolute;
+		z-index: 3;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
@@ -322,8 +329,46 @@
 	.intro-banner-section input:checked ~ .intro-video-wrapper {
 		width: var(--container-width);
 		border-radius: var(--space-25);
+		box-shadow: 
+			0 0 var(--border-width)  color-mix(in srgb, var(--hue-dark) 20%, transparent),
+			0 var(--border-width) calc(var(--space-min)*2) color-mix(in srgb, var(--hue-dark) 20%, transparent);
 	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .intro-video-width:after { opacity: 0; }
 	.intro-banner-section input:checked ~ .intro-video-wrapper .scroll {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .project-logo {
+		pointer-events: none;
+		display: block;
+		width: var(--card);
+		height: calc(var(--card)*.75);
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+		object-fit: contain;
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .project-logo {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .page-title {
+		display: inline-block;
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		font-size: var(--h4);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		letter-spacing: calc(var(--p) * 0.05);
+		line-height: 1.25;
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .page-title {
 		opacity: 0;
 	}
 	@media( min-width: 500px ) {
@@ -339,6 +384,21 @@
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 50vw;
 		}
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*1.5);
+			height: calc((var(--card)*1.5)*.75);
+			top: 40%;
+		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			font-size: var(--h3);
+			letter-spacing: calc(var(--p) * 0.1);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*2);
+			height: calc((var(--card)*2)*.75);
+		}
 	}
 </style>
 
@@ -348,11 +408,16 @@
 	<div class="row">
 		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-video-wrapper">
-			<div class="intro-video-width fill-dark"></div>
+			<div class="intro-video-width fill-dark" style="background-image: url('media/fallback.jpg');">
+				
+			</div>
 			<div class="scroll">
 				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
 				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
+			
+				<h1 class="page-title w-500 text-uppercase text-light">Vaswani Oakmont</h1>
+			
 		</div>
 	</div>
 </section>
@@ -383,60 +448,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Project Intro Section -->
-<section id="project-intro-section" class="project-intro-section gap">
-	<div class="row">
-		<div class="container">
-			<div class="title columns small-12 text-center">
-				<label class="section-label">Vaswani Oakmont</label>
-				<h2 class="section-heading text-neutral-20 w-600"></h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">Grade A Commercial Office Space</h6>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<!-- Carousel -->
-		<div class="carousel gallery big-picture">
-			<div class="carousel-list">
-				
-			</div>
-			<div class="row">
-				<div class="carousel-controls container">
-					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-				</div>
-			</div>
-		</div>
-		<!-- End: Carousel -->
-	</div>
-	<div class="project-intro row">
-		<div class="container">
-			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center space-125-top space-50-bottom">
-				<h6 class="sub-heading text-primary"></h6>
-			</div>
-		</div>
-		<div class="container">
-			<div class="project-meta text-dark columns small-12 medium-6 large-5 large-offset-1 xlarge-4 xlarge-offset-2 space-50-bottom text-center">
-				
-				
-				
-				<small class="metadata block">
-					<i class='bx bx-map p text-primary'></i>
-					<span>Near Embassy Golf Business Park</span>
-				</small>
-				
-				
-				<h6 class="space-25-top">
-					<span class="text-neutral-40 w-600 text-uppercase">RERA Number</span>
-					<span class="label block">PRM/KA/RERA/1251/446/PR/180424/006808</span>
-				</h6>
-				
-			</div>
-			<div class="description columns small-12 medium-6 large-5 xlarge-4 text-center">
-				<p></p>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- End: Project Intro Section -->
 
 
@@ -448,42 +460,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Project Siteplan Section -->
-<section id="project-siteplan-section" class="project-siteplan-section gap">
-	<div class="row">
-		<div class="container">
-			<div class="title columns small-12 text-center space-50-bottom">
-				<label class="section-label">Siteplan</label>
-				<h2 class="section-heading text-neutral-20 w-600"></h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical"></h6>
-			</div>
-		</div>
-	</div>
-	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="residential" id="siteplanToggleMasterplan" checked>
-	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="commercial" id="siteplanToggleFloorplan">
-	
-	<!-- Pair List -->
-	<div class="pair-list row">
-		<div class="siteplans pair-content masterplan carousel">
-			<div class="container">
-				
-				
-				<div class="siteplan radius-25 box-shadow-primary">
-					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="siteplans pair-content floorplan carousel">
-			<div class="container">
-				
-				
-				<div class="siteplan radius-25 box-shadow-primary">
-					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Pair List -->
-</section>
+
 <!-- End: Project Siteplan Section -->
 
 
@@ -598,142 +575,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Project Amenities Section -->
-<section id="project-amenities-section" class="project-amenities-section gap">
-	<div class="row">
-		<div class="container">
-			<div class="title columns small-12 text-center">
-				<label class="section-label">Amenities</label>
-				
-				
-			</div>
-			
-			<div class="row">
-				<div class="columns small-12 large-5 xlarge-4 xlarge-offset-1">
-					<div class="row">
-						
-					</div>
-				</div>
-				<div class="columns small-10 small-offset-1 large-6 xlarge-5">
-					
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Carousel -->
-	<div class="carousel gallery">
-		<div class="carousel-list">
-			
-		</div>
-		<div class="row">
-			<div class="carousel-controls container">
-				<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-				<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- End: Project Amenities Section -->
 
 
 
 <!-- Brochure Section -->
-<section id="" class="banner-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url(''); height: calc(var(--card)*1); width: 100%;">
-					<h6 class=""></h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- END: Brochure Section -->
 
 
 
 <!-- Location Section -->
-<style>
-	.location-section .places {}
-	.location-section .places label {
-		display: inline-flex;
-		align-items: center;
-		cursor: pointer;
-		line-height: 0.5;
-	}
-	.location-section .places label * { pointer-events: none; }
-	.location-section .places label .bx-minus { display: none; }
-	.location-section .places label .title { padding-left: var(--space-min) }
-	.location-section .places .place-list {
-		display: block;
-		width: 100%;
-		height: auto;
-		max-height: 0px;
-		overflow: clip;
-		transition: max-height var(--transition-speed) var(--transition-ease);
-		margin: var(--space-25) 0;
-		padding-left: calc(var(--space-25) * 1.5);
-	}
-	.location-section .places .place-list .place { white-space: nowrap; }
 
-	.location-section .places .places-radio:checked + label { color: var(--hue-primary); }
-	.location-section .places .places-radio:checked + label .bx-minus { display: inline-block; }
-	.location-section .places .places-radio:checked + label .bx-plus { display: none; }
-	.location-section .places .places-radio:checked ~ .place-list { max-height: 800px; }
-
-	.location-section .dotmatrix { display: none; }
-	@media( min-width: 500px ) {}
-	@media( min-width: 1000px ) {
-		.location-section .section-sub-heading { font-size: var(--h5); }
-		.location-section .dotmatrix {
-			display: block;
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			left: 25%;
-			width: calc(var(--card)/1.5);
-			opacity: 25%;
-			transform: translate(-25%, 175%);
-		}
-	}
-	@media( min-width: 1500px ) {
-		.location-section .dotmatrix {
-			transform: translate(-25%, 200%);
-			left: calc(25% + (var(--column-unit)/2)); 
-		}
-	}
-</style>
-
-
-
-<section id="location-section" class="location-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 xlarge-10 xlarge-offset-1 space-25-bottom">
-				<label tabindex="0" class="section-label text-uppercase">Location</label>
-				<h2 class="section-heading text-neutral-20 w-600"></h2>
-			</div>
-			<div class="columns small-12 large-4 xlarge-3 xlarge-offset-1">
-				<div class="row">
-					<div class="columns small-12 medium-5 large-12 space-50-top">
-						<h3 class="section-sub-heading h6 text-primary"></h3>
-						<p class="label space-50-top"></p>
-					</div>
-					<div class="columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-50-top">
-					
-					</div>
-				</div>
-			</div>
-			<div class="columns small-12 large-7 large-offset-1 xlarge-6 space-50-top">
-				<div class="google-map block card" style="position: relative; height: 0; padding-top: 100%;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin" style="border:0; width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
-		</div>
-	</div>
-</section>
 <!-- END: Location Section -->
 
 

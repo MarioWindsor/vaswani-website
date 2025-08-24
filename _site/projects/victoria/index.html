@@ -264,20 +264,6 @@
 
 
 
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
-
-
-
 <!-- Intro Banner Section -->
 <style>
 	.intro-banner-section {
@@ -290,6 +276,7 @@
 	}
 	.intro-banner-section .intro-video-wrapper {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
@@ -298,18 +285,38 @@
 		overflow: clip;
 		border-radius: 0;
 		transition: var(--transition-speed) var(--transition-ease);
+		box-shadow: 0;
 	}
 	.intro-banner-section .intro-video-wrapper .intro-video-width {
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 50%;
 		width: 100vw;
 		padding-top: 85vw;
 		transform: translateX(-50%);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.intro-banner-section .intro-video-wrapper .intro-video-width:after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--hue-dark);
+		opacity: 1;
+		mix-blend-mode: hard-light;
+		transition: opacity var(--transition-speed) var(--transition-ease);
 	}
 	.intro-banner-section .intro-video-wrapper .scroll {
 		pointer-events: none;
 		position: absolute;
+		z-index: 3;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
@@ -322,8 +329,46 @@
 	.intro-banner-section input:checked ~ .intro-video-wrapper {
 		width: var(--container-width);
 		border-radius: var(--space-25);
+		box-shadow: 
+			0 0 var(--border-width)  color-mix(in srgb, var(--hue-dark) 20%, transparent),
+			0 var(--border-width) calc(var(--space-min)*2) color-mix(in srgb, var(--hue-dark) 20%, transparent);
 	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .intro-video-width:after { opacity: 0; }
 	.intro-banner-section input:checked ~ .intro-video-wrapper .scroll {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .project-logo {
+		pointer-events: none;
+		display: block;
+		width: var(--card);
+		height: calc(var(--card)*.75);
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+		object-fit: contain;
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .project-logo {
+		opacity: 0;
+	}
+	.intro-banner-section .intro-video-wrapper .page-title {
+		display: inline-block;
+		position: absolute;
+		z-index: 3;
+		top: 30%;
+		left: 50%;
+		font-size: var(--h4);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		letter-spacing: calc(var(--p) * 0.05);
+		line-height: 1.25;
+		opacity: 1;
+		transition: opacity var(--transition-speed) var(--transition-ease);
+	}
+	.intro-banner-section input:checked ~ .intro-video-wrapper .page-title {
 		opacity: 0;
 	}
 	@media( min-width: 500px ) {
@@ -339,6 +384,21 @@
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 50vw;
 		}
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*1.5);
+			height: calc((var(--card)*1.5)*.75);
+			top: 40%;
+		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			font-size: var(--h3);
+			letter-spacing: calc(var(--p) * 0.1);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.intro-banner-section .intro-video-wrapper .project-logo {
+			width: calc(var(--card)*2);
+			height: calc((var(--card)*2)*.75);
+		}
 	}
 </style>
 
@@ -348,11 +408,16 @@
 	<div class="row">
 		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-video-wrapper">
-			<div class="intro-video-width fill-dark"></div>
+			<div class="intro-video-width fill-dark" style="background-image: url('media/fallback.jpg');">
+				
+			</div>
 			<div class="scroll">
 				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
 				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
+			
+				<h1 class="page-title w-500 text-uppercase text-light">Vaswani Victoria</h1>
+			
 		</div>
 	</div>
 </section>
@@ -383,176 +448,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Project Intro Section -->
-<section id="project-intro-section" class="project-intro-section gap">
-	<div class="row">
-		<div class="container">
-			<div class="title columns small-12 text-center">
-				<label class="section-label">Vaswani Victoria</label>
-				<h2 class="section-heading text-neutral-20 w-600">Whitefield's New Benchmark</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">Grade A Commercial Office Space</h6>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<!-- Carousel -->
-		<div class="carousel gallery big-picture">
-			<div class="carousel-list">
-				
-				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-				</div>
-				
-				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-				</div>
-				
-				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-				</div>
-				
-				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-				</div>
-				
-				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-				</div>
-				
-				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-				</div>
-				
-			</div>
-			<div class="row">
-				<div class="carousel-controls container">
-					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-				</div>
-			</div>
-		</div>
-		<!-- End: Carousel -->
-	</div>
-	<div class="project-intro row">
-		<div class="container">
-			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center space-125-top space-50-bottom">
-				<h6 class="sub-heading text-primary">Discover a life that blends sophistication with convenience. Embrace Urban Serenity. </h6>
-			</div>
-		</div>
-		<div class="container">
-			<div class="project-meta text-dark columns small-12 medium-6 large-5 large-offset-1 xlarge-4 xlarge-offset-2 space-50-bottom text-center">
-				
-				
-				<small class="metadata block">
-					<i class='bx bx-area p text-primary'></i>
-					<span>4890sqft Super Built-up Area</span>
-				</small>
-				
-				
-				<small class="metadata block">
-					<i class='bx bx-map p text-primary'></i>
-					<span>Xavier Layout, Victoria Road</span>
-				</small>
-				
-				
-				<h6 class="space-25-top">
-					<span class="text-neutral-40 w-600 text-uppercase">RERA Number</span>
-					<span class="label block">PRM/KA/RERA/1251/446/PR/180424/006808</span>
-				</h6>
-				
-			</div>
-			<div class="description columns small-12 medium-6 large-5 xlarge-4 text-center">
-				<p>Nestled in the heart of Whitefield, Vaswani Starlight offers world-class amenities, thoughtfully designed living spaces, and seamless connectivity to everything that matters. 
 
-This is truly Whitefield’s chosen space. Everything you need is just around the corner, whether it’s the vibrant social scene, thriving tech parks, or lush green surroundings.</p>
-			</div>
-		</div>
-	</div>
-</section>
 <!-- End: Project Intro Section -->
 
 
 
 <!-- Banner Section -->
 
-<section id="" class="banner-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('https://placeholdit.com/1200x800/F1F1F1/999999'); height: calc(var(--card)*1.5); width: 100%;">
-					<h6 class="top left">A Private Home Office with Every Unit</h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- End: Banner Section -->
 
 
 
 <!-- Project Siteplan Section -->
-<section id="project-siteplan-section" class="project-siteplan-section gap">
-	<div class="row">
-		<div class="container">
-			<div class="title columns small-12 text-center space-50-bottom">
-				<label class="section-label">Siteplan</label>
-				<h2 class="section-heading text-neutral-20 w-600">Discover Your Ideal Home</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">Discover a life that blends</h6>
-			</div>
-		</div>
-	</div>
-	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="residential" id="siteplanToggleMasterplan" checked>
-	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="commercial" id="siteplanToggleFloorplan">
-	
-	<!-- Pair Toggle -->
-	<div class="pair-toggle row space-100-bottom">
-		<div class="container text-center">
-			<div class="columns small-12 medium-6 large-4 xlarge-3 text-center">
-				<div class="pair-toggle-button inline space-25 fill-neutral-10 radius-round box-shadow-inset">
-					<label class="button text-uppercase radius-round space-75-horizontal" for="siteplanToggleMasterplan">Masterplan</label>
-					<label class="button text-uppercase radius-round space-75-horizontal" for="siteplanToggleFloorplan">Floorplan</label>
-					<span class="button button-bg text-uppercase radius-round space-75-horizontal"></span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Pair Toggle -->
-	
-	<!-- Pair List -->
-	<div class="pair-list row">
-		<div class="siteplans pair-content masterplan carousel">
-			<div class="container">
-				
-				
-				<div class="siteplan radius-25 box-shadow-primary">
-					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-		<div class="siteplans pair-content floorplan carousel">
-			<div class="container">
-				
-				
-					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
-					
-						<option value="https://placeholdit.com/1200x800/F1F1F1/999999">3BHK + Office A</option>
-					
-						<option value="https://placeholdit.com/1200x800/F1F1F1/999999">3BHK + Office B</option>
-					
-						<option value="https://placeholdit.com/1200x800/F1F1F1/999999">3BHK + Office C</option>
-					
-						<option value="https://placeholdit.com/1200x800/F1F1F1/999999">3BHK + Office D</option>
-					
-					</select>
-				
-				<div class="siteplan radius-25 box-shadow-primary">
-					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Pair List -->
-</section>
+
 <!-- End: Project Siteplan Section -->
 
 
@@ -667,364 +575,24 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 
 
 <!-- Project Amenities Section -->
-<section id="project-amenities-section" class="project-amenities-section gap">
-	<div class="row">
-		<div class="container">
-			<div class="title columns small-12 text-center">
-				<label class="section-label">Amenities</label>
-				<h2 class="section-heading text-neutral-20 w-600">Nebula : the Clubhouse</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">Limitless Moments. Endless Memories</h6>
-			</div>
-			
-			<div class="cover-image space-50-top">
-				<img class="radius-25 block" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-			<div class="row">
-				<div class="columns small-12 large-5 xlarge-4 xlarge-offset-1">
-					<div class="row">
-						
-						<div class="columns small-12 medium-10 medium-offset-1 large-12 large-offset-0 space-50-top">
-							<p class="p description">Podium level nebula clubhouse with 15+ curated indulgences. From world-class amenities to exclusive privileges at your doorstep, every detail is curated to elevate your lifestyle. Unwind with a few laps in the pool, or end your workday in a stellar manner at the clubhouse, Nebula.</p>
-						</div>
-						
-					</div>
-				</div>
-				<div class="columns small-10 small-offset-1 large-6 xlarge-5">
-					
-					
-					<ul class="amenities space-50-top">
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Air-conditioned Club House</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Gym</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Multipurpose Hall</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Indoor Games Room</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Outdoor Pickleball Court</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Indoor Squash Court</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Indoor Badminton Court</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Outdoor Multipurpose Court</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Outdoor Cricket Practice Net</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Jogging Track</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Kid’s Play Area</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Large Outdoor Swimming Pool</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Toddler’s Pool</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Pool Deck</span>
-						</li>
-						
-						<li class="amenity">
-							<img src="https://placeholdit.com/48x48/FFFFFF/999999" alt="">
-							<span>Landscaped Gardens & Walkways</span>
-						</li>
-						
-					</ul>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Carousel -->
-	<div class="carousel gallery">
-		<div class="carousel-list">
-			
-			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			
-		</div>
-		<div class="row">
-			<div class="carousel-controls container">
-				<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-				<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- End: Project Amenities Section -->
 
 
 
 <!-- Brochure Section -->
-<section id="" class="banner-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('https://placeholdit.com/1200x400/CCCCCC/999999'); height: calc(var(--card)*1); width: 100%;">
-					<h6 class=""></h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- END: Brochure Section -->
 
 
 
 <!-- Location Section -->
-<style>
-	.location-section .places {}
-	.location-section .places label {
-		display: inline-flex;
-		align-items: center;
-		cursor: pointer;
-		line-height: 0.5;
-	}
-	.location-section .places label * { pointer-events: none; }
-	.location-section .places label .bx-minus { display: none; }
-	.location-section .places label .title { padding-left: var(--space-min) }
-	.location-section .places .place-list {
-		display: block;
-		width: 100%;
-		height: auto;
-		max-height: 0px;
-		overflow: clip;
-		transition: max-height var(--transition-speed) var(--transition-ease);
-		margin: var(--space-25) 0;
-		padding-left: calc(var(--space-25) * 1.5);
-	}
-	.location-section .places .place-list .place { white-space: nowrap; }
 
-	.location-section .places .places-radio:checked + label { color: var(--hue-primary); }
-	.location-section .places .places-radio:checked + label .bx-minus { display: inline-block; }
-	.location-section .places .places-radio:checked + label .bx-plus { display: none; }
-	.location-section .places .places-radio:checked ~ .place-list { max-height: 800px; }
-
-	.location-section .dotmatrix { display: none; }
-	@media( min-width: 500px ) {}
-	@media( min-width: 1000px ) {
-		.location-section .section-sub-heading { font-size: var(--h5); }
-		.location-section .dotmatrix {
-			display: block;
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			left: 25%;
-			width: calc(var(--card)/1.5);
-			opacity: 25%;
-			transform: translate(-25%, 175%);
-		}
-	}
-	@media( min-width: 1500px ) {
-		.location-section .dotmatrix {
-			transform: translate(-25%, 200%);
-			left: calc(25% + (var(--column-unit)/2)); 
-		}
-	}
-</style>
-
-
-
-<section id="location-section" class="location-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 xlarge-10 xlarge-offset-1 space-25-bottom">
-				<label tabindex="0" class="section-label text-uppercase">Location</label>
-				<h2 class="section-heading text-neutral-20 w-600">Nestled in the heart of Whitefield</h2>
-			</div>
-			<div class="columns small-12 large-4 xlarge-3 xlarge-offset-1">
-				<div class="row">
-					<div class="columns small-12 medium-5 large-12 space-50-top">
-						<h3 class="section-sub-heading h6 text-primary">Everything you need is just around the corner</h3>
-						<p class="label space-50-top">From vibrant social scene, thriving tech parks, to lush green surroundings. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-50-top">
-					
-						<div class="places">
-							<input class="places-radio visuallyhidden" type="radio" id="schools" name="places-group" checked>
-							<label for="schools">
-								<i class='bx bx-plus h4 text-primary'></i>
-								<i class='bx bx-minus h4 text-primary'></i>
-								<h3 class="title">Schools</h3>
-							</label>
-							<div class="place-list">
-								
-								<p class="place">0.5 Km : The Deen’s Academy</p>
-								
-								<p class="place">2.9 Km : Whitefield Global</p>
-								
-								<p class="place">1.6 Km : Greenwood High Pre-school, Whitefield</p>
-								
-								<p class="place">7.0 Km : Ryan International School, Kundalahalli</p>
-								 
-							</div>
-						</div>
-					
-						<div class="places">
-							<input class="places-radio visuallyhidden" type="radio" id="hospitals" name="places-group" >
-							<label for="hospitals">
-								<i class='bx bx-plus h4 text-primary'></i>
-								<i class='bx bx-minus h4 text-primary'></i>
-								<h3 class="title">Hospitals</h3>
-							</label>
-							<div class="place-list">
-								
-								<p class="place">2.3 Km : Shri Sathya Sai Hospital</p>
-								
-								<p class="place">3.0 Km : Manipal Hospital Whitefield, ITPL</p>
-								
-								<p class="place">2.9 Km : Vydehi Hospital</p>
-								
-								<p class="place">2.8 Km : Aster Women & Children Hospital</p>
-								
-								<p class="place">2.6 Km : Cloud 9 Hospital</p>
-								 
-							</div>
-						</div>
-					
-						<div class="places">
-							<input class="places-radio visuallyhidden" type="radio" id="malls" name="places-group" >
-							<label for="malls">
-								<i class='bx bx-plus h4 text-primary'></i>
-								<i class='bx bx-minus h4 text-primary'></i>
-								<h3 class="title">Malls</h3>
-							</label>
-							<div class="place-list">
-								
-								<p class="place">3.2 Km : Nexus Shantiniketan Mall</p>
-								
-								<p class="place">2.5 Km : Park Square Mall</p>
-								
-								<p class="place">7.4 Km : Phoenix Market City</p>
-								 
-							</div>
-						</div>
-					
-						<div class="places">
-							<input class="places-radio visuallyhidden" type="radio" id="offices" name="places-group" >
-							<label for="offices">
-								<i class='bx bx-plus h4 text-primary'></i>
-								<i class='bx bx-minus h4 text-primary'></i>
-								<h3 class="title">Offices</h3>
-							</label>
-							<div class="place-list">
-								
-								<p class="place">2.4 Km : ITPL</p>
-								
-								<p class="place">3.7 Km : EPIP Zone</p>
-								
-								<p class="place"> 7.8 Km : ORR</p>
-								 
-							</div>
-						</div>
-					
-						<div class="places">
-							<input class="places-radio visuallyhidden" type="radio" id="metros" name="places-group" >
-							<label for="metros">
-								<i class='bx bx-plus h4 text-primary'></i>
-								<i class='bx bx-minus h4 text-primary'></i>
-								<h3 class="title">Metros</h3>
-							</label>
-							<div class="place-list">
-								
-								<p class="place">2.4 Km : Kadugodi Tree Park Station</p>
-								
-								<p class="place">2.3 Km : Pattandur Agrahara Station</p>
-								 
-							</div>
-						</div>
-					
-					</div>
-				</div>
-			</div>
-			<div class="columns small-12 large-7 large-offset-1 xlarge-6 space-50-top">
-				<div class="google-map block card" style="position: relative; height: 0; padding-top: 100%;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin" style="border:0; width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
-		</div>
-	</div>
-</section>
 <!-- END: Location Section -->
 
 
 
 <!-- Banner Section -->
-
-<section id="" class="banner-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('https://placeholdit.com/1200x800/F1F1F1/999999'); height: calc(var(--card)*1.5); width: 100%;">
-					<h6 class="top right">70% Green Spaces at Vaswani Starlight</h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <!-- End: Banner Section -->
 

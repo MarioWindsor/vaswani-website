@@ -3,7 +3,7 @@ tags:
   - projects
 date: 2009-01-01T18:57:00.000+05:30
 name: Pinnacle
-overview:
+metadata:
   prefix-name: true
   type: residential
   status: completed
