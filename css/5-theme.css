@@ -277,6 +277,12 @@ select {
 	border-color: var(--hue-secondary);
 }
 
+select.button {
+	background-image: url('/media/select-white.png');
+	background-size: auto 45%;
+	background-repeat: no-repeat;
+	background-position: right var(--p) center;
+}
 
 
 /*

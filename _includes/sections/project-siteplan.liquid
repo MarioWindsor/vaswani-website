@@ -10,7 +10,9 @@
 	</div>
 	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="residential" id="siteplanToggleMasterplan" checked>
 	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="commercial" id="siteplanToggleFloorplan">
+	{% comment %}
 	{% if siteplan.masterplan != blank and siteplan.floorplan != blank %}
+	{% endcomment %}
 	<!-- Pair Toggle -->
 	<div class="pair-toggle row space-100-bottom">
 		<div class="container text-center">
@@ -24,8 +26,11 @@
 		</div>
 	</div>
 	<!-- End: Pair Toggle -->
+	{% comment %}
 	{% endif %}
+	{% endcomment %}
 	<!-- Pair List -->
+	{% comment %}
 	<div class="pair-list row">
 		<div class="siteplans pair-content masterplan carousel">
 			<div class="container">
@@ -58,5 +63,6 @@
 			</div>
 		</div>
 	</div>
+	{% endcomment %}
 	<!-- End: Pair List -->
 </section>

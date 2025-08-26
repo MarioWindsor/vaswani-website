@@ -27,9 +27,24 @@
 	.location-section .places .places-radio:checked ~ .place-list { max-height: 800px; }
 
 	.location-section .dotmatrix { display: none; }
+
+	.location-section .google-map-embed {
+		position: relative;
+		height: 0;
+		padding-top: 100%;
+	}
+	.location-section .google-map-embed iframe {
+		border: 0;
+		width: 100% !important;
+		height: 100% !important;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 	@media( min-width: 500px ) {}
 	@media( min-width: 1000px ) {
-		.location-section .section-sub-heading { font-size: var(--h5); }
+		/*.location-section .section-sub-heading { font-size: var(--h5); }*/
 		.location-section .dotmatrix {
 			display: block;
 			position: absolute;
@@ -56,16 +71,23 @@
 		<div class="row">
 			<div class="columns small-12 xlarge-10 xlarge-offset-1 space-25-bottom">
 				<label tabindex="0" class="section-label text-uppercase">Location</label>
-				<h2 class="section-heading text-neutral-20 w-600">{{ location.heading }}</h2>
+				{% if location.heading != blank %}<h2 class="section-heading text-neutral-20 w-600">{{ location.heading }}</h2>{% endif %}
 			</div>
 			<div class="columns small-12 large-4 xlarge-3 xlarge-offset-1">
 				<div class="row">
+					{% if location.sub-heading != blank or location.map-link != blank %}
+						{% if location.places != blank %}
 					<div class="columns small-12 medium-5 large-12 space-50-top">
-						<h3 class="section-sub-heading h6 text-primary">{{ location.sub-heading }}</h3>
-						<p class="label space-50-top">{{ location.description | newline_to_br }}</p>
+						{% else %}
+					<div class="columns small-12 medium-10 large-12 space-50-top">
+						{% endif %}
+						<h3 class="section-sub-heading h6 text-primary space-50-bottom">{{ location.sub-heading }}</h3>
+						<a href="{{ location.map-link }}" target="_blank" class="button fill-dark">Open in Google Maps</a>
 					</div>
+					{% endif %}
+					{% if location.places != blank %}
 					<div class="columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-50-top">
-					{% for places in location.places %}
+						{% for places in location.places %}
 						<div class="places">
 							<input class="places-radio visuallyhidden" type="radio" id="{{ places.name | slugify }}" name="places-group" {% if forloop.index == 1 %}checked{% endif %}>
 							<label for="{{ places.name | slugify }}">
@@ -79,16 +101,19 @@
 								{% endfor %} 
 							</div>
 						</div>
-					{% endfor %}
+						{% endfor %}
 					</div>
+					{% endif %}
 				</div>
 			</div>
+			{% if location.map-embed != blank %}
 			<div class="columns small-12 large-7 large-offset-1 xlarge-6 space-50-top">
-				<div class="google-map block card" style="position: relative; height: 0; padding-top: 100%;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin" style="border:0; width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="google-map-embed block card">
+					{{ location.map-embed }}
 				</div>
 			</div>
 			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
+			{% endif %}
 		</div>
 	</div>
 </section>

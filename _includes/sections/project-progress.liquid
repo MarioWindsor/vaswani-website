@@ -1,0 +1,86 @@
+<style>
+.project-progress-section .project-progress {}
+.project-progress-section .project-progress .entry { display: none; }
+.project-progress-section .project-progress .entry-radio:checked + .entry { display: block; }
+</style>
+<section id="project-progress-section" class="project-progress-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 text-center space-50-bottom">
+				<label class="section-label">Progress</label>
+				<h2 class="section-heading text-neutral-20 w-600">{% if progress.heading != blank %}{{ progress.heading }}{% endif %}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{% if progress.sub-heading != blank %}{{ progress.sub-heading }}{% endif %}</h6>
+			</div>
+		</div>
+	</div>
+	{% if progress.entry != blank %}
+	<div class="row project-progress">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3">
+				<div class="title-toggle-button block space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<select class="button" name="" id="toggle-progress-entry">
+						{% for entry in progress.entry %}
+							<option value="{{ entry.title | slugify }}" {% if forloop.first == true %}selected{% endif %}>{{ entry.title }}</option>						
+						{% endfor %}
+					</select>
+				</div>
+			</div>
+		</div>
+		{% for entry in progress.entry %}
+		<input class="entry-radio visuallyhidden" type="radio" name="entry-radio-group" id="{{ entry.title | slugify }}" {% if forloop.first == true %}checked{% endif %}>
+		<div id="entry-{{ entry.title | slugify }}" class="entry {{ entry.title | slugify }}">
+			<!-- Carousel -->
+			{% if entry.gallery != blank %}
+			<div class="carousel gallery space-50-top">
+				<div class="carousel-list">
+					{% for gallery in entry.gallery %}
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+					</div>
+					{% endfor %}
+				</div>
+				<div class="row">
+					<div class="carousel-controls container">
+						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if entry.heading != blank or entry.description != blank %}
+			<div class="container text-center space-50-top">
+				<div class="columns small-12 medium-10 medium-offset-1 xlarge-8 xlarge-offset-2">
+					{% if entry.heading != blank %}<h6 class="heading text-primary space-50-top">{{ entry.heading }}</h6>{% endif %}
+					{% if entry.description != blank %}<p class="label description space-50-top">{{ entry.description | newline_to_br }}</p>{% endif %}
+				</div>
+			</div>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Find the Elements
+	const toggleProgressEntry = document.getElementById('toggle-progress-entry');
+
+	toggleProgressEntry.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+});
+</script>

@@ -117,8 +117,8 @@ collections:
             fields:
               - {dlabel: "Name", name: "name", widget: "string", }
               - { label: "Icon", name: "icon", widget: "image", choose_url: false }
-          - label: "Images"
-            name: "images"
+          - label: "Gallery"
+            name: "gallery"
             widget: "list"
             required: false
             minimize_collapsed: true
@@ -131,7 +131,7 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Background Image", name: "background", widget: "background", required: false, choose_url: false, hint: "Dimensions: 1200 x 400 pixels" }
+          - { label: "Background Image", name: "background", widget: "image", required: false, choose_url: false, hint: "Dimensions: 1200 x 400 pixels" }
           - { label: "PDF File", name: "pdf", widget: "file", required: false, choose_url: false }
       - label: "Location"
         name: "location"
@@ -140,8 +140,8 @@ collections:
         fields:
           - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
-          - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: "Map", name: "map", widget: "string", required: false, hint: 'Eg: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.907211381899!2d77.73506491144487!3d12.9777862872854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1754159728105!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' }
+          - { label: "Map Link", name: "map-link", widget: "string", required: false, hint: 'From Google Maps Eg: https://maps.app.goo.gl/PfUwVyD8C2xvM2GX7' }
+          - { label: "Map Embed", name: "map-embed", widget: "string", required: false, hint: 'Note: Remove height, width and style attributes. Eg: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' }
           - label: "Places Nearby"
             name: "places"
             widget: "list"
@@ -165,6 +165,7 @@ collections:
         collapsed: true
         fields:
           - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
           - label: "Entry"
             name: "entry"
             widget: "list"
@@ -175,8 +176,8 @@ collections:
               - { label: Title, name: title, widget: string, required: false, hint: "Eg: Feb 2025" }
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text", required: false }
-              - label: "Images"
-                name: "images"
+              - label: "Gallery"
+                name: "gallery"
                 widget: "list"
                 required: false
                 minimize_collapsed: true

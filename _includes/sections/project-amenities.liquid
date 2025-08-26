@@ -12,35 +12,50 @@
 			</div>
 			{% endif %}
 			<div class="row">
-				<div class="columns small-12 large-5 xlarge-4 xlarge-offset-1">
-					<div class="row">
-						{% if amenities.description != blank %}
-						<div class="columns small-12 medium-10 medium-offset-1 large-12 large-offset-0 space-50-top">
+				{% if amenities.description != blank and amenities.amenity != blank %}
+					<div class="columns small-12 medium-10 medium-offset-1 large-4 large-offset-0 xlarge-3 xlarge-offset-1 space-100-top">
+						<p class="p description">{{ amenities.description | newline_to_br }}</p>
+					</div>
+				{% else %} 
+					{% if amenities.description != blank %}
+						<div class="columns small-12 medium-10 medium-offset-1 xlarge-8 xlarge-offset-2 space-100-top">
 							<p class="p description">{{ amenities.description | newline_to_br }}</p>
 						</div>
-						{% endif %}
-					</div>
-				</div>
-				<div class="columns small-10 small-offset-1 large-6 xlarge-5">
-					{% assign amenity_count = amenities.amenity | size %}
-					{% if amenity_count > 1 %}
-					<ul class="amenities space-50-top">
-						{% for amenity in amenities.amenity %}
-						<li class="amenity">
-							<img src="{{ amenity.icon }}" alt="">
-							<span>{{ amenity.name }}</span>
-						</li>
-						{% endfor %}
-					</ul>
 					{% endif %}
-				</div>
+				{% endif %}
+				{% if amenities.amenity != blank and amenities.description != blank %}
+					<div class="columns small-12 medium-10 medium-offset-1 large-7 large-offset-1 xlarge-6 space-100-top">
+						<ul class="amenities">
+							{% for amenity in amenities.amenity %}
+							<li class="amenity space-25-bottom">
+								<img class="inline-middle" src="{{ amenity.icon }}" alt="">
+								<span class="inline-middle">{{ amenity.name }}</span>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% else %} 
+					{% if amenities.amenity != blank %}
+						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 space-100-top">
+							<ul class="amenities">
+								{% for amenity in amenities.amenity %}
+								<li class="amenity space-25-bottom">
+									<img class="inline-middle" src="{{ amenity.icon }}" alt="">
+									<span class="inline-middle">{{ amenity.name }}</span>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endif %}
+				{% endif %}
 			</div>
 		</div>
 	</div>
 	<!-- Carousel -->
-	<div class="carousel gallery">
+	{% if amenities.gallery != blank %}
+	<div class="carousel gallery space-50-top">
 		<div class="carousel-list">
-			{% for gallery in amenities.images %}
+			{% for gallery in amenities.gallery %}
 			<div class="carousel-list-item">
 				<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
 			</div>
@@ -53,4 +68,5 @@
 			</div>
 		</div>
 	</div>
+	{% endif %}
 </section>

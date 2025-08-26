@@ -1,9 +1,15 @@
-<section id="" class="banner-section gap">
+<section id="" class="project-brochure-section gap">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
-				<div class="banner img-cover radius-25 box-shadow" style="background-image: url('{{ brochure.background }}'); height: calc(var(--card)*1); width: 100%;">
-					<h6 class="{{ banner.position }}">{{ banner.heading }}</h6>
+				<div class="project-brochure img-cover radius-25 box-shadow" style="background-image: url('{{ brochure.background }}'); background-position: 90% 50%; height: calc(var(--card)*1.5); width: 100%;">
+					<div class="heading text-dark">
+						<h5 class="w-600">Want More Details?</h5>
+						<h6 class="space-50-bottom">Download the PDF Brochure.</h6>
+					</div>
+					<div class="cta">
+						<a href="{{ brochure.pdf }}" target="_blank" class="button">Download Now</a>
+					</div>
 				</div>
 			</div>
 		</div>

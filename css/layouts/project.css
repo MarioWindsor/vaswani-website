@@ -98,12 +98,12 @@
 	justify-content: flex-start;
 }
 .project-amenities-section .amenity img {
-	width: var(--h4);
+	width: var(--h3);
 }
 .project-amenities-section .amenity span {
 	display: inline-block;
-	font-size: var(--label);
-	padding: var(--space-min);
+	font-size: var(--p);
+	padding-left: var(--space-25);
 }
 @media( min-width:  500px ) {
 	.project-amenities-section .amenities {
@@ -111,7 +111,7 @@
 	}
 }
 @media( min-width: 1000px ) {
-	.project-amenities-section .description { text-align: left; }
+	.project-amenities-section .columns.large-offset-0 .description { text-align: left; }
 }
 
 
@@ -177,4 +177,38 @@
 		bottom: calc(var(--space-250) * -1);
 		filter: blur(var(--space-200));
 	}
+}
+
+
+
+/* -- Project Brochure Section -- */
+.project-brochure-section .project-brochure {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: clip;
+	padding: var(--space-100);
+}
+@media( min-width:  500px ) {
+	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h4); }
+	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h5); }
+}
+@media( min-width:  1000px ) {
+	.project-brochure-section .project-brochure {
+		padding: var(--space-150);
+		justify-content: center;
+	}
+	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h3); }
+	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h4); }
+	.project-brochure-section .project-brochure .cta .button {
+		transform: scale(1.125);
+		transform-origin: top left;
+	}
+}
+@media( min-width:  1500px ) {
+	.project-brochure-section .project-brochure {
+		padding: var(--space-200);
+	}
+	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h2); }
+	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h3); }
 }
