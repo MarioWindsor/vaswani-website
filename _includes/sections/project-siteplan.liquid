@@ -1,3 +1,8 @@
+<style>
+.project-siteplan-section .project-siteplan {}
+/*.project-siteplan-section .project-siteplan .siteplan { display: none; }*/
+/*.project-siteplan-section .project-siteplan .siteplan-radio:checked + .siteplan { display: block; }*/
+</style>
 <section id="project-siteplan-section" class="project-siteplan-section gap">
 	<div class="row">
 		<div class="container">
@@ -10,9 +15,7 @@
 	</div>
 	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="residential" id="siteplanToggleMasterplan" checked>
 	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="commercial" id="siteplanToggleFloorplan">
-	{% comment %}
 	{% if siteplan.masterplan != blank and siteplan.floorplan != blank %}
-	{% endcomment %}
 	<!-- Pair Toggle -->
 	<div class="pair-toggle row space-100-bottom">
 		<div class="container text-center">
@@ -26,43 +29,92 @@
 		</div>
 	</div>
 	<!-- End: Pair Toggle -->
-	{% comment %}
 	{% endif %}
-	{% endcomment %}
 	<!-- Pair List -->
-	{% comment %}
 	<div class="pair-list row">
-		<div class="siteplans pair-content masterplan carousel">
+		<div class="project-siteplan pair-content masterplan carousel">
 			<div class="container">
 				{% assign masterplan_count = siteplan.masterplan | size %}
 				{% if masterplan_count > 1 %}
-					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
+					<select class="select-siteplan button fill-dark box-shadow" id="selectMasterplan">
 					{% for plan in siteplan.masterplan %}
-						<option value="{{ plan.image }}">{{ plan.title }}</option>
+						<option value="masterplan-{{ plan.title | slugify }}">{{ plan.title }}</option>
 					{% endfor %}
 					</select>
 				{% endif %}
-				<div class="siteplan radius-25 box-shadow-primary">
-					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
+				{% for siteplan in siteplan.masterplan %}
+				<input class="siteplan-radio visuallyhidden" type="radio" name="masterplan-radio-group" id="masterplan-{{ siteplan.title | slugify }}" {% if forloop.first == true %}checked{% endif %}>
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					{% comment %}
+						<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
+					{% endcomment %}
+					<img class="block" src="{{ siteplan.image }}" alt="">
 				</div>
+				{% endfor %}
 			</div>
 		</div>
-		<div class="siteplans pair-content floorplan carousel">
+		<div class="project-siteplan pair-content floorplan carousel">
 			<div class="container">
 				{% assign floorplan_count = siteplan.floorplan | size %}
 				{% if floorplan_count > 1 %}
+					<small class="select-siteplan-label text-uppercase text-light w-600">Pick an Option</small>
 					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
 					{% for plan in siteplan.floorplan %}
-						<option value="{{ plan.image }}">{{ plan.title }}</option>
+						<option value="floorplan-{{ plan.title | slugify }}">{{ plan.title }}</option>
 					{% endfor %}
 					</select>
 				{% endif %}
-				<div class="siteplan radius-25 box-shadow-primary">
-					<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
+				{% for siteplan in siteplan.floorplan %}
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-{{ siteplan.title | slugify }}" {% if forloop.first == true %}checked{% endif %}>
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					{% comment %}
+						<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
+					{% endcomment %}
+					<img class="block" src="{{ siteplan.image }}" alt="">
 				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
-	{% endcomment %}
 	<!-- End: Pair List -->
 </section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Find the Elements
+	const toggleFloorplan = document.getElementById('selectFloorplan');
+	const toggleMasterplan = document.getElementById('selectMasterplan');
+
+	toggleFloorplan.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+
+	toggleMasterplan.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+});
+</script>

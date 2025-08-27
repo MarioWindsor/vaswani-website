@@ -411,7 +411,7 @@
 			<div class="intro-video-width fill-dark" style="">
 				
 				<div class="video-embed-cover">
-					<iframe class="" src="_https://www.youtube-nocookie.com/embed/3OyRc5eczbc?playlist=3OyRc5eczbc&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe class="" src="https://www.youtube-nocookie.com/embed/3OyRc5eczbc?playlist=3OyRc5eczbc&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 				
 			</div>
@@ -582,6 +582,11 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 
 <!-- Project Siteplan Section -->
 
+<style>
+.project-siteplan-section .project-siteplan {}
+/*.project-siteplan-section .project-siteplan .siteplan { display: none; }*/
+/*.project-siteplan-section .project-siteplan .siteplan-radio:checked + .siteplan { display: block; }*/
+</style>
 <section id="project-siteplan-section" class="project-siteplan-section gap">
 	<div class="row">
 		<div class="container">
@@ -610,9 +615,91 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 	<!-- End: Pair Toggle -->
 	
 	<!-- Pair List -->
-	
+	<div class="pair-list row">
+		<div class="project-siteplan pair-content masterplan carousel">
+			<div class="container">
+				
+				
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="masterplan-radio-group" id="masterplan-masterplan" checked>
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/image.png" alt="">
+				</div>
+				
+			</div>
+		</div>
+		<div class="project-siteplan pair-content floorplan carousel">
+			<div class="container">
+				
+				
+					<small class="select-siteplan-label text-uppercase text-light w-600">Pick an Option</small>
+					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
+					
+						<option value="floorplan-3bhk-type-1">3BHK Type 1</option>
+					
+						<option value="floorplan-4bhk-home-office-type-2">4BHK + Home Office Type 2</option>
+					
+					</select>
+				
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-3bhk-type-1" checked>
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/image.png" alt="">
+				</div>
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-4bhk-home-office-type-2" >
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/image.png" alt="">
+				</div>
+				
+			</div>
+		</div>
+	</div>
 	<!-- End: Pair List -->
 </section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Find the Elements
+	const toggleFloorplan = document.getElementById('selectFloorplan');
+	const toggleMasterplan = document.getElementById('selectMasterplan');
+
+	toggleFloorplan.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+
+	toggleMasterplan.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+});
+</script>
 
 <!-- End: Project Siteplan Section -->
 
@@ -1132,11 +1219,6 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 
 <!-- Project Progress Section -->
 
-<style>
-.project-progress-section .project-progress {}
-.project-progress-section .project-progress .entry { display: none; }
-.project-progress-section .project-progress .entry-radio:checked + .entry { display: block; }
-</style>
 <section id="project-progress-section" class="project-progress-section gap">
 	<div class="row">
 		<div class="container">

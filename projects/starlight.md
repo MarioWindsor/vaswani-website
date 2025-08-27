@@ -41,6 +41,11 @@ siteplan:
   masterplan:
     - title: Masterplan
       image: /media/uploads/image.png
+  floorplan:
+    - title: 3BHK Type 1
+      image: /media/uploads/image.png
+    - image: /media/uploads/image.png
+      title: 4BHK + Home Office Type 2
 amenities:
   cover-image: /media/uploads/starlight_pool_stock.png
   heading: "Nebula : the Clubhouse"
