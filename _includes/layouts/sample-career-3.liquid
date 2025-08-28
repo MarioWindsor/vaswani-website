@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Vaswani Group</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+        :root {
+            --primary-font: 'Poppins', sans-serif;
+            --dark-color: #1a1a1a;
+            --light-color: #f5f5f5;
+            --accent-color: #d4af37;
+            --section-bg: #e8e8e8;
+        }
+
+        body {
+            font-family: var(--primary-font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--primary-font);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        h1 { font-size: clamp(2.5rem, 8vw, 6rem); line-height: 0.9; margin-bottom: 1rem; }
+        h2 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; }
+        h3 { font-size: clamp(1.5rem, 4vw, 3rem); font-weight: 700; }
+        p { font-size: clamp(0.9rem, 1.5vw, 1.1rem); font-weight: 400; max-width: 800px; margin: 1rem 0; }
+        
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzB8MHwxfHNlYXJjaHwxNXx8YmFuZ2Fsb3JlJTIwY2l0eXxlbnwwfHx8fDE3MTcwMDM2MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-weight: 900;
+            letter-spacing: -2px;
+        }
+
+        .section {
+            padding: 6rem 0;
+        }
+        
+        .section.alt-bg {
+            background-color: var(--section-bg);
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+            text-align: left;
+        }
+
+        @media (min-width: 768px) {
+            .grid-section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .role-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .role-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .grid-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .cta-section {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            text-decoration: none;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1 class="hero-title">YOUR JOURNEY IN CREATING. OUR LEGACY IN BUILDING.</h1>
+    </div>
+
+    <div class="section container">
+        <h2 style="text-align: center;">Our Foundation We Grow On</h2>
+        <div class="grid-section" style="margin-top: 4rem;">
+            <div class="content-left">
+                <h3>Our People are Our Strength</h3>
+                <p>At our core, we are a family of visionaries and craftsmen. We believe a company is only as strong as its team, nurturing a culture built on **trust, respect, and collaboration** where every individual is valued and empowered to grow.</p>
+            </div>
+            <div class="image-right">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzB8MHwxfHNlYXJjaHwzfHxjb2xsYWJvcmF0aW9uJTIwaW5ub3ZhdGlvbnxlbnwwfHx8fDE3MTcwMDM2MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Team members collaborating and innovating" class="grid-image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="section alt-bg">
+        <div class="container">
+            <div class="grid-section">
+                <div class="content-left">
+                    <h3>The Art of Continuous Learning</h3>
+                    <p>In a fast-paced industry, we stay ahead by constantly learning, exploring new ideas, and mentoring one another. With us, you'll find a place to continuously refine your craft, because we believe every day is an opportunity to get a little better.</p>
+                </div>
+                <div class="image-right">
+                    <img src="https://images.unsplash.com/photo-1522204523234-8729aa6e993f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzB8MHwxfHNlYXJjaHwyfHxjb250aW51b3VzJTIwbGVhcm5pbmclMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzE3MDAzNjM2fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Professional in a training program, showing growth" class="grid-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section container">
+        <div class="grid-section">
+            <div class="content-left">
+                <h3>Where Integrity is Everything</h3>
+                <p>We are defined by the spaces we create and the values we hold. Our work is a quiet promise of **honesty, integrity, and ethics**, which ensures our legacy is one that will be admired for generations to come.</p>
+            </div>
+            <div class="image-right">
+                <img src="https://images.unsplash.com/photo-1520607162513-7707595b413f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzB8MHwxfHNlYXJjaHwxfHxtZWV0aW5nJTIwaW50ZWdyaXR5JTIwYW5kJTIwZXRoaWNzfGVufDB8fHx8MTcxNzAwMzYzNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Professionals discussing integrity and ethics" class="grid-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="section alt-bg">
+        <div class="container">
+            <h2 style="text-align: center;">Explore Potential Opportunities</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">We have a place for those who are passionate about their craft. Whether you're a seasoned professional or just starting your journey, explore how you can contribute to our vision.</p>
+            
+            <div class="roles-grid">
+                <div class="role-card">
+                    <h4>The Architects of Our Future</h4>
+                    <p>For those who dream in blueprints and see beauty in detail. Come shape our award-winning designs and help us create spaces that inspire awe.</p>
+                </div>
+                <div class="role-card">
+                    <h4>The Builders of Our Vision</h4>
+                    <p>If you’re passionate about bringing a vision to life, this is your path. Join us in the meticulous, day-to-day work of turning dreams into tangible reality.</p>
+                </div>
+                <div class="role-card">
+                    <h4>The Voices of Our Brand</h4>
+                    <p>For those who have a knack for storytelling. Help us share the magic of a Vaswani home with the world, connecting with people and helping them begin their journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2 style="color:white; font-weight: 900;">Ready to begin your story?</h2>
+            <p style="color:rgba(255,255,255,0.8); max-width:600px; margin: 1rem auto 0;">We're not just looking for an employee; we're looking for a partner in our journey. Let's begin a conversation about where your story fits into ours.</p>
+            <a href="mailto:careers@vaswanigroup.com" class="cta-button">Send Your Resume</a>
+        </div>
+    </div>
+
+</body>
+</html>s

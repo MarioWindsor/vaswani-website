@@ -23,9 +23,77 @@
 
 
 
-<!-- Contact Form Section -->
-{% include 'sections/contact-form.liquid' %}
-<!-- End: Contact Form Section -->
+<style>
+	.careers-section .careers {
+		display: grid;
+		gap: var(--space-50);
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.careers-section .careers .career {
+
+	}
+	@media( min-width: 500px ) {
+		.careers-section .careers {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	@media( min-width: 1000px ) {
+		.careers-section .careers {
+			text-align: left;
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+</style>
+<!-- Careers Section -->
+<section id="careers-section" class="careers-section gap">
+	<div class="container">
+		<div class="row">
+			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
+				<label class="section-label">Join Us</label>
+				<h2 class="section-heading text-neutral-20 w-600">Our People are Our Strength</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">At our core, we are a family of visionaries and craftsmen.</h6>
+				<p class="description space-25-top">We believe a company is only as strong as its team, nurturing a culture built on trust, respect, and collaboration — where every individual is valued and empowered to grow.</p>
+			</div>
+		</div>
+		<div class="opportunities row space-100-top">
+			<div class="columns small-12 text-center space-100-bottom">
+				<label class="section-label">Explore Opportunities</label>
+			</div>
+			<div class="columns small-12 large-6 xlarge-5 xlarge-offset-1 space-50-bottom">
+				<img class="block radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+			</div>
+			<div class="columns small-12 large-5 large-offset-1 xlarge-4 text-center">
+				<div class="row careers">
+					<div class="career card space-50">
+						<h5 class="text-neutral-50">Architects of Our Future</h5>
+						<small class="block w-600 text-primary">Roles: Architects, Design Managers.</small>
+						<p class="label space-25-top">For those who dream in blueprints and see beauty in detail. Come shape our award-winning designs and help us create spaces that inspire awe.</p>
+					</div>
+					<div class="career card space-50">
+						<h5 class="text-neutral-50">Builders of Our Vision</h5>
+						<small class="block w-600 text-primary">Roles: Project Managers, Engineers.</small>
+						<p class="label space-25-top">If you’re passionate about bringing a vision to life, this is your path. Join us in the meticulous, day-to-day work of turning dreams into tangible reality.</p>
+					</div>
+					<div class="career card space-50">
+						<h5 class="text-neutral-50">Voices of Our Brand</h5>
+						<small class="block w-600 text-primary">Roles: Marketing Specialists, Sales Executives.</small>
+						<p class="label space-25-top">For those who have a knack for storytelling. Help us share the magic of a Vaswani home with the world, connecting with people and helping them begin their journey.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
+				<p class="space-150-top">We have a place for those who are passionate about their craft. Whether you're a seasoned professional or just starting your journey, explore how you can contribute to our vision.</p>
+
+				<label class="section-label space-50-top">send in your resume to</label>
+				<a class="button w-500" href="mailto: careers@vaswanigroup.com" style="text-transform: none;">careers@vaswanigroup.com</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Careers Section -->
 
 
 

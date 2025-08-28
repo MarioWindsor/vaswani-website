@@ -1,0 +1,32 @@
+<style>
+	.page-content {}
+	.page-content h1 { font-size: var(--h2); }
+	.page-content h2 { font-size: var(--h3); }
+	.page-content h3 { font-size: var(--h4); }
+	.page-content h4 { font-size: var(--h5); }
+	.page-content h5 { font-size: var(--h6); }
+	.page-content h6 { font-size: var(--p); }
+	.page-content p  { font-size: var(--p); }
+	.page-content label { font-size: var(--label); }
+	.page-content small { font-size: var(--small); }
+	.page-content  h1, .page-content  h2, .page-content  h3, .page-content  h4, .page-content  h5, .page-content  h6 {
+		font-weight: 600;
+		padding: var(--space-25) 0;
+	}
+	.page-content  p {
+		padding: var(--space-25) 0;
+	}
+	.page-content  hr {
+		margin: var(--space-25) 0;
+	}
+</style>
+<section id="page-content-section" class="page-content-section gap">
+	<div class="container">
+		<div class="row">
+			<!-- <div class="page-content columns small-12 medium-10 xlarge-8 medium-offset-1 xlarge-offset-2"> -->
+			<div class="page-content columns small-12 large-10 large-offset-1">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</section>

@@ -161,6 +161,8 @@
 
 ## Careers Page
 ===============
+- [ ] Add Image
+- [ ] Add Dot Matrix With the image
 
 ## RERA Disclaimer
 ===============

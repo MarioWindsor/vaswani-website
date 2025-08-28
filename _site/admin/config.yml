@@ -319,6 +319,25 @@ collections:
       - { label: "Award Title", name: "title", widget: "string" }
       - { label: "Awarded By", name: "awarder", widget: "string" }
       - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "csr"
+        label: "CSR"
+        file: "csr.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Corporate Social Responsibility"}
+          - { label: "Layout", name: "layout", widget: "string", default: "layouts/csr.liquid" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "home"
+        label: "Home"
+        file: "_data/home.json"
+        fields:
+          - { label: "Intro Video YouTube ID", name: "introvideoid", widget: "string" }
+          - { label: "Brand Video YouTube ID", name: "brandvideoid", widget: "string" }
+          - { label: "Helpdesk Timing", name: "helpdesktiming", widget: "string" }
+
+
   - name: "settings"
     label: "Settings"
     files:
@@ -333,11 +352,4 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Path", name: "path", widget: "string" }
-      - name: "home"
-        label: "Home Page"
-        file: "_data/home.json"
-        fields:
-          - { label: "Intro Video YouTube ID", name: "introvideoid", widget: "string" }
-          - { label: "Brand Video YouTube ID", name: "brandvideoid", widget: "string" }
-          - { label: "Helpdesk Timing", name: "helpdesktiming", widget: "string" }
 

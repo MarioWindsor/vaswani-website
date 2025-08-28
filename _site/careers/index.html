@@ -378,112 +378,77 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-<!-- Contact Form Section -->
 <style>
-	.contact-form-section .form {
+	.careers-section .careers {
 		display: grid;
-		gap: var(--small);
+		gap: var(--space-50);
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.contact-form-section .dotmatrix { display: none; }
+	.careers-section .careers .career {
+
+	}
 	@media( min-width: 500px ) {
-		.contact-form-section .or-message {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			padding-bottom: var(--space-100);
-		}
-		.contact-form-section .dotmatrix {
-			display: block;
-			position: absolute;
-			z-index: -1;
-			bottom: var(--space-200);
-			left: 25%;
-			width: calc(var(--card)/1.5);
-			opacity: 66.666%;
-			transform: translate(-50%, -75%);
+		.careers-section .careers {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 	@media( min-width: 1000px ) {
-		.contact-form-section .form { grid-template-columns: repeat(2, 1fr); }
-		.contact-form-section .form .form-input.span-row { grid-column: 1 / -1; }
-		.contact-form-section .dotmatrix { transform: translate(-25%, -25%); }
+		.careers-section .careers {
+			text-align: left;
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
-	@media( min-width: 1500px ) { .contact-form-section .dotmatrix { left: calc(25% + (var(--column-unit)/2)); } }
+
 </style>
-
-
-
-<section id="contact-form-section" class="contact-form-section gap">
+<!-- Careers Section -->
+<section id="careers-section" class="careers-section gap">
 	<div class="container">
 		<div class="row">
-			<div class="columns small-12 xlarge-10 xlarge-offset-1">
-				<label class="section-label text-uppercase">Get in Touch</label>
-				<h2 class="section-heading text-neutral-20 w-600 space-50-bottom">Exceptional Living Begins Here</h2>
+			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
+				<label class="section-label">Join Us</label>
+				<h2 class="section-heading text-neutral-20 w-600">Our People are Our Strength</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">At our core, we are a family of visionaries and craftsmen.</h6>
+				<p class="description space-25-top">We believe a company is only as strong as its team, nurturing a culture built on trust, respect, and collaboration — where every individual is valued and empowered to grow.</p>
 			</div>
-			<div class="columns small-12 space-50-bottom medium-4 xlarge-3 xlarge-offset-1">
-				<p class="h6">Provide your details, and our expert advisors will connect with you to tailor your next steps.</p>
+		</div>
+		<div class="opportunities row space-100-top">
+			<div class="columns small-12 text-center space-100-bottom">
+				<label class="section-label">Explore Opportunities</label>
 			</div>
-			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6">
-				<div class="form card row space-50">
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Full Name *</span>
-							<input class="input-field" type="text">
-
-						</label>
+			<div class="columns small-12 large-6 xlarge-5 xlarge-offset-1 space-50-bottom">
+				<img class="block radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+			</div>
+			<div class="columns small-12 large-5 large-offset-1 xlarge-4 text-center">
+				<div class="row careers">
+					<div class="career card space-50">
+						<h5 class="text-neutral-50">Architects of Our Future</h5>
+						<small class="block w-600 text-primary">Roles: Architects, Design Managers.</small>
+						<p class="label space-25-top">For those who dream in blueprints and see beauty in detail. Come shape our award-winning designs and help us create spaces that inspire awe.</p>
 					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Email Id *</span>
-							<input class="input-field" type="text">
-						</label>
+					<div class="career card space-50">
+						<h5 class="text-neutral-50">Builders of Our Vision</h5>
+						<small class="block w-600 text-primary">Roles: Project Managers, Engineers.</small>
+						<p class="label space-25-top">If you’re passionate about bringing a vision to life, this is your path. Join us in the meticulous, day-to-day work of turning dreams into tangible reality.</p>
 					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Phone Number *</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">I’M Interested In</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">City</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">How Did You Find Us ?</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input span-row">
-						<label for="">
-							<span class="input-label space-min block">Your Requirement</span>
-							<textarea class="input-field" name="" id=""></textarea>
-						</label>
-					</div>
-					<div class="form-input">
-						<button class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
+					<div class="career card space-50">
+						<h5 class="text-neutral-50">Voices of Our Brand</h5>
+						<small class="block w-600 text-primary">Roles: Marketing Specialists, Sales Executives.</small>
+						<p class="label space-25-top">For those who have a knack for storytelling. Help us share the magic of a Vaswani home with the world, connecting with people and helping them begin their journey.</p>
 					</div>
 				</div>
 			</div>
-			<div class="columns or-message small-12 space-50-top medium-4 xlarge-3 xlarge-offset-1">
-				<span class="h4 text-primary">OR</span>
-				<p class="h6">Call our Help Desk <br>between 10am to 7pm IST</p>
-				<a class="h4 text-primary" href="tel:+918747987479">+91-<strong>8747987479</strong></a>
+		</div>
+		<div class="row">
+			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
+				<p class="space-150-top">We have a place for those who are passionate about their craft. Whether you're a seasoned professional or just starting your journey, explore how you can contribute to our vision.</p>
+
+				<label class="section-label space-50-top">send in your resume to</label>
+				<a class="button w-500" href="mailto: careers@vaswanigroup.com" style="text-transform: none;">careers@vaswanigroup.com</a>
 			</div>
-			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
 		</div>
 	</div>
 </section>
-<!-- End: Contact Form Section -->
+<!-- End: Careers Section -->
 
 
 
