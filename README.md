@@ -111,7 +111,7 @@
 
 ## Home Page
 ============
-- [ ] City Selector : Remember Selection : Session Variable
+- [x] City Selector : Remember Selection : Session Variable
 
 - [ ] Menu : Main Nav : Add some image/graphic in the empty space area.
 - [ ] Intro Video Banner Section : CMSify Video Embed with Image Fallback
@@ -122,53 +122,82 @@
 - [ ] Join Newsletter Section : Form Capture
 - [ ] Join Newsletter Section : ERP Integration
 - [ ] Project Listing Section [Completed] : Gallery Image/s : Content
-- [ ] CSR Excerpt Section : Create Link Page
-- [ ] NRI Excerpt Section : Create Link Page
-- [ ] Blog Section : Create Blog Listing Page
-- [ ] Blog Section : Create Single Blog Template
+- [x] CSR Excerpt Section : Create Link Page
+- [x] NRI Excerpt Section : Create Link Page
+- [x] Blog Section : Create Blog Listing Page
+- [x] Blog Section : Create Single Blog Template
 - [ ] Blog Section : Add Content
 - [ ] Footer Section : Add Social Links (via CMS)
 
 
 ## Project Page
 ===============
-- [ ] Feature Banner Section : CSS + CMSify
+- [x] Feature Banner Section : CSS + CMSify
+- [x] Siteplan Section : Basic + CMS
+- [x] Amenities Section : Cover Image + Icons + Gallery
+- [x] Brochure Section : CSS + CMSify
+- [x] Location Section : CMSify Map Embed
 - [ ] Siteplan Section : CMS + Leaflet JS
-- [ ] Amenities Section : Cover Image + Icons + Gallery
-- [ ] Brochure Section : CSS + CMSify
 - [ ] Brochure Section : Form Capture
 - [ ] Brochure Section : ERP Integration
-- [ ] Location Section : CMSify Map Embed
+- [!] Migrate All Content
 
 
 ## About Page
 ===============
+- [ ] Title Banner Bg Image
+- [ ] SEO Title & Description + CMS
+- [-] Done
+- [ ] Leadership Images
+- [ ] About Vaswani Legacy Video
 
 ## Contact Page
 ===============
+- [ ] Title Banner Bg Image
+- [ ] SEO Title & Description + CMS
+- [-] Done
 
 ## Blog Page
 ===============
+- [ ] Title Banner Bg Image
+- [ ] SEO Title & Description + CMS
+- [-] Done
+- [!] Migrate All Content
+- [ ] Pagination
 
 ## NRI Page
 ===============
+- [ ] Title Banner Bg Image
+- [ ] SEO Title & Description + CMS
+- [-] Done
 
 ## CSR Page
 ===============
+- [ ] Title Banner Bg Image
+- [ ] SEO Title & Description + CMS
+- [-] Done
 
 ## Awards Page
 ===============
+- [ ] Title Banner Bg Image
+- [ ] SEO Title & Description + CMS
+- [-] Done
+- [ ] Single Awards View
 
 ## Careers Page
 ===============
-- [ ] Add Image
-- [ ] Add Dot Matrix With the image
+- [ ] Title Banner Bg Image
+- [-] Done
 
 ## RERA Disclaimer
 ===============
+- [ ] Title Banner Bg Image
+- [-] Done
 
 ## Privacy Policy
 ===============
+- [ ] Title Banner Bg Image
+- [-] Done
 
 ## Channel Partner Hub
 ===============

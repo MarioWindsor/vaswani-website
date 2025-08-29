@@ -262,20 +262,6 @@
 
 
 
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
-
-
-
 <!-- Title Banner Section -->
 <style>
 	.title-banner-section {
@@ -378,113 +364,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-<!-- Contact Form Section -->
+<!-- Page Content -->
 <style>
-	.contact-form-section .form {
-		display: grid;
-		gap: var(--small);
-		grid-template-columns: repeat(1, 1fr);
+	.page-content {}
+	.page-content h1 { font-size: var(--h2); }
+	.page-content h2 { font-size: var(--h3); }
+	.page-content h3 { font-size: var(--h4); }
+	.page-content h4 { font-size: var(--h5); }
+	.page-content h5 { font-size: var(--h6); }
+	.page-content h6 { font-size: var(--p); }
+	.page-content p  { font-size: var(--p); }
+	.page-content label { font-size: var(--label); }
+	.page-content small { font-size: var(--small); }
+	.page-content  h1, .page-content  h2, .page-content  h3, .page-content  h4, .page-content  h5, .page-content  h6 {
+		font-weight: 600;
+		padding: var(--space-25) 0;
 	}
-	.contact-form-section .dotmatrix { display: none; }
-	@media( min-width: 500px ) {
-		.contact-form-section .or-message {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			padding-bottom: var(--space-100);
-		}
-		.contact-form-section .dotmatrix {
-			display: block;
-			position: absolute;
-			z-index: -1;
-			bottom: var(--space-200);
-			left: 25%;
-			width: calc(var(--card)/1.5);
-			opacity: 66.666%;
-			transform: translate(-50%, -75%);
-		}
+	.page-content  p {
+		padding: var(--space-25) 0;
 	}
-	@media( min-width: 1000px ) {
-		.contact-form-section .form { grid-template-columns: repeat(2, 1fr); }
-		.contact-form-section .form .form-input.span-row { grid-column: 1 / -1; }
-		.contact-form-section .dotmatrix { transform: translate(-25%, -25%); }
+	.page-content  hr {
+		margin: var(--space-25) 0;
 	}
-	@media( min-width: 1500px ) { .contact-form-section .dotmatrix { left: calc(25% + (var(--column-unit)/2)); } }
 </style>
-
-
-
-<section id="contact-form-section" class="contact-form-section gap">
+<section id="page-content-section" class="page-content-section gap">
 	<div class="container">
 		<div class="row">
-			<div class="columns small-12 xlarge-10 xlarge-offset-1">
-				<label class="section-label text-uppercase">Get in Touch</label>
-				<h2 class="section-heading text-neutral-20 w-600 space-50-bottom">Exceptional Living Begins Here</h2>
-			</div>
-			<div class="columns small-12 space-50-bottom medium-4 xlarge-3 xlarge-offset-1">
-				<p class="h6">Provide your details, and our expert advisors will connect with you to tailor your next steps.</p>
-			</div>
-			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6">
-				<div class="form card row space-50">
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Full Name *</span>
-							<input class="input-field" type="text">
+			<!-- <div class="page-content columns small-12 medium-10 xlarge-8 medium-offset-1 xlarge-offset-2"> -->
+			<div class="page-content columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
+				<h2>Privacy Policy</h2>
+<p>Vaswani group respects your online privacy and recognizes your need for security and protection in respect of any Personal Information that you share with us.</p>
+<p>This privacy policy has been created to demonstrate our committed endeavor to protect your online privacy and may change from time to time. Access to Personal Information is limited to such of our employees who we believe reasonably need to come into contact with your information to provide services required by you or in order to do their jobs.</p>
+<p>Your Personal Information is used to identify you, streamline your requirements and provide our services, which includes understanding and appreciating your needs and providing real estate solutions that are appropriate and suitable to your needs.</p>
+<p>We do not rent, sell, or share Personal Information with third parties who are not bound to act on our behalf unless such sharing is legally required. While we may provide the information to trusted partners who work on our behalf or with us under confidentiality agreements, these partners do not have any independent right to rent, sell, or share such information.</p>
+<h4>We may also share information</h4>
+<ul>
+<li>if we believe it is necessary to enforce our rights or defend against legal claims</li>
+<li>if required by the Governing laws; or</li>
+<li>if required for provision of a requested service.</li>
+</ul>
+<p>...</p>
+<hr>
+<h4>Liability</h4>
+<p>Please be advised that while Vaswani group has implemented adequate security measures to protect against any misuse, theft or alteration of information stored on the vaswanigroup.com website, Vaswani group accepts no liability for any claims, damages or losses of any nature arising directly or indirectly from misuse, theft or corruption of data maintained on the site.</p>
+<p>We welcome any questions or comments you may have about Vaswani group. Send in your queries to <a href="mailto:sales@vaswanigroup.com">sales@vaswanigroup.com</a></p>
 
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Email Id *</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">Phone Number *</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">I’M Interested In</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">City</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">How Did You Find Us ?</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input span-row">
-						<label for="">
-							<span class="input-label space-min block">Your Requirement</span>
-							<textarea class="input-field" name="" id=""></textarea>
-						</label>
-					</div>
-					<div class="form-input">
-						<button class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
-					</div>
-				</div>
 			</div>
-			<div class="columns or-message small-12 space-50-top medium-4 xlarge-3 xlarge-offset-1">
-				<span class="h4 text-primary">OR</span>
-				<p class="h6">Call our Help Desk <br>between 10am to 7pm IST</p>
-				<a class="h4 text-primary" href="tel:+918747987479">+91-<strong>8747987479</strong></a>
-			</div>
-			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
 		</div>
 	</div>
 </section>
-<!-- End: Contact Form Section -->
-
+<!-- End: Page Content -->
 
 
 

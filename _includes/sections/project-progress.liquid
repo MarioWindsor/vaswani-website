@@ -44,7 +44,7 @@
 			{% endif %}
 			{% if entry.heading != blank or entry.description != blank %}
 			<div class="container text-center space-50-top">
-				<div class="columns small-12 medium-10 medium-offset-1 xlarge-8 xlarge-offset-2">
+				<div class="columns small-12 medium-10 xlarge-8">
 					{% if entry.heading != blank %}<h6 class="heading text-primary space-50-top">{{ entry.heading }}</h6>{% endif %}
 					{% if entry.description != blank %}<p class="label description space-50-top">{{ entry.description | newline_to_br }}</p>{% endif %}
 				</div>

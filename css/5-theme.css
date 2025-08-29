@@ -435,6 +435,10 @@ select.button {
 @media( min-width:  500px ) { .gap { margin-top: calc(var(--container-width)/6); } }
 @media( min-width: 1000px ) { .gap { margin-top: calc(var(--container-width)/8); } }
 
+.small-gap { margin-top: calc(var(--container-width)/8); }
+@media( min-width:  500px ) { .small-gap { margin-top: calc(var(--container-width)/12); } }
+@media( min-width: 1000px ) { .small-gap { margin-top: calc(var(--container-width)/16); } }
+
 .section-heading {}
 
 .section-label {

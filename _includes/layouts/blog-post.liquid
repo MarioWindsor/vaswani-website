@@ -3,42 +3,21 @@
 
 
 
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
-
-
-
 <!-- Title Banner Section -->
 {% include 'sections/title-banner.liquid' %}
 <!-- End: Title Banner Section -->
 
 
 
-<!-- Blog Content -->
-<section id="blog-content-section" class="blog-content-section gap">
-	<div class="container">
-		<div class="row">
-			<div class="blog-content columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">{{ content }}</div>
-		</div>
-	</div>
-</section>
-<!-- End: Blog Content -->
+<!-- Page Content -->
+{% include 'sections/page-content.liquid' %}
+<!-- End: Page Content -->
 
 
 
 <!-- Contact Form Section -->
 {% include 'sections/contact-form.liquid' %}
 <!-- End: Contact Form Section -->
-
 
 
 

@@ -262,20 +262,6 @@
 
 
 
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
-
-
-
 <!-- Title Banner Section -->
 <style>
 	.title-banner-section {
@@ -379,6 +365,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <style>
+	.careers-section .thumbnail { position: relative; }
+	.careers-section .thumbnail img { position: relative; z-index: 1; }
+	.careers-section .thumbnail .dotmatrix { display: none; }
+
+	.careers-section .opportunities {
+		display: inline-grid;
+		gap: var(--space-100);
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	.careers-section .careers {
 		display: grid;
 		gap: var(--space-50);
@@ -393,17 +389,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		}
 	}
 	@media( min-width: 1000px ) {
+		.careers-section .opportunities {
+			grid-template-columns: repeat(2, 1fr);
+		}
 		.careers-section .careers {
 			text-align: left;
 			grid-template-columns: repeat(1, 1fr);
 		}
+
+		.careers-section .thumbnail .dotmatrix {
+					display: block;
+					position: absolute;
+					z-index: -1;
+					bottom: 0;
+					right: 100%;
+					width: calc(var(--card)/1.5);
+					opacity: 66.666%;
+					transform: translate(50%, 0%);
+				}
 	}
 
 </style>
-<!-- Careers Section -->
-<section id="careers-section" class="careers-section gap">
-	<div class="container">
-		<div class="row">
+
+
+
+<!-- Careers Intro Section -->
+<section id="careers-intro-section" class="careers-intro-section gap">
+	<div class="row">
+		<div class="container">
 			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
 				<label class="section-label">Join Us</label>
 				<h2 class="section-heading text-neutral-20 w-600">Our People are Our Strength</h2>
@@ -411,15 +424,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				<p class="description space-25-top">We believe a company is only as strong as its team, nurturing a culture built on trust, respect, and collaboration — where every individual is valued and empowered to grow.</p>
 			</div>
 		</div>
-		<div class="opportunities row space-100-top">
-			<div class="columns small-12 text-center space-100-bottom">
+	</div>
+</section>
+<!-- End: Careers Intro Section -->
+
+
+
+<!-- Careers Cta Section -->
+<section id="careers-cta-section" class="careers-cta-section small-gap fill-dark space-100-vertical">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
+				<label class="section-label">send in your resume to</label>
+				<a class="button w-500" href="mailto: careers@vaswanigroup.com" style="text-transform: none;">careers@vaswanigroup.com</a>
+				<p class="space-50-top">We have a place for those who are passionate about their craft. Whether you're a seasoned professional or just starting your journey, explore how you can contribute to our vision.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Careers Cta Section -->
+
+
+
+<!-- Careers Section -->
+<section id="careers-section" class="careers-section row small-gap">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 text-center space-50-bottom">
 				<label class="section-label">Explore Opportunities</label>
 			</div>
-			<div class="columns small-12 large-6 xlarge-5 xlarge-offset-1 space-50-bottom">
-				<img class="block radius-25 box-shadow" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
-			</div>
-			<div class="columns small-12 large-5 large-offset-1 xlarge-4 text-center">
-				<div class="row careers">
+			<div class="opportunities columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2 text-center">
+				<div class="thumbnail">
+					<img class="block radius-25 box-shadow" src="media/genai-careers.png" alt="">
+					<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
+				</div>
+				<div class="careers">
 					<div class="career card space-50">
 						<h5 class="text-neutral-50">Architects of Our Future</h5>
 						<small class="block w-600 text-primary">Roles: Architects, Design Managers.</small>
@@ -438,18 +477,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
-				<p class="space-150-top">We have a place for those who are passionate about their craft. Whether you're a seasoned professional or just starting your journey, explore how you can contribute to our vision.</p>
-
-				<label class="section-label space-50-top">send in your resume to</label>
-				<a class="button w-500" href="mailto: careers@vaswanigroup.com" style="text-transform: none;">careers@vaswanigroup.com</a>
-			</div>
-		</div>
 	</div>
 </section>
 <!-- End: Careers Section -->
-
 
 
 

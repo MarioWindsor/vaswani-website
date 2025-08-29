@@ -262,20 +262,6 @@
 
 
 
-<!-- Sample Section -->
-<section id="sample-section" class="sample-section hidden">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				<!-- Stuff Goes Here -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Sample Section -->
-
-
-
 <!-- Title Banner Section -->
 <style>
 	.title-banner-section {
@@ -378,11 +364,35 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-<!-- Blog Content -->
-<section id="blog-content-section" class="blog-content-section gap">
+<!-- Page Content -->
+<style>
+	.page-content {}
+	.page-content h1 { font-size: var(--h2); }
+	.page-content h2 { font-size: var(--h3); }
+	.page-content h3 { font-size: var(--h4); }
+	.page-content h4 { font-size: var(--h5); }
+	.page-content h5 { font-size: var(--h6); }
+	.page-content h6 { font-size: var(--p); }
+	.page-content p  { font-size: var(--p); }
+	.page-content label { font-size: var(--label); }
+	.page-content small { font-size: var(--small); }
+	.page-content  h1, .page-content  h2, .page-content  h3, .page-content  h4, .page-content  h5, .page-content  h6 {
+		font-weight: 600;
+		padding: var(--space-25) 0;
+	}
+	.page-content  p {
+		padding: var(--space-25) 0;
+	}
+	.page-content  hr {
+		margin: var(--space-25) 0;
+	}
+</style>
+<section id="page-content-section" class="page-content-section gap">
 	<div class="container">
 		<div class="row">
-			<div class="blog-content columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2"><h2><strong>Have you ever seen the rain?</strong></h2>
+			<!-- <div class="page-content columns small-12 medium-10 xlarge-8 medium-offset-1 xlarge-offset-2"> -->
+			<div class="page-content columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
+				<h2><strong>Have you ever seen the rain?</strong></h2>
 <p>The weather is straight out of the lyrics of the Creedence Clearwater Revival song, “Have you ever seen the rain,” isn’t it? Equal parts sun, sudden showers, and then sunny again! “It’ll rain on a sunny day – I know/ Shining down like water…”</p>
 <p>This issue of Shared Space takes its inspiration from a little bit of the sun and a drizzle of rain to talk about: plants! Wizard at growing them, or kill whatever you touch, there’s no one who doesn’t like plants. Find the perfect plant for you, depending on the space and time you have..</p>
 <p>In Responsibly Yours, we talk about something that at first, sounds like an oxymoron: an Empty Bin! Dig deep into the responsible way to segregate waste and find out why an Empty Bin – also known as a Zero Waste Bin – is such a big deal!</p>
@@ -458,11 +468,12 @@ Phone – 87479 87479</p>
 601, Sant Nivas, 14th Road Corner, Khar West, Mumbai
 Email – sales@vaswanigroup.com
 www.vaswanigroup.com</p>
-</div>
+
+			</div>
 		</div>
 	</div>
 </section>
-<!-- End: Blog Content -->
+<!-- End: Page Content -->
 
 
 
@@ -572,7 +583,6 @@ www.vaswanigroup.com</p>
 	</div>
 </section>
 <!-- End: Contact Form Section -->
-
 
 
 
