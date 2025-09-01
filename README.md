@@ -113,8 +113,8 @@
 ============
 - [x] City Selector : Remember Selection : Session Variable
 
-- [ ] Menu : Main Nav : Add some image/graphic in the empty space area.
-- [ ] Intro Video Banner Section : CMSify Video Embed with Image Fallback
+- [-] Menu : Main Nav : Add some image/graphic in the empty space area.
+- [x] Intro Video Banner Section : CMSify Video Embed with Image Fallback
 - [ ] Project Listing Section [Ongoing] : Gallery Images : Content
 - [ ] Contact Form Section : Form Capture
 - [ ] Contact Form Section : ERP Integration

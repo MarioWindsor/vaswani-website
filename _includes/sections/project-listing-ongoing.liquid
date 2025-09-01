@@ -63,17 +63,17 @@
 					<div class="carousel-list">
 						{% if project.data.overview.gallery != blank %}
 							{% for gallery in project.data.overview.gallery %}
-							<div class="carousel-list-item">
+							<a class="carousel-list-item" href="{{ project.url }}">
 								<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
-								{% if forloop.index == 1 %}
+								{% if forloop.first %}
 									{% if project.data.metadata.status-label != blank %}
 									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
 									{% endif %}
 								{% endif %}
-							</div>
+							</a>
 							{% endfor %}
 						{% else %}
-							<div class="carousel-list-item">
+							<a class="carousel-list-item" href="{{ project.url }}">
 								<img class="radius-25 box-shadow" src="
 								{% if project.data.cover.background != blank %}
 									{{ project.data.cover.background }}
@@ -81,12 +81,10 @@
 									media/fallback.jpg
 								{% endif %}
 								" alt="">
-								{% if forloop.index == 1 %}
-									{% if project.data.metadata.status-label != blank %}
-									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
-									{% endif %}
+								{% if project.data.metadata.status-label != blank %}
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
 								{% endif %}
-							</div>
+							</a>
 						{% endif %}
 					</div>
 					<div class="row">
@@ -106,10 +104,10 @@
 			{% for project in ongoing_commercial_projects %}
 			<div class="project space-100-vertical">
 				<div class="container">
-					<div class="project-title columns small-12 medium-7 large-8 inline-bottom">
+					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="{{ project.url }}">
 						<h6 class="heading text-primary">{% if project.data.metadata.project-label != blank %}{{ project.data.metadata.project-label }}{% endif %}</h6>
-						<h4 class="name text-uppercase strong letter-spacing-loose-loose">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
-					</div>
+						<h4 class="name text-neutral-70 text-uppercase strong letter-spacing-loose-loose">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</h4>
+					</a>
 					<div class="project-meta text-dark columns small-12 medium-5 large-4 inline-bottom">
 						{% if project.data.metadata.starting-price != blank %}
 						<small class="metadata block">
@@ -136,17 +134,17 @@
 					<div class="carousel-list">
 						{% if project.data.overview.gallery != blank %}
 							{% for gallery in project.data.overview.gallery %}
-							<div class="carousel-list-item">
+							<a class="carousel-list-item" href="{{ project.url }}">
 								<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
-								{% if forloop.index == 1 %}
+								{% if forloop.first %}
 									{% if project.data.metadata.status-label != blank %}
 									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
 									{% endif %}
 								{% endif %}
-							</div>
+							</a>
 							{% endfor %}
 						{% else %}
-							<div class="carousel-list-item">
+							<a class="carousel-list-item" href="{{ project.url }}">
 								<img class="radius-25 box-shadow" src="
 								{% if project.data.cover.background != blank %}
 									{{ project.data.cover.background }}
@@ -154,12 +152,10 @@
 									media/fallback.jpg
 								{% endif %}
 								" alt="">
-								{% if forloop.index == 1 %}
-									{% if project.data.metadata.status-label != blank %}
-									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
-									{% endif %}
+								{% if project.data.metadata.status-label != blank %}
+								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
 								{% endif %}
-							</div>
+							</a>
 						{% endif %}
 					</div>
 					<div class="row">

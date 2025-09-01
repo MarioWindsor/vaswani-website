@@ -10,4 +10,6 @@ metadata:
   status-label: Completed 2011
   project-label: Built to Suit
   location-label: Ring Road, Domlur
+cover:
+  background: /media/uploads/sasken_01.jpg
 ---

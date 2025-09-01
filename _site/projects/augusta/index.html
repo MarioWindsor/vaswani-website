@@ -377,6 +377,9 @@
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 66vw;
 		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			top: 40%;
+		}
 	}
 	@media( min-width: 1000px ) {
 		.intro-banner-section ,
@@ -390,6 +393,7 @@
 			top: 40%;
 		}
 		.intro-banner-section .intro-video-wrapper .page-title {
+			top: 45%;
 			font-size: var(--h3);
 			letter-spacing: calc(var(--p) * 0.1);
 		}
@@ -408,7 +412,7 @@
 	<div class="row">
 		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-video-wrapper">
-			<div class="intro-video-width fill-dark" style="background-image: url('media/fallback.jpg');">
+			<div class="intro-video-width fill-dark" style="background-image: url('/media/uploads/augusta_IMG_1848.jpg');">
 				
 			</div>
 			<div class="scroll">
@@ -449,6 +453,87 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 <!-- Project Intro Section -->
 
+<section id="project-overview-section" class="project-overview-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center">
+				<label class="section-label">Vaswani Augusta</label>
+				<h2 class="section-heading text-neutral-20 w-600">Brimming in the Lap of Nature</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">Grade A Commercial Office Space</h6>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<!-- Carousel -->
+		<div class="carousel gallery big-picture">
+			<div class="carousel-list">
+				
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="/media/uploads/augusta_Vaswani-Augusta-view-06-02-2017.jpg" alt="">
+				</div>
+				
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="/media/uploads/augusta_IMG_1848.jpg" alt="">
+				</div>
+				
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="/media/uploads/augusta_IMG_1865.jpg" alt="">
+				</div>
+				
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="/media/uploads/augusta_IMG_1869.jpg" alt="">
+				</div>
+				
+				<div class="carousel-list-item">
+					<img class="radius-25 box-shadow" src="/media/uploads/augusta_IMG_1866.jpg" alt="">
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="carousel-controls container">
+					<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+					<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+				</div>
+			</div>
+		</div>
+		<!-- End: Carousel -->
+	</div>
+	
+	<div class="project-overview row">
+		<div class="container">
+			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center space-125-top space-50-bottom">
+				<h6 class="sub-heading text-primary">Imagine a stylish structure with greenery so pristine that you can hear the Earth sing.</h6>
+			</div>
+		</div>
+		<div class="container">
+			<div class="project-meta text-dark columns small-12 medium-6 large-5 large-offset-1 xlarge-4 xlarge-offset-2 space-50-bottom text-center">
+				
+				
+				
+				<small class="metadata block">
+					<i class='bx bx-map p text-primary'></i>
+					<span>Near Embassy Golf Links Business Park</span>
+				</small>
+				
+				
+				<h6 class="space-25-top">
+					<span class="text-neutral-40 w-600 text-uppercase">RERA Number</span>
+					<span class="label block">PRM/KA/RERA/1251/446/PR/171230/002141</span>
+				</h6>
+				
+			</div>
+			
+			<div class="description columns small-12 medium-6 large-5 xlarge-4 text-center">
+				<p>Directly overlooking the Karnataka Golf Association’s Championship Golf Course, Vaswani Augusta is a workspace created to revolutionize the idea of an office. A Grade 'A' Commercial Office Space Development near the Embassy Golf Business Park and Hotel Hilton, Bangalore with state-of-the-art architecture & design.<br />
+<br />
+This region primarily houses captive units of major  IT/ ITeS and BFSI companies like IBM, Goldman Sachs, Yahoo, 24x7 Customer, Microsoft, ANZ, Target Corporation, J P Morgan and others</p>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
 <!-- End: Project Intro Section -->
 
 
@@ -460,6 +545,121 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Project Siteplan Section -->
+
+
+
+<section id="project-siteplan-section" class="project-siteplan-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center space-50-bottom">
+				<label class="section-label">Siteplan</label>
+				<h2 class="section-heading text-neutral-20 w-600">Commercial Floor plans</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical"></h6>
+			</div>
+		</div>
+	</div>
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="residential" id="siteplanToggleMasterplan" checked>
+	<input class="pair-toggle-input visuallyhidden position-absolute" type="radio" name="siteplanToggle" value="commercial" id="siteplanToggleFloorplan">
+	
+	<!-- Pair List -->	
+	<div class="pair-list row">
+		
+		
+		<div class="project-siteplan pair-content floorplan carousel" style="display: block;">
+			<div class="container">
+				
+					<small class="select-siteplan-label text-uppercase text-light w-600">Pick an Option</small>
+					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
+					
+						<option value="floorplan-ground-floor">Ground Floor</option>
+					
+						<option value="floorplan-mezzanine-floor">Mezzanine Floor</option>
+					
+						<option value="floorplan-first-floor">First Floor</option>
+					
+						<option value="floorplan-second-floor">Second Floor</option>
+					
+						<option value="floorplan-third-floor">Third Floor</option>
+					
+					</select>
+				
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-ground-floor" checked>
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/augusta_GF.jpg" alt="">
+				</div>
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-mezzanine-floor" >
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/augusta_MF.jpg" alt="">
+				</div>
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-first-floor" >
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/augusta_FF.jpg" alt="">
+				</div>
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-second-floor" >
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/augusta_SF.jpg" alt="">
+				</div>
+				
+				<input class="siteplan-radio visuallyhidden" type="radio" name="floorplan-radio-group" id="floorplan-third-floor" >
+				<div class="siteplan radius-25 box-shadow-primary overflow-clip">
+					
+					<img class="block" src="/media/uploads/augusta_TF.jpg" alt="">
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<!-- End: Pair List -->
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Find the Elements
+	const toggleFloorplan = document.getElementById('selectFloorplan');
+	const toggleMasterplan = document.getElementById('selectMasterplan');
+
+	toggleFloorplan.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+
+	toggleMasterplan.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+});
+</script>
 
 <!-- End: Project Siteplan Section -->
 
@@ -587,6 +787,106 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Location Section -->
+
+<style>
+	.location-section .places {}
+	.location-section .places label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		line-height: 0.5;
+	}
+	.location-section .places label * { pointer-events: none; }
+	.location-section .places label .bx-minus { display: none; }
+	.location-section .places label .title { padding-left: var(--space-min) }
+	.location-section .places .place-list {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-height: 0px;
+		overflow: clip;
+		transition: max-height var(--transition-speed) var(--transition-ease);
+		margin: var(--space-25) 0;
+		padding-left: calc(var(--space-25) * 1.5);
+	}
+	.location-section .places .place-list .place { white-space: nowrap; }
+
+	.location-section .places .places-radio:checked + label { color: var(--hue-primary); }
+	.location-section .places .places-radio:checked + label .bx-minus { display: inline-block; }
+	.location-section .places .places-radio:checked + label .bx-plus { display: none; }
+	.location-section .places .places-radio:checked ~ .place-list { max-height: 800px; }
+
+	.location-section .dotmatrix { display: none; }
+
+	.location-section .google-map-embed {
+		position: relative;
+		height: 0;
+		padding-top: 100%;
+	}
+	.location-section .google-map-embed iframe {
+		border: 0;
+		width: 100% !important;
+		height: 100% !important;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@media( min-width: 500px ) {}
+	@media( min-width: 1000px ) {
+		/*.location-section .section-sub-heading { font-size: var(--h5); }*/
+		.location-section .dotmatrix {
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 25%;
+			width: calc(var(--card)/1.5);
+			opacity: 25%;
+			transform: translate(-25%, 175%);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.location-section .dotmatrix {
+			transform: translate(-25%, 200%);
+			left: calc(25% + (var(--column-unit)/2)); 
+		}
+	}
+</style>
+
+
+
+<section id="location-section" class="location-section gap">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 xlarge-10 xlarge-offset-1 space-25-bottom">
+				<label tabindex="0" class="section-label text-uppercase">Location</label>
+				<h2 class="section-heading text-neutral-20 w-600">Vaswani Augusta</h2>
+			</div>
+			<div class="columns small-12 large-4 xlarge-3 xlarge-offset-1">
+				<div class="row">
+					
+						
+					<div class="columns small-12 medium-10 large-12 space-50-top">
+						
+						<h3 class="section-sub-heading h6 text-primary space-50-bottom">Near Embassy Golf Business Park</h3>
+						<a href="https://maps.app.goo.gl/5BF7uUmETZ3fmk866" target="_blank" class="button fill-dark">Open in Google Maps</a>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<div class="columns small-12 large-7 large-offset-1 xlarge-6 space-50-top">
+				<div class="google-map-embed block card">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3353.083447860389!2d77.6471148!3d12.9492528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1474a8b3bb85%3A0x53e54c249ebd6074!2sVaswani%20Augusta!5e1!3m2!1sen!2sin!4v1756757993146!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
+			
+		</div>
+	</div>
+</section>
 
 <!-- END: Location Section -->
 

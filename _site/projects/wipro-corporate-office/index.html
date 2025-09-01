@@ -377,6 +377,9 @@
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 66vw;
 		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			top: 40%;
+		}
 	}
 	@media( min-width: 1000px ) {
 		.intro-banner-section ,
@@ -390,6 +393,7 @@
 			top: 40%;
 		}
 		.intro-banner-section .intro-video-wrapper .page-title {
+			top: 45%;
 			font-size: var(--h3);
 			letter-spacing: calc(var(--p) * 0.1);
 		}
@@ -408,7 +412,7 @@
 	<div class="row">
 		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-video-wrapper">
-			<div class="intro-video-width fill-dark" style="background-image: url('media/fallback.jpg');">
+			<div class="intro-video-width fill-dark" style="background-image: url('/media/uploads/wipro_02.jpg');">
 				
 			</div>
 			<div class="scroll">
@@ -587,6 +591,106 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 <!-- Location Section -->
+
+<style>
+	.location-section .places {}
+	.location-section .places label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		line-height: 0.5;
+	}
+	.location-section .places label * { pointer-events: none; }
+	.location-section .places label .bx-minus { display: none; }
+	.location-section .places label .title { padding-left: var(--space-min) }
+	.location-section .places .place-list {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-height: 0px;
+		overflow: clip;
+		transition: max-height var(--transition-speed) var(--transition-ease);
+		margin: var(--space-25) 0;
+		padding-left: calc(var(--space-25) * 1.5);
+	}
+	.location-section .places .place-list .place { white-space: nowrap; }
+
+	.location-section .places .places-radio:checked + label { color: var(--hue-primary); }
+	.location-section .places .places-radio:checked + label .bx-minus { display: inline-block; }
+	.location-section .places .places-radio:checked + label .bx-plus { display: none; }
+	.location-section .places .places-radio:checked ~ .place-list { max-height: 800px; }
+
+	.location-section .dotmatrix { display: none; }
+
+	.location-section .google-map-embed {
+		position: relative;
+		height: 0;
+		padding-top: 100%;
+	}
+	.location-section .google-map-embed iframe {
+		border: 0;
+		width: 100% !important;
+		height: 100% !important;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@media( min-width: 500px ) {}
+	@media( min-width: 1000px ) {
+		/*.location-section .section-sub-heading { font-size: var(--h5); }*/
+		.location-section .dotmatrix {
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 25%;
+			width: calc(var(--card)/1.5);
+			opacity: 25%;
+			transform: translate(-25%, 175%);
+		}
+	}
+	@media( min-width: 1500px ) {
+		.location-section .dotmatrix {
+			transform: translate(-25%, 200%);
+			left: calc(25% + (var(--column-unit)/2)); 
+		}
+	}
+</style>
+
+
+
+<section id="location-section" class="location-section gap">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 xlarge-10 xlarge-offset-1 space-25-bottom">
+				<label tabindex="0" class="section-label text-uppercase">Location</label>
+				<h2 class="section-heading text-neutral-20 w-600">Wipro Technologies</h2>
+			</div>
+			<div class="columns small-12 large-4 xlarge-3 xlarge-offset-1">
+				<div class="row">
+					
+						
+					<div class="columns small-12 medium-10 large-12 space-50-top">
+						
+						<h3 class="section-sub-heading h6 text-primary space-50-bottom"></h3>
+						<a href="https://maps.app.goo.gl/h9FN9NiDT8B9oULE6" target="_blank" class="button fill-dark">Open in Google Maps</a>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<div class="columns small-12 large-7 large-offset-1 xlarge-6 space-50-top">
+				<div class="google-map-embed block card">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.89932859828!2d77.68363327588376!3d12.914191487395874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae131113828d65%3A0x10609c748b4fe98a!2sWipro%20Technologies!5e0!3m2!1sen!2sin!4v1756755873863!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<img class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
+			
+		</div>
+	</div>
+</section>
 
 <!-- END: Location Section -->
 

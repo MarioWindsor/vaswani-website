@@ -1,8 +1,5 @@
-<style>
-.project-siteplan-section .project-siteplan {}
-/*.project-siteplan-section .project-siteplan .siteplan { display: none; }*/
-/*.project-siteplan-section .project-siteplan .siteplan-radio:checked + .siteplan { display: block; }*/
-</style>
+{% assign masterplan_count = siteplan.masterplan | size %}
+{% assign floorplan_count = siteplan.floorplan | size %}
 <section id="project-siteplan-section" class="project-siteplan-section gap">
 	<div class="row">
 		<div class="container">
@@ -30,11 +27,11 @@
 	</div>
 	<!-- End: Pair Toggle -->
 	{% endif %}
-	<!-- Pair List -->
+	<!-- Pair List -->	
 	<div class="pair-list row">
-		<div class="project-siteplan pair-content masterplan carousel">
+		{% if siteplan.masterplan != blank %}
+		<div class="project-siteplan pair-content masterplan carousel" {% if siteplan.floorplan == blank %}style="display: block;"{% endif %}>
 			<div class="container">
-				{% assign masterplan_count = siteplan.masterplan | size %}
 				{% if masterplan_count > 1 %}
 					<select class="select-siteplan button fill-dark box-shadow" id="selectMasterplan">
 					{% for plan in siteplan.masterplan %}
@@ -53,9 +50,10 @@
 				{% endfor %}
 			</div>
 		</div>
-		<div class="project-siteplan pair-content floorplan carousel">
+		{% endif %}
+		{% if siteplan.floorplan != blank %}
+		<div class="project-siteplan pair-content floorplan carousel" {% if siteplan.masterplan == blank %}style="display: block;"{% endif %}>
 			<div class="container">
-				{% assign floorplan_count = siteplan.floorplan | size %}
 				{% if floorplan_count > 1 %}
 					<small class="select-siteplan-label text-uppercase text-light w-600">Pick an Option</small>
 					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
@@ -75,6 +73,7 @@
 				{% endfor %}
 			</div>
 		</div>
+		{% endif %}
 	</div>
 	<!-- End: Pair List -->
 </section>

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
-				<div class="project-brochure img-cover radius-25 box-shadow" style="background-image: url('{{ brochure.background }}'); background-position: 90% 50%; height: calc(var(--card)*1.5); width: 100%;">
+				<div class="project-brochure img-cover radius-25 box-shadow" style="background-image: url({% if brochure.background != blank %}'{{ brochure.background }}'{% else %}'media/fallback-brochure.png'{% endif %}); background-position: 90% 50%; height: calc(var(--card)*1.5); width: 100%;">
 					<div class="heading text-dark">
 						<h5 class="w-600">Want More Details?</h5>
 						<h6 class="space-50-bottom">Download the PDF Brochure.</h6>

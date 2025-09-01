@@ -31,7 +31,7 @@ console.log('Initial labels updated.');
 
 // --- 3. SET UP THE DYNAMIC OBSERVER ---
 // Create an observer to watch for future changes to the page.
-const observer = new MutationObserver((mutationsList) => {
+const asterisk_observer = new MutationObserver((mutationsList) => {
   // A mutation is a change to the page's content (DOM).
   for (const mutation of mutationsList) {
     // We only care about mutations where new elements ('nodes') were added.
@@ -50,7 +50,7 @@ const observer = new MutationObserver((mutationsList) => {
 // --- 4. START THE OBSERVER ---
 // Tell the observer to watch the entire <body> of the page for
 // additions of new child elements and to watch all descendants (subtree).
-observer.observe(document.body, {
+asterisk_observer.observe(document.body, {
   childList: true,
   subtree: true
 });

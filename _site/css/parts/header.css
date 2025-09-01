@@ -29,7 +29,7 @@
 	align-items: center;
 	gap: var(--space-min);
 
-	background: color-mix(in srgb, var(--hue-light) 50%, transparent);
+	background: color-mix(in srgb, var(--hue-light) 25%, transparent);
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 	
@@ -81,7 +81,7 @@
 				transform var(--transition-speed) var(--transition-ease);
 	overflow-y: scroll;
 
-	background: color-mix(in srgb, var(--hue-light) 75%, transparent);
+	background: color-mix(in srgb, var(--hue-light) 85%, transparent);
 	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
 }

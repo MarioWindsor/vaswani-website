@@ -377,6 +377,9 @@
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
 			padding-top: 66vw;
 		}
+		.intro-banner-section .intro-video-wrapper .page-title {
+			top: 40%;
+		}
 	}
 	@media( min-width: 1000px ) {
 		.intro-banner-section ,
@@ -390,6 +393,7 @@
 			top: 40%;
 		}
 		.intro-banner-section .intro-video-wrapper .page-title {
+			top: 45%;
 			font-size: var(--h3);
 			letter-spacing: calc(var(--p) * 0.1);
 		}
@@ -582,11 +586,8 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 
 <!-- Project Siteplan Section -->
 
-<style>
-.project-siteplan-section .project-siteplan {}
-/*.project-siteplan-section .project-siteplan .siteplan { display: none; }*/
-/*.project-siteplan-section .project-siteplan .siteplan-radio:checked + .siteplan { display: block; }*/
-</style>
+
+
 <section id="project-siteplan-section" class="project-siteplan-section gap">
 	<div class="row">
 		<div class="container">
@@ -614,11 +615,11 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 	</div>
 	<!-- End: Pair Toggle -->
 	
-	<!-- Pair List -->
+	<!-- Pair List -->	
 	<div class="pair-list row">
-		<div class="project-siteplan pair-content masterplan carousel">
+		
+		<div class="project-siteplan pair-content masterplan carousel" >
 			<div class="container">
-				
 				
 				
 				<input class="siteplan-radio visuallyhidden" type="radio" name="masterplan-radio-group" id="masterplan-masterplan" checked>
@@ -629,9 +630,10 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 				
 			</div>
 		</div>
-		<div class="project-siteplan pair-content floorplan carousel">
+		
+		
+		<div class="project-siteplan pair-content floorplan carousel" >
 			<div class="container">
-				
 				
 					<small class="select-siteplan-label text-uppercase text-light w-600">Pick an Option</small>
 					<select class="select-siteplan button fill-dark box-shadow" id="selectFloorplan">
@@ -657,6 +659,7 @@ This is truly Whitefield’s chosen space. Everything you need is just around th
 				
 			</div>
 		</div>
+		
 	</div>
 	<!-- End: Pair List -->
 </section>
