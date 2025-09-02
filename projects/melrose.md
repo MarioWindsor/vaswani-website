@@ -11,4 +11,6 @@ metadata:
   project-label: 3BHK Flats & Row Houses
   location-label: Marathahalli - Sarjapur, ORR
   unit-size: 2500sqft to 2800 sqft
+cover:
+  background: /media/uploads/melrose_01.png
 ---

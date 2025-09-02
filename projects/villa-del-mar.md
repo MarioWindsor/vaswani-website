@@ -11,4 +11,6 @@ metadata:
   project-label: 3 & 4 BHK Row Houses
   unit-size: 2740sqft to 3750sqft
   location-label: Sarjapur Road, Bellandur
+cover:
+  background: /media/uploads/villa_del_mar_01.png
 ---

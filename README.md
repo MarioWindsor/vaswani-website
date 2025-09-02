@@ -112,20 +112,20 @@
 ## Home Page
 ============
 - [x] City Selector : Remember Selection : Session Variable
-
-- [-] Menu : Main Nav : Add some image/graphic in the empty space area.
 - [x] Intro Video Banner Section : CMSify Video Embed with Image Fallback
-- [ ] Project Listing Section [Ongoing] : Gallery Images : Content
-- [ ] Contact Form Section : Form Capture
-- [ ] Contact Form Section : ERP Integration
-- [ ] About Vaswnani Section : Create Link Page
-- [ ] Join Newsletter Section : Form Capture
-- [ ] Join Newsletter Section : ERP Integration
-- [ ] Project Listing Section [Completed] : Gallery Image/s : Content
+- [x] Project Listing Section [Ongoing] : Gallery Images : Content
+- [x] About Vaswnani Section : Create Link Page
 - [x] CSR Excerpt Section : Create Link Page
 - [x] NRI Excerpt Section : Create Link Page
 - [x] Blog Section : Create Blog Listing Page
 - [x] Blog Section : Create Single Blog Template
+
+- [-] Menu : Main Nav : Add some image/graphic in the empty space area.
+- [ ] Contact Form Section : Form Capture
+- [ ] Contact Form Section : ERP Integration
+- [ ] Join Newsletter Section : Form Capture
+- [ ] Join Newsletter Section : ERP Integration
+- [-] Project Listing Section [Completed] : Gallery Image/s : Content
 - [ ] Blog Section : Add Content
 - [ ] Footer Section : Add Social Links (via CMS)
 
