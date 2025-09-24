@@ -14,6 +14,14 @@ metadata:
 cover:
   logo: /media/uploads/walnut-creek-logo.png
   background: /media/uploads/walnut-creek-cover-1-1-1.jpg
+overview:
+  gallery:
+    - image: /media/uploads/walnut-creek-gallery-1-1-2.jpg
+    - image: /media/uploads/walnut-creek-gallery-6-1-1.jpg
+    - image: /media/uploads/walnut-creek-gallery-7-1-1.jpg
+    - image: /media/uploads/walnut-creek-gallery-4-1-1.jpg
+    - image: /media/uploads/walnut-creek-gallery-3-1-1.jpg
+    - image: /media/uploads/walnut-creek-gallery-2-1-1.jpg
 progress:
   heading: Project Completed
   sub-heading: A Glimpse Through Time
