@@ -197,3 +197,11 @@
 	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h2); }
 	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h3); }
 }
+
+
+
+/* -- Project Progress Section --  */
+.project-progress-section {}
+.project-progress-section .project-progress .entry { display: none; }
+.project-progress-section .project-progress .entry-radio:checked + .entry { display: block; }
+

@@ -14,14 +14,14 @@
 			<div class="columns small-12 medium-6 large-4 xlarge-3">
 				<div class="title-toggle-button block space-25 fill-neutral-10 radius-round box-shadow-inset">
 					<select class="button" name="" id="toggle-progress-entry">
-						{% for entry in progress.entry %}
+						{% for entry in progress.entry reversed %}
 							<option value="{{ entry.title | slugify }}" {% if forloop.first == true %}selected{% endif %}>{{ entry.title }}</option>						
 						{% endfor %}
 					</select>
 				</div>
 			</div>
 		</div>
-		{% for entry in progress.entry %}
+		{% for entry in progress.entry reversed %}
 		<input class="entry-radio visuallyhidden" type="radio" name="entry-radio-group" id="{{ entry.title | slugify }}" {% if forloop.first == true %}checked{% endif %}>
 		<div id="entry-{{ entry.title | slugify }}" class="entry {{ entry.title | slugify }}">
 			<!-- Carousel -->
