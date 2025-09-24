@@ -41,6 +41,8 @@ progress:
 
 
         3 BHK Villaments: Structural Work, Super terrace works, Solid block masonry, Internal electrical works, Internal & External plastering work are Completed Plumbing & Waterproofing are work in progress.
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2016-10-1-3.jpg
     - description: >-
         What has been completed and is in progress:
 
@@ -56,6 +58,8 @@ progress:
 
         Clubhouse:  Structural work in progress.  Ground floor SBM has been completed.
       title: December 2016
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2016-12-IMG_20170105_164327.jpg
     - title: April 2017
       description: >-
         What has been completed and is in progress:
@@ -67,6 +71,8 @@ progress:
         Clubhouse :
 
         Structure has been completed.  Swimming pool work in progress.
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2017-04-IMG-20170420-WA0001.jpg
     - description: |-
         What has been completed and is in progress:
 
@@ -83,6 +89,8 @@ progress:
         Villament finishing works in progress
         External development works in progress.
       title: October 2017
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2017-10-IMG_20171004_113356.jpg
     - description: >-
         What has been completed and is in progress:
 
@@ -98,10 +106,14 @@ progress:
 
         Club House – Glazing & External Painting work is completed. Squash Court– False Ceiling work is in progress. Swimming Pool – Water Proofing work is completed, Tiling work is about to start.
       title: December 2017
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2017-12-Picture1-4.jpg
     - title: April 2018
       description: Vaswani Walnut Creek is racing towards completion. The project is
         in its final phase with Landscape work in progress and finishes.
       heading: Last Few Units Available
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2018-04-IMG-20180503-WA0006.jpg
     - title: June 2018
       description: >-
         Project Progress Report as on 11th June 2018
@@ -112,10 +124,14 @@ progress:
 
         Visit today for an exclusive tour of the property.
       heading: Last Few Units Available
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2018-08-1-6.jpg
     - title: August 2018
       heading: Project is Ready to Occupy
       description: |-
         PROJECT PROGRESS REPORT AS ON 6th August 2018
 
         The Project is Ready to Occupy with last few units available.
+      gallery:
+        - image: /media/uploads/walnut-creek-progress-2018-08-1-6.jpg
 ---
