@@ -15,4 +15,16 @@ metadata:
 cover:
   logo: /media/uploads/brentwood-featured-image-6.jpg
   background: /media/uploads/brentwood-project-logo.png
+overview:
+  heading: q
+  sub-heading: q
+  description: q
+  gallery:
+    - image: /media/uploads/brentwood-BeautyPlus_20170615165622_save.jpg
+siteplan:
+  heading: q
+  sub-heading: q
+  masterplan:
+    - title: Masterplan
+      image: /media/uploads/brentwood-masterplan-3.jpg
 ---
