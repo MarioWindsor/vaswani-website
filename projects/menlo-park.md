@@ -77,6 +77,11 @@ progress:
         Tower C: Excavation works in progress
       gallery:
         - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
     - title: September 2018
       heading: Project Progress Report as on 7th September 2018
       description: |-
@@ -88,5 +93,8 @@ progress:
 
         Tower A – Excavation is in progress
       gallery:
-        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+        - image: /media/uploads/menlo-park-progress-2018-09-TA.jpg
+        - image: /media/uploads/menlo-park-progress-2018-09-TB.jpg
+        - image: /media/uploads/menlo-park-progress-2018-09-TC.jpg
+        - image: /media/uploads/menlo-park-progress-2018-09-TD.jpg
 ---

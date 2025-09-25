@@ -915,6 +915,160 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!-- Project Progress Section -->
 
+<section id="project-progress-section" class="project-progress-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 text-center space-50-bottom">
+				<label class="section-label">Progress</label>
+				<h2 class="section-heading text-neutral-20 w-600">q</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">q</h6>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row project-progress">
+		<div class="container text-center">
+			<div class="columns small-12 medium-6 large-4 xlarge-3">
+				<div class="title-toggle-button block space-25 fill-neutral-10 radius-round box-shadow-inset">
+					<select class="button" name="" id="toggle-progress-entry">
+						
+							<option value="september-2018" selected>September 2018</option>						
+						
+							<option value="july-2018" >July 2018</option>						
+						
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<input class="entry-radio visuallyhidden" type="radio" name="entry-radio-group" id="september-2018" checked>
+		<div id="entry-september-2018" class="entry september-2018">
+			<!-- Carousel -->
+			
+			<div class="carousel gallery space-50-top">
+				<div class="carousel-list">
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/menlo-park-progress-2018-09-TA.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/menlo-park-progress-2018-09-TB.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/menlo-park-progress-2018-09-TC.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/menlo-park-progress-2018-09-TD.jpg" alt="">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="carousel-controls container">
+						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="container text-center space-50-top">
+				<div class="columns small-12 medium-10 xlarge-8">
+					<h6 class="heading text-primary space-50-top">Project Progress Report as on 7th September 2018</h6>
+					<p class="label description space-50-top">Tower D – Footings & Tie Beam Completed<br />
+<br />
+Tower C – Footings Completed & Tie Beam is in progress<br />
+<br />
+Tower B – Excavation Completed & PCC is in progress<br />
+<br />
+Tower A – Excavation is in progress</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<input class="entry-radio visuallyhidden" type="radio" name="entry-radio-group" id="july-2018" >
+		<div id="entry-july-2018" class="entry july-2018">
+			<!-- Carousel -->
+			
+			<div class="carousel gallery space-50-top">
+				<div class="carousel-list">
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg" alt="">
+					</div>
+					
+					<div class="carousel-list-item">
+						<img class="radius-25 box-shadow" src="/media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg" alt="">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="carousel-controls container">
+						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="container text-center space-50-top">
+				<div class="columns small-12 medium-10 xlarge-8">
+					<h6 class="heading text-primary space-50-top">Project Progress Report as on 7th July 2018</h6>
+					<p class="label description space-50-top">Tower D: Excavation has been completed and footing work is under progress.<br />
+<br />
+Tower C: Excavation works in progress</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Find the Elements
+	const toggleProgressEntry = document.getElementById('toggle-progress-entry');
+
+	toggleProgressEntry.addEventListener('change', (event) => {
+		const newValue = event.target.value;
+
+		const targetRadio = document.getElementById(newValue);
+
+		// Check if the radio button was found
+		if (targetRadio) {
+			// Set the 'checked' property to true
+			targetRadio.checked = true;
+			console.log(`Radio button with ID '${newValue}' has been checked.`);
+		} else {
+			console.error(`Radio button with ID '${newValue}' not found.`);
+		}
+	});
+});
+</script>
+
 <!-- End: Project Progress Section -->
 
 
