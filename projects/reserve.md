@@ -12,4 +12,16 @@ metadata:
   location-label: Off Marathahalli - Sarjapur, ORR
   status-label: Completed 2016
   unit-size: 1715sqft to 3290sqft Apartments
+cover:
+  logo: /media/uploads/reserve-project-logo.png
+  background: /media/uploads/reserve-cover_01.jpg
+overview:
+  heading: Q
+  sub-heading: Q
+  description: Q
+  gallery:
+    - image: /media/uploads/reserve-Picture6.jpg
+    - image: /media/uploads/reserve-Picture7.jpg
+    - image: /media/uploads/reserve-Picture9.jpg
+    - image: /media/uploads/reserve-Picture1kjaslfj.jpg
 ---
