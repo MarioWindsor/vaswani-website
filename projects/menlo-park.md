@@ -63,4 +63,30 @@ siteplan:
       image: /media/uploads/menlo-park-floorplan-3-BHK-2079-sft.jpg
     - title: 3 BHK (2144 SQFT)
       image: /media/uploads/menlo-park-floorplan-3-BHK-2144-sft.jpg
+progress:
+  heading: q
+  sub-heading: q
+  entry:
+    - title: July 2018
+      heading: Project Progress Report as on 7th July 2018
+      description: >-
+        Tower D: Excavation has been completed and footing work is under
+        progress.
+
+
+        Tower C: Excavation works in progress
+      gallery:
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
+    - title: September 2018
+      heading: Project Progress Report as on 7th September 2018
+      description: |-
+        Tower D – Footings & Tie Beam Completed
+
+        Tower C – Footings Completed & Tie Beam is in progress
+
+        Tower B – Excavation Completed & PCC is in progress
+
+        Tower A – Excavation is in progress
+      gallery:
+        - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
 ---
