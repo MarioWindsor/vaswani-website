@@ -12,4 +12,7 @@ metadata:
   starting-price: Starting at ₹1.14Cr
   project-label: 2 & 3 Bedroom Apartments
   unit-size: 1025sqft to 2275sqft Apartments
+cover:
+  logo: /media/uploads/brentwood-featured-image-6.jpg
+  background: /media/uploads/brentwood-project-logo.png
 ---
