@@ -8,7 +8,7 @@
 			</div>
 			{% if amenities.cover-image != blank %}
 			<div class="cover-image space-50-top">
-				<img class="radius-25 block" src="{{ amenities.cover-image }}" alt="">
+				<img loading="lazy" class="radius-25 block" src="{{ amenities.cover-image }}" alt="">
 			</div>
 			{% endif %}
 			<div class="row">
@@ -28,7 +28,7 @@
 						<ul class="amenities">
 							{% for amenity in amenities.amenity %}
 							<li class="amenity space-25-bottom">
-								<img class="inline-middle" src="{{ amenity.icon }}" alt="">
+								<img loading="lazy" class="inline-middle" src="{{ amenity.icon }}" alt="">
 								<span class="inline-middle">{{ amenity.name }}</span>
 							</li>
 							{% endfor %}
@@ -40,7 +40,7 @@
 							<ul class="amenities">
 								{% for amenity in amenities.amenity %}
 								<li class="amenity space-25-bottom">
-									<img class="inline-middle" src="{{ amenity.icon }}" alt="">
+									<img loading="lazy" class="inline-middle" src="{{ amenity.icon }}" alt="">
 									<span class="inline-middle">{{ amenity.name }}</span>
 								</li>
 								{% endfor %}
@@ -57,7 +57,7 @@
 		<div class="carousel-list">
 			{% for gallery in amenities.gallery %}
 			<div class="carousel-list-item">
-				<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+				<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
 			</div>
 			{% endfor %}
 		</div>

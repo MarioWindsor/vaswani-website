@@ -154,10 +154,10 @@
 			</div>
 			<div class="scroll">
 				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
-				<img class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
+				<img loading="lazy" class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
 			</div>
 			{% if cover.logo != blank %}
-				<img class="project-logo" src="{{ cover.logo }}">
+				<img loading="lazy" class="project-logo" src="{{ cover.logo }}">
 			{% else %}
 				<h1 class="page-title w-500 text-uppercase text-light">{% if metadata.prefix-name == true %}Vaswani {% endif %}{{ name }}</h1>
 			{% endif %}

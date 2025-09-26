@@ -15,7 +15,7 @@
 			<div class="carousel-list">
 				{% for gallery in overview.gallery %}
 				<div class="carousel-list-item">
-					<img class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+					<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
 				</div>
 				{% endfor %}
 			</div>
