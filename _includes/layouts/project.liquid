@@ -24,7 +24,7 @@ eleventyComputed:
 
 
 <!-- Banner Section -->
-{% if banner.feature-1 != blank %}
+{% if banner.feature-1.heading != blank or banner.feature-1.background %}
 {% include 'sections/project-banner.liquid', banner: banner.feature-1 %}
 {% endif %}
 <!-- End: Banner Section -->
@@ -78,7 +78,7 @@ eleventyComputed:
 
 
 <!-- Banner Section -->
-{% if banner.feature-2 != empty %}
+{% if banner.feature-2.background != blank or banner.feature-2.background %}
 {% include 'sections/project-banner.liquid', banner: banner.feature-2 %}
 {% endif %}
 <!-- End: Banner Section -->
@@ -86,7 +86,7 @@ eleventyComputed:
 
 
 <!-- Project Progress Section -->
-{% if progress != empty %}
+{% if progress != blank %}
 {% include 'sections/project-progress.liquid' %}
 {% endif %}
 <!-- End: Project Progress Section -->
