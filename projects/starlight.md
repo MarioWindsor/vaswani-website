@@ -31,8 +31,8 @@ overview:
     - image: /media/uploads/starlight_vaswani_starlight_aerial_09.jpg
     - image: /media/uploads/starlight_vaswani_starlight_semi_aerial_day_highress_04.jpg
 film:
-  heading: Show Apartment Walkthrough
-  sub-heading: Closest thing to experiencing it in person.
+  heading: Apartment Walkthrough
+  sub-heading: It feels like home, doesn't it?
   video: RjAg-MB3MIg
 siteplan:
   heading: Discover Your Ideal Home
