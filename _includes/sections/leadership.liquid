@@ -1,15 +1,29 @@
 <style>
 	.leadership-section .leadership {
 		display: grid;
-		gap: var(--space-50);
-		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-100);
+	}
+	.leadership-section .leadership .leader {
+		display: grid;
+		gap: var(--space-25);
 	}
 	@media( min-width: 500px )  {
 		.leadership-section .leadership {
-			grid-template-columns: repeat(4, 1fr);
+			gap: var(--space-125);
+		}
+		.leadership-section .leadership .leader {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+			gap: var(--space-100);
+		}
+		.leadership-section .leadership .leader:nth-child(2n) .photo {
+			order: 2;
 		}
 	}
-	@media( min-width: 1000px ) {}
+	@media( min-width: 1000px ) {
+		.leadership-section .leadership .leader .info .name { font-size: var(--h4); }
+		.leadership-section .leadership .leader .info .description { font-size: var(--p); }
+	}
 	@media( min-width: 1500px ) {}
 </style>
 <section id="leadership-section" class="leadership-section gap">
@@ -24,15 +38,28 @@
 	</div>
 	<div class="row space-100-top">
 		<div class="container">
-			<div class="leadership columns small-12 xlarge-10 xlarge-offset-1">
-				<img loading="lazy" class="radius-min block box-shadow" src="https://placeholdit.com/600x800/dddddd/999999" alt="">
-				<img loading="lazy" class="radius-min block box-shadow" src="https://placeholdit.com/600x800/dddddd/999999" alt="">
-				<img loading="lazy" class="radius-min block box-shadow" src="https://placeholdit.com/600x800/dddddd/999999" alt="">
-				<img loading="lazy" class="radius-min block box-shadow" src="https://placeholdit.com/600x800/dddddd/999999" alt="">
+			<div class="leadership columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
+				<div class="leader">
+					<div class="photo">
+						<img loading="lazy" class="radius-min block box-shadow" src="media/neville-vaswani-profile-photo.png" alt="">
+					</div>
+					<div class="info space-25">
+						<div class="name h5 text-primary">Neville Vaswani</div>
+						<small class="role text-neutral-30 strong">Managing Director</small>
+						<p class="description small space-25-top">Neville has been the driving force behind Vaswani Group for over three decades. With an eye for detail and a deep belief that spaces should feel human, he has guided the group through its journey of creating homes, offices, and communities across cities. His approach has always been simple: build with integrity, and build with empathy.</p>
+					</div>
+				</div>
+				<div class="leader">
+					<div class="photo">
+						<img loading="lazy" class="radius-min block box-shadow" src="media/arun-advani-profile-photo.png" alt="">
+					</div>
+					<div class="info space-25">
+						<div class="name h5 text-primary">Arun Advani</div>
+						<small class="role text-neutral-30 strong">Joint Managing Director</small>
+						<p class="description small space-25-top">Arun brings with him a sharp focus on strategy and execution. His strength lies in turning ideas into reality with clarity and consistency. Over the years, he has played a key role in shaping the group’s projects and ensuring that promises made to customers are delivered with care.</p>
+					</div>
+				</div>
 			</div>
-			<!-- <div class="leadership columns small-12 medium-10 medium-offset-1 xlarge-8 xlarge-offset-2">
-				<img loading="lazy" class="radius-min block box-shadow" src="https://placeholdit.com/1200x800/dddddd/999999" alt="">
-			</div> -->
 		</div>
 	</div>
 </section>
