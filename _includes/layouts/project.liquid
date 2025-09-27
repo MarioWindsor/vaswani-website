@@ -78,7 +78,7 @@ eleventyComputed:
 
 
 <!-- Banner Section -->
-{% if banner.feature-2 != blank %}
+{% if banner.feature-2 != empty %}
 {% include 'sections/project-banner.liquid', banner: banner.feature-2 %}
 {% endif %}
 <!-- End: Banner Section -->
@@ -86,7 +86,7 @@ eleventyComputed:
 
 
 <!-- Project Progress Section -->
-{% if progress != blank %}
+{% if progress != empty %}
 {% include 'sections/project-progress.liquid' %}
 {% endif %}
 <!-- End: Project Progress Section -->

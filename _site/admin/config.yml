@@ -4,10 +4,14 @@ backend:
   branch: main
   repo: MarioWindsor/vaswani-website
 
+output:
+  omit_empty_optional_fields: false
+
 local_backend: true
 
 media_folder: "/media/uploads"
 public_folder: "/media/uploads"
+
 collections:
   - name: "projects"
     label: "Projects"
