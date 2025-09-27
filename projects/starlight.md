@@ -1,31 +1,26 @@
 ---
-tags:
-  - projects
+tags: projects
 date: 2025-08-07T03:19:00.000+05:30
 name: Starlight
 metadata:
-  project-label: Luxury 3 & 4 Bedroom Homes
   prefix-name: true
-  unit-size: 1970sqft to 2730sqft Apartments
-  status: ongoing
-  rera-number: PRM/KA/RERA/1251/446/PR/180424/006808
-  status-label: Construction in Full Swing
   type: residential
+  project-label: Luxury 3 & 4 Bedroom Homes
+  status: ongoing
+  status-label: Construction in Full Swing
   starting-price: Starting at ₹2.82Cr
+  unit-size: 1970sqft to 2730sqft Apartments
   location-label: ECC Main Road, Whitefield
+  rera-number: PRM/KA/RERA/1251/446/PR/180424/006808
 cover:
-  background: /media/uploads/starlight__mg_3870-edit.jpg
   logo: /media/uploads/starlight_logo-white-transparent.png
+  background: /media/uploads/starlight__mg_3870-edit.jpg
   video: 3OyRc5eczbc
 overview:
   heading: Whitefield's Newest Benchmark
-  sub-heading: Discover a life that blends sophistication with convenience.
-    Embrace Urban Serenity.
-  description: >-
-    Nestled in the heart of Whitefield, Vaswani Starlight offers world-class
-    amenities, thoughtfully designed living spaces, and seamless connectivity to
-    everything that matters. 
-
+  sub-heading: Discover a life that blends sophistication with convenience. Embrace Urban Serenity.
+  description: |-
+    Nestled in the heart of Whitefield, Vaswani Starlight offers world-class amenities, thoughtfully designed living spaces, and seamless connectivity to everything that matters. 
 
     This is truly Whitefield’s chosen space. Everything you need is just around the corner, whether it’s the vibrant social scene, thriving tech parks, or lush green surroundings.
   gallery:
@@ -35,6 +30,10 @@ overview:
     - image: /media/uploads/starlight_vaswani_starlight_dropoff_view.jpg
     - image: /media/uploads/starlight_vaswani_starlight_aerial_09.jpg
     - image: /media/uploads/starlight_vaswani_starlight_semi_aerial_day_highress_04.jpg
+film:
+  heading: Show Apartment Walkthrough
+  sub-heading: Closest thing to experiencing it in person.
+  video: RjAg-MB3MIg
 siteplan:
   heading: Discover Your Ideal Home
   sub-heading: Something for Everyone.
@@ -44,16 +43,13 @@ siteplan:
   floorplan:
     - title: 3BHK Type 1
       image: /media/uploads/image.png
-    - image: /media/uploads/image.png
-      title: 4BHK + Home Office Type 2
+    - title: 4BHK + Home Office Type 2
+      image: /media/uploads/image.png
 amenities:
-  cover-image: /media/uploads/starlight_pool_stock.png
-  heading: "Nebula : the Clubhouse"
+  heading: 'Nebula : the Clubhouse'
   sub-heading: Limitless Moments. Endless Memories
-  description: Podium level nebula clubhouse with 15+ curated indulgences. From
-    world-class amenities to exclusive privileges at your doorstep, every detail
-    is curated to elevate your lifestyle. Unwind with a few laps in the pool, or
-    end your workday in a stellar manner at the clubhouse, Nebula.
+  description: Podium level nebula clubhouse with 15+ curated indulgences. From world-class amenities to exclusive privileges at your doorstep, every detail is curated to elevate your lifestyle. Unwind with a few laps in the pool, or end your workday in a stellar manner at the clubhouse, Nebula.
+  cover-image: /media/uploads/starlight_pool_stock.png
   amenity:
     - name: Air-conditioned Club House
       icon: /media/uploads/mini-icon-air-conditioner.png
@@ -97,13 +93,9 @@ brochure:
   pdf: /media/uploads/vaswani-starlight-ecc-road-whitefield_-e-brochure.pdf
 location:
   heading: Nestled in the heart of Whitefield
-  sub-heading: Everything you need is just around the corner. From vibrant social
-    scene, thriving tech parks, to lush green surroundings and so much more.
+  sub-heading: Everything you need is just around the corner. From vibrant social scene, thriving tech parks, to lush green surroundings and so much more.
   map-link: https://maps.app.goo.gl/PfUwVyD8C2xvM2GX7
-  map-embed: <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin"
-    allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   places:
     - name: Schools
       place:
@@ -115,7 +107,8 @@ location:
           distance: 1.6 Km
         - name: Ryan International School, Kundalahalli
           distance: 7.0 Km
-    - place:
+    - name: Hospitals
+      place:
         - name: Shri Sathya Sai Hospital
           distance: 2.3 Km
         - name: Manipal Hospital Whitefield, ITPL
@@ -126,7 +119,6 @@ location:
           distance: 2.8 Km
         - name: Cloud 9 Hospital
           distance: 2.6 Km
-      name: Hospitals
     - name: Malls
       place:
         - name: Nexus Shantiniketan Mall
@@ -142,7 +134,7 @@ location:
         - name: EPIP Zone
           distance: 3.7 Km
         - name: ORR
-          distance: " 7.8 Km"
+          distance: 7.8 Km
     - name: Metros
       place:
         - name: Kadugodi Tree Park Station
@@ -155,12 +147,8 @@ progress:
   entry:
     - title: MAR 2025
       heading: March Lorem ipsum dolor sit amet
-      description: >-
-        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate
-        velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
+      description: |-
+        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       gallery:
@@ -170,12 +158,8 @@ progress:
         - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - title: Feb 2025
       heading: February Lorem ipsum dolor sit amet
-      description: >-
-        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate
-        velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
+      description: |-
+        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       gallery:
@@ -185,12 +169,8 @@ progress:
         - image: https://placeholdit.com/1200x800/F1F1F1/999999
     - title: Jan 2025
       heading: January Lorem ipsum dolor sit amet
-      description: >-
-        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate
-        velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
+      description: |-
+        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       gallery:
@@ -201,14 +181,15 @@ progress:
 banner:
   feature-1:
     heading: A Private Home Office with Every Unit
-    background: /media/uploads/starlight_banner_bg_home_office_01.png
     align-text: left
     position-text: top
+    background: /media/uploads/starlight_banner_bg_home_office_01.png
     background-fix: right bottom
   feature-2:
     heading: 70% Green Spaces at Vaswani Starlight
-    background: /media/uploads/starlight_banner_bg_jogging_man_01.png
-    background-fix: center center
     align-text: right
     position-text: top
+    background: /media/uploads/starlight_banner_bg_jogging_man_01.png
+    background-fix: center center
 ---
+
