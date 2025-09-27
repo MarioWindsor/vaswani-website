@@ -1,8 +1,8 @@
 
 backend:
-  name: git-gateway
+  name: github
   branch: main
-  repo: MarioWindsor/bgc-smart-cat
+  repo: MarioWindsor/vaswani-website
 
 local_backend: true
 
@@ -12,6 +12,7 @@ collections:
   - name: "projects"
     label: "Projects"
     folder: "projects"
+    icon: apartment
     create: true
     slug: "{{name}}"
     editor:
@@ -281,6 +282,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "blog"
+    icon: newsmode
     create: true
     slug: "{{slug}}"
     editor:
@@ -294,6 +296,7 @@ collections:
   - name: "testimonials"
     label: "Testimonials"
     folder: "testimonials"
+    icon: reviews
     create: true
     slug: "{{slug}}"
     editor:
@@ -308,6 +311,7 @@ collections:
   - name: "awards"
     label: "Awards"
     folder: "awards"
+    icon: trophy
     create: true
     slug: "{{slug}}"
     editor:
@@ -321,6 +325,7 @@ collections:
       - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
   - name: "pages"
     label: "Pages"
+    icon: news
     files:
       - name: "csr"
         label: "CSR"
@@ -336,10 +341,9 @@ collections:
           - { label: "Intro Video YouTube ID", name: "introvideoid", widget: "string" }
           - { label: "Brand Video YouTube ID", name: "brandvideoid", widget: "string" }
           - { label: "Helpdesk Timing", name: "helpdesktiming", widget: "string" }
-
-
   - name: "settings"
     label: "Settings"
+    icon: settings
     files:
       - name: "menu"
         label: "Menu"
