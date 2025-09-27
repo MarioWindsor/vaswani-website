@@ -11,7 +11,7 @@ metadata:
   unit-size: 1,43,000sqft Total Built-up Area
   location-label: Brookefield, Bangalore
 cover:
-  background: /media/uploads/WhatsApp Image 2025-08-20 at 10.02.36 (1).jpeg
+  background: /media/uploads/matrix-draft-3d-2.jpeg
 overview:
   heading: Inspire, Support and Grow
   sub-heading: Finds the balance between Efficiency and Ease
@@ -24,9 +24,9 @@ overview:
 
         - Robust infrastructure for IT/ITES requirements
   gallery:
-    - image: /media/uploads/WhatsApp Image 2025-08-20 at 10.02.36.jpeg
+    - image: /media/uploads/matrix-draft-3d-1.jpeg
       caption: ''
-    - image: /media/uploads/WhatsApp Image 2025-08-20 at 10.02.36 (1).jpeg
+    - image: /media/uploads/matrix-draft-3d-2.jpeg
       caption: ''
 banner:
   feature-1:
