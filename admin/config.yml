@@ -5,7 +5,7 @@ backend:
   repo: MarioWindsor/vaswani-website
 
 output:
-  omit_empty_optional_fields: false
+  omit_empty_optional_fields: true
 
 local_backend: true
 
