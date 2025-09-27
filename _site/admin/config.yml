@@ -339,6 +339,8 @@ collections:
   - name: "pages"
     label: "Pages"
     icon: news
+    editor:
+      preview: false
     files:
       - name: "csr"
         label: "CSR"
@@ -357,6 +359,8 @@ collections:
   - name: "settings"
     label: "Settings"
     icon: settings
+    editor:
+      preview: false
     files:
       - name: "menu"
         label: "Menu"
