@@ -1,6 +1,5 @@
 ---
-tags:
-  - projects
+tags: projects
 date: 2025-09-28T01:35:00
 name: Matrix
 metadata:
@@ -10,7 +9,7 @@ metadata:
   status: ongoing
   status-label: Under Construction
   starting-price: ''
-  unit-size: 1,43,000sqft
+  unit-size: 1,43,000sqft Total Built-up Area
   location-label: Brookefield, Bangalore
   rera-number: ''
 cover:
@@ -19,7 +18,14 @@ cover:
 overview:
   heading: Inspire, Support and Grow
   sub-heading: Finds the balance between Efficiency and Ease
-  description: Set in the heart of Brookefield, Matrix places you right where opportunity lives. With easy access to tech parks, business hubs, hotels, and transport links, your teams stay connected to everything they need. The location makes collaboration easier and commuting simpler, while surrounding amenities bring convenience right to your doorstep.
+  description: |-
+    Set in the heart of Brookefield, Matrix places you right where opportunity lives. With easy access to tech parks, business hubs, hotels, and transport links, your teams stay connected to everything they need. The location makes collaboration easier and commuting simpler, while surrounding amenities bring convenience right to your doorstep.
+
+    * Modern façade with ample natural light
+
+    * Flexible floor plates designed for scale and adaptability
+
+    * Robust infrastructure for IT/ITES requirements
   gallery:
     - image: /media/uploads/WhatsApp Image 2025-08-20 at 10.02.36.jpeg
       caption: ''
