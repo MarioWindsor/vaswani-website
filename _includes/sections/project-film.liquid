@@ -1,0 +1,18 @@
+<section id="project-film-section" class="project-film-section gap">
+	<div class="row">
+		<div class="container">
+			<div class="title columns small-12 text-center space-50-bottom">
+				<label class="section-label">Project Film</label>
+				<h2 class="section-heading text-neutral-20 w-600">{% if film.heading != blank %}{{ film.heading }}{% endif %}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{% if film.sub-heading != blank %}{{ film.sub-heading }}{% endif %}</h6>
+			</div>
+			{% if film.video != blank %}
+			<div class="film columns small-12">
+				<div class="video-embed">
+					<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ film.video }}?playlist={{ film.video }}&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</section>

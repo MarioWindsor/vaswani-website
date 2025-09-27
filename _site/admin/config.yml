@@ -35,6 +35,7 @@ collections:
             options:
               - { label: "Residential", value: "residential" }
               - { label: "Commercial", value: "commercial" }
+              - { label: "Hospitality", value: "hospitality" }
             default: residential
           - { label: "Project Label", name: "project-label", widget: "string", required: false, hint: "Eg: Luxury 3 & 4 Bedroom Apartments" }
           - label: "Status"
@@ -75,6 +76,14 @@ collections:
             fields:
               - { label: "Image", name: "image", widget: "image", choose_url: false }
               - { label: "Caption", name: "caption", widget: "string", required: false }
+      - label: "Project Film"
+        name: "film"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+          - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
       - label: "Site Plan"
         name: "siteplan"
         widget: "object"
