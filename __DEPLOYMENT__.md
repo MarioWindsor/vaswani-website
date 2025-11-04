@@ -1,9 +1,6 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
-- Update Vaswani Logo with TM on Website
-- Update Lotte Animation with Vaswani TM Logo
-- Favicon
 - Projects Page > Provision for video for construction update
 - Review Hospitality Content - Shared By Meenal [ Update Hospitality Project / Prepare a Response ]
 - Home Page > Add a separate block for Hospitality (after Completed Projects List)
