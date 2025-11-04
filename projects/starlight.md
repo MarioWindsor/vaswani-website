@@ -153,41 +153,7 @@ location:
           distance: 2.3 Km
 progress:
   heading: Construction in Full Swing
-  sub-heading: Explore our Journey
-  entry:
-    - title: MAR 2025
-      heading: March Lorem ipsum dolor sit amet
-      description: |-
-        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      gallery:
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-    - title: Feb 2025
-      heading: February Lorem ipsum dolor sit amet
-      description: |-
-        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      gallery:
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-    - title: Jan 2025
-      heading: January Lorem ipsum dolor sit amet
-      description: |-
-        Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      gallery:
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
-        - image: https://placeholdit.com/1200x800/F1F1F1/999999
+  sub-heading: Updates Coming Soon
 banner:
   feature-1:
     heading: A Private Home Office with Every Unit
