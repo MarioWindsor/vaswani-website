@@ -41,10 +41,20 @@ siteplan:
     - title: Masterplan
       image: /media/uploads/image.png
   floorplan:
-    - title: 3BHK Type 1
-      image: /media/uploads/image.png
-    - title: 4BHK + Home Office Type 2
-      image: /media/uploads/image.png
+    - title: 3BHK + Home Office (1970 sqft)
+      image: /media/uploads/3BHK+_1970.jpg
+    - title: 3BHK + Home Office (2000 sqft)
+      image: /media/uploads/3BHK+_2000.jpg
+    - title: 3BHK + Home Office (2025 sqft)
+      image: /media/uploads/3BHK+_2025.jpg
+    - title: 3BHK + Home Office (2090 sqft)
+      image: /media/uploads/3BHK+_2090.jpg
+    - title: 3BHK + Home Office (2140 sqft)
+      image: /media/uploads/3BHK+_2140.jpg
+    - title: 4BHK + Home Office (2056 sqft)
+      image: /media/uploads/4BHK+_2560.jpg
+    - title: 4BHK + Home Office (2730 sqft)
+      image: /media/uploads/4BHK+_2730.jpg
 amenities:
   heading: 'Nebula : the Clubhouse'
   sub-heading: Limitless Moments. Endless Memories
