@@ -23,6 +23,8 @@ overview:
     Nestled in the heart of Whitefield, Vaswani Starlight offers world-class amenities, thoughtfully designed living spaces, and seamless connectivity to everything that matters. 
 
     This is truly Whitefield’s chosen space. Everything you need is just around the corner, whether it’s the vibrant social scene, thriving tech parks, or lush green surroundings.
+
+    Ground + 23 Floors spread across 3 Towers. Starlight is designed with space, light, and comfort in mind. From the way the windows open to bring in natural air, to the intuitive layouts that make everyday movement effortless.
   gallery:
     - image: /media/uploads/starlight_vaswani_starlight_night.jpg
     - image: /media/uploads/starlight_vaswani_starlight_back_day_view_02.jpg
