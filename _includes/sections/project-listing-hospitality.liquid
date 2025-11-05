@@ -49,7 +49,38 @@
 						{% if project.data.overview.gallery != blank %}
 							{% for gallery in project.data.overview.gallery %}
 							<a class="carousel-list-item" href="{{ project.url }}">
-								<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+								{% assign img_data = images[gallery.image] %}
+								{% if img_data %}
+									{% assign original_width = img_data.width %}
+									{% assign output_path = gallery.image | replace: "/media/", "/img/" %}
+									{% assign extension = output_path | split: '.' | last | prepend: '.' %}
+									{% assign base_path = output_path | remove_last: extension %}
+									{% assign srcset = "" %}
+									{% if original_width > 500 %}
+										{% assign srcset = srcset | append: base_path | append: '-500w' | append: extension | append: ' 500w, ' %}
+									{% endif %}
+									{% if original_width > 1000 %}
+										{% assign srcset = srcset | append: base_path | append: '-1000w' | append: extension | append: ' 1000w, ' %}
+									{% endif %}
+									{% if original_width > 1500 %}
+										{% assign srcset = srcset | append: base_path | append: '-1500w' | append: extension | append: ' 1500w, ' %}
+									{% endif %}
+									{% if original_width > 2000 %}
+										{% assign srcset = srcset | append: base_path | append: '-2000w' | append: extension | append: ' 2000w, ' %}
+									{% endif %}
+									{% assign srcset = srcset | append: output_path | append: ' ' | append: original_width | append: 'w' %}
+									<img 
+										loading="lazy" 
+										class="radius-25 box-shadow" 
+										src="{{ output_path }}" 
+										srcset="{{ srcset }}" 
+										sizes="(max-width: 500px) 80vw, (max-width: 1000px) 60vw, (max-width: 1500px) 40vw, (max-width: 2000px) 30vw" 
+										alt=""
+										width="{{ original_width }}"
+										height="{{ original_width | divided_by: 1.5 | round }}" >
+								{% else %}
+									<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image | replace: "/media/", "/img/" }}" alt="">
+								{% endif %}
 								{% if forloop.first %}
 									{% if project.data.metadata.status-label != blank %}
 									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
@@ -120,7 +151,38 @@
 						{% if project.data.overview.gallery != blank %}
 							{% for gallery in project.data.overview.gallery %}
 							<a class="carousel-list-item" href="{{ project.url }}">
-								<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+								{% assign img_data = images[gallery.image] %}
+								{% if img_data %}
+									{% assign original_width = img_data.width %}
+									{% assign output_path = gallery.image | replace: "/media/", "/img/" %}
+									{% assign extension = output_path | split: '.' | last | prepend: '.' %}
+									{% assign base_path = output_path | remove_last: extension %}
+									{% assign srcset = "" %}
+									{% if original_width > 500 %}
+										{% assign srcset = srcset | append: base_path | append: '-500w' | append: extension | append: ' 500w, ' %}
+									{% endif %}
+									{% if original_width > 1000 %}
+										{% assign srcset = srcset | append: base_path | append: '-1000w' | append: extension | append: ' 1000w, ' %}
+									{% endif %}
+									{% if original_width > 1500 %}
+										{% assign srcset = srcset | append: base_path | append: '-1500w' | append: extension | append: ' 1500w, ' %}
+									{% endif %}
+									{% if original_width > 2000 %}
+										{% assign srcset = srcset | append: base_path | append: '-2000w' | append: extension | append: ' 2000w, ' %}
+									{% endif %}
+									{% assign srcset = srcset | append: output_path | append: ' ' | append: original_width | append: 'w' %}
+									<img 
+										loading="lazy" 
+										class="radius-25 box-shadow" 
+										src="{{ output_path }}" 
+										srcset="{{ srcset }}" 
+										sizes="(max-width: 500px) 80vw, (max-width: 1000px) 60vw, (max-width: 1500px) 40vw, (max-width: 2000px) 30vw" 
+										alt=""
+										width="{{ original_width }}"
+										height="{{ original_width | divided_by: 1.5 | round }}" >
+								{% else %}
+									<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image | replace: "/media/", "/img/" }}" alt="">
+								{% endif %}
 								{% if forloop.first %}
 									{% if project.data.metadata.status-label != blank %}
 									<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>

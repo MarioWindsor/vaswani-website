@@ -39,7 +39,6 @@ overview:
 
     When you live in Vaswani Exquisite, unmatched luxury meets uncompromising connectivity. Located on ITPL Main Road in Whitefield, these spectacular apartments offer world-class amenities for an ultra-fine living experience with proximity to the best schools, hospitals, metro stations, shopping malls  and offices all within a 5-minute walking distance
   gallery:
-    - image: /media/uploads/exquisite_dsc_8083.jpg
     - image: /media/uploads/exquisite_DSC_8083.jpg
     - image: /media/uploads/exquisite_DSC_8140.jpg
     - image: /media/uploads/exquisite_DSC_8290.jpg

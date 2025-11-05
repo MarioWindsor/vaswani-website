@@ -628,7 +628,6 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-12-54bdb417-beb0-4861-9be5-bca8773f97f5.jpg
         - image: /media/uploads/menlo-park-progress-2020-12-a0b31a86-d1e7-496b-878a-53a24c231b88.jpg
         - image: /media/uploads/menlo-park-progress-2020-12-61cba4bb-fcde-4336-a640-bf3f1935604b.jpg
-        - image: /media/uploads/menlo-park-progress-2020-12-2783235f-b654-4d67-9d81-cc83a3848045.jpg
         - image: /media/uploads/menlo-park-progress-2020-12-56d7ca21-f923-4f84-8965-683952a98973.jpg
         - image: /media/uploads/menlo-park-progress-2020-12-1dd7e4b5-2eaa-460b-8c98-3545e3777986.jpg
         - image: /media/uploads/menlo-park-progress-2020-12-48cedb15-d3a3-4820-aeca-89e421688285.jpg
