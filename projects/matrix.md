@@ -16,18 +16,17 @@ overview:
   heading: Inspire, Support and Grow
   sub-heading: Finds the balance between Efficiency and Ease
   description: |-
-    Set in the heart of Brookefield, Matrix places you right where opportunity lives. With easy access to tech parks, business hubs, hotels, and transport links, your teams stay connected to everything they need. The location makes collaboration easier and commuting simpler, while surrounding amenities bring convenience right to your doorstep.
+    Set in the heart of Brookefield, Vaswani Matrix is more than just an office building - we’ve created a space with easy access to tech parks, business hubs, hotels, and transport links, your teams stay connected to everything they need. The location makes collaboration easier and commuting simpler, while surrounding amenities bring convenience right to your doorstep. Crafted with attention to both design and detail — from smart layouts to efficient services, every element comes together to create an environment where businesses can thrive.
 
-        - Modern façade with ample natural light
-
-        - Flexible floor plates designed for scale and adaptability
-
-        - Robust infrastructure for IT/ITES requirements
+    - Modern façade with ample natural light
+    - Flexible floor plates designed for scale and adaptability
+    - Robust infrastructure for IT/ITES requirements
   gallery:
     - image: /media/uploads/matrix-draft-3d-1.jpeg
-      caption: ''
     - image: /media/uploads/matrix-draft-3d-2.jpeg
-      caption: ''
+progress:
+  heading: Under Construction
+  sub-heading: Updates Coming Soon
 banner:
   feature-1:
     align-text: left
