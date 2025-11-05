@@ -1,9 +1,6 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
-- Review Hospitality Content - Shared By Meenal [ Update Hospitality Project / Prepare a Response ]
-- Home Page > Add a separate block for Hospitality (after Completed Projects List)
-
 - Vaswani Exquisite > [ Content ]
 - Projects Page > Provision for video for construction update
 

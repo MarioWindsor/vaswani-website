@@ -5,13 +5,14 @@ name: Lemon Tree Suites
 metadata:
   prefix-name: false
   type: hospitality
+  project-label: 5 Star Accomodations
   status: ongoing
   status-label: All Suite Hotel
   location-label: Whitefield Main Road
 cover:
   background: /media/uploads/lemon_tree_suites_Facade (day shot).jpg
 overview:
-  heading: A little pause of Comfort
+  heading: A Little Pause of Comfort
   sub-heading: in the heart of Whitefield
   description: |-
     At Lemon Tree Suites, Whitefield, we’ve created more than just rooms - we’ve built a space where comfort meets care. Designed for long stays and short visits alike, our 103 suites and executive rooms are crafted to feel like a second home.
