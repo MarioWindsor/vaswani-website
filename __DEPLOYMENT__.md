@@ -16,4 +16,4 @@
 - Vaswani Victoria > [ Content ]
 - Completed Projects > Content Check + Attached Brochure
 - In4Suite Portal > [ Update Link ] ** 'https' issue **
-
+- Test/Debug Favicons

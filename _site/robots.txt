@@ -1,4 +1,0 @@
-Sitemap: https://vaswanigroup.com//sitemap.xml
-
-User-agent: *
-Disallow: /admin/**

@@ -129,7 +129,7 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.name}} {{fields.icon}}'
             fields:
-              - {dlabel: "Name", name: "name", widget: "string", }
+              - { label: "Name", name: "name", widget: "string", }
               - { label: "Icon", name: "icon", widget: "image", choose_url: false }
           - label: "Gallery"
             name: "gallery"
@@ -320,7 +320,7 @@ collections:
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Rating", name: "rating", widget: "number", min: 0, max: 5, value_type: "int" }
-      - { label: "Content", name: "content", widget: "text" }
+      - { label: "Review", name: "review", widget: "text" }
   - name: "awards"
     label: "Awards"
     folder: "awards"
