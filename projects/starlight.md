@@ -32,6 +32,16 @@ overview:
     - image: /media/uploads/starlight_vaswani_starlight_dropoff_view.jpg
     - image: /media/uploads/starlight_vaswani_starlight_aerial_09.jpg
     - image: /media/uploads/starlight_vaswani_starlight_semi_aerial_day_highress_04.jpg
+    - image: /media/uploads/starlight_demo_MG_3870-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_3966-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4006-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4121-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4492-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4533-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4553-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4583-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4823-Edit.jpg
+    - image: /media/uploads/starlight_demo_MG_4904-Edit.jpg
 film:
   heading: Apartment Walkthrough
   sub-heading: It feels like home, doesn't it?

@@ -1,13 +1,11 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
-- Vaswani Starlight > [ Review Content Shared By Meenal + Add Photographs to Main Gallery + Pool 3d Render for Ammenities Gallery + Cleanup ]
-- Vaswani Matrix > [ Content ]
-- Vaswani Exquisite > [ Content ]
-- Projects Page > Provision for video for construction update
-
 - Review Hospitality Content - Shared By Meenal [ Update Hospitality Project / Prepare a Response ]
 - Home Page > Add a separate block for Hospitality (after Completed Projects List)
+
+- Vaswani Exquisite > [ Content ]
+- Projects Page > Provision for video for construction update
 
 - Vaswani Centropolis > [ Content ]
 - Vaswani Victoria > [ Content ]

@@ -107,6 +107,8 @@
 	display: block;
 }
 
+.carousel.gallery .carousel-list .carousel-list-item img { height: 100%; }
+
 @media( min-width: 1000px ) {
 	.carousel.gallery.big-picture .carousel-list {
 		grid-auto-rows: calc(var(--card) * 1.5);
