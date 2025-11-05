@@ -97,9 +97,8 @@ amenities:
       icon: /media/uploads/mini-icon-footsteps.png
   gallery:
     - image: /media/uploads/starlight_vaswani_starlight_club_view.jpg
+    - image: /media/uploads/starlight_vaswani_starlight_pool_02.jpg
     - image: /media/uploads/starlight_vaswani_starlight_dropoff_view.jpg
-    - image: /media/uploads/starlight_vaswani_starlight_aerial_09.jpg
-    - image: /media/uploads/starlight_vaswani_starlight_semi_aerial_day_highress_04.jpg
 brochure:
   background: /media/uploads/starlight_brochure_bg.jpg
   pdf: /media/uploads/vaswani-starlight-ecc-road-whitefield_-e-brochure.pdf
