@@ -5,8 +5,8 @@ const path = require('path');
 const { statSync } = require('fs');
 
 // --- Configuration ---
-const SOURCE_DIR = 'media'; 
-const DEST_DIR = '_site/img'; 
+const SOURCE_DIR = 'media';
+const DEST_DIR = '_site/img';
 const SIZES = [500, 1000, 1500, 2000]; // Use the sizes from your template
 const QUALITY = {
   jpeg: 80,
@@ -48,7 +48,7 @@ const processImage = async (filePath) => {
     }
 
     // --- Save an optimized version of the original, largest size ---
-    const originalSizeFileName = `${name}${ext}`; 
+    const originalSizeFileName = `${name}${ext}`;
     const originalOutputPath = path.join(outputDir, originalSizeFileName);
     if (extension === '.jpg' || extension === '.jpeg') {
       await image.clone().jpeg({ quality: QUALITY.jpeg }).toFile(originalOutputPath);
@@ -56,15 +56,15 @@ const processImage = async (filePath) => {
       await image.clone().png({ quality: QUALITY.png }).toFile(originalOutputPath);
     }
     
-    // --- MODIFIED: Return the width ---
-    return { width: originalWidth }; 
+    // --- Return the width ---
+    return { width: originalWidth };
   } catch (error) {
     console.error(`--- ERROR processing ${filePath} ---`);
     console.error(error.message);
     console.warn(`Skipping this file due to error.`);
     console.error(`-----------------------------------`);
-    // --- MODIFIED: Return null ---
-    return null; 
+    // --- Return null ---
+    return null;
   }
 };
 
@@ -101,10 +101,10 @@ const run = async () => {
       console.error(error.message);
       console.warn(`Skipping this file entirely.`);
       console.error(`-----------------------------------`);
-      continue; 
+      continue;
     }
     
-    const receiptFileName = `${name}${ext}`; 
+    const receiptFileName = `${name}${ext}`;
     const receiptPath = path.join(outputDir, receiptFileName);
     let shouldProcess = true;
 
@@ -123,7 +123,7 @@ const run = async () => {
     fileMap.push({ templatePath, width: metadata.width, shouldProcess });
 
     if (shouldProcess) {
-      tasksToRun.push(processImage(filePath)); 
+      tasksToRun.push(processImage(filePath));
     } else {
       skippedCount++;
     }
@@ -136,13 +136,18 @@ const run = async () => {
 
   await Promise.all(tasksToRun);
   
-  // --- NEW: Create the manifest ---
+  // --- Create the manifest ---
   const manifest = {};
   for (const file of fileMap) {
-    // Add all images to the manifest, even skipped ones
-    manifest[file.templatePath] = {
+    //
+    // --- THIS IS THE ONLY CHANGE ---
+    // We use encodeURI to convert spaces in the KEY to %20
+    const encodedKey = encodeURI(file.templatePath);
+    manifest[encodedKey] = {
       width: file.width
     };
+    // -----------------------------
+    //
   }
 
   try {
