@@ -44,19 +44,19 @@ siteplan:
       image: /media/uploads/image.png
   floorplan:
     - title: 3BHK + Home Office (1970 sqft)
-      image: /media/uploads/3BHK+_1970.jpg
+      image: /media/uploads/starlight_floorplan_3BHK+_1970.jpg
     - title: 3BHK + Home Office (2000 sqft)
-      image: /media/uploads/3BHK+_2000.jpg
+      image: /media/uploads/starlight_floorplan_3BHK+_2000.jpg
     - title: 3BHK + Home Office (2025 sqft)
-      image: /media/uploads/3BHK+_2025.jpg
+      image: /media/uploads/starlight_floorplan_3BHK+_2025.jpg
     - title: 3BHK + Home Office (2090 sqft)
-      image: /media/uploads/3BHK+_2090.jpg
+      image: /media/uploads/starlight_floorplan_3BHK+_2090.jpg
     - title: 3BHK + Home Office (2140 sqft)
-      image: /media/uploads/3BHK+_2140.jpg
+      image: /media/uploads/starlight_floorplan_3BHK+_2140.jpg
     - title: 4BHK + Home Office (2056 sqft)
-      image: /media/uploads/4BHK+_2560.jpg
+      image: /media/uploads/starlight_floorplan_4BHK+_2560.jpg
     - title: 4BHK + Home Office (2730 sqft)
-      image: /media/uploads/4BHK+_2730.jpg
+      image: /media/uploads/starlight_floorplan_4BHK+_2730.jpg
 amenities:
   heading: 'Nebula : the Clubhouse'
   sub-heading: Limitless Moments. Endless Memories
