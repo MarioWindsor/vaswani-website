@@ -42,6 +42,11 @@ overview:
     - image: /media/uploads/lemon_tree_suites_Main%20Gate%20Entry.jpg
     - image: /media/uploads/lemon_tree_suites_Main%20Porch.jpg
     - image: /media/uploads/lemon_tree_suites_Tangerine%20Garden%20(Round%20Table).JPG
+location:
+  heading: Whitefield Main Road
+  sub-heading: At the end of the day, it’s not just where you stay - it’s how you feel. And here, we hope you always feel at home.
+  map-link: https://maps.app.goo.gl/6iPCHPSZyR9o2HxU9
+  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5173.204005439667!2d77.75125799999999!3d12.9665939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0d32fc3a4277%3A0x704e35892c8f30c6!2sLemon%20Tree%20Suites%20%2CWhitefield%2C%20Bengaluru!5e1!3m2!1sen!2sin!4v1762369227875!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 banner:
   feature-1:
     align-text: left
