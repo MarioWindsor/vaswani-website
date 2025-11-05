@@ -9,7 +9,7 @@ metadata:
   status-label: All Suite Hotel
   location-label: Whitefield Main Road
 cover:
-  background: /media/uploads/81b7075b957663d6ed421c9742895898.jpg
+  background: /media/uploads/lemon_tree_suites_Facade (day shot).jpg
 overview:
   heading: A little pause of Comfort
   sub-heading: in the heart of Whitefield
@@ -26,9 +26,9 @@ overview:
     - image: /media/uploads/lemon_tree_suites_Citrus Patio (2).JPG
     - image: /media/uploads/lemon_tree_suites_Deluxe Room (2).JPG
     - image: /media/uploads/lemon_tree_suites_Deluxe Room (4).JPG
+    - image: /media/uploads/lemon_tree_suites_Tangerine Garden (Empty).JPG
     - image: /media/uploads/lemon_tree_suites_Executive Suite (2).JPG
     - image: /media/uploads/lemon_tree_suites_Executive Suite (7).JPG
-    - image: /media/uploads/lemon_tree_suites_Facade (day shot).jpg
     - image: /media/uploads/lemon_tree_suites_Facade (night shot).jpg
     - image: /media/uploads/lemon_tree_suites_Fitness Center (2).JPG
     - image: /media/uploads/lemon_tree_suites_img_9649-img_9653.jpg
@@ -41,7 +41,6 @@ overview:
     - image: /media/uploads/lemon_tree_suites_Reception Counter.jpg
     - image: /media/uploads/lemon_tree_suites_Reception Entry.jpg
     - image: /media/uploads/lemon_tree_suites_Slounge (2).JPG
-    - image: /media/uploads/lemon_tree_suites_Tangerine Garden (Empty).JPG
 banner:
   feature-1:
     align-text: left
