@@ -11,54 +11,14 @@
 		<!-- Carousel -->
 		<div class="carousel">
 			<div class="carousel-list">
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
+				{% for testimon in collections.testimonials %}
+				<div class="carousel-list-item card testimonial space-50">
+					<h5 class="text-primary space-min-bottom">{{ testimon.data.title }}</h5>
+					<small class="block text-neutral-50 space-min-bottom">{{ testimon.date | date: "%B %Y" }}</small>
+					<h5 class="space-25-bottom">{% for i in (1..testimon.data.rating) %}⭐{% endfor %}</h5>
+					<p class="text-neutral-50">{{ testimon.data.review }}</p>
 				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<h5 class="space-25-bottom">⭐⭐⭐⭐⭐</h5>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
-				<div class="carousel-list-item">
-					<div class="card testimonial space-50">
-						<h5 class="text-primary space-min-bottom">Prabhu Thukkaram</h5>
-						<small class="block text-neutral-50 space-min-bottom">10 Months Ago</small>
-						<div class="h5 space-25-bottom">⭐⭐⭐⭐⭐</div>
-						<p class="text-neutral-50">If we could give Vaswani 10 stars we would. We had purchased a residential villa from Vaswani in 1999 and more recently we needed some help from Vaswani. Their willingness to help a customer from 25 years ago is commendable and praise worthy. They went above and beyond to help us out. This unparalleled customer service is not common, especially 25 years after a transaction was made. Our sincere thanks to everyone at Vaswani and we wish them great success in all their endeavors.</p>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 			<div class="row">
 				<div class="carousel-controls container">

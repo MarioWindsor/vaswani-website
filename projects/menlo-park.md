@@ -64,8 +64,8 @@ siteplan:
     - title: 3 BHK (2144 SQFT)
       image: /media/uploads/menlo-park-floorplan-3-BHK-2144-sft.jpg
 progress:
-  heading: q
-  sub-heading: q
+  heading: Project Completed
+  sub-heading: A Glimpse Through Time
   entry:
     - title: JUL 2018
       heading: Project Progress Report as on 7th July 2018

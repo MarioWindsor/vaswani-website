@@ -4,9 +4,6 @@
 - Vaswani Exquisite > [ Content ]
 - Projects Page > Provision for video for construction update
 
-- Vaswani Centropolis > [ Content ]
-- Vaswani Victoria > [ Content ]
-
 - Completed Projects > Content Check + Attached Brochure
 - Test/Debug Favicons
 - Blog > Content Migration
@@ -17,8 +14,6 @@
 
 - In4Suite Portal > [ Update Link ] ** 'https' issue **
 
-- Optimise image Processing
-
 - Paramantara Integration
 
-- Testimonials >CMS-ify
+- Optimise image Processing

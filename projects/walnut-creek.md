@@ -22,9 +22,25 @@ overview:
     - image: /media/uploads/walnut-creek-gallery-4-1-1.jpg
     - image: /media/uploads/walnut-creek-gallery-3-1-1.jpg
     - image: /media/uploads/walnut-creek-gallery-2-1-1.jpg
-  heading: test
-  sub-heading: test
-  description: test
+  heading: A Welcome Oasis
+  sub-heading: Just 22 Villas & 8 Townhouses
+  description: >-
+    A change to the norm in Bangalore’s urban chaos. Uber spacious villas and townhouses  with internationally styled clubhouse and world-class amenities developed on almost 3.25 acres of land
+
+
+    - 4 BHK Villas ranging from 4427 sft to 4357 sft
+
+
+    - 3 BHK Townhouse of 3030 sft and 3148 sft
+
+
+    - Upto 3,000sft of garden & terrace area per villa
+
+
+    - OC Received
+
+
+    Vaswani Walnut Creek is all sold out.
 progress:
   heading: Project Completed
   sub-heading: A Glimpse Through Time
