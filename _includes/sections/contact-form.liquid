@@ -44,24 +44,24 @@
 				<p class="h6">Provide your details, and our expert advisors will connect with you to tailor your next steps.</p>
 			</div>
 			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6">
-				<div class="form card row space-50">
+				<form id="lead-form" class="form block card row space-50">
 					<div class="form-input">
-						<label for="">
+						<label for="f_name">
 							<span class="input-label space-min block">Full Name *</span>
-							<input class="input-field" type="text">
+							<input class="input-field" id="f_name" name="f_name" type="text">
 
 						</label>
 					</div>
 					<div class="form-input">
-						<label for="">
+						<label for="email">
 							<span class="input-label space-min block">Email Id *</span>
-							<input class="input-field" type="text">
+							<input class="input-field" id="email" name="email" type="text">
 						</label>
 					</div>
 					<div class="form-input">
-						<label for="">
+						<label for="phonefax">
 							<span class="input-label space-min block">Phone Number *</span>
-							<input class="input-field" type="text">
+							<input class="input-field" id="phonefax" name="phonefax" type="text">
 						</label>
 					</div>
 					<div class="form-input">
@@ -89,9 +89,18 @@
 						</label>
 					</div>
 					<div class="form-input">
-						<button class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
+						<div class="visuallyhidden">
+							<label for="project">Project:</label>
+							<input type="text" id="project" name="project">
+						</div>
+						<div class="visuallyhidden">
+							<label for="notes">Notes:</label>
+							<textarea id="notes" name="notes"></textarea>
+						</div>
+						<button type="submit" class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
 					</div>
-				</div>
+					<div id="form-status" role="status"></div>
+				</form>
 			</div>
 			<div class="columns or-message small-12 space-50-top medium-4 xlarge-3 xlarge-offset-1">
 				<span class="h4 text-primary">OR</span>
@@ -102,3 +111,59 @@
 		</div>
 	</div>
 </section>
+
+<script>
+  const form = document.getElementById('lead-form');
+  const statusMessage = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (event) => {
+    // 1. Stop the form from submitting normally
+    event.preventDefault();
+    
+    // 2. Get all form data as a plain object
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // 3. Show a 'loading' message
+    statusMessage.textContent = 'Submitting...';
+    
+    try {
+      // 4. Send the data to *your* Netlify Function
+      const response = await fetch('/.netlify/functions/submit-lead', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      // 5. Get the response *from your function*
+      const result = await response.json();
+
+      if (response.ok) {
+        // Handle Paramantra's success/duplicate messages
+        if (result[0]?.status === 'failed' && result[0]?.message === 'duplicate_entry') {
+          statusMessage.textContent = 'This contact number is already in our system.';
+          statusMessage.style.color = 'blue';
+        } else if (result[1]?.status === 'success') {
+          statusMessage.textContent = 'Thank you! We have received your request.';
+          statusMessage.style.color = 'green';
+          form.reset(); // Clear the form
+        } else {
+          statusMessage.textContent = 'Submission received.';
+          statusMessage.style.color = 'green';
+        }
+      } else {
+        // Handle 4xx/5xx errors
+        statusMessage.textContent = `Error: ${result.error || 'Submission failed.'}`;
+        statusMessage.style.color = 'red';
+      }
+
+    } catch (error) {
+      // 6. Handle network errors
+      console.error('Submission error:', error);
+      statusMessage.textContent = 'An error occurred. Please try again later.';
+      statusMessage.style.color = 'red';
+    }
+  });
+</script>
