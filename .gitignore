@@ -9,3 +9,6 @@ node_modules/
 
 # Ignore package-lock.json
 package-lock.json
+
+# Ignore _data/images.json
+_data/images.json
