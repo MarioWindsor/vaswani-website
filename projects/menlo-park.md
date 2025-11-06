@@ -21,9 +21,9 @@ overview:
   description: |-
     Vaswani Menlo Park is an oasis of calm that combines the best of city amenities and country living. Located in the heart of the IT belt, with top-notch schools in the neighbourhood, and the best stores a stone’s throw away, Vaswani Menlo Park is the perfect base for every person in the family.
 
-    Our one, two- and three-bedroom apartments stretch to meet every need of yours, whether essential or entertainment. Take a leisurely swim in the resort-style pool. Lift, stretch or train for a marathon at the gym. Play a game of badminton or cricket with the kids. Watch your parents make friends and thrive in spaces customized for senior citizens.
+    Our 1, 2 and 3 Bedroom Apartments stretch to meet every need of yours, whether essential or entertainment. Take a leisurely swim in the resort-style pool. Lift, stretch or train for a marathon at the gym. Play a game of badminton or cricket with the kids. Watch your parents make friends and thrive in spaces customized for senior citizens.
 
-    As working from home becomes a new reality, Vaswani Menlo Park anticipates some of your needs. Vaswani HomeworX – our concept of quiet spaces in your apartment clubhouse that are conducive to working from the comfort of your home. Learning pods for kids to get their homework done. Private corner home offices built into our two & three-bedroom homes. Vaswani Menlo Park is equipped to help you handle the most unexpected circumstances.
+    As working from home becomes a new reality, Vaswani Menlo Park anticipates some of your needs. Vaswani HomeworX – our concept of quiet spaces in your apartment clubhouse that are conducive to working from the comfort of your home. Learning pods for kids to get their homework done. Private corner home offices built into our 2 & 3 Bedroom homes. Vaswani Menlo Park is equipped to help you handle the most unexpected circumstances.
 
     If happiness were defined as the freedom to live your life the way you want to, Vaswani Menlo Park is your address of happiness.
   gallery:

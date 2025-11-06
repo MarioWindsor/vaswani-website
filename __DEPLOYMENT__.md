@@ -1,10 +1,9 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
-- Vaswani Exquisite > [ Content ]
+- Vaswani Exquisite > [ Video Construction Update ]
 - Projects Page > Provision for video for construction update
 
-- Completed Projects > Content Check + Attached Brochure
 - Test/Debug Favicons
 - Blog > Content Migration
 
