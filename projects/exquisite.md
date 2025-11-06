@@ -62,5 +62,27 @@ location:
   sub-heading: Next to Hotel Zuri
   map-link: https://maps.app.goo.gl/wy8TQ1JtBY1LpCtXA
   map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.877635299528!2d77.7242795!3d12.98979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb58a62769%3A0xd9d2d75e3426ebe!2sVaswani%20Exquisite!5e0!3m2!1sen!2sin!4v1762450541796!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+progress:
+  heading: Project Completed
+  sub-heading: A Glimpse Through Time
+  entry:
+    - title: q
+      heading: q
+      description: |-
+        q
+
+        q
+        q
+      gallery:
+        - image: /media/uploads/81b7075b957663d6ed421c9742895898.jpg
+    - title: m
+      heading: m
+      description: |-
+        m
+
+        m
+        m
+      gallery:
+        - image: /media/uploads/81b7075b957663d6ed421c9742895898.jpg
 ---
 
