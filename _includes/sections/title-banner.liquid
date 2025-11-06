@@ -65,9 +65,9 @@
 
 <section id="title-banner-section" class="title-banner-section">
 	<div class="row">
-		<input id="intro-video-clip" class="visuallyhidden" type="checkbox">
+		<input id="intro-image-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-banner-wrapper">
-			<div class="intro-banner-width fill-dark">
+			<div class="intro-banner-width img-cover fill-dark" style="background-blend-mode: overlay; background-image: url({% if cover.background != blank %}'{{ cover.background }}'{% else %}'media/fallback.jpg'{% endif %});">
 				<h1 class="page-title w-500 text-uppercase text-light">{{ title }}</h1>
 			</div>
 		</div>			
@@ -82,12 +82,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		const bannerSection = document.getElementById('title-banner-section');
 
 		if (bannerSection) {
-			const videoCheckbox = document.getElementById('intro-video-clip');
+			const imageCheckbox = document.getElementById('intro-image-clip');
 			const scrollPosition = window.scrollY;
 			if (scrollPosition > 0) {
-			  videoCheckbox.checked = true;
+			  imageCheckbox.checked = true;
 			} else {
-			  videoCheckbox.checked = false;
+			  imageCheckbox.checked = false;
 			}
 		}
 	};

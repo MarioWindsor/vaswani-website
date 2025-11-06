@@ -1,6 +1,8 @@
 ---
 title: RERA Disclaimer
 layout: layouts/rera-disclaimer.liquid
+cover:
+  background: /media/banner-4.jpg
 ---
 ## Disclaimer
 

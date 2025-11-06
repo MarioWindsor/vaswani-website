@@ -1,6 +1,8 @@
 ---
 title: Privacy Policy
 layout: layouts/privacy-policy.liquid
+cover:
+  background: /media/banner-2.jpg
 ---
 ## Privacy Policy
 
