@@ -190,6 +190,7 @@ collections:
               - { label: Title, name: title, widget: string, required: false, hint: "Eg: Feb 2025" }
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
               - label: "Gallery"
                 name: "gallery"
                 widget: "list"
