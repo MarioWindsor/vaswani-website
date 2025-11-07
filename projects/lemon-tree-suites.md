@@ -5,7 +5,7 @@ name: Lemon Tree Suites
 metadata:
   prefix-name: false
   type: hospitality
-  project-label: 5 Star Accomodations
+  project-label: 4 Star Accomodations
   status: ongoing
   status-label: All Suite Hotel
   location-label: Whitefield Main Road
