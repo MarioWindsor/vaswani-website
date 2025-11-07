@@ -902,8 +902,8 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-07-Exquisite-1.jpg
     - title: SEP 2021
       heading: Project Progress Report as on September 2021
-      description: |-
-        The Project is nearing completion.
+      description: The Project is nearing completion.
+      video: c3JpE5EF04Y
       gallery:
         - image: /media/uploads/exquisite-floorplan-progress-2021-09-WhatsApp-Image-2021-10-03-at-22.11.34.jpeg
         - image: /media/uploads/exquisite-floorplan-progress-2021-09-WhatsApp-Image-2021-11-30-at-14.56.57.jpeg
