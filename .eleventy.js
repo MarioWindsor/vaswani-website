@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("media");
 	eleventyConfig.addPassthroughCopy("admin");
-	eleventyConfig.addPassthroughCopy("favicon.ico");
+	eleventyConfig.addPassthroughCopy("favicon");
 	eleventyConfig.addPassthroughCopy("js");
 	eleventyConfig.addPassthroughCopy("sitemap.xml");
 	eleventyConfig.addPassthroughCopy("robots.txt");

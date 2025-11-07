@@ -25,9 +25,16 @@
 		<input class="entry-radio visuallyhidden" type="radio" name="entry-radio-group" id="{{ entry.title | slugify }}" {% if forloop.first == true %}checked{% endif %}>
 		<div id="entry-{{ entry.title | slugify }}" class="entry {{ entry.title | slugify }}">
 			<!-- Carousel -->
-			{% if entry.gallery != blank %}
+			{% if entry.gallery != blank or entry.video != blank %}
 			<div class="carousel gallery space-50-top">
 				<div class="carousel-list">
+					{% if entry.video != blank %}
+						<div class="carousel-list-item">
+							<div class="video-embed radius-min box-shadow" style="padding: 0; height: 100%; width: calc(var(--card)*1.7777);">
+								<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ entry.video }}?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+						</div>
+					{% endif %}
 					{% for gallery in entry.gallery %}
 					<div class="carousel-list-item">
 						<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">

@@ -1,9 +1,6 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
-- Vaswani Exquisite > [ Video Construction Update ]
-- Projects Page > Provision for video for construction update
-
 - Test/Debug Favicons
 - Blog > Content Migration
 
@@ -13,6 +10,6 @@
 
 - In4Suite Portal > [ Update Link ] ** 'https' issue **
 
-- Paramantara Integration
+- Paramantara Integration > Test
 
 - Optimise image Processing
