@@ -19,7 +19,6 @@ overview:
 
     Set in the heart of Whitefield’s IT corridor, our hotel is perfectly placed for work and leisure. Thoughtful service, spacious living, and warm hospitality make every stay memorable. Whether you’re here for business, a project, or a pause, Lemon Tree Suites welcomes you with the kind of comfort that makes settling in easy.
   gallery:
-    - image: /media/uploads/lemon_tree_suites_Reception%20Entry.jpg
     - image: /media/uploads/lemon_tree_suites_Reception%20Counter.jpg
     - image: /media/uploads/lemon_tree_suites_Presidential%20Suite%20(1).JPG
     - image: /media/uploads/lemon_tree_suites_img_9649-img_9653.jpg

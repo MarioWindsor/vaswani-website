@@ -1,6 +1,11 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
+- add city selector in the menu
+- newsletter signup > google sheets > name and email
+- replace with dummy photos of founder
+- new script integration feedback
+
 - Test/Debug Favicons
 - Blog > Content Migration
 
