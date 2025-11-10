@@ -3,27 +3,33 @@ tags: projects
 date: 2022-01-01T19:08:00.000+05:30
 name: Menlo Park
 metadata:
-  prefix-name: true
-  type: residential
   project-label: 1, 2 & 3 BHK Apartments
-  status: completed
-  status-label: Completed 2022
-  starting-price: Starting at ₹49L
+  prefix-name: true
   unit-size: 733sqft to 2144sqft
-  location-label: Off Brookefield Jn., Whitefield
+  status: completed
   rera-number: PRM/KA/RERA/1251/446/PR/171015/000854
+  status-label: Completed 2022
+  type: residential
+  starting-price: ""
+  location-label: Off Brookefield Jn., Whitefield
 cover:
   logo: /media/uploads/menlo-park-project-logo-white.png
   background: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
 overview:
   heading: In the bustle of Whitefield
   sub-heading: All units at Vaswani Menlo Park are sold out
-  description: |-
-    Vaswani Menlo Park is an oasis of calm that combines the best of city amenities and country living. Located in the heart of the IT belt, with top-notch schools in the neighbourhood, and the best stores a stone’s throw away, Vaswani Menlo Park is the perfect base for every person in the family.
+  description: >-
+    Vaswani Menlo Park is an oasis of calm that combines the best of city
+    amenities and country living. Located in the heart of the IT belt, with
+    top-notch schools in the neighbourhood, and the best stores a stone’s throw
+    away, Vaswani Menlo Park is the perfect base for every person in the family.
+
 
     Our 1, 2 and 3 Bedroom Apartments stretch to meet every need of yours, whether essential or entertainment. Take a leisurely swim in the resort-style pool. Lift, stretch or train for a marathon at the gym. Play a game of badminton or cricket with the kids. Watch your parents make friends and thrive in spaces customized for senior citizens.
 
+
     As working from home becomes a new reality, Vaswani Menlo Park anticipates some of your needs. Vaswani HomeworX – our concept of quiet spaces in your apartment clubhouse that are conducive to working from the comfort of your home. Learning pods for kids to get their homework done. Private corner home offices built into our 2 & 3 Bedroom homes. Vaswani Menlo Park is equipped to help you handle the most unexpected circumstances.
+
 
     If happiness were defined as the freedom to live your life the way you want to, Vaswani Menlo Park is your address of happiness.
   gallery:
@@ -73,15 +79,20 @@ location:
   heading: Off Brookefield Junction
   sub-heading: On the cusp of the ORR, Whitefield & EPIP Zone
   map-link: https://maps.app.goo.gl/4iX59wAFBn7ubgQ86
-  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.415025844139!2d77.717493!3d12.9492007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1240c1842521%3A0x4d5cd2b77c0c4355!2sVaswani%20Menlo%20Park!5e0!3m2!1sen!2sin!4v1762449263160!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  map-embed: <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.415025844139!2d77.717493!3d12.9492007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1240c1842521%3A0x4d5cd2b77c0c4355!2sVaswani%20Menlo%20Park!5e0!3m2!1sen!2sin!4v1762449263160!5m2!1sen!2sin"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 progress:
   heading: Project Completed
   sub-heading: A Glimpse Through Time
   entry:
     - title: JUL 2018
       heading: Project Progress Report as on 7th July 2018
-      description: |-
-        Tower D - Excavation has been completed and footing work is under progress.
+      description: >-
+        Tower D - Excavation has been completed and footing work is under
+        progress.
+
         Tower C - Excavation works in progress.
       gallery:
         - image: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
@@ -173,11 +184,15 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-01-IMG_20190110_114454.jpg
     - title: FEB 2019
       heading: Project Progress Report as on 10th February 2019
-      description: |-
+      description: >-
         Tower A – Ground Floor Slab Completed.
+
         Tower B – First Floor Slab Completed.
+
         Tower C – Third Floor Slab work in progress.
+
         Tower D – Third Floor Slab work in progress & Ground Floor Block Work in Progress.
+
         Tower E – Footing work in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-02-IMG_20190213_165934.jpg
@@ -199,11 +214,15 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-02-IMG_20190213_165702.jpg
     - title: MAR 2019
       heading: Project Progress Report as on 10th March 2019
-      description: |-
+      description: >-
         Tower A – First Floor Slab works in Progress.
+
         Tower B – Second Floor Slab Completed.
+
         Tower C – Third Floor Slab Completed; Ground & First floor Block Work in Progress.
+
         Tower D – Fourth Floor Slab Completed; Ground & First floor Block Work in Progress.
+
         Tower F – Basement Column 2nd lift work in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-03-IMG_20190314_144033.jpg
@@ -222,11 +241,15 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-03-IMG_20190314_145301.jpg
     - title: APR 2019
       heading: Project Progress Report as on 10th April 2019
-      description: |-
+      description: >-
         Tower A –Second Floor Slab Completed.
+
         Tower B – Fourth Floor Column Work in Progress, Ground Floor Block Work in Progress.
+
         Tower C – Fifth Floor Column Work in Progress; Ground, First & Second Floor Block Work in Progress.
+
         Tower D – Fifth Floor Slab Completed; Ground, First & Second Floor Block Work in Progress.
+
         Tower F – Ground Floor Slab Work in Progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-04-IMG_20190412_155901.jpg
@@ -243,11 +266,15 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-04-IMG_20190412_161039.jpg
     - title: MAY 2019
       heading: Project Progress Report as on 10th May 2019
-      description: |-
+      description: >-
         Tower A – Third Floor Slab Completed.
+
         Tower B – Fourth Floor Slab Completed, Ground & First Floor Block Work in Progress.
+
         Tower C – Fifth Floor Slab Completed; Ground to Third Floor Block Work in Progress.
+
         Tower D – Sixth Floor Slab Work in Progress; Ground to Third Floor Block Work in Progress.
+
         Tower F – Ground Floor Slab Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-05-IMG_20190508_170711.jpg
@@ -262,12 +289,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-05-IMG_20190508_165432.jpg
     - title: JUN 2019
       heading: Project Progress Report as on 10th June 2019
-      description: |-
-        Tower A – Fourth Floor Slab Work in Progress, First Floor Block Work in Progress.
+      description: >-
+        Tower A – Fourth Floor Slab Work in Progress, First Floor Block Work in
+        Progress.
+
         Tower B – Fifth Floor Slab Completed, First & Second Floor Block Work in Progress.
+
         Tower C – Sixth Floor Slab Completed, Second & Third Floor Block Work in Progress.
+
         Tower D – Seventh Floor Slab Work in Progress, Third & Fourth Floor Block Work in Progress.
+
         Tower E – Ground Floor Slab Work in Progress.
+
         Tower F – First Floor Slab Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-06-IMG_8626.jpg
@@ -282,12 +315,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-06-IMG_8523.jpg
     - title: JUL 2019
       heading: Project Progress Report as on 10th July 2019
-      description: |-
-        Tower A - Slab Work, 4th Floor Completed. Block Work, 1st Floor Completed.
+      description: >-
+        Tower A - Slab Work, 4th Floor Completed. Block Work, 1st Floor
+        Completed.
+
         Tower B - Slab Work, 6th Floor Slab Completed. Block Work, 2nd Floor Completed.
+
         Tower C - Slab Work, 7th Floor Slab Completed. Block Work, 2nd Floor Completed. Internal Plastering, Ground & First Floor in progress.
+
         Tower D - Slab Work, 8th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, Ground & First Floor in progress.
+
         Tower E - Slab Work, Ground Floor Slab Completed.
+
         Tower F - Slab Work, 2nd Floor Slab Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-07-c11e24dd-4afb-482a-af2a-170c6668270e.jpg
@@ -302,9 +341,12 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-07-5d271ce7-a4cb-4af6-aa3f-f9c2fa3b156c.jpg
     - title: AUG 2019
       heading: Project Progress Report as on 10th August 2019
-      description: |-
-        Tower A - Slab Work, 6th Floor Slab Completed. Block Work, 2nd Floor Completed.
+      description: >-
+        Tower A - Slab Work, 6th Floor Slab Completed. Block Work, 2nd Floor
+        Completed.
+
         Tower B - Slab Work, 7th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, Ground Floor In Progress.
+
         Tower C - Slab Work, 8th Floor Slab Completed. Block Work, 4th Floor Completed. Internal Plastering, Ground Floor Completed & 1st & 2nd Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-08-IMG_0376.jpg
@@ -318,12 +360,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-08-IMG_0372.jpg
     - title: SEP 2019
       heading: Project Progress Report as on 10th September 2019
-      description: |-
-        Tower A - Slab Work, 7th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, 1st Floor in Progress.
+      description: >-
+        Tower A - Slab Work, 7th Floor Slab Completed. Block Work, 3rd Floor
+        Completed. Internal Plastering, 1st Floor in Progress.
+
         Tower B - Slab Work, 8th Floor Slab Completed. Block Work, 5th Floor Completed. Internal Plastering, 1st Floor In Progress.
+
         Tower C - Slab Work, 10th Floor Slab Completed. Block Work, 5th Floor Completed. Internal Plastering, 3rd Floor in progress.
+
         Tower D - Slab Work, 10th Floor Slab Completed. Block Work, 6th Floor Completed. Internal Plastering, 3rd Floor completed.
+
         Tower E -  Slab Work, 2nd Floor Slab Completed.
+
         Tower F - Slab Work, 4th Floor Slab Completed. Block Work, 1st Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-09-IMG_1364.jpg
@@ -345,12 +393,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-09-IMG_1253.jpg
     - title: OCT 2019
       heading: Project Progress Report as on 10th October 2019
-      description: |-
-        Tower A - Slab Work, 8th Floor Slab Completed. Block Work, 4th Floor Completed. Internal Plastering, 1st Floor Completed.
+      description: >-
+        Tower A - Slab Work, 8th Floor Slab Completed. Block Work, 4th Floor
+        Completed. Internal Plastering, 1st Floor Completed.
+
         Tower B - Slab Work, 9th Floor Slab Completed. Block Work, 6th Floor Completed. Internal Plastering, 2nd Floor Completed.
+
         Tower C - Slab Work, 11th Floor Slab Completed. Block Work, 6th Floor Completed. Internal Plastering, 3rd Floor Completed.
+
         Tower D - Slab Work, 11th Floor Slab Completed. Block Work, 7th Floor Completed. Internal Plastering, 6th Floor completed.
+
         Tower E - Slab Work, 4th Floor Slab Completed.
+
         Tower F - Slab Work, 5th Floor Slab Completed. Block Work, 1st Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-10-WhatsApp-Image-2019-10-12-at-3.50.34-PM.jpeg
@@ -370,12 +424,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-10-WhatsApp-Image-2019-10-12-at-10.41.00-AM.jpeg
     - title: NOV 2019
       heading: Project Progress Report as on 10th November 2019
-      description: |-
-        Tower A - Slab Work, 9th Floor Slab Completed. Block Work, 5th Floor Completed. Internal Plastering, 2nd Floor Completed.
+      description: >-
+        Tower A - Slab Work, 9th Floor Slab Completed. Block Work, 5th Floor
+        Completed. Internal Plastering, 2nd Floor Completed.
+
         Tower B - Slab Work, 10th Floor Slab Completed. Block Work, 7th Floor Completed. Internal Plastering, 3rd Floor Completed.
+
         Tower C - Slab Work, 12th Floor Slab Completed. Block Work, 8th Floor Completed. Internal Plastering, 4th Floor Completed.
+
         Tower D - Slab Work, 12th Floor Slab Completed. Block Work, 8th Floor Completed. Internal Plastering, 7th Floor completed.
+
         Tower E - Slab Work, 4th Floor Slab Completed.
+
         Tower F - Slab Work, 6th Floor Slab Completed. Block Work, 2nd Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-11-SHOWE1677.jpg
@@ -392,12 +452,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-11-IMG_3341.jpg
     - title: DEC 2019
       heading: Project Progress Report as on 10th December 2019
-      description: |-
-        Tower A - Slab Work, 10th Floor Slab Completed. Block Work, 6th Floor Completed. Internal Plastering, 4th Floor Completed.
+      description: >-
+        Tower A - Slab Work, 10th Floor Slab Completed. Block Work, 6th Floor
+        Completed. Internal Plastering, 4th Floor Completed.
+
         Tower B - Slab Work, 11th Floor Slab Completed. Block Work, 8th Floor Completed. Internal Plastering, 5th Floor Completed.
+
         Tower C - Slab Work, 13th Floor Slab Completed. Block Work, 10th Floor Completed. Internal Plastering, 6th Floor Completed.
+
         Tower D - Slab Work, 13th Floor Slab Completed. Block Work, 9th Floor Completed. Internal Plastering, 8th Floor completed.
+
         Tower E - Slab Work, 5th Floor Slab Completed. Block Work, 2nd Floor Completed.
+
         Tower F - Slab Work, 6th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, 1st Floor in Progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2019-12-IMG_4015.jpg
@@ -414,12 +480,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2019-12-IMG_3977.jpg
     - title: JAN 2020
       heading: Project Progress Report as on 10th January 2019
-      description: |-
-        Tower A - Slab Work, 11th Floor Slab Completed. Block Work, 7th Floor Completed. Internal Plastering, 5th Floor Completed.
+      description: >-
+        Tower A - Slab Work, 11th Floor Slab Completed. Block Work, 7th Floor
+        Completed. Internal Plastering, 5th Floor Completed.
+
         Tower B - Slab Work, 12th Floor Slab Completed. Block Work, 9th Floor Completed. Internal Plastering, 7th Floor Completed.
+
         Tower C - Slab Work, 14th Floor Slab Completed. Block Work, 10th Floor Completed. Internal Plastering, 7th Floor Completed.
+
         Tower D - Slab Work, 14th Floor Slab Completed. Block Work, 10th Floor Completed. Internal Plastering, 8th Floor completed.
+
         Tower E - Slab Work, 6th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, 1st Floor in progress.
+
         Tower F - Slab Work, 7th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, 1st Floor Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-01-11-1.jpg
@@ -431,12 +503,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-01-9-4.jpg
     - title: FEB 2020
       heading: Project Progress Report as on 10th February 2020
-      description: |-
-        Tower A - Slab Work, 12th Floor Slab Completed. Block Work, 8th Floor Completed. Internal Plastering, 6th Floor Completed.
+      description: >-
+        Tower A - Slab Work, 12th Floor Slab Completed. Block Work, 8th Floor
+        Completed. Internal Plastering, 6th Floor Completed.
+
         Tower B - Slab Work, 12th Floor Slab Completed. Block Work, 9th Floor Completed. Internal Plastering, 8th Floor Completed.
+
         Tower C - Slab Work, Terrace Slab Completed. Block Work, 10th Floor Completed. Internal Plastering, 8th Floor Completed.
+
         Tower D - Slab Work, Terrace Slab Completed. Block Work, 11th Floor Completed. Internal Plastering, 9th Floor completed.
+
         Tower E - Slab Work, 6th Floor Slab Completed. Block Work, 3rd Floor Completed. Internal Plastering, 1st Floor in progress.
+
         Tower F - Slab Work, 8th Floor Slab Completed. Block Work, 4th Floor Completed. Internal Plastering, 2nd Floor Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-02-fe6c2fe8-1b41-45e1-b4a2-a0bd0b943943.jpg
@@ -450,12 +528,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-02-6cff22cd-10a7-4359-ba4e-4ca86ec7e403.jpg
     - title: MAR 2020
       heading: Project Progress Report as on 10th March 2020
-      description: |-
-        Tower A - Slab Work, 13th Floor Slab Completed. Block Work, 9th Floor Completed. Internal Plastering, 6th Floor Completed.
+      description: >-
+        Tower A - Slab Work, 13th Floor Slab Completed. Block Work, 9th Floor
+        Completed. Internal Plastering, 6th Floor Completed.
+
         Tower B - Slab Work, 13th Floor Slab Completed. Block Work, 10th Floor Completed. Internal Plastering, 8th Floor Completed.
+
         Tower C - Slab Work, Terrace Slab Completed. Block Work, 11th Floor Completed. Internal Plastering, 8th Floor Completed.
+
         Tower D - Slab Work, Terrace Slab Completed. Block Work, 12th Floor Completed. Internal Plastering, 9th Floor completed.
+
         Tower E - Slab Work, 8th Floor Slab Completed. Block Work, 4th Floor Completed. Internal Plastering, 1st Floor in progress.
+
         Tower F - Slab Work, 9th Floor Slab Completed. Block Work, 5th Floor Completed. Internal Plastering, 2nd Floor Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-03-IMG_7239.jpg
@@ -472,18 +556,25 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-03-IMG_7170.jpg
     - title: MAY 2020
       heading: Project Progress Report as on 10th May 2020
-      description: |-
-        Tower A - Slab Work, 13th Floor Slab Completed. Block Work, 10th Floor in Progress. Internal Plastering, 8th Floor Completed.
+      description: >-
+        Tower A - Slab Work, 13th Floor Slab Completed. Block Work, 10th Floor
+        in Progress. Internal Plastering, 8th Floor Completed.
+
 
         Tower B - Slab Work, Terrace Floor Slab Ready to be casted. Block Work, 11th Floor in progress. Internal Plastering, 9th Floor Completed.
 
+
         Tower C - Slab Work, Terrace Slab Completed. Block Work, 12th Floor in progress. Internal Plastering, 10th Floor Completed.
+
 
         Tower D - Slab Work, Terrace Slab Completed. Block Work, 13th Floor in progress. Internal Plastering, 10th Floor completed.
 
+
         Tower E - Slab Work, 8th Floor Slab Completed. Block Work, 5th Floor in Progress. Internal Plastering, 3rd Floor in progress.
 
+
         Tower F - Slab Work, 10th Floor Slab  Ready to be casted. Block Work, 6th Floor in progress. Internal Plastering, 4th Floor Completed.
+
 
         We are happy to share that we are back to work and our construction sites are active as well (since April 27th). As there are nearly 250 workers on site, we are leaving no stone unturned for safety within the premises. As responsible citizens, wearing a mask, regular hand sanitization, thermal screening, maintaining physical distance, etc. are the stringent protocols that are being followed across our sites and offices.
       gallery:
@@ -505,12 +596,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-05-DSC4113.jpg
     - title: JUN 2020
       heading: Project Progress Report as on 10th June 2020
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, 11th Floor in Progress. Internal Plastering, 8th Floor Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, 11th Floor in Progress.
+        Internal Plastering, 8th Floor Completed.
+
         Tower B - Slab Work, Completed. Block Work, 11th Floor in progress. Internal Plastering, 9th Floor Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, 11th Floor Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, 11th Floor completed.
+
         Tower E - Slab Work, 9th Floor Slab Completed. Block Work, 6th Floor in Progress. Internal Plastering, 3rd Floor in progress.
+
         Tower F - Slab Work, 10th Floor Slab Completed. Block Work, 7th Floor in progress. Internal Plastering, 5th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-06-IMG_8645.jpg
@@ -522,12 +619,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-06-IMG_8648.png
     - title: JUL 2020
       heading: Project Progress Report as on 10th July 2020
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, 12th Floor in Progress. Internal Plastering, 10th Floor Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, 12th Floor in Progress.
+        Internal Plastering, 10th Floor Completed.
+
         Tower B - Slab Work, Completed. Block Work, 12th Floor in progress. Internal Plastering, 10th Floor Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in Progress.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, 12th Floor completed.
+
         Tower E - Slab Work, 10th Floor Slab Completed. Block Work, 7th Floor in Progress. Internal Plastering, 4th Floor in progress.
+
         Tower F - Slab Work, 11th Floor Slab Completed. Block Work, 8th Floor in progress. Internal Plastering, 5th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-07-IMG_9101.jpg
@@ -545,12 +648,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-07-IMG_9040.jpg
     - title: AUG 2020
       heading: Project Progress Report as on 10th January 2019
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, 13th Floor in Progress. Internal Plastering, 10th Floor Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, 13th Floor in Progress.
+        Internal Plastering, 10th Floor Completed.
+
         Tower B - Slab Work, Completed. Block Work, 13th Floor in progress. Internal Plastering, 11th Floor in progress.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in Progress.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower E - Slab Work, 11th Floor in Progress. Block Work, 7th Floor Completed. Internal Plastering, 5th Floor in progress.
+
         Tower F - Slab Work, 12th Floor Completed. Block Work, 9th Floor in progress. Internal Plastering, 6th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-08-IMG_9540.jpg
@@ -567,12 +676,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-08-IMG_9486.jpg
     - title: SEP 2020
       heading: Project Progress Report as on 10th September 2020
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, 11th Floor Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, 11th Floor Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, 12th Floor in progress.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower E - Slab Work, 12th Floor ready to cast. Block Work, 8th Floor Completed. Internal Plastering, 6th Floor in progress.
+
         Tower F - Slab Work, 13th Floor Completed. Block Work, 10th Floor in progress. Internal Plastering, 7th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-09-IMG_0298.jpg
@@ -590,12 +705,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-09-IMG_0280.jpg
     - title: OCT 2020
       heading: Project Progress Report as on 10th October 2020
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in Floor in Progress.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, 13th Floor in Floor in Progress.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in progress.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower E - Slab Work, 13th Floor Slab in progress. Block Work, 9th Floor Completed. Internal Plastering, 8th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, 11th Floor in progress. Internal Plastering, 8th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-10-Menlo-Park-8.jpg
@@ -608,12 +729,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-10-Menlo-Park-4.jpg
     - title: NOV 2020
       heading: Project Progress Report as on 10th November 2020
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower E - Slab Work, 13th Floor Slab Completed. Block Work, 10th Floor in Progress. Internal Plastering, 9th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, 11th Floor in progress. Internal Plastering, 9th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-11-Picture6-5.jpg
@@ -626,12 +753,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-11-Picture2-5.jpg
     - title: DEC 2020
       heading: Project Progress Report as on 10th December 2020
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
+
         Tower E - Slab Work, Completed. Block Work, 12th Floor in Progress. Internal Plastering, 9th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, 13th Floor in progress. Internal Plastering, 11th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2020-12-fa9749e4-4a75-4026-a981-a66923a65ddc.jpg
@@ -644,12 +777,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2020-12-48cedb15-d3a3-4820-aeca-89e421688285.jpg
     - title: JAN 2021
       heading: Project Progress Report as on 10th January 2019
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, 12th Floor in Progress.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. MEP Work, 12th Floor in Progress.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, 10th Floor in Progress.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed.
+
         Tower E - Slab Work, Completed. Block Work, 13th Floor in Progress. Internal Plastering, 10th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, 12th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-01-WhatsApp-Image-2021-01-12-at-8.56.05-PM-14.jpeg
@@ -665,12 +804,18 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-01-WhatsApp-Image-2021-01-12-at-8.56.05-PM-15.jpeg
     - title: FEB 2021
       heading: Project Progress Report as on 10th February 2021
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, 12th Floor in Progress.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. MEP Work, 12th Floor in Progress.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, 12th Floor in Progress.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed.
+
         Tower E - Slab Work, Completed. Block Work, 13th Floor in Progress. Internal Plastering, 11th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-02-Vaswanimenlopark.jpeg
@@ -682,12 +827,19 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-02-Vaswanimenlopark3.jpeg
     - title: MAR 2021
       heading: Project Progress Report as on 10th March 2021
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, Work in Progress.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. MEP Work, Completed. Tilling & Dado, Work in
+        Progress.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, 13th Floor in Progress. Tilling & Dado, Work in Progress.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, 50% Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, 75% Completed.
+
         Tower E - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-03-WhatsApp-Image-2021-03-10-at-9.27.30-AM.jpeg
@@ -702,12 +854,19 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-03-WhatsApp-Image-2021-03-10-at-9.27.30-AM-1-1.jpeg
     - title: APR 2021
       heading: Project Progress Report as on 10th April 2021
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, 30% Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. MEP Work, Completed. Tilling & Dado, 30%
+        Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, 5th Floor Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, 50% Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. MEP Work, Completed. Tilling & Dado, 85% Completed.
+
         Tower E - Slab Work, Completed. Block Work, Completed. Internal Plastering, 13th Floor in progress.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-04-6f3e9011-8f57-45c9-88a6-90c0dc3cded0.jpg
@@ -720,12 +879,19 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-04-5300a5e8-fa06-436b-8a12-f319d9820611.jpg
     - title: MAY 2021
       heading: Project Progress Report as on 10th May 2021
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. External Plastering, Completed. External Painting
+        - Primer Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed.
+
         Tower E - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, 50% Completed. External Painting - Yet to Start.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, 80% Completed. External Painting - Yet to Start.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-05-Picture6-6.jpg
@@ -735,12 +901,19 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-05-Picture1-11.jpg
     - title: JUN 2021
       heading: Project Progress Report as on 10th June 2021
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. External Plastering, Completed. External Painting
+        - Primer Completed. Plumbing Work, 93% Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed.
+
         Tower E - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, 55% Completed. External Painting - Yet to Start. Plumbing Work, 86% Completed.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, 93% Completed. External Painting - Yet to Start. Plumbing Work, 93% Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-06-Picture4-9.jpg
@@ -749,12 +922,20 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-06-Picture1-12.jpg
     - title: JUL 2021
       heading: Project Progress Report as on 10th July 2021
-      description: |-
-        Tower A - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, Completed. Flooring: 12th Floor Completed.
+      description: >-
+        Tower A - Slab Work, Completed. Block Work, Completed. Internal
+        Plastering, Completed. External Plastering, Completed. External Painting
+        - Primer Completed. Plumbing Work, Completed. Flooring: 12th Floor
+        Completed.
+
         Tower B - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed. Flooring: 12th Floor Completed.
+
         Tower C - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed. Flooring: 13th Floor Completed.
+
         Tower D - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, Completed. External Painting - Primer Completed. Plumbing Work, 93% Completed. Flooring: 12th Floor Completed.
+
         Tower E - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, 55% Completed. External Painting - Yet to Start. Plumbing Work, 86% Completed. Flooring: 4th Floor in Progress.
+
         Tower F - Slab Work, Completed. Block Work, Completed. Internal Plastering, Completed. External Plastering, 93% Completed. External Painting - Yet to Start. Plumbing Work, 93% Completed. Flooring: 1st Floor in Progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-07-Menlo-4.jpeg
@@ -765,19 +946,29 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-07-Menlo-7.jpeg
     - title: OCT 2021
       heading: Project Progress Report as on 10th October 2021
-      description: |-
+      description: >-
         External 
+
         1. STP structural work completed.
+
         2. UG sumps completed.
+
         3. Swimming pool work commenced.
 
+
         Podium
+
         Structure works on Eastern and Western Side Completed.
 
+
         Clubhouse
+
         A. Structural Works - First & Second floor Completed.
+
         B. Block Works - Ground to the Second floor Completed.
+
         C. Internal Plastering - Ground to the First floor Completed.
+
         D. External Plastering - Ground Floor Completed, First & Second Floor In Progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-10-WhatsApp-Image-2021-10-06-at-15.10.19.jpeg
@@ -798,31 +989,52 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-10-WhatsApp-Image-2021-10-06-at-15.11.02.jpeg
     - title: NOV 2021
       heading: Project Progress Report as on 10th November 2021
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works -Slab Conduiting, Electrical Works - Wall Conduiting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works -Slab
+        Conduiting, Electrical Works - Wall Conduiting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A - 40 Flats Completed.
+
         Tower B - 50 Flats Completed.
+
         Tower C - 53 Flats Completed.
+
         Tower D - 52 Flats Completed.
+
         Tower E - 42 Flats Completed.
+
         Tower F - 38 Flats Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A - 39 Flats Completed.
+
         Tower B - 47 Flats Completed.
+
         Tower C - 53 Flats Completed.
+
         Tower D - 52 Flats Completed.
+
         Tower E - 34 Flats Completed.
+
         Tower F - 34 Flats Completed.
 
+
         3. Plumbing Works - PVC
+
         Tower A, B, C - Ground to 13 Floor Complete.
+
         Tower D, E & F - 1st to 13 Floor Completed.
 
+
         4. External Plastering
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 95% Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-11-Pool.jpg
@@ -836,33 +1048,55 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-11-WhatsApp-Image-2021-11-08-at-15.20.47.jpeg
     - title: DEC 2021
       heading: Project Progress Report as on 10th December 2021
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works -Slab Conduiting, Electrical Works -Wall Conduiting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works -Slab
+        Conduiting, Electrical Works -Wall Conduiting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – 40 Flats Completed.
+
         Tower B – 51 Flats completed.
+
         Tower C – 54 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 55 Flats Completed.
+
         Tower F – 50 Flats Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A – 46 Flats Completed.
+
         Tower B – 51 Flats Completed.
+
         Tower C – 54 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 50 Flats Completed.
+
         Tower F – 44 Flats Completed.
 
+
         3.Plumbing Works - PVC
+
         Tower A, B, C - Ground to 13 Floor Complete.
+
         Tower D, E & F – 1st to 13 Floor Completed.
+
 
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 85% Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2021-12-WhatsApp-Image-2021-12-06-at-4.10.55-PM.jpeg
@@ -883,40 +1117,68 @@ progress:
         - image: /media/uploads/menlo-park-progress-2021-12-WhatsApp-Image-2021-12-06-at-4.11.09-PM.jpeg
     - title: JAN 2022
       heading: Project Progress Report as on 10th January 2019
-      description: |-
-        Structural,Block, Internal Plastering, Electrical Works -Slab Conduiting, Electrical Works -Wall Conduiting for all towers completed.
+      description: >-
+        Structural,Block, Internal Plastering, Electrical Works -Slab
+        Conduiting, Electrical Works -Wall Conduiting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – 51 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 71 Flats Completed.
+
         Tower F – 52 Flats Completed.
+
 
         2. Electrical Works - Switch Plate
+
         Tower A – 51 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 71 Flats Completed.
+
         Tower F – 52 Flats Completed.
 
+
         3. Plumbing Works - PVC
+
         Tower A, B, C - Ground to 13 Floor Complete.
+
         Tower D, E & F – 1st to 13 Floor Completed.
+
 
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 85% completed.
 
+
         Clubhouse
+
         A. Structural Works - Completed.
+
         B.Block Works - Complete.
+
         C. Internal Plastering - Ground to the First floor - Completed.
+
         D. External Plastering - Completed.
+
         E. Water Proofing - Ground & First Floors Completed. Second floor in progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-01-WhatsApp-Image-2022-01-07-at-17.11.59.jpeg
@@ -932,47 +1194,80 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-01-WhatsApp-Image-2022-01-07-at-17.13.13.jpeg
     - title: FEB 2022
       heading: Project Progress Report as on 10th February 2022
-      description: |-
-        Structural,Block, Internal Plastering, Electrical Works -Slab Conduiting, Electrical Works -Wall Conduiting for all towers completed.
+      description: >-
+        Structural,Block, Internal Plastering, Electrical Works -Slab
+        Conduiting, Electrical Works -Wall Conduiting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – 52 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 78 Flats Completed.
+
         Tower F – 52 Flats Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A – 52 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 78 Flats Completed.
+
         Tower F – 52 Flats Completed.
+
 
         3.Plumbing Works - PVC - Completed.
 
+
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 90% Completed.
 
+
         Clubhouse
+
         A. Structural Works - Completed.
+
         B. Block Works - Complete.
+
         C. Internal Plastering - Ground to the First floor - Completed.
+
         D. External Plastering - Completed.
+
         E. Water Proofing - Ground & First Floors Completed. Second floor in progress.
 
+
         6. Common Area Works
+
         Podium Structural Works - Completed.
+
         Podium driveway water proofing & screed - Work in Progress.
+
         Basement IPS Flooring - 20% Completed.
+
         Landscape - Work in Progress.
 
+
         Swimming Pool
+
         70% Completed - Work in Progress.
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-02-WhatsApp-Image-2022-02-07-at-12.36.35.jpeg
@@ -991,37 +1286,62 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-02-WhatsApp-Image-2022-02-07-at-12.36.38.jpeg
     - title: MAR 2022
       heading: Project Progress Report as on 10th March 2022
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works - Slab Conduiting, Electrical Works - Wall Conduiting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works - Slab
+        Conduiting, Electrical Works - Wall Conduiting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – 52 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 53 Flats Completed.
+
         Tower E – 80 Flats Completed.
+
         Tower F – 52 Flats Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A – 52 Flats Completed.
+
         Tower B – 55 Flats Completed
+
         Tower C – 55 Flats Completed.
+
         Tower D – 52 Flats Completed.
+
         Tower E – 80 Flats Completed.
+
         Tower F – 52 Flats Completed.
+
 
         3.Plumbing Works - PVC - Completed.
 
+
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 90% Completed.
 
+
         6. Common Area Works
+
         Podium Structural Works - Completed.
+
         Basement IPS Flooring - 50% Completed.
+
         Landscape - Work in Progress.
+
         Swimming Pool - Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-03-Picture10-1.jpg
@@ -1036,37 +1356,62 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-03-Picture1-1.png
     - title: APR 2022
       heading: Project Progress Report as on 10th April 2022
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works - Slab Conducting, Electrical Works - Wall Conducting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works - Slab
+        Conducting, Electrical Works - Wall Conducting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – 54 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 53 Flats Completed.
+
         Tower E – 82 Flats Completed.
+
         Tower F – 52 Flats Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A – 52 Flats Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 53 Flats Completed.
+
         Tower E – 82 Flats Completed.
+
         Tower F – 52 Flats Completed.
+
 
         3.Plumbing Works - PVC - Completed.
 
+
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 90% Completed.
 
+
         6. Common Area Works
+
         Podium Structural Works - Completed
+
         Basement IPS Flooring - 85% Completed
+
         Landscape - 35% Completed
+
         Swimming Pool - Completed
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-04-DJI_0039.jpg
@@ -1080,37 +1425,62 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-04-IMG_3707.jpg
     - title: MAY 2022
       heading: Project Progress Report as on 10th May 2022
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works - Slab Conducting, Electrical Works - Wall Conducting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works - Slab
+        Conducting, Electrical Works - Wall Conducting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 54 Flats Completed.
+
         Tower E – Completed.
+
         Tower F – 54 Flats Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A – Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – 53 Flats Completed.
+
         Tower E – Completed.
+
         Tower F – 54 Flats Completed.
+
 
         3.Plumbing Works - PVC - Completed.
 
+
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D & F - Completed.
+
         Tower E - 90 % Completed.
 
+
         6. Common Area Works
+
         Podium Structural Works - Completed.
+
         Basement IPS Flooring - 95% Completed.
+
         Landscape - 45% Completed.
+
         Swimming Pool - Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-05-Menlo-Park-8.jpeg
@@ -1122,36 +1492,60 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-05-Menlo-Park1.jpeg
     - title: JUN 2022
       heading: Project Progress Report as on 10th June 2022
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works - Slab Conducting, Electrical Works - Wall Conducting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works - Slab
+        Conducting, Electrical Works - Wall Conducting for all towers completed.
+
 
         1. Electrical Works - Wiring
+
         Tower A – Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D –Completed.
+
         Tower E – Completed.
+
         Tower F – Completed.
 
+
         2. Electrical Works - Switch Plate
+
         Tower A – Completed.
+
         Tower B – 55 Flats Completed.
+
         Tower C – 55 Flats Completed.
+
         Tower D – Completed.
+
         Tower E – Completed.
+
         Tower F – Completed.
+
 
         3.Plumbing Works - PVC - Completed.
 
+
         4. External Plastering - Completed.
 
+
         5. External Primer
+
         Tower A, B, C, D, E & F - Completed.
 
+
         6. Common Area Works
+
         Podium Structural Works - Completed.
+
         Basement IPS Flooring - 98% Completed.
+
         Landscape - 65% Completed.
+
         Swimming Pool - Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-06-Picture4.png
@@ -1171,24 +1565,39 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-06-WhatsApp-Image-2022-06-14-at-10.46.11-AM-1.jpeg
     - title: JUL 2022
       heading: Project Progress Report as on 10th July 2022
-      description: |-
-        Structural, Block, Internal Plastering, Electrical Works - Slab Conducting, Electrical Works - Wall Conducting for all towers completed.
+      description: >-
+        Structural, Block, Internal Plastering, Electrical Works - Slab
+        Conducting, Electrical Works - Wall Conducting for all towers completed.
+
 
         1. External Frist Coat Painting
+
         Tower A - 90% Completed.
+
         Tower B, C, D, E & F - Completed.
 
+
         2. External Frist Coat Painting
+
         Tower A - 70% Completed.
+
         Tower B - 95% Completed.
+
         Tower C - 90% Completed.
+
         Tower D, E & F - Completed.
 
+
         6. Common Area Works
+
         Podium Structural Works - Completed.
+
         Basement IPS Flooring - Completed.
+
         Landscape - 75% Completed.
+
         Swimming Pool - Completed.
+
         Club House - Completed.
       gallery:
         - image: /media/uploads/menlo-park-progress-2022-07-Menlo-Basement.jpg
@@ -1202,4 +1611,3 @@ progress:
         - image: /media/uploads/menlo-park-progress-2022-07-Menlo-Elevation-3.jpg
         - image: /media/uploads/menlo-park-progress-2022-07-Menlo-Elevation-6.jpg
 ---
-
