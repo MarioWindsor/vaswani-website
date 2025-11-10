@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "node process-images.js",
+    // "prebuild": "node process-images.js",
     "start": "eleventy --serve",
     "build": "eleventy"
   },
