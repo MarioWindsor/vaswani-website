@@ -75,7 +75,7 @@ siteplan:
 amenities:
   heading: "Nebula : the Clubhouse"
   sub-heading: Limitless Moments. Endless Memories
-  description: Podium level nebula clubhouse with 15+ curated indulgences. From
+  description: Podium level nebula clubhouse with 30+ curated indulgences. From
     world-class amenities to exclusive privileges at your doorstep, every detail
     is curated to elevate your lifestyle. Unwind with a few laps in the pool, or
     end your workday in a stellar manner at the clubhouse, Nebula.
