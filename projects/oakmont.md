@@ -14,10 +14,10 @@ cover:
   background: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38-1.jpeg
 overview:
   heading: The Space for What's Next
-  sub-heading: Your workspace is more than a productive environment — it
+  sub-heading: Your workspace is more than a productive environment - it
     symbolizes your brand aspirations. Designed for the future you are building,
     offering an address that just works.
-  description: >-
+  description: >
     Vaswani Oakmont offers a combination of character, convenience, and
     unparalleled infrastructure. Overlooking the KGA Championship Golf Course,
     it is a space designed to elevate your brand, attract top talent, and leave
@@ -27,10 +27,6 @@ overview:
     Development size : 30,000 square feet.
 
     Average Floor Plate size : 7500 square feet.
-
-    Occupancy Certificate Received.
-
-    Ready for fit-outs.
   gallery:
     - image: /media/uploads/oakmont_Vaswani-Oakmont_Oct-2021.jpeg
     - image: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38.jpeg
