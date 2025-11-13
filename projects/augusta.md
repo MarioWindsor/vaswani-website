@@ -24,7 +24,7 @@ overview:
   heading: Brimming in the Lap of Nature
   sub-heading: Imagine a stylish structure with greenery so pristine that you can
     hear the Earth sing.
-  description: >-
+  description: >
     Directly overlooking the Karnataka Golf Association’s Championship Golf
     Course, Vaswani Augusta is a workspace created to revolutionize the idea of
     an office. A Grade 'A' Commercial Office Space Development near the Embassy
@@ -32,7 +32,9 @@ overview:
     architecture & design.
 
 
-    This region primarily houses captive units of major  IT/ ITeS and BFSI companies 
+    Development size : 34,400 square feet.
+
+    Average Floor Plate size : 8000 square feet.
 siteplan:
   floorplan:
     - title: Ground Floor
