@@ -32,7 +32,7 @@ overview:
     architecture & design.
 
 
-    This region primarily houses captive units of major  IT/ ITeS and BFSI companies like IBM, Goldman Sachs, Yahoo, 24x7 Customer, Microsoft, ANZ, Target Corporation, J P Morgan and others
+    This region primarily houses captive units of major  IT/ ITeS and BFSI companies 
 siteplan:
   floorplan:
     - title: Ground Floor
