@@ -3,26 +3,31 @@ tags: projects
 date: 2025-08-07T03:19:00.000+05:30
 name: Starlight
 metadata:
-  prefix-name: true
-  type: residential
   project-label: Luxury 3 & 4 Bedroom Homes
+  prefix-name: true
+  unit-size: 1970 sqft to 2730 sqft Apartments
   status: ongoing
-  status-label: Construction in Full Swing
-  starting-price: Starting at ₹2.82Cr
-  unit-size: 1970sqft to 2730sqft Apartments
-  location-label: ECC Main Road, Whitefield
   rera-number: PRM/KA/RERA/1251/446/PR/180424/006808
+  status-label: Construction in Full Swing
+  type: residential
+  starting-price: Starting at ₹2.95Cr
+  location-label: ECC Main Road, Whitefield
 cover:
   logo: /media/uploads/starlight_logo-white-transparent.png
   background: /media/uploads/starlight__mg_3870-edit.jpg
   video: 3OyRc5eczbc
 overview:
   heading: Whitefield's Newest Benchmark
-  sub-heading: Discover a life that blends sophistication with convenience. Embrace Urban Serenity.
-  description: |-
-    Nestled in the heart of Whitefield, Vaswani Starlight offers world-class amenities, thoughtfully designed living spaces, and seamless connectivity to everything that matters. 
+  sub-heading: Discover a life that blends sophistication with convenience.
+    Embrace Urban Serenity.
+  description: >-
+    Nestled in the heart of Whitefield, Vaswani Starlight offers world-class
+    amenities, thoughtfully designed living spaces, and seamless connectivity to
+    everything that matters. 
+
 
     This is truly Whitefield’s chosen space. Everything you need is just around the corner, whether it’s the vibrant social scene, thriving tech parks, or lush green surroundings.
+
 
     Ground + 23 Floors spread across 3 Towers. Starlight is designed with space, light, and comfort in mind. From the way the windows open to bring in natural air, to the intuitive layouts that make everyday movement effortless.
   gallery:
@@ -68,9 +73,12 @@ siteplan:
     - title: 4BHK + Home Office (2730 sqft)
       image: /media/uploads/starlight_floorplan_4BHK+_2730.jpg
 amenities:
-  heading: 'Nebula : the Clubhouse'
+  heading: "Nebula : the Clubhouse"
   sub-heading: Limitless Moments. Endless Memories
-  description: Podium level nebula clubhouse with 15+ curated indulgences. From world-class amenities to exclusive privileges at your doorstep, every detail is curated to elevate your lifestyle. Unwind with a few laps in the pool, or end your workday in a stellar manner at the clubhouse, Nebula.
+  description: Podium level nebula clubhouse with 15+ curated indulgences. From
+    world-class amenities to exclusive privileges at your doorstep, every detail
+    is curated to elevate your lifestyle. Unwind with a few laps in the pool, or
+    end your workday in a stellar manner at the clubhouse, Nebula.
   cover-image: /media/uploads/starlight_pool_stock.png
   amenity:
     - name: Air-conditioned Club House
@@ -114,9 +122,13 @@ brochure:
   pdf: /media/uploads/vaswani-starlight-ecc-road-whitefield_-e-brochure.pdf
 location:
   heading: Nestled in the heart of Whitefield
-  sub-heading: Everything you need is just around the corner. From vibrant social scene, thriving tech parks, to lush green surroundings and so much more.
+  sub-heading: Everything you need is just around the corner. From vibrant social
+    scene, thriving tech parks, to lush green surroundings and so much more.
   map-link: https://maps.app.goo.gl/PfUwVyD8C2xvM2GX7
-  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  map-embed: <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1594.8431091199511!2d77.73660262614308!3d12.977434744615737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11f093ce84ed%3A0x181d9c5cb50023cf!2sVaswani%20Starlight!5e0!3m2!1sen!2sin!4v1755611327119!5m2!1sen!2sin"
+    allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
   places:
     - name: Schools
       place:
@@ -179,4 +191,3 @@ banner:
     background: /media/uploads/starlight_banner_bg_jogging_man_01.png
     background-fix: center center
 ---
-
