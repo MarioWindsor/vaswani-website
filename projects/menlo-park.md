@@ -61,20 +61,8 @@ overview:
 siteplan:
   heading: 733 sq ft to 2144 sq ft
   sub-heading: Ground + 14 Floors with 360 Apartments
-  masterplan:
-    - title: Masterplan
-      image: /media/uploads/menlo-park-Master_Plan_2021_Jan.jpg
-  floorplan:
-    - title: 2 BHK (1142 SQFT)
-      image: /media/uploads/menlo-park-floorplan-2-BHK-1142.jpg
-    - title: 3 BHK (1599 SQFT)
-      image: /media/uploads/menlo-park-floorplan-3-BHK-1599-sft.jpg
-    - title: 3 BHK (1635 SQFT)
-      image: /media/uploads/menlo-park-floorplan-3-BHK-1635-sft.jpg
-    - title: 3 BHK (2079 SQFT)
-      image: /media/uploads/menlo-park-floorplan-3-BHK-2079-sft.jpg
-    - title: 3 BHK (2144 SQFT)
-      image: /media/uploads/menlo-park-floorplan-3-BHK-2144-sft.jpg
+  masterplan: []
+  floorplan: []
 location:
   heading: Off Brookefield Junction
   sub-heading: On the cusp of the ORR, Whitefield & EPIP Zone
