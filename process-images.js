@@ -7,7 +7,7 @@ const { statSync } = require('fs');
 // --- Configuration ---
 const SOURCE_DIR = 'media';
 const DEST_DIR = '_site/img';
-const SIZES = [500, 1000, 1500, 2000]; // Use the sizes from your template
+const SIZES = [1000, 2000]; // Use the sizes from your template
 const QUALITY = {
   jpeg: 80,
   png: 80,
