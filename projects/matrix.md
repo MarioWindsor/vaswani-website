@@ -5,15 +5,15 @@ name: Matrix
 metadata:
   prefix-name: true
   type: commercial
-  project-label: Grade A Commercial Office Space
+  project-label: Introducing Grade A Commercial Office Space
   status: ongoing
   status-label: Under Construction
-  unit-size: 1,43,000sqft Total Built-up Area
-  location-label: Brookefield, Bangalore
+  unit-size: 1,43,000 sqft Built-up Area
+  location-label: Brookefield, Bengaluru
 cover:
   background: /media/uploads/matrix-draft-3d-2.jpeg
 overview:
-  heading: Inspire, Support and Grow
+  heading: Visible, Connected, Efficient
   sub-heading: Finds the balance between Efficiency and Ease
   description: >-
     Set in the heart of Brookefield, Vaswani Matrix is more than just an office
@@ -21,10 +21,12 @@ overview:
     hubs, hotels, and transport links, your teams stay connected to everything
     they need. The location makes collaboration easier and commuting simpler,
     while surrounding amenities bring convenience right to your doorstep.
-    Crafted with attention to both design and detail — from smart layouts to
+    Crafted with attention to both design and detail - from smart layouts to
     efficient services, every element comes together to create an environment
     where businesses can thrive.
 
+
+    - Strategic Location - ITPL Road, Brookefield (Main Road Frontage; high visibility)
 
     - Modern façade with ample natural light
 
