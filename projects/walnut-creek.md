@@ -14,8 +14,8 @@ cover:
   logo: /media/uploads/walnut-creek-logo.png
   background: /media/uploads/walnut-creek-cover-1-1-1.jpg
 overview:
-  heading: Where Space Meets Stillness - A Welcome Oasis
-  sub-heading: Just 22 Villas & 8 Townhouses
+  heading: "Where Space Meets Stillness "
+  sub-heading: A Quiet, Complete Neighbourhood
   description: >
     Set within one of Bengaluru’s most serene pockets, Vaswani Walnut Creek
     Villas is a thoughtfully crafted, boutique enclave of contemporary homes
