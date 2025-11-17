@@ -3,15 +3,15 @@ tags: projects
 date: 2023-01-01T02:32:00.000+05:30
 name: Exquisite
 metadata:
+  project-label: 3 & 4 Bedroom Luxury Homes
   prefix-name: true
-  type: residential
-  project-label: 3 & 4 Bedroom Luxury Residences
+  unit-size: 1815 sqft to 2860 sqft Apartments
   status: ongoing
-  status-label: Limited Units Available
-  starting-price: Starting at ₹2.66Cr
-  unit-size: 1815sqft to 2860sqft Apartments
-  location-label: ITPL Main Road, Whitefield
   rera-number: PRM/KA/RERA/1251/446/PR/171015/000784
+  status-label: Limited Units Available
+  type: residential
+  starting-price: ""
+  location-label: ITPL Main Road, Whitefield
 cover:
   logo: /media/uploads/exquisite_project-logo.png
   background: /media/uploads/exquisite_DSC_8174.jpg
@@ -19,14 +19,22 @@ cover:
 overview:
   heading: Live Life Sky High
   sub-heading: A piece of sky, in the palm of your hand
-  description: |-
-    This is what life at the top looks like. The morning sun streams into your bedroom. Brunch by the lake, right on your balcony. Swathes of green, as far as the eye can see. Clouds in your coffee. You got to the top by sheer dint of your hard work. Now, set your standards sky-high for the home you deserve.
+  description: >-
+    This is what life at the top looks like. The morning sun streams into your
+    bedroom. Brunch by the lake, right on your balcony. Swathes of green, as far
+    as the eye can see. Clouds in your coffee. You got to the top by sheer dint
+    of your hard work. Now, set your standards sky-high for the home you
+    deserve.
+
 
     Vaswani Exquisite is your place in the sky. It’s your answer to living right in the middle of the city’s action but elevated above it all. It’s Zen in an apartment!
 
+
     With elegant 4 towers rising into the sky in a graceful arc, living in Vaswani Exquisite is like being in seventh heaven.
 
+
     Thoughtfully designed 3 & 4-bedroom homes ranging from 1815 to 2860 square feet. Come take a look at the finer details, the spectacular views from the apartments, the airy interiors, the extra high ceilings, imported marble, and much more.
+
 
     When you live in Vaswani Exquisite, unmatched luxury meets uncompromising connectivity. Located on ITPL Main Road in Whitefield, these spectacular apartments offer world-class amenities for an ultra-fine living experience with proximity to the best schools, hospitals, metro stations, shopping malls  and offices all within a 5-minute walking distance
   gallery:
@@ -61,10 +69,13 @@ location:
   heading: ITPL Main Road
   sub-heading: Next to Hotel Zuri
   map-link: https://maps.app.goo.gl/wy8TQ1JtBY1LpCtXA
-  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.877635299528!2d77.7242795!3d12.98979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb58a62769%3A0xd9d2d75e3426ebe!2sVaswani%20Exquisite!5e0!3m2!1sen!2sin!4v1762450541796!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  map-embed: <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.877635299528!2d77.7242795!3d12.98979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb58a62769%3A0xd9d2d75e3426ebe!2sVaswani%20Exquisite!5e0!3m2!1sen!2sin!4v1762450541796!5m2!1sen!2sin"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 progress:
   heading: Project Completed
-  sub-heading: A Glimpse Through Time
+  sub-heading: ""
   entry:
     - title: JUL 2017
       heading: Project Progress Report as on July 2017
@@ -89,14 +100,19 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2017-07-IMG_20170704_123052.jpg
     - title: SEP 2017
       heading: Project Progress Report as on September 2017
-      description: |-
-        Tower A - 12th Floor slab casted, 5th Floor Masonry work is in progress, 3rd Floor Plastering work is in progress.
+      description: >-
+        Tower A - 12th Floor slab casted, 5th Floor Masonry work is in progress,
+        3rd Floor Plastering work is in progress.
+
 
         Tower B - 11th Floor slab casted, 5th Floor Masonry work is in progress, 2nd Floor Plastering work is in progress.
 
+
         Tower C - 11th Floor slab casted, 4th Floor Masonry work is in progress, 3rd Floor Plastering work is in progress.
 
+
         Tower D - 11th Floor slab work is in progress, 5th Floor Masonry work is in progress, 3rd Floor Plastering work is in progress.
+
 
         Podium West (Zuri side) - Casted one pour of slab of the upper basement floor slab
       gallery:
@@ -107,12 +123,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2017-09-Picture5-2.jpg
     - title: DEC 2017
       heading: Project Progress Report as on December 2017
-      description: |-
-        Tower A - 15th Floor slab work is completed, 8th Floor masonry work is in progress. Internal plastering is on the 4th Floor
+      description: >-
+        Tower A - 15th Floor slab work is completed, 8th Floor masonry work is
+        in progress. Internal plastering is on the 4th Floor
+
 
         Tower B - 14th Floor slab work is completed, 6th/7th Floor masonry work is in progress. Internal plastering is on 2nd Floor
 
+
         Tower C - 14th Floor slab is casted, 6th-floor masonry work is in progress. Internal plastering is on 3rd Floor
+
 
         Tower D - 14th Floor slab is in progress, as is the 5th Floor masonry work. Internal plastering is on 3rd Floor.
       gallery:
@@ -123,16 +143,23 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2017-12-Picture2.png
     - title: JAN 2018
       heading: Project Progress Report as on January 2018
-      description: |-
-        Tower A - 17th Floor shuttering & rebar work is in progress. 11th Floor masonry work is in progress. 6th, 7th & 8th Floor internal plastering work is in progress.
+      description: >-
+        Tower A - 17th Floor shuttering & rebar work is in progress. 11th Floor
+        masonry work is in progress. 6th, 7th & 8th Floor internal plastering
+        work is in progress.
+
 
         Tower B - 15th Floor slab is casted & column casting is in progress. 7th & 8th Floor masonry work is in progress. 4th, 5th & 6th Floor Internal plastering work is in progress
 
+
         Tower C - 15th Floor slab is casted & column casting is in progress. 7th,8th & 9th Floor masonry work is in progress. 4th & 5th Floor internal plastering is in progress.
+
 
         Tower D - 15th Floor slab casting is in progress, 6th Floor masonry work is in progress, 3rd & 4th Floor internal plastering is in progress.
 
+
         Podium 8 - Slab is casted.
+
 
         Podium 5 - 1st Level Slab is casted.
       gallery:
@@ -145,16 +172,23 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-01-p5-1st-level-slab.jpg
     - title: FEB 2018
       heading: Project Progress Report as on February 2018
-      description: |-
-        Tower A - 17th Floor slab completed. 13th Floor masonry work is in progress. 9th Floor internal plastering work is in progress. The external painting has commenced.
+      description: >-
+        Tower A - 17th Floor slab completed. 13th Floor masonry work is in
+        progress. 9th Floor internal plastering work is in progress. The
+        external painting has commenced.
+
 
         Tower B - 16th Floor slab is casted & column casting is in progress. 8th Floor masonry work is in progress. 7th Floor Internal plastering work is in progress
 
+
         Tower C - 16th Floor slab is casted & column casting is in progress. 9th Floor masonry work is in progress. 5th Floor internal plastering is in progress.
+
 
         Tower D - 16th Floor slab casting is in progress, 6th Floor masonry work is in progress, 5th Floor internal plastering is in progress.
 
+
         Podium 3 - 2nd Level completed.
+
 
         Podium - 1, 2, 4, 5, 8, 14 & 15 is on 1st Level.
       gallery:
@@ -168,12 +202,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-02-IMG_20180203_170825.jpg
     - title: APR 2018
       heading: Project Progress Report as on April 2018
-      description: |-
-        Tower A - 17th Floor slab work is completed, 15th Floor Masonry work is in progress, 12th Floor plastering work is in progress.
+      description: >-
+        Tower A - 17th Floor slab work is completed, 15th Floor Masonry work is
+        in progress, 12th Floor plastering work is in progress.
+
 
         Tower B - 17th Floor slab work is completed, 11th Floor Masonry work is in progress, 9th Floor plastering work is in progress.
 
+
         Tower C - 17th Floor slab work is completed, 11th Floor Masonry work is in progress, 7th Floor plastering work is in progress.
+
 
         Tower D - 17th Floor slab work is completed, 9th Floor Masonry work is in progress, 6th Floor plastering work is in progress.
       gallery:
@@ -187,16 +225,22 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-04-9-1.jpg
     - title: JUN 2018
       heading: Project Progress Report as on June 2018
-      description: |-
-        Tower A - 17th Floor slab work is completed, 15th Floor Masonry work is completed, 12th Floor plastering work is in progress.
+      description: >-
+        Tower A - 17th Floor slab work is completed, 15th Floor Masonry work is
+        completed, 12th Floor plastering work is in progress.
+
 
         Tower B - 17th Floor slab work is completed, 14th Floor Masonry work is in progress, 9th Floor plastering work is in progress.
 
+
         Tower C - 17th Floor slab work is completed, 12th Floor Masonry work is in progress, 7th Floor plastering work is in progress.
+
 
         Tower D - 17th Floor slab work is completed, 11th Floor Masonry work is in progress, 7th & 8th Floor plastering work is in progress.
 
+
         Podium 11 & 12 - Casting is in progress for 2 Ramps.
+
 
         Podium 3 - 1st Floor (Level3) Shuttering work is in progress.
       gallery:
@@ -209,12 +253,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-06-IMG-20180608-WA0009.jpg
     - title: JUL 2018
       heading: Project Progress Report as on July 2018
-      description: |-
-        Tower A - 17th Floor slab work is completed, 15th Floor Masonry work is completed, 13th & 14th Floor plastering work is in progress.
+      description: >-
+        Tower A - 17th Floor slab work is completed, 15th Floor Masonry work is
+        completed, 13th & 14th Floor plastering work is in progress.
+
 
         Tower B - 17th Floor slab work is completed, 15th Floor Masonry work is completed, 11th Floor plastering work is in progress.
 
+
         Tower C - 17th Floor slab work is completed, 13th Floor Masonry work is in progress, 8th Floor plastering work is in progress.
+
 
         Tower D - 17th Floor slab work is completed, 12th Floor Masonry work is in progress, 8th & 9th Floor plastering work is in progress.
       gallery:
@@ -229,28 +277,39 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-07-IMG-20180709-WA0016.jpg
     - title: SEP 2018
       heading: Project Progress Report as on September 2018
-      description: |-
+      description: >-
         1. Block work
+
 
         Tower A & B - 15th Floor Completed
 
+
         Tower C & D - 14th Floor Completed, 15th Floor is in progress
+
 
         2. Internal Plastering
 
+
         Tower A - 14th Floor Completed
+
 
         Tower B - 12th Floor Completed
 
+
         Tower C - 10th Floor Completed
+
 
         Tower D - 10th Floor Completed
 
+
         3. External Plastering
+
 
         Tower A - East, West & North Elevation has been completed upto 13th Floor, South Elevation is in progress
 
+
         Tower B - South & North Elevation 85% Completed, East & West Elevation is in progress
+
 
         Tower C - North Elevation is completed up to the 13th Floor, East & West Elevation is in progress
       gallery:
@@ -268,12 +327,18 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-09-TD-West.jpg
     - title: OCT 2018
       heading: Project Progress Report as on October 2018
-      description: |-
-        Tower A Block Work - 15th Floor Completed, 16th Floor is in progress. Internal Plastering work - 14th Floor Completed External Plastering work (Up to 13th Floor Level) - East, West & North Elevation Completed, South Elevation is in progress.
+      description: >-
+        Tower A Block Work - 15th Floor Completed, 16th Floor is in progress.
+        Internal Plastering work - 14th Floor Completed External Plastering work
+        (Up to 13th Floor Level) - East, West & North Elevation Completed, South
+        Elevation is in progress.
+
 
         Tower B Block Work - 15th Floor Completed. Internal Plastering work - 14th Floor Completed. External Plastering work(Up to 13th Floor Level) South & North Elevation 85% Completed, East Elevation completed & West Elevation is in progress.
 
+
         Tower C Block Work - 15th Floor Completed. Internal Plastering work - 11th Floor Completed, 12th Floor is in progress. External Plastering work - North & East Elevation – Completed, West Elevation is in progress.
+
 
         Tower D Block Work - 15th Floor Completed. Internal Plastering work - 11th Floor Completed, 12th Floor is in progress. External Plastering work - West Elevation is in progress
       gallery:
@@ -287,12 +352,18 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-10-Picture7-2.jpg
     - title: NOV 2018
       heading: Project Progress Report as on November 2018
-      description: |-
-        Tower A Block Work - 16th Floor 90% completed. Internal Plastering work - 14th Floor Completed. External Plastering work (Up to 13th Floor Level) - East, West & North Elevation – Completed, South Elevation 90% Completed.
+      description: >-
+        Tower A Block Work - 16th Floor 90% completed. Internal Plastering work
+        - 14th Floor Completed. External Plastering work (Up to 13th Floor
+        Level) - East, West & North Elevation – Completed, South Elevation 90%
+        Completed.
+
 
         Tower B Block Work - 16th floor 80% completed. Internal Plastering work - 14th Floor Completed. External Plastering work(Up to 13th Floor Level) South & North Elevation 90% Completed, East & West Side Elevation completed.
 
+
         Tower C Block Work - 16th Floor - 80% completed. Internal Plastering work - 13th Floor Completed, 14th Floor 75% Completed. External Plastering work - North & East Elevation – Completed, West & South Elevation is in progress.
+
 
         Tower D Block Work - 15th Floor Completed. Internal Plastering work - 12th Floor Completed, 13th Floor 65% Completed. External Plastering work - West Elevation 50% Completed, East-Staging Erection in Progress
       gallery:
@@ -310,12 +381,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2018-11-IMG-20181112-WA0017.jpg
     - title: JAN 2019
       heading: Project Progress Report as on January 2019
-      description: |-
-        Tower A Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor work in progress. External Plastering work (Up to 13th Floor Level) East, West, North & South Elevation Completed.
+      description: >-
+        Tower A Block Work - 16th Floor Completed. Internal Plastering work -
+        15th Floor work in progress. External Plastering work (Up to 13th Floor
+        Level) East, West, North & South Elevation Completed.
+
 
         Tower B Block Work - 16th Floor Completed. Internal Plastering work - 14th Floor Completed. External Plastering work (Up to 13th Floor Level) - East, West, North & South Elevation Completed.
 
+
         Tower C Block Work - 16th Floor Completed. Internal Plastering work - 13th Floor Completed, 14th Floor 95% Completed. External Plastering work - East, West & North Elevation – Completed, South Elevation in progress.
+
 
         Tower D Block Work - 15th Floor completed, 16th Floor Work in Progress. Internal Plastering work - 14th Floor Completed, 15th Floor Work in Progress. External Plastering work - West side Completed & East & North Side Work in Progress.
       gallery:
@@ -335,12 +411,19 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-01-16.jpg
     - title: MAR 2019
       heading: Project Progress Report as on March 2019
-      description: |-
-        Tower A  Work - 16th Floor Completed. Internal Plastering work -  15th Floor work in progress. External Plastering work (Up to 13th Floor Level - East, West, North & South Elevation Completed. MEP Works - 14th Floor Work in Progress.  Tiling & Dado -  1st, 2nd & 3rd Floor Work in Progress
+      description: >-
+        Tower A  Work - 16th Floor Completed. Internal Plastering work -  15th
+        Floor work in progress. External Plastering work (Up to 13th Floor Level
+        - East, West, North & South Elevation Completed. MEP Works - 14th Floor
+        Work in Progress.  Tiling & Dado -  1st, 2nd & 3rd Floor Work in
+        Progress
+
 
         TOWER B  Work - 16th Floor Completed. Internal Plastering work - 14th Floor Completed. External Plastering work(Up to 13th Floor Level) - East, West, North & South Elevation Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 1st, 2nd & 3rd Floor Work in Progress
 
+
         TOWER C  Work - 16th Floor Completed. Internal Plastering work - 13th Floor Completed, 14th Floor 95% Completed. External Plastering work - East, West, North & South Elevation Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 1st, 2nd & 3rd Floor Work in Progress
+
 
         Tower D  Work -  15th Floor completed, 16th Floor Work in Progress. Internal Plastering work 14th Floor Completed, 15th Floor Work in Progress. External Plastering work - East, West & North Side Completed, South Side Work in Progress. MEP Works - 13th Floor Work in Progress. Tiling & Dado - Yet to start
       gallery:
@@ -352,14 +435,18 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-03-985793456.jpg
     - title: APR 2019
       heading: Project Progress Report as on April 2019
-      description: |-
+      description: >-
         Tower A: 
+
 
         Block Work - 16th Floor Completed. Internal Plastering work -  15th Floor work in progress. MEP Works - 14th Floor Work in Progress.Tiling & Dado - 1st to 5th floor completed, 6th floor started.
 
+
         TOWER B   Work - 16th Floor Completed. Internal Plastering work - 14th Floor Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 2nd to 6th Floor Completed,7th Floor Work in Progress.
 
+
         TOWER C   Work - 16th Floor Completed. Internal Plastering work - 14th Floor Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado -1st to 3rd floor completed, 4th Floor Work in Progress.
+
 
         Tower D  Work - 16th Floor completed. Internal Plastering work - 15th Floor Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - Yet to start.
       gallery:
@@ -370,12 +457,18 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-04-Picture6-4.jpg
     - title: MAY 2019
       heading: Project Progress Report as on May 2019
-      description: |-
-        Tower A:  Block Work - 16th Floor Completed. Internal Plastering work -  15th Floor work in progress. External Plastering work (Up to 13th Floor Level) -  Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 1st to 7th floor completed, 8th floor work in progress.
+      description: >-
+        Tower A:  Block Work - 16th Floor Completed. Internal Plastering work
+        -  15th Floor work in progress. External Plastering work (Up to 13th
+        Floor Level) -  Completed. MEP Works - 14th Floor Work in Progress.
+        Tiling & Dado - 1st to 7th floor completed, 8th floor work in progress.
+
 
         TOWER B : Block Work - 16th Floor Completed. Internal Plastering work - 14th Floor Completed. External Plastering work(Up to 13th Floor Level) - Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 2nd to 8th Floor Completed. Slab Works - 18th Floor Completed.
 
+
         TOWER C : Block Work - 16th Floor Completed. Internal Plastering work - 14th Floor Completed. External Plastering work - Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado -1st to 5th floor completed, 6th Floor Work in Progress. Slab Works - 18th Floor Completed.
+
 
         Tower D: Block Work - 16th Floor completed. Internal Plastering work - 15th Floor Completed. External Plastering work - East, West & North Side Completed, South Side Work in Progress. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 1st Floor Work in progress.
       gallery:
@@ -386,20 +479,27 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-05-0.jpg
     - title: JUN 2019
       heading: Project Progress Report as on June 2019
-      description: |-
+      description: >-
         Tower A: 
+
 
         Slab Works - 18th Floor Slab Completed. Block Work - 16th Floor Completed. Internal Plastering work -  15th Floor work in progress. MEP Works - 14th Floor Work in Progress.Tiling & Dado - 1st to 8th floor completed, 9th floor work in progress. Marble Work - 2nd & 4th Floor Work in Progress, 3rd Floor Completed.Putty Works - 5th & 6th Floor Completed, 1st, 2nd & 7th Floor Work in Progress.
 
+
         Tower B :
+
 
         Slab Works - 18th Floor Completed. Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor Completed. MEP Works - 14th Floor Work in Progress. Tiling & Dado - 2nd to 8th floor completed, 9th floor work in progress. Putty Works - 1st to 7th Floor Completed.
 
+
         Tower C :
+
 
         Slab Works - 19th Floor Completed. Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor work in progress.  MEP Works - 14th Floor Work in Progress. Tiling & Dado - 1st to 8th  Floor completed. Putty Works - 1st to 5th Floor Completed.
 
+
         Tower D:
+
 
         Slab Works - 18th Floor Slab in Progress. Block Work - 16th Floor completed. Internal Plastering work - 15th Floor Completed.  MEP Works - 14th Floor Work in Progress. Tiling & Dado - 1st to 4th Floor Work in Progress. Putty Works - 1st & 2nd Floor Completed.
       gallery:
@@ -413,12 +513,19 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-06-IMG_8484.jpg
     - title: JUL 2019
       heading: Project Progress Report as on July 2019
-      description: |-
-        Tower A Slab Work - 19th Floor Completed. Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor work Completed. MEP Work - 14th Floor Work in Progress. Tiling & Dado -  9th floor work in progress. Putty Work - 5th & 6th Floor Completed, 1st, 2nd & 7th Floor Work in Progress.
+      description: >-
+        Tower A Slab Work - 19th Floor Completed. Block Work - 16th Floor
+        Completed. Internal Plastering work - 15th Floor work Completed. MEP
+        Work - 14th Floor Work in Progress. Tiling & Dado -  9th floor work in
+        progress. Putty Work - 5th & 6th Floor Completed, 1st, 2nd & 7th Floor
+        Work in Progress.
+
 
         Tower B Slab Work - 20th Floor Completed. Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor Completed. MEP Work - 14th Floor Work in Progress. Tiling & Dado - 2nd to 8th floor completed, 9th floor work in progress. Marble Work - 2nd Floor Work in Progress. Putty Work - 2nd to 8th Floor Completed.
 
+
         Tower C Slab Work - 20th Floor Completed. Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor work Completed. MEP Work - 14th Floor Work in Progress.Tiling & Dado - 1st to 8th  Floor completed. Marble Work - 1st Floor Work in Progress. Putty Work - 1st to 7th Floor Completed.
+
 
         Tower D Slab Work - 18th Floor Completed. Block Work - 16th Floor completed. Internal Plastering work - 15th Floor Completed.  MEP Work - 1st to 7th Floor Work in Progress. Tiling & Dado - 1st to 4th Floor Work in Progress. Putty Work - 3rd to 5th Floor Completed.
       gallery:
@@ -432,12 +539,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-07-Ground-Images-8.jpg
     - title: AUG 2019
       heading: Project Progress Report as on August 2019
-      description: |-
-        Tower A Slab Work - 20th Floor Completed. Block Work - 17th Floor Completed. Internal Plastering: 15th Floor work Completed. MEP Work - 14th Floor Completed. Tiling & Dado -  9th floor work in progress.
+      description: >-
+        Tower A Slab Work - 20th Floor Completed. Block Work - 17th Floor
+        Completed. Internal Plastering: 15th Floor work Completed. MEP Work -
+        14th Floor Completed. Tiling & Dado -  9th floor work in progress.
+
 
         Tower B Slab Work - 21st Floor Completed. Block Work - 17th Floor Completed. Internal Plastering work - 15th Floor Completed. MEP Work - 14th Floor Work in Progress. Tiling & Dado - 9th floor work in progress.
 
+
         Tower C Slab Work - 21st Floor Completed. Block Work - 16th Floor Completed. Internal Plastering work - 15th Floor Completed. MEP Work - 14th Floor Work in Progress. Tiling & Dado - 1st to 8th  Floor completed.
+
 
         Tower D Slab Work - 19th Floor Completed. Block Work - 16th Floor completed. Internal Plastering work - 15th Floor Completed. MEP Work - 14th Floor Work in Progress.
       gallery:
@@ -454,12 +566,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-08-IMG_E1054.jpg
     - title: SEP 2019
       heading: Project Progress Report as on September 2019
-      description: |-
-        Tower A Slab Work - Terrace Floor Slab in Progress. Block Work - 18th Floor Completed. Internal Plastering: 16th Floor Completed. MEP Work - 14th Floor Completed. Tiling & Dado -  10th Floor Completed.
+      description: >-
+        Tower A Slab Work - Terrace Floor Slab in Progress. Block Work - 18th
+        Floor Completed. Internal Plastering: 16th Floor Completed. MEP Work -
+        14th Floor Completed. Tiling & Dado -  10th Floor Completed.
+
 
         Tower B Slab Work - Terrace Floor Slab in Progress. Block Work - 18th Floor Completed. Internal Plastering work - 16th Floor Completed. MEP Work - 14th Floor Completed. Tiling & Dado - 11th Floor Completed.
 
+
         Tower C Slab Work - 21st Floor Completed. Block Work - 17th Floor Completed. Internal Plastering work - 16th Floor Completed. MEP Work - 14th Floor Completed. Tiling & Dado - 11th Floor completed.
+
 
         Tower D Slab Work - 20th Floor Completed. Block Work - 16th Floor completed. Internal Plastering work - 16th Floor Completed. MEP Work - 14th Floor completed.
       gallery:
@@ -471,12 +588,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-09-IMG_E1057.jpg
     - title: OCT 2019
       heading: Project Progress Report as on October 2019
-      description: |-
-        Tower A Slab Work - Terrace Floor Slab Completed. Block Work - 18th Floor Completed. Internal Plastering : 16th Floor Completed. MEP Work - 14th Floor Completed. Tiling & Dado -  12th Floor Completed.
+      description: >-
+        Tower A Slab Work - Terrace Floor Slab Completed. Block Work - 18th
+        Floor Completed. Internal Plastering : 16th Floor Completed. MEP Work -
+        14th Floor Completed. Tiling & Dado -  12th Floor Completed.
+
 
         Tower B Slab Work - Terrace Floor Slab Completed. Block Work - 18th Floor Completed. Internal Plastering work - 17th Floor Completed. MEP Work - 14th Floor Completed. Tiling & Dado - 12th Floor Completed.
 
+
         Tower C Slab Work - 21st Floor Completed. Block Work - 18th Floor Completed. Internal Plastering work - 17th Floor Completed. MEP Work - 14th Floor Completed. Tiling & Dado - 13th Floor completed.
+
 
         Tower D Slab Work - 20th Floor Completed. Block Work - 16th Floor completed. Internal Plastering work - 16th Floor Completed. MEP Work - 14th Floor completed. Tiling & Dado - 9th Floor completed.
       gallery:
@@ -495,12 +617,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-10-WhatsApp-Image-2019-10-12-at-10.34.16-AM-7.jpeg
     - title: NOV 2019
       heading: Project Progress Report as on November 2019
-      description: |-
-        Tower A Slab Work - Parapet work Completed. Block Work - 19th Floor Completed. Internal Plastering : 18th Floor Completed. MEP Work - 15th Floor Completed. Tiling & Dado -  14th Floor Completed.
+      description: >-
+        Tower A Slab Work - Parapet work Completed. Block Work - 19th Floor
+        Completed. Internal Plastering : 18th Floor Completed. MEP Work - 15th
+        Floor Completed. Tiling & Dado -  14th Floor Completed.
+
 
         Tower B Slab Work - Parapet work Completed. Block Work - 19th Floor Completed. Internal Plastering work - 18th Floor Completed. MEP Work - 15th Floor Completed. Tiling & Dado - 13th Floor Completed.
 
+
         Tower C Slab Work - 21st Floor Completed. Block Work - 19th Floor Completed. Internal Plastering work - 18th Floor Completed. MEP Work - 15th Floor Completed. Tiling & Dado - 14th Floor completed.
+
 
         Tower D Slab Work - 21st Floor Completed. Block Work - 16th Floor completed. Internal Plastering work - 16th Floor Completed. MEP Work - 14th Floor completed. Tiling & Dado - 11th Floor completed.
       gallery:
@@ -515,12 +642,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-11-RKTTE5771.jpg
     - title: DEC 2019
       heading: Project Progress Report as on December 2019
-      description: |-
-        Tower A Slab Work - Parapet work Completed. Block Work - 20th Floor Completed. Internal Plastering : 18th Floor Completed. MEP Work - 16th Floor Completed. Tiling & Dado -  15th Floor Completed.
+      description: >-
+        Tower A Slab Work - Parapet work Completed. Block Work - 20th Floor
+        Completed. Internal Plastering : 18th Floor Completed. MEP Work - 16th
+        Floor Completed. Tiling & Dado -  15th Floor Completed.
+
 
         Tower B Slab Work - Parapet work Completed. Block Work - 20th Floor Completed. Internal Plastering work - 18th Floor Completed. MEP Work - 15th Floor Completed. Tiling & Dado - 15th Floor Completed.
 
+
         Tower C Slab Work - 21st Floor Completed. Block Work - 19th Floor Completed. Internal Plastering work - 18th Floor Completed. MEP Work - 16th Floor Completed. Tiling & Dado - 15th Floor completed.
+
 
         Tower D Slab Work - 21st Floor Completed. Block Work - 16th Floor completed. Internal Plastering work - 16th Floor Completed. MEP Work - 15th Floor completed. Tiling & Dado - 12th Floor completed.
       gallery:
@@ -534,12 +666,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2019-12-IMG_3874.jpg
     - title: JAN 2020
       heading: Project Progress Report as on January 2020
-      description: |-
-        Tower A Slab Work - Parapet work Completed. Block Work - 21st Floor Completed. Internal Plastering : 19th Floor Completed. MEP Work - 17th Floor Completed. Tiling & Dado -  16th Floor Completed.
+      description: >-
+        Tower A Slab Work - Parapet work Completed. Block Work - 21st Floor
+        Completed. Internal Plastering : 19th Floor Completed. MEP Work - 17th
+        Floor Completed. Tiling & Dado -  16th Floor Completed.
+
 
         Tower B Slab Work - Parapet work Completed. Block Work - 21st Floor Completed. Internal Plastering work - 19th Floor Completed. MEP Work - 17th Floor Completed. Tiling & Dado - 15th Floor Completed.
 
+
         Tower C Slab Work - Terrace Slab Completed. Block Work - 19th Floor Completed. Internal Plastering work - 19th Floor Completed. MEP Work - 17th Floor Completed. Tiling & Dado - 15th Floor completed.
+
 
         Tower D Slab Work - Terrace Slab in Progress. Block Work - 17th Floor completed. Internal Plastering work - 16th Floor Completed. MEP Work - 15th Floor completed. Tiling & Dado - 13th Floor completed.
       gallery:
@@ -553,12 +690,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-01-IMG_5329.jpg
     - title: FEB 2020
       heading: Project Progress Report as on February 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - 18th Floor Completed. Tiling & Dado - 18th Floor Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - 18th Floor Completed. Tiling & Dado -
+        18th Floor Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - 18th Floor Completed. Tiling & Dado - 17th Floor Completed.
 
+
         Tower C Slab Work - Terrace Slab Completed. Block Work - 19th Floor Completed. Internal Plastering work - 19th Floor Completed. MEP Work - 18th Floor Completed. Tiling & Dado - 18th Floor completed.
+
 
         Tower D Slab Work - Terrace Slab completed. Block Work - 18th Floor completed. Internal Plastering work - 16th Floor Completed. MEP Work - 16th Floor completed. Tiling & Dado - 14th Floor completed.
       gallery:
@@ -570,12 +712,17 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-02-12-2.jpg
     - title: MAR 2020
       heading: Project Progress Report as on March 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - 20th Floor Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - 20th Floor
+        Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 19th Floor Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - 19th Floor Completed. Tiling & Dado - 19th Floor completed.
+
 
         Tower D Slab Work - completed. Block Work - 19th Floor completed. Internal Plastering work - 17th Floor Completed. MEP Work - 16th Floor completed. Tiling & Dado - 15th Floor completed.
       gallery:
@@ -590,14 +737,24 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-03-IMG_7158.jpg
     - title: MAY 2020
       heading: Project Progress Report as on May 2020
-      description: |-
-        We are happy to share that we are back to work and our construction sites are active as well (since April 27th). As there are nearly 450 workers on site, we are leaving no stone unturned for safety within the premises. As responsible citizens, wearing a mask, regular hand sanitization, thermal screening, maintaining physical distance, etc. are the stringent protocols that are being followed across our sites and offices.
+      description: >-
+        We are happy to share that we are back to work and our construction
+        sites are active as well (since April 27th). As there are nearly 450
+        workers on site, we are leaving no stone unturned for safety within the
+        premises. As responsible citizens, wearing a mask, regular hand
+        sanitization, thermal screening, maintaining physical distance, etc. are
+        the stringent protocols that are being followed across our sites and
+        offices.
+
 
         Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 19th Floor Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 19th Floor completed.
+
 
         Tower D Slab Work - completed. Block Work - 19th Floor completed. Internal Plastering work - 18th Floor Completed. MEP Work - 19th Floor completed. Tiling & Dado - 15th Floor completed.
       gallery:
@@ -615,12 +772,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-05-Vaswani_Exquisite_Drone_May_2020_-_4.jpg
     - title: JUN 2020
       heading: Project Progress Report as on June 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 19th Floor Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 19th Floor completed.
+
 
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - 20th Floor Completed. MEP Work - 20th Floor completed. Tiling & Dado - 15th Floor completed.
       gallery:
@@ -632,12 +793,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-06-205deb64-b362-4db0-9d52-9913626e2bb2.jpg
     - title: JUL 2020
       heading: Project Progress Report as on July 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 20th Floor Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 20th Floor in progress.
+
 
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - 20th Floor completed. Tiling & Dado - 16th Floor completed.
       gallery:
@@ -654,12 +819,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-07-IMG_8992.jpg
     - title: AUG 2020
       heading: Project Progress Report as on August 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 20th Floor in progress.
+
 
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - 20th Floor completed. Tiling & Dado - 16th Floor completed.
       gallery:
@@ -679,12 +848,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-08-IMG_9474.jpg
     - title: SEP 2020
       heading: Project Progress Report as on September 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 20th Floor in progress.
+
 
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - 20th Floor completed. Tiling & Dado - 17th Floor completed.
       gallery:
@@ -697,12 +870,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-09-IMG_0191.jpg
     - title: OCT 2020
       heading: Project Progress Report as on October 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - 21st Floor in progress.
+
 
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - 20th Floor completed. Tiling & Dado - 19th Floor completed.
       gallery:
@@ -712,12 +889,16 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-10-DJI_006100.jpg
     - title: NOV 2020
       heading: Project Progress Report as on November 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed. Tiling & Dado - Completed.
       gallery:
@@ -728,14 +909,19 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-11-Picture5-8.jpg
     - title: DEC 2020
       heading: Project Progress Report as on December 2020
-      description: |-
-        Tower A Slab Work - Completed. Block Work - Completed. Internal Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+      description: >-
+        Tower A Slab Work - Completed. Block Work - Completed. Internal
+        Plastering : Completed. MEP Work - Completed. Tiling & Dado - Completed.
+
 
         Tower B Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower C Slab Work - Completed. Block Work - Completed. Internal Plastering work - Completed. MEP Work - Completed. Tiling & Dado - Completed.
 
+
         Tower D Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed. Tiling & Dado - Completed.
+
 
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - 90% Completed. MEP Work - completed.
       gallery:
@@ -748,14 +934,20 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2020-12-de549151-f32e-4c99-9ff8-d1fe474701aa.jpg
     - title: JAN 2021
       heading: Project Progress Report as on January 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
 
+
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
+
 
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed.
       gallery:
@@ -767,16 +959,23 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-01-WhatsApp-Image-2021-01-12-at-9.10.42-PM.jpeg
     - title: FEB 2021
       heading: Project Progress Report as on February 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
+
 
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.
 
+
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed.
+
 
         Swimming Pool Slab Work - completed. External Plastering work - Completed. Waterproofing Works - completed.  MEP Work - in Progress.
       gallery:
@@ -794,16 +993,24 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-02-vaswaniExquisite05.jpeg
     - title: MAR 2021
       heading: Project Progress Report as on March 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  95% Completed. Sanitary & CP Fixtures - 60% Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed. Marble Polishing -  95% Completed. Sanitary & CP Fixtures -
+        60% Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing -  95% Completed. Sanitary & CP Fixtures - 60% Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing -  95% Completed. Sanitary & CP Fixtures - Yet to Start.
+
 
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  65% Completed. Sanitary & CP Fixtures - Yet to Start.
 
+
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed.
+
 
         Swimming Pool Slab Work - completed. External Plastering work - Completed. Waterproofing Works - completed.  MEP Work - Completed.
       gallery:
@@ -819,16 +1026,24 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-03-WhatsApp-Image-2021-03-16-at-5.24.09-PM-10.jpeg
     - title: APR 2021
       heading: Project Progress Report as on April 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95% Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95%
+        Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing - Completed. Sanitary & CP Fixtures - Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing -  Completed. Sanitary & CP Fixtures - 15% Completed.
+
 
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  90% Completed. Sanitary & CP Fixtures - Yet to Start.
 
+
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed. Tiling Work - 97% Completed.
+
 
         Swimming Pool Slab Work - completed. External Plastering work - Completed. Waterproofing Works - completed.  MEP Work - Completed. Tiling Work - in Progress.
       gallery:
@@ -841,16 +1056,24 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-04-dd81c87f-9629-4513-8b2b-475306d41ca3.jpg
     - title: MAY 2021
       heading: Project Progress Report as on May 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95% Completed. External Painting - 95% Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95%
+        Completed. External Painting - 95% Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing - Completed. Sanitary & CP Fixtures - Completed. External Painting - 95% Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing -  Completed. Sanitary & CP Fixtures - 15% Completed. External Painting - 95% Completed.
+
 
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  90% Completed. Sanitary & CP Fixtures - Yet to Start. External Painting - 75% Completed.
 
+
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed. Tiling Work - 97% Completed.
+
 
         Swimming Pool Slab Work - completed. External Plastering work - Completed. Waterproofing Works - completed.  MEP Work - Completed. Tiling Work - completed.
       gallery:
@@ -861,16 +1084,25 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-05-Picture5-9.jpg
     - title: JUN 2021
       heading: Project Progress Report as on June 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95% Completed. External Painting - 95% Completed. Wooden Flooring - 80% Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95%
+        Completed. External Painting - 95% Completed. Wooden Flooring - 80%
+        Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing - Completed. Sanitary & CP Fixtures - Completed. External Painting - 95% Completed. Wooden Flooring - 70% Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing -  Completed. Sanitary & CP Fixtures - 15% Completed. External Painting - 95% Completed. Wooden Flooring - Yet to Start.
+
 
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  90% Completed. Sanitary & CP Fixtures - Yet to Start. External Painting - 75% Completed. Wooden Flooring - Yet to Start.
 
+
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed. Tiling Work - Completed.
+
 
         Swimming Pool Slab Work - completed. External Plastering work - Completed. Waterproofing Works - completed.  MEP Work - Completed. Tiling Work - completed.
       gallery:
@@ -880,16 +1112,25 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-06-WhatsApp-Image-2021-06-15-at-7.57.56-PM-2.jpeg
     - title: JUL 2021
       heading: Project Progress Report as on July 2021
-      description: |-
-        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95% Completed. External Painting - Completed. Wooden Flooring - 95% Completed.
+      description: >-
+        Tower A  All Civil Works - Completed. MEP Work - Completed. Tiling &
+        Dado - Completed. Marble Work - Completed. Elevators - Installation
+        Completed. Marble Polishing -  Completed. Sanitary & CP Fixtures - 95%
+        Completed. External Painting - Completed. Wooden Flooring - 95%
+        Completed.
+
 
         Tower B All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing - Completed. Sanitary & CP Fixtures - Completed. External Painting - Completed. Wooden Flooring - Completed.
 
+
         Tower C All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed.  Marble Polishing - Completed. Sanitary & CP Fixtures - Completed. External Painting - Completed. Wooden Flooring - 50% Completed.
+
 
         Tower D All Civil Works - Completed. MEP Work - Completed. Tiling & Dado - Completed. Marble Work - Completed. Elevators - Installation Completed. Marble Polishing - Completed. Sanitary & CP Fixtures -65% Completed. External Painting - Completed. Wooden Flooring - 35% Completed.
 
+
         Club House Slab Work - completed. Block Work - completed. Internal Plastering work - Completed. MEP Work - completed. Tiling Work - Completed. Painting - Final Coat 90% completed.
+
 
         Swimming Pool Slab Work - completed. External Plastering work - Completed. Waterproofing Works - completed.  MEP Work - Completed. Tiling Work - completed. Deck Flooring - Completed.
       gallery:
@@ -917,4 +1158,3 @@ progress:
         - image: /media/uploads/exquisite-floorplan-progress-2021-09-WhatsApp-Image-2021-11-30-at-14.59.02-1.jpeg
         - image: /media/uploads/exquisite-floorplan-progress-2021-09-WhatsApp-Image-2021-11-30-at-14.56.56-1.jpeg
 ---
-
