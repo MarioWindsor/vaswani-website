@@ -18,7 +18,7 @@ overview:
     Strategic Vision for a Commercial Space.
   description: >-
     A prestigious address on Langford Road isn't just a location; it's a
-    statement. Vaswani Centropolis is a Grade A commercial hub in Bangalore's
+    statement. Vaswani Centropolis is a Grade A commercial hub in Bengaluru's
     Central Business District, designed to be more than an office - it's an
     ecosystem for productivity and growth.
 
@@ -62,4 +62,6 @@ location:
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15552.661606044983!2d77.5980282!3d12.9612658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d0c9386f09%3A0x95d153751c01ead3!2sVaswani%20Centropolis!5e0!3m2!1sen!2sin!4v1756733824822!5m2!1sen!2sin"
     allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
+progress:
+  heading: Ready for Fit outs
 ---
