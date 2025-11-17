@@ -13,23 +13,24 @@ metadata:
 cover:
   background: /media/uploads/presidio_IMG_20161013_132043.jpg
 overview:
-  sub-heading: A stylish structure that’s brimming with energy
-  heading: Spacious Office Spaces
+  sub-heading: "Spacious Office Spaces "
+  heading: Where the Future of Work Finds Its Place
   description: >-
-    The project offers excellent location-one that’s right in the middle of the
-    IT hub and offers great connectivity to all parts of the city.
+    Strategically located in the heart of Bengaluru’s IT corridor, Vaswani
+    Presidio stands as a contemporary business destination designed for
+    companies that value connectivity, efficiency, and an elevated workplace
+    experience. With its modern architecture, flexible floor plates, and
+    thoughtfully planned infrastructure, Presidio is built to meet the evolving
+    needs of today’s dynamic enterprises.
 
 
-    A stylish structure that’s brimming with energy, Vaswani Presidio features spacious office spaces, aesthetic architecture and sustainable designs. Making sure every day at work is relaxing and comfortable.
+    Here, business finds room to grow - with seamless access to talent, technology hubs, and major transport routes. Every element, from the building design to the amenities, is created to foster productivity and enable a smooth, uninterrupted workday.
 
 
-    Just 300 meters off Outer Ring Road, behind Cisco and Cessna Special Economic Zone
+    Where Connectivity Becomes an Advantage
 
-    Close proximity to both the International Technology Park (ITPL) and Export Promotion Park (EPIP)
 
-    IT majors such as Intel, Accenture, LG Soft, Cisco and Oracle in the immediate vicinity
-
-    Seamless connectivity to all parts of the city and the CBD
+    Just minutes away from major tech parks, premium residential zones, and lifestyle conveniences, Vaswani Presidio sits at the centre of the city’s most active business ecosystem. Excellent road connectivity ensures effortless access for teams, partners, and clients.
   gallery:
     - image: /media/uploads/presidio_IMG_20161013_132043.jpg
     - image: /media/uploads/presidio_IMG_20161013_131622.jpg
@@ -45,4 +46,6 @@ location:
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.139375232107!2d77.6995196!3d12.9375907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13ad4bb099c5%3A0xdb773c60cefbf79d!2sVaswani%20Presidio!5e0!3m2!1sen!2sin!4v1756756563245!5m2!1sen!2sin"
     allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
+progress:
+  heading: Completed
 ---
