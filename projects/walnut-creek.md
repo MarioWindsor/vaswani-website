@@ -3,31 +3,38 @@ tags: projects
 date: 2015-01-01T19:14:00.000+05:30
 name: Walnut Creek
 metadata:
-  prefix-name: false
+  prefix-name: true
   type: residential
   project-label: 3 & 4 BHK Villas & Townhouses
   status: completed
   status-label: Completed 2015
-  unit-size: 3030sqft to 4357sqft
+  unit-size: 3030 sqft to 4357 sqft
   location-label: Off Sarjapur Main Road
 cover:
   logo: /media/uploads/walnut-creek-logo.png
   background: /media/uploads/walnut-creek-cover-1-1-1.jpg
 overview:
-  heading: A Welcome Oasis
+  heading: Where Space Meets Stillness - A Welcome Oasis
   sub-heading: Just 22 Villas & 8 Townhouses
-  description: |-
-    A change to the norm in Bangalore’s urban chaos. Uber spacious villas and townhouses  with internationally styled clubhouse and world-class amenities developed on almost 3.25 acres of land
+  description: >
+    Set within one of Bengaluru’s most serene pockets, Vaswani Walnut Creek
+    Villas is a thoughtfully crafted, boutique enclave of contemporary homes
+    designed for those who value privacy, comfort, and a life surrounded by
+    nature. With spacious layouts, elegant architecture, and a quiet, tree-lined
+    setting, Walnut Creek brings together the warmth of a neighbourhood and the
+    ease of modern living.
 
-    - 4 BHK Villas ranging from 4427 sft to 4357 sft
 
-    - 3 BHK Townhouse of 3030 sft and 3148 sft
+    Every villa has been designed to maximize natural light, cross-ventilation, and an effortless indoor–outdoor flow - creating spaces that feel open, uplifting, and timeless. From landscaped pathways to carefully considered common areas, every detail reflects the Vaswani commitment to quality and design integrity.
 
-    - Upto 3,000sft of garden & terrace area per villa
 
-    - OC Received
+    A Quiet, Complete Neighbourhood
 
-    Vaswani Walnut Creek is all sold out.
+
+    With a limited number of villas, a calm environment, and the convenience of being close to schools, tech parks, and daily essentials, Walnut Creek offers an elevated lifestyle for families seeking both connection and calm.
+
+
+    Discover a home that is ready to welcome you - crafted with care, completed with pride, and created for everyday living at its best.
   gallery:
     - image: /media/uploads/walnut-creek-gallery-1-1-2.jpg
     - image: /media/uploads/walnut-creek-gallery-6-1-1.jpg
@@ -35,21 +42,67 @@ overview:
     - image: /media/uploads/walnut-creek-gallery-4-1-1.jpg
     - image: /media/uploads/walnut-creek-gallery-3-1-1.jpg
     - image: /media/uploads/walnut-creek-gallery-2-1-1.jpg
+amenities:
+  heading: Amenities Designed for Everyday Ease
+  description: >+
+    Vaswani Walnut Creek Villas offers a curated selection of amenities designed
+    to bring ease, balance, and joy into daily life. From quiet green corners to
+    active leisure spaces, every element has been thoughtfully planned to
+    complement the calm of the community.
+
+
+
+    For Icons:
+
+    Landscaped gardens and lush green pockets
+
+
+    Clubhouse with indoor recreation spaces
+
+
+    Swimming pool for relaxed and refreshing moments
+
+
+    Fully equipped gym
+
+
+    Children’s play area
+
+
+    Paved walkways and internal roads
+
+
+    Round-the-clock security
+
+
+
+
+
+
+
+  amenity: []
+  sub-heading: Thoughtful Spaces, Well-Curated Comforts
 location:
   heading: Sarjapur Main Road
   map-link: https://maps.app.goo.gl/yxkiyFnUo6B5AzeR7
-  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.839641879404!2d77.6939122!3d12.8942198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae132609dda61d%3A0x368f0801610761ed!2sVillas%20at%20Vaswani%20Walnut%20Creek!5e0!3m2!1sen!2sin!4v1762447852864!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  map-embed: <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.839641879404!2d77.6939122!3d12.8942198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae132609dda61d%3A0x368f0801610761ed!2sVillas%20at%20Vaswani%20Walnut%20Creek!5e0!3m2!1sen!2sin!4v1762447852864!5m2!1sen!2sin"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 progress:
   heading: Project Completed
-  sub-heading: A Glimpse Through Time
+  sub-heading: ""
   entry:
     - title: October 2016
-      description: |-
+      description: >-
         What has been completed and is in progress:
+
 
         3 BHK Villas: Internal & external Plastering and electrical works have been completed. The Plumbing & Waterproofing Work is in progress.
 
+
         4 BHK Villas: SBM works, Internal & External plastering and Electrical concealed works completed. Plumbing & Waterproofing are work in progress.
+
 
         3 BHK Villaments: Structural Work, Super terrace works, Solid block masonry, Internal electrical works, Internal & External plastering work are Completed Plumbing & Waterproofing are work in progress.
       gallery:
@@ -59,14 +112,18 @@ progress:
         - image: /media/uploads/walnut-creek-progress-2016-10-4-2.jpg
         - image: /media/uploads/walnut-creek-progress-2016-10-5-2.jpg
     - title: December 2016
-      description: |-
+      description: >-
         What has been completed and is in progress:
+
 
         3 BHK Villas: The Plumbing & Waterproofing work has been completed. The internal finishes are work in progress.
 
+
         4 BHK Villas: Plumbing & Waterproofing works are completed.  The internal finishes are work in progress.
 
+
         3 BHK Villaments: Plumbing & Waterproofing works have been completed. The internal finishes are work in progress.
+
 
         Clubhouse:  Structural work in progress.  Ground floor SBM has been completed.
       gallery:
@@ -77,12 +134,15 @@ progress:
         - image: /media/uploads/walnut-creek-progress-2016-12-IMG_20170105_165005.jpg
         - image: /media/uploads/walnut-creek-progress-2016-12-IMG_20170106_143532.jpg
     - title: April 2017
-      description: |-
+      description: >-
         What has been completed and is in progress:
+
 
         All Internal painting and electrical wiring works have been completed. Doors & Windows fixing work in progress.
 
+
         Clubhouse :
+
         Structure has been completed.  Swimming pool work in progress.
       gallery:
         - image: /media/uploads/walnut-creek-progress-2017-04-IMG-20170420-WA0001.jpg
@@ -121,14 +181,18 @@ progress:
         - image: /media/uploads/walnut-creek-progress-2017-10-IMG_20171004_115410.jpg
         - image: /media/uploads/walnut-creek-progress-2017-10-IMG_20171004_115908.jpg
     - title: December 2017
-      description: |-
+      description: >-
         What has been completed and is in progress:
+
 
         Villaments  – 1st Coat of External Painting & Wall Cladding work is completed.
 
+
         4 BHK  Villas nos. 3 to 10 – Texture work & 1st coat of external painting work is completed; preparatory works for the road is completed
 
+
         3 BHK Villa Nos. 23 to 19 – Canopy MS Fabrication work is completed
+
 
         Club House – Glazing & External Painting work is completed. Squash Court– False Ceiling work is in progress. Swimming Pool – Water Proofing work is completed, Tiling work is about to start.
       gallery:
@@ -147,7 +211,8 @@ progress:
         - image: /media/uploads/walnut-creek-progress-2017-12-IMG_20171214_152351673.jpg
     - title: April 2018
       heading: Last Few Units Available
-      description: Vaswani Walnut Creek is racing towards completion. The project is in its final phase with Landscape work in progress and finishes.
+      description: Vaswani Walnut Creek is racing towards completion. The project is
+        in its final phase with Landscape work in progress and finishes.
       gallery:
         - image: /media/uploads/walnut-creek-progress-2018-04-IMG-20180503-WA0006.jpg
         - image: /media/uploads/walnut-creek-progress-2018-04-IMG_20180430_125555.jpg
@@ -162,10 +227,12 @@ progress:
         - image: /media/uploads/walnut-creek-progress-2018-04-walnut.jpg
     - title: June 2018
       heading: Last Few Units Available
-      description: |-
+      description: >-
         Project Progress Report as on 11th June 2018
 
+
         Works in progress are the finishing of the clubhouse, design development of the project signage.
+
 
         Visit today for an exclusive tour of the property.
       gallery:
@@ -195,4 +262,3 @@ progress:
         - image: /media/uploads/walnut-creek-progress-2018-08-9-2.jpg
         - image: /media/uploads/walnut-creek-progress-2018-08-10.jpg
 ---
-
