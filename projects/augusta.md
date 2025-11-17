@@ -9,7 +9,7 @@ metadata:
   status: completed
   project-label: Grade A Commercial Office Space
   status-label: Completed 2018
-  rera-number: PRM/KA/RERA/1251/446/PR/171230/002141
+  rera-number: ""
   location-label: Near Embassy Golf Links Business Park
 cover:
   logo: ""
