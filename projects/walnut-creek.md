@@ -28,7 +28,7 @@ overview:
     Every villa has been designed to maximize natural light, cross-ventilation, and an effortless indoor–outdoor flow - creating spaces that feel open, uplifting, and timeless. From landscaped pathways to carefully considered common areas, every detail reflects the Vaswani commitment to quality and design integrity.
 
 
-    A Quiet, Complete Neighbourhood
+    22 Villas and 8 Townhouses 
 
 
     With a limited number of villas, a calm environment, and the convenience of being close to schools, tech parks, and daily essentials, Walnut Creek offers an elevated lifestyle for families seeking both connection and calm.
