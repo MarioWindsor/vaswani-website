@@ -83,12 +83,17 @@ amenities:
   amenity: []
   sub-heading: Thoughtful Spaces, Well-Curated Comforts
 location:
-  heading: Sarjapur Main Road
+  heading: Chikkanayakanahalli, Sarjapur Road
   map-link: https://maps.app.goo.gl/yxkiyFnUo6B5AzeR7
   map-embed: <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.839641879404!2d77.6939122!3d12.8942198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae132609dda61d%3A0x368f0801610761ed!2sVillas%20at%20Vaswani%20Walnut%20Creek!5e0!3m2!1sen!2sin!4v1762447852864!5m2!1sen!2sin"
     style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
+  sub-heading: Walnut Creek places you minutes away from everything that matters.
+    From morning school runs to the ease of reaching major workplaces, and from
+    weekend cafés to essential shopping - life flows effortlessly here. It’s a
+    location chosen for comfort, convenience, and the quiet luxury of being
+    well-connected without the noise of the city.
 progress:
   heading: Project Completed
   sub-heading: ""
