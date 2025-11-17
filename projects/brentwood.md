@@ -3,24 +3,33 @@ tags: projects
 date: 2017-01-01T19:13:00.000+05:30
 name: Brentwood
 metadata:
-  prefix-name: false
+  prefix-name: true
   type: residential
   project-label: 2 & 3 Bedroom Apartments
   status: completed
   status-label: Completed 2017
-  starting-price: Starting at ₹1.14Cr
-  unit-size: 1025sqft to 2275sqft Apartments
+  starting-price: ""
+  unit-size: 1025 sqft to 2275 sqft Apartments
   location-label: Off Varthur Main road, Whitefield
 cover:
   logo: /media/uploads/brentwood-project-logo.png
   background: /media/uploads/brentwood-featured-image-6.jpg
 overview:
   heading: Superbly Located
-  sub-heading: All units at Vaswani Brentwood have been sold out
-  description: |-
-    Vaswani Brentwood is superbly located just beyond the Brookfield’s Junction and is a short drive both from the International Technology Park (ITPL), as well as from the Export Promotion Park (EPIP), besides being in the heart of the IT corridor and in the immediate vicinity of the Outer Ring Road.
+  sub-heading: ""
+  description: >+
+    Located in the vibrant heart of Bangalore’s Whitefield, Vaswani Brentwood
+    stands as a thoughtfully designed residential community that blends comfort,
+    convenience, and contemporary living. The project is successfully completed,
+    and today, Brentwood is a warm, thriving neighbourhood that reflects the
+    quality craftsmanship and planning Vaswani Group is known for.
 
-    These are 4 aesthetically designed towers of Ground + 14 floors with 237 units, in a combination of 2, 3 & 3.5 Bedroom Intelligent Homes.
+
+    Set amidst serene landscaping and generous open spaces, Brentwood offers elegantly designed 2 & 3 BHK apartments spread across 4 towers of G+14 floors that maximise natural light, ventilation, and everyday ease. With premium amenities, secure infrastructure, and excellent connectivity to IT hubs, schools, shopping, and entertainment, the community continues to offer residents a lifestyle that feels both relaxed and well-connected.
+
+
+    A completed development that has matured beautifully over time, Vaswani Brentwood remains one of Whitefield’s most cherished residential addresses - where families have built homes, created memories, and grown together.
+
   gallery:
     - image: /media/uploads/brentwood-BeautyPlus_20170615165622_save.jpg
     - image: /media/uploads/brentwood-BeautyPlus_20170615165558_save.jpg
@@ -42,10 +51,48 @@ siteplan:
   masterplan:
     - title: Masterplan
       image: /media/uploads/brentwood-masterplan-3.jpg
+amenities:
+  description: >
+    Designed to create a balanced and fulfilling lifestyle, Vaswani Brentwood
+    offers a thoughtful selection of amenities that support wellness,
+    recreation, and community living.
+
+
+    Each space has been created to bring people together, encourage an active lifestyle, and add ease to everyday living.
+
+
+    For Icons : 
+
+
+    - A well-appointed clubhouse
+
+
+    - Swimming pool with deck seating
+
+
+    - Fully equipped gymnasium
+
+
+    - Indoor games room
+
+
+    - Landscaped gardens and walking paths
+
+
+    - Children’s play area
+
+
+    - Multi-purpose hall
+
+
+    - Round-the-clock security and CCTV surveillance
 location:
   heading: Brookefield Junction
-  sub-heading: Off Varthur Main road, Whitefield
+  sub-heading: Brentwood offers residents both calmness at home and the comfort of
+    urban connectivity.
   map-link: https://maps.app.goo.gl/ovHB8dDMNx3bjbWc9
-  map-embed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.33352934608!2d77.7178537!3d12.9505063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13a45e9ce6cd%3A0xc06e6a054b913c4f!2sVaswani%20Brentwood!5e0!3m2!1sen!2sin!4v1762448697676!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  map-embed: <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.33352934608!2d77.7178537!3d12.9505063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13a45e9ce6cd%3A0xc06e6a054b913c4f!2sVaswani%20Brentwood!5e0!3m2!1sen!2sin!4v1762448697676!5m2!1sen!2sin"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 ---
-
