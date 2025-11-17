@@ -36,6 +36,10 @@ overview:
     - image: /media/uploads/pinnacle_Picture2-10.jpg
     - image: /media/uploads/pinnacle_Picture5-11.jpg
     - image: /media/uploads/pinnacle_Picture3-10.jpg
+amenities:
+  heading: Designed around your everyday.
+  description: Amenities at Pinnacle are built to make daily life smoother,
+    healthier, and more enjoyable
 brochure:
   pdf: /media/uploads/vaswani-pinnacle-c802.pdf
 location:
