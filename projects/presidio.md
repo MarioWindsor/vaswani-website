@@ -4,7 +4,7 @@ tags:
 date: 2011-01-02T19:12:00.000+05:30
 name: Presidio
 metadata:
-  prefix-name: false
+  prefix-name: true
   type: commercial
   status: completed
   project-label: Exclusive Commercial Spaces
@@ -13,12 +13,11 @@ metadata:
 cover:
   background: /media/uploads/presidio_IMG_20161013_132043.jpg
 overview:
-  sub-heading: A stylish structure that’s brimming with energy,
+  sub-heading: A stylish structure that’s brimming with energy
   heading: Spacious Office Spaces
   description: >-
-    The project offers excellent cost advantages, considering the price and the
-    location-one that’s right in the middle of the IT hub and offers great
-    connectivity to all parts of the city.
+    The project offers excellent location-one that’s right in the middle of the
+    IT hub and offers great connectivity to all parts of the city.
 
 
     A stylish structure that’s brimming with energy, Vaswani Presidio features spacious office spaces, aesthetic architecture and sustainable designs. Making sure every day at work is relaxing and comfortable.
