@@ -39,8 +39,7 @@ overview:
     - image: /media/uploads/presidio_IMG_20161013_132031.jpg
 location:
   heading: 300 meters off Outer Ring Road
-  sub-heading: Off Marathahalli - Sarjapur, Outer Ring Road, Bangalore. Near
-    Ecospace & CISCO campus
+  sub-heading: Off Marathahalli - Sarjapur, Outer Ring Road, Bengaluru. Near Ecospace & CISCO campus
   map-link: https://maps.app.goo.gl/sFpaKrCtWvwS3TEU6
   map-embed: <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.139375232107!2d77.6995196!3d12.9375907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13ad4bb099c5%3A0xdb773c60cefbf79d!2sVaswani%20Presidio!5e0!3m2!1sen!2sin!4v1756756563245!5m2!1sen!2sin"

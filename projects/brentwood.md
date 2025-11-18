@@ -18,7 +18,7 @@ overview:
   heading: Superbly Located
   sub-heading: ""
   description: >+
-    Located in the vibrant heart of Bangalore’s Whitefield, Vaswani Brentwood
+    Located in the vibrant heart of Bengaluru’s Whitefield, Vaswani Brentwood
     stands as a thoughtfully designed residential community that blends comfort,
     convenience, and contemporary living. The project is successfully completed,
     and today, Brentwood is a warm, thriving neighbourhood that reflects the

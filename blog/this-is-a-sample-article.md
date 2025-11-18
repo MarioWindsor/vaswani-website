@@ -69,7 +69,8 @@ And that’s why a lot of eco-friendly zero-waste warriors now advocate that we 
 2. Have a separate bag for all the paper waste – including face tissues, tetrapaks, cardboard, and printing paper.
 3. Wash and dry glass bottles and keep them in a separate bag or box.
 4. Make sure to collect all your electronic waste in one place. Do the same with any medical supplies or even clothes.
-5. Once a month – or once in two months, depending on how much waste your home produces – take all these separate bags and give them to a place that specialises in recycling. In Bangalore, for example, IndiaWasted takes in all kinds of waste that a home produces. They’ll even weigh it all and tell you how much your home has generated in a month. Wouldn’t you like to know?
+5. Once a month – or once in two months, depending on how much waste your home produces – take all these separate bags and give them to a place that specialises in recycling. In Bengaluru
+									, for example, IndiaWasted takes in all kinds of waste that a home produces. They’ll even weigh it all and tell you how much your home has generated in a month. Wouldn’t you like to know?
 
 #### **Wet waste**
 
@@ -129,12 +130,15 @@ In a bowl whisk together egg yolks, sugar, and milk. Cook over medium heat for o
 
 Split ladyfinger cookies in a bowl, then pour coffee and rum over and add whipped cream and egg yolks. Sprinkle cocoa powder on top and refrigerate for five hours. Yummy tiramisu ready!
 
-*Recipe courtesy: Chef. Akthar Khan, Peninsula Suites operated by Lemon Tree Hotels – Bangalore*
+*Recipe courtesy: Chef. Akthar Khan, Peninsula Suites operated by Lemon Tree Hotels – Bengaluru
+									*
 
 **Get in Touch**
 
-**Bangalore**
-Vaswani Victoria, 30 Victoria Road, Bangalore – 47
+**Bengaluru
+									**
+Vaswani Victoria, 30 Victoria Road, Bengaluru
+									 – 47
 Phone – 87479 87479
 
 **Mumbai**

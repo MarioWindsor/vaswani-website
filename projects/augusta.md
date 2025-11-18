@@ -26,9 +26,9 @@ overview:
     hear the Earth sing.
   description: >
     Directly overlooking the Karnataka Golf Association’s Championship Golf
-    Course, Vaswani Augusta is a workspace created to revolutionize the idea of
+    Course, Vaswani Augusta is a workspace created to revolutionize the idea of
     an office. A Grade 'A' Commercial Office Space Development near the Embassy
-    Golf Business Park and Hotel Hilton, Bangalore with state-of-the-art
+    Golf Business Park and Hotel Hilton, Bengaluru with state-of-the-art
     architecture & design.
 
 
