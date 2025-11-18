@@ -11,6 +11,7 @@ metadata:
   location-label: Balaji Layout, Marathahalli
   project-label: 3 & 4 BHK Villas
   unit-size: 3100 sqft to 3857 sqft Villas
+  starting-price: Completed and Sold Out
 cover:
   background: /media/uploads/whispering_palms_01.png
 overview:
