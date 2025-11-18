@@ -8,7 +8,7 @@ metadata:
   project-label: 2 & 3 Bedroom Apartments
   status: completed
   status-label: Completed 2017
-  starting-price: ""
+  starting-price: Completed and Sold Out
   unit-size: 1025 sqft to 2275 sqft Apartments
   location-label: Off Varthur Main road, Whitefield
 cover:
