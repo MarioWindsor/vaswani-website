@@ -10,7 +10,7 @@ metadata:
   rera-number: PRM/KA/RERA/1251/446/PR/171015/000854
   status-label: Completed 2022
   type: residential
-  starting-price: ""
+  starting-price: Completed and Sold Out
   location-label: Off Brookefield Jn., Whitefield
 cover:
   logo: /media/uploads/menlo-park-project-logo-white.png
