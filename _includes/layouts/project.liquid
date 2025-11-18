@@ -47,6 +47,15 @@ eleventyComputed:
 
 
 
+<!-- Location Section -->
+{% if location != blank %}
+{% include 'sections/project-location.liquid' %}
+{% endif %}
+<!-- END: Location Section -->
+
+
+
+
 <!-- Contact Form Section -->
 {% include 'sections/contact-form.liquid' %}
 <!-- End: Contact Form Section -->
@@ -66,15 +75,6 @@ eleventyComputed:
 {% include 'sections/project-brochure.liquid' %}
 {% endif %}
 <!-- END: Brochure Section -->
-
-
-
-<!-- Location Section -->
-{% if location != blank %}
-{% include 'sections/project-location.liquid' %}
-{% endif %}
-<!-- END: Location Section -->
-
 
 
 <!-- Banner Section -->
