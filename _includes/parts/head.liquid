@@ -13,8 +13,7 @@
 	<!-- Metadata -->
 	<!-- Short description of the document (limit to 150 characters) -->
 	<!-- This content *may* be used as a part of search engine results. -->
-	<meta name="description" content="Developers of residential and commercial real estate across Bengaluru
-									, Mumbai, Pune and Goa.">
+	<meta name="description" content="Developers of residential and commercial real estate across Bengaluru, Mumbai, Pune and Goa.">
 
 
 	<!-- Authors -->
@@ -60,8 +59,7 @@
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ title | default: 'Vaswani - Live the Dream' }}">
-	<meta property="og:description" content="Developers of residential and commercial real estate across Bengaluru
-									, Mumbai, Pune and Goa.">
+	<meta property="og:description" content="Developers of residential and commercial real estate across Bengaluru, Mumbai, Pune and Goa.">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="">
 	<meta property="og:site_name" content="">
@@ -69,8 +67,7 @@
 
 	<!-- Schema.org / Google+ -->
 	<meta itemprop="name" content="{{ title | default: 'Vaswani - Live the Dream' }}">
-	<meta itemprop="description" content="Developers of residential and commercial real estate across Bengaluru
-									, Mumbai, Pune and Goa.">
+	<meta itemprop="description" content="Developers of residential and commercial real estate across Bengaluru, Mumbai, Pune and Goa.">
 	<meta itemprop="image" content="">
 
 
@@ -225,8 +222,7 @@
 				<label for="toggle-city-selector" class="block card text-center">
 					<div class="title space-50">
 						<span class="p block text-uppercase w-600 text-neutral-80 letter-spacing-loose">Garden City</span>
-						<span class="h4 block text-uppercase w-600 text-neutral-80 letter-spacing-loose-loose">Bengaluru
-									</span>
+						<span class="h4 block text-uppercase w-600 text-neutral-80 letter-spacing-loose-loose">Bengaluru</span>
 					</div>
 					<div class="video-embed" style="padding-top: 75%;">
 						<iframe class="" style="height: 200%;" src="https://www.youtube-nocookie.com/embed/LHILNoXZpBk?playlist=LHILNoXZpBk&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -258,8 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const toggleCitySelectorCheckbox = document.getElementById('toggle-city-selector');
 	const logoAnimationEndCheckbox = document.getElementById('logo-animation-end');
 
-	if (!localStorage.getItem('visit_bengaluru
-									')) {
+	if (!localStorage.getItem('visit_bengaluru')) {
 		// Load the animation
 		const anim = lottie.loadAnimation({
 			container: lottieContainer,        // The div element to render into
@@ -278,8 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			toggleCitySelectorCheckbox.addEventListener('change', () => {
 				if (!toggleCitySelectorCheckbox.checked) {
 					// Save a variable to localStorage
-					localStorage.setItem('visit_bengaluru
-									', true);
+					localStorage.setItem('visit_bengaluru', true);
 				}
 			});
 		});
