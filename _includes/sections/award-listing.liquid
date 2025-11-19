@@ -1,6 +1,21 @@
 <style>
 	.awards-section { overflow: clip; }
-	.awards-section .award { position: relative; }
+	.awards-section .awards {
+		display: grid;
+		grid-template-areas: "stack";
+	}
+	.awards-section .award {
+		position: relative;
+		grid-area: stack;
+		opacity: 0;
+		transition: opacity 0.6s ease-in-out;
+		pointer-events: none;
+	}
+	.awards-section .award.active {
+		opacity: 1;
+		pointer-events: auto;
+		z-index: 2;
+	}
 	.awards-section .award:before,
 	.awards-section .award:after {
 		display: block;
@@ -41,6 +56,32 @@
 		.awards-section .award i.h3 { font-size: var(--h2); }
 		.awards-section .award i.h5 { font-size: var(--h4); }
 	}
+
+	/* Add this to your existing <style> block */
+
+	/* 1. Create a grid stack */
+	.awards-carousel {
+		/*display: grid;*/
+		/*grid-template-areas: "stack";*/
+		/* Optional: limit width if text gets too long */
+		/*max-width: 800px; */
+		/*margin: 0 auto;*/
+	}
+
+	/* 2. Place all items in the same cell */
+	.award-slide {
+		/*grid-area: stack;*/
+		/*opacity: 0;*/
+		/*transition: opacity 0.6s ease-in-out;*/
+		/*pointer-events: none; /* Prevent selecting hidden text */*/
+	}
+
+	/* 3. The active state */
+	.award-slide.active {
+		opacity: 1;
+		pointer-events: auto;
+		z-index: 2;
+	}
 </style>
 
 
@@ -54,15 +95,42 @@
 			</div>
 		</div>
 		<div class="awards row text-center">
-			<div class="award columns small-12 medium-11 xlarge-9 text-center space-100-vertical space-100-horizontal">
-				<h3 class="title h6 text-primary">Best Luxury Residential Project South Zone</h3>
-				<h4 class="awarder small block text-uppercase w-600 space-25">CNBC-Awaaz Real Estate Awards 2023</h4>
+			{% for award in collections.awards %}
+			<div class="award js_award columns small-12 medium-11 xlarge-9 text-center space-100-vertical space-100-horizontal">
+				<!-- <h3 class="title h6 text-primary">Best Luxury Residential Project South Zone</h3> -->
+				<h3 class="title h6 text-primary">{{ award.data.title }}</h3>
+				<!-- <h4 class="awarder small block text-uppercase w-600 space-25">CNBC-Awaaz Real Estate Awards 2023</h4> -->
+				<h4 class="awarder small block text-uppercase w-600 space-25">{{ award.data.awarder }}</h4>
 				<div class="stars">
 					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
 					<i class='bx bxs-star h3 text-secondary inline-middle'></i>
 					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
 				</div>
 			</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.js_award');
+    // If no awards or only 1, don't run the animation
+    if (slides.length < 2) return; 
+
+    let currentIndex = 0;
+    const intervalTime = 2500; // 4 seconds per award
+
+    setInterval(() => {
+        // 1. Remove active class from current
+        slides[currentIndex].classList.remove('active');
+
+        // 2. Calculate next index (loop back to 0 if at end)
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        // 3. Add active class to next
+        slides[currentIndex].classList.add('active');
+    }, intervalTime);
+});
+</script>
