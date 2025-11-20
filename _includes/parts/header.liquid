@@ -19,9 +19,10 @@
 
 <!-- Main Nav -->
 <nav id="main-nav" class="main-nav" role="navigation" aria-labelledby="main-nav-heading">
-	<h2 id="main-nav-heading" class="w-200 space-150-right">Menu</h2>
+	<h2 id="main-nav-heading" class="w-200 space-150-right" style="transform: translateY(calc(var(--space-min) * -1));">Menu</h2>
 	<ul class="menu-list space-25-top">
 		<li><a href="">Home</a></li>
+		<li><small class="text-uppercase w-600 text-neutral-40" style="letter-spacing: calc(var(--label) / 16);">In Bengaluru City</small></li>
 		<li>
 			<input type="checkbox" id="residential-submenu-checkbox" class="submenu-checkbox hidden">
 			<label for="residential-submenu-checkbox" class="submenu-label">Residential</label>
@@ -70,10 +71,23 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<input type="checkbox" id="hospitality-submenu-checkbox" class="submenu-checkbox hidden">
+			<label for="hospitality-submenu-checkbox" class="submenu-label">Hospitality</label>
+			<ul id="hospitality-submenu" class="sub-menu space-75-right">
+			{% for project in ongoing_hospitality_projects %}
+				<li><a class="" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+			{% endfor %}
+			{% for project in completed_hospitality_projects %}
+				<li><a class="" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a></li>
+			{% endfor %}
+			</ul>
+		</li>
+		<li><a target="_blank" href="https://www.google.com/search?q=vaswani+group+mumbai"><small class="text-uppercase w-600" style="letter-spacing: calc(var(--label) / 16);"><span class="inline-middle space-min-right">In Mumbai City</span> <i class='inline-middle bx bx-link-external' style="transform: scale(1.333); transform-origin: right center;"></i></small></a></li>
 		{% for link in menu.link %}
 			<li><a href="{{ link.path }}">{{ link.title }}</a></li>
 		{% endfor %}
-		<li><a class="text-dark" href="/client-suite" target="_blank"><span class="inline-middle space-25-right">Client Login</span> <i class='inline-middle bx bx-log-in' style="transform: scale(1.333); transform-origin: right center;"></i></a></li>
+		<li><a class="text-dark" target="_blank" href="/client-suite"><span class="inline-middle space-25-right">Client Login</span> <i class='inline-middle bx bx-log-in' style="transform: scale(1.333); transform-origin: right center;"></i></a></li>
 	</ul>
 </nav>
 <!-- End: Main Nav -->
