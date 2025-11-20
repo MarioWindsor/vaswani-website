@@ -53,42 +53,26 @@ amenities:
 
 
 
-    For Icons:
-
-    Landscaped gardens and lush green pockets
-
-
-    Clubhouse with indoor recreation spaces
-
-
-    Swimming pool for relaxed and refreshing moments
-
-
-    Fully equipped gym
-
-
-    Children’s play area
-
-
-    Paved walkways and internal roads
-
-
-    Round-the-clock security
-
-
-
-
 
 
 
   amenity:
-    - name: Landscaped gardens and lush green pockets
+    - name: Landscaped Gardens and lush green pockets
+      icon: /media/uploads/mini-icon-florist.png
     - name: Clubhouse with indoor recreation spaces
-    - name: Swimming pool for relaxed and refreshing moments
-    - name: Fully equipped gym
+      icon: /media/uploads/mini-icon-cocktail.png
+    - name: Swimming Pool for relaxed and refreshing moments
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Fully Equipped Gym
+      icon: /media/uploads/mini-icon-dumbbell.png
     - name: Children’s play area
-    - name: Paved walkways and internal roads
-    - name: Round-the-clock security
+      icon: /media/uploads/mini-icon-parent-child.png
+    - name: Paved Walkways
+      icon: /media/uploads/mini-icon-footsteps.png
+    - name: Internal Roads
+      icon: /media/uploads/mini-icon-car.png
+    - name: Round-the-clock Security
+      icon: /media/uploads/mini-icon-cctv.png
   sub-heading: Thoughtful Spaces, Well-Curated Comforts
 location:
   heading: Chikkanayakanahalli, Sarjapur Road
