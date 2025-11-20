@@ -81,7 +81,14 @@ amenities:
 
 
 
-  amenity: []
+  amenity:
+    - name: Landscaped gardens and lush green pockets
+    - name: Clubhouse with indoor recreation spaces
+    - name: Swimming pool for relaxed and refreshing moments
+    - name: Fully equipped gym
+    - name: Children’s play area
+    - name: Paved walkways and internal roads
+    - name: Round-the-clock security
   sub-heading: Thoughtful Spaces, Well-Curated Comforts
 location:
   heading: Chikkanayakanahalli, Sarjapur Road
