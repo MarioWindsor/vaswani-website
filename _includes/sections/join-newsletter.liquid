@@ -17,11 +17,32 @@
 		z-index: 2;
 		padding-bottom: calc(var(--container-width)/4);
 	}
+	.join-newsletter-section .join-newsletter .newsletter-form {
+		color: var(--hue-dark);
+		text-align: left;
+		display: none;
+		grid-template-columns: repeat(1, 1fr);
+		gap: var(--small);
+		align-items: end;
+	}
+	.join-newsletter-section .join-newsletter .form-title {
+		display: none;
+		/*grid-column: 1 / -1;;*/
+	}
+	.join-newsletter-section .join-newsletter .toggle-newsletter-form:checked ~ .newsletter-form { display: grid; }
+	.join-newsletter-section .join-newsletter .toggle-newsletter-form:checked ~ .form-title { display: block; }
+	.join-newsletter-section .join-newsletter .toggle-newsletter-form:checked ~ .open-newsletter-form { display: none; }
 	@media( min-width: 500px ) {
 		.join-newsletter-section .join-newsletter-bg:after { height: calc(var(--space-400) * 2); }
 		.join-newsletter-section .join-newsletter {
 			margin-top: calc(var(--space-100) * -1.5);
 			padding-bottom: calc(var(--container-width)/6);
+		}
+		.join-newsletter-section .join-newsletter .newsletter-form {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.join-newsletter-section .join-newsletter .newsletter-form .nl-submit {
+			grid-column: span 2;
 		}
 	}
 	@media( min-width: 1000px ) {
@@ -30,10 +51,24 @@
 			margin-top: calc(var(--space-100) * -3);
 			padding-bottom: calc(var(--container-width)/8);
 		}
+		.join-newsletter-section .join-newsletter .newsletter-form {
+			grid-template-columns: repeat(5, 1fr);
+		}
+		.join-newsletter-section .join-newsletter .newsletter-form .nl-last-name,
+		.join-newsletter-section .join-newsletter .newsletter-form .nl-email {
+			grid-column: span 2;
+		}
+		.join-newsletter-section .join-newsletter .newsletter-form .nl-submit {
+			grid-column: span 1;
+		}
 	}
 	@media( min-width: 1500px ) {
 		.join-newsletter-section .join-newsletter-bg:after { height: calc(var(--space-400) * 4); }
 		.join-newsletter-section .join-newsletter { margin-top: calc(var(--space-100) * -4); }
+		.join-newsletter-section .join-newsletter .newsletter-form {
+			width: 75%;
+			margin: 0 auto;
+		}
 	}
 </style>
 
@@ -47,9 +82,38 @@
 		<div class="join-newsletter">
 			<div class="container text-center">
 				<div class="columns small-12">
+					<input type="checkbox" id="toggle-newsletter-form" class="toggle-newsletter-form visuallyhidden">
 					<label class="section-label text-secondary">Shared Space</label>
 					<h2 class="section-heading text-light w-600 space-50-bottom">The Art of Architecture</h2>
-					<a class="button fill-secondary" href="">Join our Newsletter</a>
+					<label class="open-newsletter-form button fill-secondary" for="toggle-newsletter-form">Join our Newsletter</label>
+					<div class="form-title columns small-12 text-center">
+						<span class="block h4 text-secondary">Join our Newsletter</span>
+						<small class="block small opacity-50 text-uppercase w-600 space-50-bottom" style="letter-spacing: calc(var(--label) / 16);">Enter Details</small>
+					</div>
+					<form name="newsletter" method="POST" netlify netlify-honeypot="nl_company" class="newsletter-form form block card row space-50">
+						<div class="form-input nl-first-name columns small-12 visuallyhidden">
+							<label for="nl_company" tabindex="-1">
+								<span class="input-label space-min block">Company *</span>
+								<input class="input-field" id="nl_company" name="nl_company" type="text" tabindex="-1">
+							</label>
+						</div>
+						<div class="form-input nl-last-name columns small-12">
+							<label for="nl_applicant">
+								<span class="input-label space-min block">Full Name *</span>
+								<input class="input-field" id="nl_applicant" name="nl_applicant" type="text">
+							</label>
+						</div>
+						<div class="form-input nl-email columns small-12">
+							<label for="nl_email">
+								<span class="input-label space-min block">Email Id *</span>
+								<input class="input-field" id="nl_email" name="nl_email" type="text">
+							</label>
+						</div>
+						<div class="form-input nl-submit columns small-12">
+							<button type="submit" class="button block fill-primary" style="padding: 0 var(--space-100);">Sign Up</button>
+						</div>
+						<div id="form-status" class="columns nl-form-status small-12" role="status"></div>
+					</form>
 				</div>
 			</div>
 		</div>
