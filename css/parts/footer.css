@@ -49,6 +49,11 @@
 	font-size: var(--h4);
 	color: var(--hue-light);
 }
+.footer-section .footer .commercial {
+	display: grid;
+	gap: var(--space-50);
+	grid-template-columns: repeat(1, 1fr);
+}
 
 @media( min-width: 500px ) {
 	.footer-section .ribbon img {
@@ -58,6 +63,11 @@
 	.footer-section .foot-set {
 		display: inline-grid;
 		grid-template-columns: 1fr 1fr;
+	}
+	.footer-section .footer .commercial {
+		gap: 0;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: span 2;
 	}
 }
 @media( min-width: 1000px ) {
@@ -77,6 +87,12 @@
 	.footer-section .footer .residential,
 	.footer-section .footer .commercial {
 		text-align: right;
+	}
+
+	.footer-section .footer .commercial {
+		gap: var(--space-50);
+		grid-template-columns: repeat(1, 1fr);
+		grid-column: span 1;
 	}
 }
 @media( min-width: 1500px ) {

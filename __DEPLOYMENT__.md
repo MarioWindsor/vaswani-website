@@ -1,8 +1,6 @@
 # DEPLOYMENT CHECKLIST:
 ---
 
-- newsletter signup > google sheets > name and email
-
 - brand film edits
 
 - Home Page > Intro Banner Section > [ Edit a Short Fast Cut Version of Brand Film for the Video Bg ]

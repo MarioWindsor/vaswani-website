@@ -51,13 +51,26 @@
 					{% endfor %}
 				</div>
 				<div class="foot commercial">
-					<h6 class="title">Commercial</h6>
-					{% for project in ongoing_commercial_projects %}
-					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
-					{% endfor %}
-					{% for project in completed_commercial_projects %}
-					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
-					{% endfor %}
+					<div class="com-1">
+						<h6 class="title">Commercial</h6>
+						{% for project in ongoing_commercial_projects %}
+						<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+						{% endfor %}
+						{% for project in completed_commercial_projects %}
+						<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+						{% endfor %}
+					</div>
+					{% if ongoing_hospitality_projects != blank or completed_hospitality_projects != blank %}
+					<div class="com-2">
+						<h6 class="title">Hospitality</h6>
+						{% for project in ongoing_hospitality_projects %}
+						<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+						{% endfor %}
+						{% for project in completed_hospitality_projects %}
+						<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
+						{% endfor %}
+					</div>
+					{% endif %}
 				</div>
 			</div>
 		</div>
