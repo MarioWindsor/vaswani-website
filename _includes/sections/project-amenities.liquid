@@ -28,8 +28,8 @@
 						<ul class="amenities">
 							{% for amenity in amenities.amenity %}
 							<li class="amenity space-25-bottom">
-								<img loading="lazy" class="inline-middle" src="{{ amenity.icon }}" alt="">
-								<span class="inline-middle">{{ amenity.name }}</span>
+								{% if amenity.icon != blank %}<img loading="lazy" class="inline-middle" src="{{ amenity.icon }}" alt="">{% endif %}
+								{% if amenity.name != blank %}<span class="inline-middle">{{ amenity.name }}</span>{% endif %}
 							</li>
 							{% endfor %}
 						</ul>
@@ -40,8 +40,8 @@
 							<ul class="amenities">
 								{% for amenity in amenities.amenity %}
 								<li class="amenity space-25-bottom">
-									<img loading="lazy" class="inline-middle" src="{{ amenity.icon }}" alt="">
-									<span class="inline-middle">{{ amenity.name }}</span>
+									{% if amenity.icon != blank %}<img loading="lazy" class="inline-middle" src="{{ amenity.icon }}" alt="">{% endif %}
+									{% if amenity.name != blank %}<span class="inline-middle">{{ amenity.name }}</span>{% endif %}
 								</li>
 								{% endfor %}
 							</ul>

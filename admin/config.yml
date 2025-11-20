@@ -130,8 +130,8 @@ collections:
             minimize_collapsed: true
             summary: '{{fields.name}} {{fields.icon}}'
             fields:
-              - { label: "Name", name: "name", widget: "string", }
-              - { label: "Icon", name: "icon", widget: "image", choose_url: false }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image", choose_url: false, required: false }
           - label: "Gallery"
             name: "gallery"
             widget: "list"
