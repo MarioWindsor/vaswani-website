@@ -1,6 +1,6 @@
 </main>
-<!-- End: Main -->		
-		
+<!-- End: Main -->
+
 
 
 <!-- Footer Section -->
@@ -25,7 +25,7 @@
 					<h6 class="title">Bengaluru Address</h6>
 					<p class="h6 text-primary">Vaswani Victoria, #30, Victoria Road, Bengaluru - 560 047 Karnataka, India.</p>
 				</div>
-				<div class="foot social space-25-bottom">
+				<div class="foot social small-bottom">
 					<h6 class="title">Follow us</h6>
 					<a class="social-link" href=""><i class='bx bxl-instagram'></i><span class="visuallyhidden">Instagram</span></a>
 					<a class="social-link" href=""><i class='bx bxl-youtube'></i><span class="visuallyhidden">YouTube</span></a>
@@ -80,12 +80,83 @@
 
 
 
+<!-- Sticky CTA -->
+<style>
+.sticky-cta-section {
+	position: sticky;
+	z-index: 900;
+	bottom: var(--space-50);
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+	@media( min-width: 500px ) { display: none; }
+
+	.sticky-cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: content-box;
+		padding: var(--small);
+		/*grid-template-columns: repeat(3, 1fr);*/
+		width: calc(var(--container-width) - (var(--small) * 2));
+		overflow: clip;
+		backdrop-filter: blur(3px);
+		-webkit-backdrop-filter: blur(3px);
+		border-radius: calc((var(--p) * 3) + (var(--small) * 2));
+		background: color-mix(in srgb, var(--hue-light) 25%, transparent);
+		box-shadow: 0 0 var(--border-width)  color-mix(in srgb, var(--hue-primary) 75%, transparent),
+		0 var(--border-width) calc(var(--space-min)/1) color-mix(in srgb, var(--hue-primary) 25%, transparent);
+
+		.button	{
+			padding: 0 calc(var(--small) * 1);
+			color: var(--hue-primary);
+			background: color-mix(in srgb, var(--hue-light) 75%, transparent);
+			backdrop-filter: blur(3px);
+			-webkit-backdrop-filter: blur(3px);
+			border-radius: 0;
+			font-size: var(--small);
+			font-weight: 600;
+
+			display: inline-flex;
+			flex-grow: 1;
+			align-items: center;
+			justify-content: center;
+			gap: calc(var(--small) / 3);
+
+			i { transform: scale(1.333); }
+
+			* { pointer-events: none; }
+		}
+
+		:first-child {
+			border-top-left-radius: calc(var(--p) * 3);
+			border-bottom-left-radius: calc(var(--p) * 3);
+		}
+
+		:last-child {
+			border-top-right-radius: calc(var(--p) * 3);
+			border-bottom-right-radius: calc(var(--p) * 3);
+		}
+	}
+}
+</style>
+<aside class="sticky-cta-section space-50-vertical">
+	<div class="sticky-cta">
+		<a class="button box-shadow" href="tel: +918747987479"><i class='p bx bx-phone'></i><span>Call</span></a>
+		<a class="button box-shadow" href="#lead-form"><i class='p bx bx-support'></i><span>Enquire</span></a>
+		<a class="button box-shadow" href="https://wa.me/918747987479" target="_blank"><i class='p bx bxl-whatsapp'></i><span>WhatsApp</span></a>
+	</div>
+</aside>	
+<!-- End: Sticky CTA -->
+
+
 
 <!-- Copyright Section -->
 <style>
 	.copyright-section { text-align: center; }
 	.copyright-section .signature { margin-top: var(--space-50); }
-	@media( min-width: 1040px ) {
+	@media( min-width: 1000px ) {
 		.copyright-section { text-align: left; }
 		.copyright-section .signature { text-align: right; margin: 0; }
 	}
