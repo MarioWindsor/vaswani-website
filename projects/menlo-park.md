@@ -101,8 +101,10 @@ amenities:
     - name: Swimming pool
       icon: /media/uploads/mini-icon-swimming-pool.png
 location:
-  heading: Off Brookefield Junction
-  sub-heading: On the cusp of the ORR, Whitefield & EPIP Zone
+  heading: A Location That Connects Ease and Access
+  sub-heading: Located in a well-established neighborhood that blends urban
+    convenience with everyday comfort. From leading schools and workplaces to
+    supermarkets, cafés, and healthcare - everything is comfortably close.
   map-link: https://maps.app.goo.gl/4iX59wAFBn7ubgQ86
   map-embed: <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.415025844139!2d77.717493!3d12.9492007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1240c1842521%3A0x4d5cd2b77c0c4355!2sVaswani%20Menlo%20Park!5e0!3m2!1sen!2sin!4v1762449263160!5m2!1sen!2sin"
