@@ -46,11 +46,9 @@ overview:
     - image: /media/uploads/brentwood-3-4.jpg
     - image: /media/uploads/brentwood-5-3.jpg
 siteplan:
-  heading: Masterplan
-  sub-heading: Ground + 14 floors with 237 units
-  masterplan:
-    - title: Masterplan
-      image: /media/uploads/brentwood-masterplan-3.jpg
+  heading: ""
+  sub-heading: ""
+  masterplan: []
 amenities:
   description: >
     Designed to create a balanced and fulfilling lifestyle, Vaswani Brentwood
@@ -86,6 +84,7 @@ amenities:
 
 
     - Round-the-clock security and CCTV surveillance
+  sub-heading: Designed for a Balanced Lifestyle
 location:
   heading: Brookefield Junction
   sub-heading: Brentwood offers residents both calmness at home and the comfort of
