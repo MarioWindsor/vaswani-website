@@ -16,22 +16,20 @@ cover:
   logo: /media/uploads/menlo-park-project-logo-white.png
   background: /media/uploads/Menlo-Park-Cover_Jan-2021-Render.jpg
 overview:
-  heading: In the bustle of Whitefield
-  sub-heading: All units at Vaswani Menlo Park are sold out
+  heading: A Connected, Comfortable Neighbourhood
+  sub-heading: Where Everyday Living Feels Effortless
   description: >-
-    Vaswani Menlo Park is an oasis of calm that combines the best of city
-    amenities and country living. Located in the heart of the IT belt, with
-    top-notch schools in the neighbourhood, and the best stores a stone’s throw
-    away, Vaswani Menlo Park is the perfect base for every person in the family.
+    Thoughtfully planned, beautifully detailed, and designed for modern urban
+    living, Vaswani Menlo Park is a boutique residential community that brings
+    together comfort, convenience, and quiet sophistication. With well-laid-out
+    homes, and thoughtfully curated common spaces, Menlo Park reflects the
+    Vaswani ethos of quality craftsmanship and enduring design.
 
 
-    Our 1, 2 and 3 Bedroom Apartments stretch to meet every need of yours, whether essential or entertainment. Take a leisurely swim in the resort-style pool. Lift, stretch or train for a marathon at the gym. Play a game of badminton or cricket with the kids. Watch your parents make friends and thrive in spaces customized for senior citizens.
+    Every residence is planned to maximize natural light, ventilation, and usable space creating a home that feels open, warm, and intuitively designed for everyday life. The community features tree-lined pathways, landscaped pockets, and amenities that bring balance to work, rest, and leisure.
 
 
-    As working from home becomes a new reality, Vaswani Menlo Park anticipates some of your needs. Vaswani HomeworX – our concept of quiet spaces in your apartment clubhouse that are conducive to working from the comfort of your home. Learning pods for kids to get their homework done. Private corner home offices built into our 2 & 3 Bedroom homes. Vaswani Menlo Park is equipped to help you handle the most unexpected circumstances.
-
-
-    If happiness were defined as the freedom to live your life the way you want to, Vaswani Menlo Park is your address of happiness.
+    The development stands ready, with residents already enjoying a mature, well-functioning community and a beautifully finished environment.
   gallery:
     - image: /media/uploads/menlo-park-gallery-DJI_0409_Enhancer.jpg
     - image: /media/uploads/menlo-park-gallery-DJI_0390_1.jpg
@@ -63,6 +61,20 @@ siteplan:
   sub-heading: ""
   masterplan: []
   floorplan: []
+amenities:
+  heading: Amenities Designed for Everyday Living
+  sub-heading: ""
+  description: >
+    Vaswani Menlo Park offers a thoughtful selection of amenities that bring
+    convenience and balance into daily life. Whether it’s fitness, leisure, or
+    time spent with family, the community’s spaces have been curated with care.
+
+
+    Icons :
+  amenity:
+    - name: Swimming pool
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - {}
 location:
   heading: Off Brookefield Junction
   sub-heading: On the cusp of the ORR, Whitefield & EPIP Zone
