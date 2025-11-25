@@ -111,7 +111,7 @@ location:
     style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 progress:
-  heading: Project Completed
+  heading: ""
   sub-heading: ""
   entry: []
 ---
