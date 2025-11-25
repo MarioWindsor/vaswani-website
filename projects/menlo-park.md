@@ -71,10 +71,35 @@ amenities:
 
 
     Icons :
+
+    Clubhouse 
+
+    Landscaped gardens and green pockets
+
+    Swimming pool
+
+    Fully equipped gym
+
+    Game Room 
+
+    Indoor Badminton
+
+    Outdoor Tennis 
+
+    Children’s play area
+
+    Multi-purpose hall
+
+    Pedestrian-friendly walkways
+
+    24/7 security with surveillance
+
+    Visitor parking
+
+    Well-planned utility and service infrastructure
   amenity:
     - name: Swimming pool
       icon: /media/uploads/mini-icon-swimming-pool.png
-    - {}
 location:
   heading: Off Brookefield Junction
   sub-heading: On the cusp of the ORR, Whitefield & EPIP Zone
