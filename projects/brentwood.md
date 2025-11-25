@@ -84,7 +84,7 @@ amenities:
 
 
     - Round-the-clock security and CCTV surveillance
-  sub-heading: Designed for a Balanced Lifestyle
+  sub-heading: Spaces That Bring Life Together
 location:
   heading: Brookefield Junction
   sub-heading: Brentwood offers residents both calmness at home and the comfort of
