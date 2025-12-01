@@ -64,42 +64,39 @@ siteplan:
 amenities:
   heading: Amenities Designed for Everyday Living
   sub-heading: ""
-  description: >
-    Vaswani Menlo Park offers a thoughtful selection of amenities that bring
-    convenience and balance into daily life. Whether it’s fitness, leisure, or
-    time spent with family, the community’s spaces have been curated with care.
-
-
-    Icons :
-
-    Clubhouse 
-
-    Landscaped gardens and green pockets
-
-    Swimming pool
-
-    Fully equipped gym
-
-    Game Room 
-
-    Indoor Badminton
-
-    Outdoor Tennis 
-
-    Children’s play area
-
-    Multi-purpose hall
-
-    Pedestrian-friendly walkways
-
-    24/7 security with surveillance
-
-    Visitor parking
-
-    Well-planned utility and service infrastructure
+  description: Vaswani Menlo Park offers a thoughtful selection of amenities that
+    bring convenience and balance into daily life. Whether it’s fitness,
+    leisure, or time spent with family, the community’s spaces have been curated
+    with care.
   amenity:
     - name: Swimming pool
       icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Clubhouse
+      icon: /media/uploads/mini-icon-cocktail.png
+    - name: Landscaped Gardens and Green Pockets
+      icon: /media/uploads/mini-icon-florist.png
+    - name: Swimming Pool
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Fully Equipped Gym
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: "Game Room "
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Indoor Badminton
+      icon: /media/uploads/mini-icon-shuttlecock.png
+    - name: Outdoor Tennis
+      icon: /media/uploads/mini-icon-tennis.png
+    - name: Children’s Play Area
+      icon: /media/uploads/mini-icon-parent-child.png
+    - name: Multi-purpose Hall
+      icon: /media/uploads/mini-icon-institution.png
+    - name: Pedestrian-friendly Walkways
+      icon: /media/uploads/mini-icon-footsteps.png
+    - name: 24/7 Security with Surveillance
+      icon: /media/uploads/mini-icon-cctv.png
+    - name: Visitor Parking
+      icon: /media/uploads/mini-icon-car.png
+    - name: Well-planned Utility and Service Infrastructure
+      icon: /media/uploads/mini-icon-store-alt.png
 location:
   heading: A Location That Connects Ease and Access
   sub-heading: Located in a well-established neighborhood that blends urban
