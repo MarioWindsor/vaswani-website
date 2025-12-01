@@ -96,7 +96,9 @@
 
 
 <!-- Blog Section -->
-{% include 'sections/blog-listing.liquid' %}
+{% if collections.blog != blank %}
+	{% include 'sections/blog-listing.liquid' %}
+{% endif %}
 <!-- End: Blog Section -->
 
 

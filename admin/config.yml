@@ -250,6 +250,7 @@ collections:
                 default: "center center"
                 required: false
                 hint: "Value 1 = Horizontal, Value 2 = Vertical"
+              - { label: "Description", name: "description", widget: "text", required: false }
           - label: "Feature 2"
             name: "feature-2"
             widget: "object"
@@ -294,6 +295,7 @@ collections:
                 default: "center center"
                 required: false
                 hint: "Value 1 = Horizontal, Value 2 = Vertical"
+              - { label: "Description", name: "description", widget: "text", required: false }
   - name: "blog"
     label: "Blog"
     folder: "blog"

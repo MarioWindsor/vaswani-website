@@ -4,31 +4,37 @@
 		gap: var(--small);
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.contact-form-section .dotmatrix { display: none; }
+	/*.contact-form-section .dotmatrix { display: none; }*/
 	@media( min-width: 500px ) {
 		.contact-form-section .or-message {
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			padding-bottom: var(--space-100);
+			padding-bottom: var(--space-50);
 		}
-		.contact-form-section .dotmatrix {
+		/*.contact-form-section .dotmatrix {
 			display: block;
 			position: absolute;
 			z-index: -1;
-			bottom: var(--space-200);
-			left: 25%;
-			width: calc(var(--card)/1.5);
+			bottom: var(--space-100);
+			left: 29%;
+			width: calc(var(--card)/2);
 			opacity: 66.666%;
-			transform: translate(-50%, -75%);
-		}
+			transform: translate(-50%, -55%);
+		}*/
 	}
 	@media( min-width: 1000px ) {
 		.contact-form-section .form { grid-template-columns: repeat(2, 1fr); }
-		.contact-form-section .form .form-input.span-row { grid-column: 1 / -1; }
-		.contact-form-section .dotmatrix { transform: translate(-25%, -25%); }
+		/*.contact-form-section .form .form-input.span-row { grid-column: 1 / -1; }*/
+		/*.contact-form-section .dotmatrix {
+			bottom: 0;
+			transform: translate(-25%, -15%);
+		}*/
+
 	}
-	@media( min-width: 1500px ) { .contact-form-section .dotmatrix { left: calc(25% + (var(--column-unit)/2)); } }
+	/*@media( min-width: 1500px ) { .contact-form-section .dotmatrix {
+		left: calc(28% + (var(--column-unit)/2)); }
+	}*/
 </style>
 
 
@@ -38,132 +44,59 @@
 		<div class="row">
 			<div class="columns small-12 xlarge-10 xlarge-offset-1">
 				<label class="section-label text-uppercase">Get in Touch</label>
-				<h2 class="section-heading text-neutral-20 w-600 space-50-bottom">Exceptional Living Begins Here</h2>
+				<h2 class="section-heading text-neutral-20 w-600 space-75-bottom">Exceptional Living Begins Here</h2>
 			</div>
 			<div class="columns small-12 space-50-bottom medium-4 xlarge-3 xlarge-offset-1">
 				<p class="h6">Provide your details, and our expert advisors will connect with you to tailor your next steps.</p>
 			</div>
 			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6">
-				<form id="lead-form" class="form block card row space-50">
+				<form name="lead" method="POST" netlify netlify-honeypot="nl_company" id="lead-form" class="form block card row space-50">
+					<div class="form-input nl-first-name columns small-12 visuallyhidden">
+						<label for="le_company" tabindex="-1">
+							<span class="input-label space-min block">Company *</span>
+							<input class="input-field" id="le_company" name="le_company" type="text" tabindex="-1">
+						</label>
+					</div>
 					<div class="form-input">
-						<label for="f_name">
+						<label for="le_name">
 							<span class="input-label space-min block">Full Name *</span>
-							<input class="input-field" id="f_name" name="f_name" type="text">
-
+							<input class="input-field" id="le_name" name="le_name" type="text">
 						</label>
 					</div>
 					<div class="form-input">
-						<label for="email">
+						<label for="le_email">
 							<span class="input-label space-min block">Email Id *</span>
-							<input class="input-field" id="email" name="email" type="text">
+							<input class="input-field" id="le_email" name="le_email" type="text">
 						</label>
 					</div>
 					<div class="form-input">
-						<label for="phonefax">
+						<label for="le_phone">
 							<span class="input-label space-min block">Phone Number *</span>
-							<input class="input-field" id="phonefax" name="phonefax" type="text">
+							<input class="input-field" id="le_phone" name="le_phone" type="text">
 						</label>
 					</div>
 					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">I’M Interested In</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">City</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input">
-						<label for="">
-							<span class="input-label space-min block">How Did You Find Us ?</span>
-							<input class="input-field" type="text">
-						</label>
-					</div>
-					<div class="form-input span-row">
-						<label for="">
+						<label for="le_requirement">
 							<span class="input-label space-min block">Your Requirement</span>
-							<textarea class="input-field" name="" id=""></textarea>
+							<input class="input-field" id="le_requirement" name="le_requirement" type="text">
 						</label>
 					</div>
 					<div class="form-input">
 						<div class="visuallyhidden">
-							<label for="project">Project:</label>
-							<input type="text" id="project" name="project">
+							<label for="le_page">Page</label>
+							<input type="text" id="le_page" name="le_page">
 						</div>
-						<div class="visuallyhidden">
-							<label for="notes">Notes:</label>
-							<textarea id="notes" name="notes"></textarea>
-						</div>
-						<button type="submit" class="button fill-primary" style="padding: 0 var(--space-100);">Contact</button>
+						<button type="submit" class="button fill-primary" style="padding: 0 var(--space-100); margin-top: var(--space-25); margin-left: calc(var(--space-min) * -0.5);">Contact Us</button>
 					</div>
-					<div id="form-status" role="status"></div>
 				</form>
+				<div id="form-status" role="status"></div>
 			</div>
 			<div class="columns or-message small-12 space-50-top medium-4 xlarge-3 xlarge-offset-1">
 				<span class="h4 text-primary">OR</span>
 				<p class="h6">Call our Help Desk <br>between 10am to 7pm IST</p>
 				<a class="h4 text-primary" href="tel:+918747987479">+91-<strong>8747987479</strong></a>
 			</div>
-			<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
+			<!-- <img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green.svg" alt=""> -->
 		</div>
 	</div>
 </section>
-
-<script>
-  const form = document.getElementById('lead-form');
-  const statusMessage = document.getElementById('form-status');
-
-  form.addEventListener('submit', async (event) => {
-    // 1. Stop the form from submitting normally
-    event.preventDefault();
-    
-    // 2. Get all form data as a plain object
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-
-    // 3. Show a 'loading' message
-    statusMessage.textContent = 'Submitting...';
-    
-    try {
-      // 4. Send the data to *your* Netlify Function
-      const response = await fetch('/.netlify/functions/submit-lead', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      // 5. Get the response *from your function*
-      const result = await response.json();
-
-      if (response.ok) {
-        // Handle Paramantra's success/duplicate messages
-        if (result[0]?.status === 'failed' && result[0]?.message === 'duplicate_entry') {
-          statusMessage.textContent = 'This contact number is already in our system.';
-          statusMessage.style.color = 'blue';
-        } else if (result[1]?.status === 'success') {
-          statusMessage.textContent = 'Thank you! We have received your request.';
-          statusMessage.style.color = 'green';
-          form.reset(); // Clear the form
-        } else {
-          statusMessage.textContent = 'Submission received.';
-          statusMessage.style.color = 'green';
-        }
-      } else {
-        // Handle 4xx/5xx errors
-        statusMessage.textContent = `Error: ${result.error || 'Submission failed.'}`;
-        statusMessage.style.color = 'red';
-      }
-
-    } catch (error) {
-      // 6. Handle network errors
-      console.error('Submission error:', error);
-      statusMessage.textContent = 'An error occurred. Please try again later.';
-      statusMessage.style.color = 'red';
-    }
-  });
-</script>

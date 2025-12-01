@@ -45,6 +45,4 @@ location:
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.139375232107!2d77.6995196!3d12.9375907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13ad4bb099c5%3A0xdb773c60cefbf79d!2sVaswani%20Presidio!5e0!3m2!1sen!2sin!4v1756756563245!5m2!1sen!2sin"
     allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
-progress:
-  heading: Completed
 ---

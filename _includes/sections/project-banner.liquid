@@ -17,5 +17,12 @@
 				</div>
 			</div>
 		</div>
+		{% if banner.description %}
+		<div class="row">
+			<div class="columns small-12 text-center medium-10 xlarge-8 p">
+				{{ banner.description }}
+			</div>
+		</div>
+		{% endif %}
 	</div>
 </section>

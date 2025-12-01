@@ -47,26 +47,18 @@ eleventyComputed:
 
 
 
-<!-- Location Section -->
-{% if location != blank %}
-{% include 'sections/project-location.liquid' %}
+<!-- Ongoing: Location Section --><!-- Completed: Amenities Section -->
+{% if metadata.status != "completed" %}
+    {% if location != blank %}
+    {% include 'sections/project-location.liquid' %}
+    {% endif %}
+{% else %}
+    {% if amenities != blank %}
+    {% include 'sections/project-amenities.liquid' %}
+    {% endif %}
 {% endif %}
-<!-- END: Location Section -->
 
-
-
-
-<!-- Contact Form Section -->
-{% include 'sections/contact-form.liquid' %}
-<!-- End: Contact Form Section -->
-
-
-
-<!-- Project Amenities Section -->
-{% if amenities != blank %}
-{% include 'sections/project-amenities.liquid' %}
-{% endif %}
-<!-- End: Project Amenities Section -->
+<!-- End: Ongoing: Location Section --><!-- End: Completed: Amenities Section -->
 
 
 
@@ -74,7 +66,28 @@ eleventyComputed:
 {% if brochure != blank %}
 {% include 'sections/project-brochure.liquid' %}
 {% endif %}
-<!-- END: Brochure Section -->
+<!-- End: Brochure Section -->
+
+
+
+<!-- Ongoing : Project Amenities Section --><!-- Completed: Location Section -->
+{% if metadata.status != "completed" %}
+    {% if amenities != blank %}
+    {% include 'sections/project-amenities.liquid' %}
+    {% endif %}
+{% else %}
+    {% if location != blank %}
+    {% include 'sections/project-location.liquid' %}
+    {% endif %}
+{% endif %}
+<!-- End: Ongoing : Project Amenities Section --><!-- End: Completed: Location Section -->
+
+
+
+<!-- Contact Form Section -->
+{% include 'sections/contact-form.liquid' %}
+<!-- End: Contact Form Section -->
+
 
 
 <!-- Banner Section -->
@@ -85,11 +98,13 @@ eleventyComputed:
 
 
 
-<!-- Project Progress Section -->
-{% if progress != blank %}
-{% include 'sections/project-progress.liquid' %}
+<!-- Ongoing: Project Progress Section -->
+{% if metadata.status != "completed" %}
+    {% if progress != blank %}
+    {% include 'sections/project-progress.liquid' %}
+    {% endif %}
 {% endif %}
-<!-- End: Project Progress Section -->
+<!-- End: Ongoing: Project Progress Section -->
 
 
 
@@ -112,7 +127,9 @@ eleventyComputed:
 
 
 <!-- Blog Section -->
-{% include 'sections/blog-listing.liquid' %}
+{% if collections.blog != blank %}
+    {% include 'sections/blog-listing.liquid' %}
+{% endif %}
 <!-- End: Blog Section -->
 
 
