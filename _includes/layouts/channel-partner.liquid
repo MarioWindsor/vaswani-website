@@ -22,17 +22,17 @@
 }
 @media( min-width: 500px ) { .channel-benefits-section .benefits { grid-template-columns: repeat(2, 1fr); } }
 @media( min-width: 1000px ) {
-	.channel-benefits-section .channel-benefits { grid-template-columns: repeat(2, 1fr); }
+	.channel-benefits-section .channel-benefits { grid-template-columns: repeat(3, 1fr); }
 	.channel-benefits-section .benefits {
 		text-align: left;
-		grid-template-columns: repeat(1, 1fr);
+		grid-column: span 2;
 	}
 }
 
 .channel-benefits-section .thumbnail { position: relative; }
 .channel-benefits-section .thumbnail img { position: relative; z-index: 1; }
-.channel-benefits-section .thumbnail .dotmatrix { display: none; }
-@media( min-width: 1000px ) {
+/*.channel-benefits-section .thumbnail .dotmatrix { display: none; }*/
+/*@media( min-width: 1000px ) {
 	.channel-benefits-section .thumbnail .dotmatrix {
 		display: block;
 		position: absolute;
@@ -43,7 +43,7 @@
 		opacity: 66.666%;
 		transform: translate(50%, 0%);
 	}
-}
+}*/
 </style>
 
 
@@ -65,22 +65,6 @@
 
 
 
-<!-- Channel CTA Section -->
-<section id="channel-cta-section" class="channel-cta-section small-gap fill-dark space-100-vertical">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
-				<label class="section-label">Get started, Apply Now.</label>
-				<a class="button w-500" href="mailto: presales@vaswanigroup.com" style="text-transform: none;">presales@vaswanigroup.com</a>
-				<p class="space-50-top">We see this as more than a business arrangement. It’s about growing together, celebrating wins, and creating value for everyone involved.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End: Channel CTA Section -->
-
-
-
 <!-- Channel Partner Benefits Section -->
 <section class="channel-benefits-section row small-gap">
 	<div class="container">
@@ -88,10 +72,10 @@
 			<div class="columns small-12 text-center space-50-bottom">
 				<label class="section-label">Channel Partner Benefits</label>
 			</div>
-			<div class="channel-benefits columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2 text-center">
+			<div class="channel-benefits columns small-12 text-center">
 				<div class="thumbnail">
 					<img loading="lazy" class="block radius-25 box-shadow" src="media/genai-channel-partnership.png" alt="">
-					<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green-tall.svg" alt="">
+					<!-- <img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green-tall.svg" alt=""> -->
 				</div>
 				<div class="row benefits">
 					<div class="benefit card space-50">
@@ -116,6 +100,22 @@
 	</div>
 </section>
 <!-- End: Channel Partner Benefits Section -->
+
+
+
+<!-- Channel CTA Section -->
+<section id="channel-cta-section" class="channel-cta-section small-gap fill-dark space-100-vertical">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
+				<label class="section-label">Get started, Apply Now.</label>
+				<a class="button w-500" href="mailto: presales@vaswanigroup.com" style="text-transform: none;">presales@vaswanigroup.com</a>
+				<p class="space-50-top">We see this as more than a business arrangement. It’s about growing together, celebrating wins, and creating value for everyone involved.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Channel CTA Section -->
 
 
 
