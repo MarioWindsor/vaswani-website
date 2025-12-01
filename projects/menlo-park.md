@@ -56,11 +56,6 @@ overview:
     - image: /media/uploads/menlo-park-gallery-IMG_20230115_162958.jpg
     - image: /media/uploads/menlo-park-gallery-IMG_20230115_182003.jpg
     - image: /media/uploads/menlo-park-gallery-IMG_20230115_195914.jpg
-siteplan:
-  heading: ""
-  sub-heading: ""
-  masterplan: []
-  floorplan: []
 amenities:
   heading: Amenities Designed for Everyday Living
   sub-heading: ""

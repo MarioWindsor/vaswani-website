@@ -45,10 +45,6 @@ overview:
     - image: /media/uploads/brentwood-IMG-20161207-WA0009.jpg
     - image: /media/uploads/brentwood-3-4.jpg
     - image: /media/uploads/brentwood-5-3.jpg
-siteplan:
-  heading: ""
-  sub-heading: ""
-  masterplan: []
 amenities:
   description: >-
     Designed to create a balanced and fulfilling lifestyle, Vaswani Brentwood
