@@ -67,7 +67,7 @@ amenities:
       icon: /media/uploads/mini-icon-dumbbell.png
     - name: Indoor Games Room
       icon: /media/uploads/mini-icon-chess-knight.png
-    - name: Landscaped Gardens and Walking Paths
+    - name: Landscaped Gardens and Walkways
       icon: /media/uploads/mini-icon-florist.png
     - name: Children’s Play Area
       icon: /media/uploads/mini-icon-parent-child.png
