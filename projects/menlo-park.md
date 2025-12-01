@@ -68,8 +68,10 @@ amenities:
       icon: /media/uploads/mini-icon-swimming-pool.png
     - name: Clubhouse
       icon: /media/uploads/mini-icon-cocktail.png
-    - name: Landscaped Gardens and Green Pockets
+    - name: Landscaped Gardens
       icon: /media/uploads/mini-icon-florist.png
+    - name: Green Pockets
+      icon: /media/uploads/mini-icon-leaf.png
     - name: Swimming Pool
       icon: /media/uploads/mini-icon-swimming-pool.png
     - name: Fully Equipped Gym
@@ -90,8 +92,10 @@ amenities:
       icon: /media/uploads/mini-icon-cctv.png
     - name: Visitor Parking
       icon: /media/uploads/mini-icon-car.png
-    - name: Well-planned Utility and Service Infrastructure
+    - name: Well-planned Utilities
       icon: /media/uploads/mini-icon-store-alt.png
+    - name: Service Infrastructure
+      icon: /media/uploads/mini-icon-caret-up-square.png
 location:
   heading: A Location That Connects Ease and Access
   sub-heading: Located in a well-established neighborhood that blends urban
