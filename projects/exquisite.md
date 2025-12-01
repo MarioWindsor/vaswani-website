@@ -46,6 +46,10 @@ overview:
     - image: /media/uploads/exquisite_DSC_8071.jpg
     - image: /media/uploads/exquisite_1673935423942.jpg
     - image: /media/uploads/exquisite_DSC_8045.jpg
+film:
+  video: c3JpE5EF04Y
+  heading: Project Film
+  sub-heading: Where Luxury Meets Location
 siteplan:
   heading: A Class Apart
   sub-heading: 4 Towers each with Ground + 23 floors
@@ -1144,7 +1148,7 @@ progress:
     - title: SEP 2021
       heading: Project Progress Report as on September 2021
       description: The Project is nearing completion.
-      video: c3JpE5EF04Y
+      video: ""
       gallery:
         - image: /media/uploads/exquisite-floorplan-progress-2021-09-WhatsApp-Image-2021-10-03-at-22.11.34.jpeg
         - image: /media/uploads/exquisite-floorplan-progress-2021-09-WhatsApp-Image-2021-11-30-at-14.56.57.jpeg
