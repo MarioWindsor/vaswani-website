@@ -99,9 +99,10 @@
 			{% for award in collections.awards %}
 			<div class="award js_award columns small-12 medium-11 xlarge-9 text-center space-100-vertical space-100-horizontal">
 				<!-- <h3 class="title h6 text-primary">Best Luxury Residential Project South Zone</h3> -->
+				<h4 class="awardee small block text-uppercase w-600 space-25-bottom text-primary">{{ award.data.awardee }}</h4>
 				<h3 class="title h6 text-primary">{{ award.data.title }}</h3>
 				<!-- <h4 class="awarder small block text-uppercase w-600 space-25">CNBC-Awaaz Real Estate Awards 2023</h4> -->
-				<h4 class="awarder small block text-uppercase w-600 space-25">{{ award.data.awarder }}</h4>
+				<h5 class="awarder small block text-uppercase w-600 space-25">{{ award.data.awarder }}</h5>
 				<div class="stars">
 					<i class='bx bxs-star h5 text-secondary inline-middle'></i>
 					<i class='bx bxs-star h3 text-secondary inline-middle'></i>
