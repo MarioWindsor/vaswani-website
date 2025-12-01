@@ -48,8 +48,8 @@ overview:
     - image: /media/uploads/exquisite_DSC_8045.jpg
 film:
   video: c3JpE5EF04Y
-  heading: Project Film
-  sub-heading: Where Luxury Meets Location
+  heading: Where Luxury Meets Location
+  sub-heading: Come Explore the Paradise
 siteplan:
   heading: A Class Apart
   sub-heading: 4 Towers each with Ground + 23 floors
