@@ -337,9 +337,9 @@ collections:
     fields:
       - { label: "Tags", name: "tags", widget: "hidden", default: ["awards"] }
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Awarded To", name: "awardee", widget: "string", required: false }
       - { label: "Award Title", name: "title", widget: "string" }
-      - { label: "Awarded By", name: "awarder", widget: "string" }
+      - { label: "Awarded To", name: "awardee", widget: "string", required: false }
+      - { label: "Awarded By", name: "awarder", widget: "string", required: false }
       - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
   - name: "pages"
     label: "Pages"
