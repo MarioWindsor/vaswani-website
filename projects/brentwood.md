@@ -50,41 +50,33 @@ siteplan:
   sub-heading: ""
   masterplan: []
 amenities:
-  description: >
+  description: >-
     Designed to create a balanced and fulfilling lifestyle, Vaswani Brentwood
     offers a thoughtful selection of amenities that support wellness,
     recreation, and community living.
 
 
     Each space has been created to bring people together, encourage an active lifestyle, and add ease to everyday living.
-
-
-    For Icons : 
-
-
-    - A well-appointed clubhouse
-
-
-    - Swimming pool with deck seating
-
-
-    - Fully equipped gymnasium
-
-
-    - Indoor games room
-
-
-    - Landscaped gardens and walking paths
-
-
-    - Children’s play area
-
-
-    - Multi-purpose hall
-
-
-    - Round-the-clock security and CCTV surveillance
   sub-heading: Spaces That Bring Life Together
+  amenity:
+    - name: A well-appointed Clubhouse
+      icon: /media/uploads/mini-icon-cocktail.png
+    - name: Swimming Pool with Deck Seating
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Fully Equipped Gymnasium
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: Indoor Games Room
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Landscaped Gardens and Walking Paths
+      icon: /media/uploads/mini-icon-florist.png
+    - name: Children’s Play Area
+      icon: /media/uploads/mini-icon-parent-child.png
+    - name: Multi-purpose Hall
+      icon: /media/uploads/mini-icon-institution.png
+    - name: Round-the-clock security
+      icon: /media/uploads/mini-icon-shield-alt-2.png
+    - name: CCTV Surveillance
+      icon: /media/uploads/mini-icon-cctv.png
 location:
   heading: Brookefield Junction
   sub-heading: Brentwood offers residents both calmness at home and the comfort of
