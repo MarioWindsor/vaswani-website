@@ -83,6 +83,7 @@
 <!-- Sticky CTA -->
 <style>
 .sticky-cta-section {
+	pointer-events: none;
 	position: sticky;
 	z-index: 900;
 	bottom: var(--space-50);
@@ -90,16 +91,20 @@
 	width: 100%;
 	text-align: center;
 
-	@media( min-width: 500px ) { display: none; }
+	@media( min-width: 500px ) {
+		bottom: 0;
+		width: auto;
+		text-align: right;
+	}
 
 	.sticky-cta {
+		pointer-events: auto;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		box-sizing: content-box;
 		padding: var(--small);
-		/*grid-template-columns: repeat(3, 1fr);*/
-		width: calc(var(--container-width) - (var(--small) * 2));
+		width: var(--container-width);
 		overflow: clip;
 		backdrop-filter: blur(3px);
 		-webkit-backdrop-filter: blur(3px);
@@ -107,6 +112,12 @@
 		background: color-mix(in srgb, var(--hue-light) 25%, transparent);
 		box-shadow: 0 0 var(--border-width)  color-mix(in srgb, var(--hue-primary) 75%, transparent),
 		0 var(--border-width) calc(var(--space-min)/1) color-mix(in srgb, var(--hue-primary) 25%, transparent);
+
+		@media( min-width: 500px ) {
+			width: auto;
+			gap: var(--space-25);
+			margin-right: calc(var(--column-unit) - var(--space-25));
+		}
 
 		.button	{
 			padding: 0 calc(var(--small) * 1);
@@ -124,28 +135,48 @@
 			justify-content: center;
 			gap: calc(var(--small) / 3);
 
-			i { transform: scale(1.333); }
+			@media( min-width: 500px ) {
+				width: var(--space-100);
+				height: var(--space-100);
+
+				border-radius: 50%;
+
+				span {
+					border: 0;
+					clip: rect(0 0 0 0);
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					padding: 0;
+					position: absolute;
+					width: 1px;
+				}
+			}
+
+			i { transform: scale(1.25); }
 
 			* { pointer-events: none; }
 		}
 
-		:first-child {
-			border-top-left-radius: calc(var(--p) * 3);
-			border-bottom-left-radius: calc(var(--p) * 3);
-		}
+		@media( max-width: 499px ) {
+			:first-child {
+				border-top-left-radius: calc(var(--p) * 3);
+				border-bottom-left-radius: calc(var(--p) * 3);
+			}
 
-		:last-child {
-			border-top-right-radius: calc(var(--p) * 3);
-			border-bottom-right-radius: calc(var(--p) * 3);
+			:last-child {
+				border-top-right-radius: calc(var(--p) * 3);
+				border-bottom-right-radius: calc(var(--p) * 3);
+			}
 		}
 	}
 }
 </style>
 <aside class="sticky-cta-section space-50-vertical">
 	<div class="sticky-cta">
-		<a class="button box-shadow" href="tel: +918747987479"><i class='p bx bx-phone'></i><span>Call</span></a>
-		<a class="button box-shadow" href="#lead-form"><i class='p bx bx-support'></i><span>Enquire</span></a>
-		<a class="button box-shadow" href="https://wa.me/918747987479" target="_blank"><i class='p bx bxl-whatsapp'></i><span>WhatsApp</span></a>
+		<a class="button box-shadow" href="tel: +918747987479"><i class='h6 bx bx-phone'></i><span>Call</span></a>
+		<a class="button box-shadow" href="#lead-form"><i class='h6 bx bx-support'></i><span>Enquire</span></a>
+		<a class="button box-shadow" href="https://wa.me/918747987479" target="_blank"><i class='h5 bx bxl-whatsapp'></i><span>WhatsApp</span></a>
 	</div>
 </aside>	
 <!-- End: Sticky CTA -->

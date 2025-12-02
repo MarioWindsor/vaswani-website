@@ -18,7 +18,7 @@
 .menu-toggle {
 	cursor: pointer;
 	position: fixed;
-	top: var(--space-100);
+	top: calc(var(--space-100) + var(--space-min));
 	right: var(--column-unit);
 	z-index: 1001;
 	width: var(--space-100);

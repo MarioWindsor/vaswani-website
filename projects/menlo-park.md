@@ -74,7 +74,7 @@ amenities:
       icon: /media/uploads/mini-icon-swimming-pool.png
     - name: Fully Equipped Gym
       icon: /media/uploads/mini-icon-dumbbell.png
-    - name: "Game Room "
+    - name: Game Room
       icon: /media/uploads/mini-icon-chess-knight.png
     - name: Indoor Badminton
       icon: /media/uploads/mini-icon-shuttlecock.png

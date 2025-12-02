@@ -4,7 +4,6 @@
 		gap: var(--small);
 		grid-template-columns: repeat(1, 1fr);
 	}
-	/*.contact-form-section .dotmatrix { display: none; }*/
 	@media( min-width: 500px ) {
 		.contact-form-section .or-message {
 			position: absolute;
@@ -12,34 +11,16 @@
 			left: 0;
 			padding-bottom: var(--space-50);
 		}
-		/*.contact-form-section .dotmatrix {
-			display: block;
-			position: absolute;
-			z-index: -1;
-			bottom: var(--space-100);
-			left: 29%;
-			width: calc(var(--card)/2);
-			opacity: 66.666%;
-			transform: translate(-50%, -55%);
-		}*/
+
 	}
 	@media( min-width: 1000px ) {
 		.contact-form-section .form { grid-template-columns: repeat(2, 1fr); }
-		/*.contact-form-section .form .form-input.span-row { grid-column: 1 / -1; }*/
-		/*.contact-form-section .dotmatrix {
-			bottom: 0;
-			transform: translate(-25%, -15%);
-		}*/
-
 	}
-	/*@media( min-width: 1500px ) { .contact-form-section .dotmatrix {
-		left: calc(28% + (var(--column-unit)/2)); }
-	}*/
 </style>
 
 
 
-<section id="contact-form-section" class="contact-form-section gap">
+<section id="contact-form-section" class="contact-form-section gap not-white">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 xlarge-10 xlarge-offset-1">
@@ -96,7 +77,6 @@
 				<p class="h6">Call our Help Desk <br>between 10am to 7pm IST</p>
 				<a class="h4 text-primary" href="tel:+918747987479">+91-<strong>8747987479</strong></a>
 			</div>
-			<!-- <img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green.svg" alt=""> -->
 		</div>
 	</div>
 </section>

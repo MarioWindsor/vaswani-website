@@ -455,3 +455,5 @@ select.button {
 	padding-bottom: var(--space-25);
 	letter-spacing: calc(var(--label)/16);
 }
+
+.not-white { background-image: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--hue-neutral-10) 33.333%, transparent), transparent) }
