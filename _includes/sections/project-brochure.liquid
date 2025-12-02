@@ -1,3 +1,82 @@
+<style>
+.project-brochure-section .project-brochure {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: clip;
+	padding: var(--column-unit);
+
+	.brochure-form-wrapper {
+		display: none;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		background-color: var(--hue-dark);
+		padding: var(--column-unit);
+		flex-direction: column;
+		justify-content: center;
+
+
+		.brochure-form {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: var(--small);
+			align-items: end;
+
+			@media( min-width:  500px ) {
+
+				grid-template-columns: repeat(2, 1fr);
+				
+				.br-submit {
+					grid-column: span 2;
+				}
+				
+			}
+			@media( min-width:  1000px ) {
+				grid-template-columns: repeat(5, 1fr);
+
+				.br-last-name,
+				.br-email {
+					grid-column: span 2;
+				}
+				.br-submit {
+					grid-column: span 1;
+				}
+			}
+		}
+	}
+
+	#toggle-brochure-form:checked ~ .brochure-form-wrapper {
+		display: flex;
+	}
+}
+@media( min-width:  500px ) {
+	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h4); }
+	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h5); }
+}
+@media( min-width:  1000px ) {
+	.project-brochure-section .project-brochure {
+		justify-content: center;
+	}
+	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h3); }
+	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h4); }
+	.project-brochure-section .project-brochure .cta .button {
+		transform: scale(1.125);
+		transform-origin: top left;
+	}
+}
+@media( min-width:  1500px ) {
+	.project-brochure-section .project-brochure .heading h5 { font-size: var(--h2); }
+	.project-brochure-section .project-brochure .heading h6 { font-size: var(--h3); }
+}
+</style>
 <section id="" class="project-brochure-section gap">
 	<div class="container">
 		<div class="row">
@@ -8,7 +87,35 @@
 						<h6 class="space-50-bottom">Download the PDF Brochure.</h6>
 					</div>
 					<div class="cta">
-						<a href="{{ brochure.pdf }}" target="_blank" class="button">Download Now</a>
+						<label for="toggle-brochure-form" class="button" style="margin-left: calc(var(--space-min) * -0.5);">Download Now</a>
+					</div>
+					<input type="checkbox" id="toggle-brochure-form" class="visuallyhidden">
+					<div class="brochure-form-wrapper">
+						<label class="section-label text-secondary">Verify Download</label>
+						<h4 class="section-heading text-light w-600 space-50-bottom">Please Enter Your Details Below</h4>
+						<form name="brochure" method="POST" netlify netlify-honeypot="br_company" action="{{ brochure.pdf }}" target="_blank" class="brochure-form form block card row space-50">
+							<div class="form-input br-first-name columns small-12 visuallyhidden">
+								<label for="br_company" tabindex="-1">
+									<span class="input-label space-min block">Company *</span>
+									<input class="input-field" id="br_company" name="br_company" type="text" tabindex="-1">
+								</label>
+							</div>
+							<div class="form-input br-last-name columns small-12">
+								<label for="br_applicant">
+									<span class="input-label space-min block">Full Name *</span>
+									<input class="input-field" id="br_applicant" name="br_applicant" type="text">
+								</label>
+							</div>
+							<div class="form-input br-email columns small-12">
+								<label for="br_email">
+									<span class="input-label space-min block">Email Id *</span>
+									<input class="input-field" id="br_email" name="br_email" type="text">
+								</label>
+							</div>
+							<div class="form-input br-submit columns small-12">
+								<button type="submit" class="button block fill-primary" style="padding: 0 var(--space-100);">Download</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
