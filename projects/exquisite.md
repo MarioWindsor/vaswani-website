@@ -16,7 +16,7 @@ cover:
   logo: /media/uploads/exquisite_project-logo.png
   background: /media/uploads/exquisite_DSC_8174.jpg
   video: JytdFRIACTU
-  link: "#project-film-section"
+  link: "/projects/exquisite/#project-film-section"
 overview:
   heading: Live Life Sky High
   sub-heading: A piece of sky, in the palm of your hand

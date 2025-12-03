@@ -16,7 +16,7 @@ cover:
   logo: /media/uploads/starlight_logo-white-transparent.png
   background: /media/uploads/starlight__mg_3870-edit.jpg
   video: 3OyRc5eczbc
-  link: "#project-film-section"
+  link: "/projects/starlight/#project-film-section"
 overview:
   heading: Whitefield's Newest Benchmark
   sub-heading: Discover a life that blends sophistication with convenience.

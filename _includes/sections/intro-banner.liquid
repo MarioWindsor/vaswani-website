@@ -66,6 +66,10 @@
 			background: color-mix(in srgb, var(--hue-light) 25%, transparent);
 			box-shadow: 0 0 var(--border-width)  color-mix(in srgb, var(--hue-dark) 75%, transparent),
 			0 var(--border-width) calc(var(--space-min)/1) color-mix(in srgb, var(--hue-dark) 25%, transparent);
+
+			* {
+				pointer-events: none;
+			}
 		}
 	}
 	.intro-banner-section .intro-video-wrapper .scroll {
