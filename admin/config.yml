@@ -63,7 +63,9 @@ collections:
         fields:
           - { label: "Project Logo", name: "logo", widget: "image", choose_url: false, required: false }
           - { label: "Background Image", name: "background", widget: "image", choose_url: false, required: false }
-          - { label: "Walkthough Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+          - { label: "Cover Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+          - { label: "Cover Film Link", name: "link", widget: "string", required: false, hint: "Use Eg: #project-film-section for On Page Link or https://www.youtube.com/watch?v=RjAg-MB3MIg for External Link" }
+          - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false }
       - label: "Overview"
         name: "overview"
         widget: "object"

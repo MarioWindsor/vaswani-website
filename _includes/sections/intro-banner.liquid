@@ -46,6 +46,28 @@
 		mix-blend-mode: hard-light;
 		transition: opacity var(--transition-speed) var(--transition-ease);
 	}
+	.intro-banner-section .intro-video-wrapper .watch-film-wrapper {
+		position: absolute;
+		pointer-events: none;
+		z-index: 4;
+		left: 50%;
+		bottom: var(--space-100);
+		transform: translateX(-50%);
+		width: auto;
+
+		.watch-film {
+			position: relative;
+			pointer-events: auto;
+			padding: 0 calc((var(--p) * 1.5));
+			overflow: clip;
+			backdrop-filter: blur(3px);
+			-webkit-backdrop-filter: blur(3px);
+			border-radius: calc((var(--p) * 3) + (var(--small) * 2));
+			background: color-mix(in srgb, var(--hue-light) 25%, transparent);
+			box-shadow: 0 0 var(--border-width)  color-mix(in srgb, var(--hue-dark) 75%, transparent),
+			0 var(--border-width) calc(var(--space-min)/1) color-mix(in srgb, var(--hue-dark) 25%, transparent);
+		}
+	}
 	.intro-banner-section .intro-video-wrapper .scroll {
 		pointer-events: none;
 		position: absolute;
@@ -67,6 +89,9 @@
 			0 var(--border-width) calc(var(--space-min)*2) color-mix(in srgb, var(--hue-dark) 20%, transparent);
 	}
 	.intro-banner-section input:checked ~ .intro-video-wrapper .intro-video-width:after { opacity: 0; }
+	.intro-banner-section input:checked ~ .intro-video-wrapper .watch-film {
+		background: color-mix(in srgb, var(--hue-dark) 50%, transparent);
+	}
 	.intro-banner-section input:checked ~ .intro-video-wrapper .scroll {
 		opacity: 0;
 	}
@@ -152,6 +177,15 @@
 				</div>
 				{% endif %}
 			</div>
+			{% if cover.link %}
+				<div class="watch-film-wrapper">
+					<a href="{{ cover.link }}"
+					{% if cover.link-external %}
+						target="_blank" 
+					{% endif %}
+					class="button watch-film"><i class='h5 bx bxl-youtube inline-middle'></i><span class="inline-middle space-25-left">Watch Film</span></a>
+				</div>
+			{% endif %}
 			<div class="scroll">
 				<label class="label text-uppercase text-light space-25-bottom letter-spacing-loose-loose">Scroll</label>
 				<img loading="lazy" class="dotmatrix" src="media/dot-matrix-white.svg" alt="">
