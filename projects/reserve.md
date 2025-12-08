@@ -8,7 +8,7 @@ metadata:
   project-label: 3 & 4 BHK Luxury Apartments
   status: completed
   status-label: Completed 2016
-  starting-price: Sold Out
+  starting-price: Completed and Sold Out
   unit-size: 1715 sqft to 3290 sqft Apartments
   location-label: Off Marathahalli - Sarjapur, ORR
 cover:
@@ -47,9 +47,61 @@ overview:
     - image: /media/uploads/reserve-Picture1980.jpg
     - image: /media/uploads/reserve-Picture10908-0.jpg
 amenities:
-  sub-heading: Spaces that bring people together.
-  description: "A comprehensive set of amenities supports both personal downtime
-    and community engagement:"
+  sub-heading: Where Everyday Living Turns Effortless
+  description: >-
+    At Vaswani Reserve, every amenity is designed to elevate daily life into
+    something quieter, richer, and more refined. Thoughtfully planned spaces,
+    modern comforts, and lifestyle conveniences come together to create a
+    community that feels both exclusive and deeply familiar. Here, luxury isn’t
+    loud - it’s lived in the details.
+
+
+    List for Icons:
+
+
+    Elegant clubhouse with curated lifestyle spaces
+
+
+    Fully equipped gym & dedicated yoga studio
+
+
+    Swimming pool with sun deck + separate kids’ pool
+
+
+    Landscaped gardens, courtyards & quiet sit-out zones
+
+
+    Indoor games lounge (table tennis, carrom, chess)
+
+
+    Multi-purpose hall for private events
+
+
+    Children’s outdoor play zone
+
+
+    Badminton court & basketball half-court
+
+
+    Jogging/walking track amid green pockets
+
+
+    Steam, sauna & wellness areas
+
+
+    Library/reading lounge
+
+
+    Senior citizens’ seating corners
+
+
+    Outdoor party area
+
+
+    24/7 security with CCTV surveillance
+
+
+    Power backup for common areas & apartments
 location:
   heading: Marathahalli - Sarjapur, ORR
   sub-heading: Vaswani Reserve sits within one of Bengaluru’s most strategic and
