@@ -10,13 +10,13 @@ metadata:
   rera-number: PRM/KA/RERA/1251/446/PR/180424/006808
   status-label: Construction in Full Swing
   type: residential
-  starting-price: Starting at ₹2.95Cr
+  starting-price: Starting at ₹ 3.03 Cr
   location-label: ECC Main Road, Whitefield
 cover:
   logo: /media/uploads/starlight_logo-white-transparent.png
   background: /media/uploads/starlight__mg_3870-edit.jpg
   video: 3OyRc5eczbc
-  link: "/projects/starlight/#project-film-section"
+  link: /projects/starlight/#project-film-section
 overview:
   heading: Whitefield's Newest Benchmark
   sub-heading: Discover a life that blends sophistication with convenience.
