@@ -10,6 +10,7 @@ metadata:
   status-label: Available for Lease
   unit-size: 20236 sqft to 25230 Super Built-up Area
   location-label: Langford Road, Richmond Town
+  starting-price: Ready for Fit out
 cover:
   background: /media/uploads/centropolis_Building_Design_Vaswani_Centropolis_05.jpg
 overview:
