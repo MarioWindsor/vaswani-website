@@ -10,6 +10,7 @@ metadata:
   status-label: Under Construction
   unit-size: 1,43,000 sqft Built-up Area
   location-label: Brookefield, Bengaluru
+  starting-price: "Ready for Fit outs - July 2026 "
 cover:
   background: /media/uploads/matrix-draft-3d-2.jpeg
 overview:
@@ -36,6 +37,37 @@ overview:
   gallery:
     - image: /media/uploads/matrix-draft-3d-1.jpeg
     - image: /media/uploads/matrix-draft-3d-2.jpeg
+amenities:
+  heading: "Handover Condition "
+  description: >-
+    Office Building Structure
+
+    - Ground + 3 Floors with Single Basement
+
+    - Warm Shell Handover Condition for custom-fit interior planning
+
+    - Premium-grade construction with efficient floor plates
+
+
+    A thoughtfully designed commercial address built for efficiency, flexibility, and seamless business operations.
+
+
+    Icons : 
+
+    Services & Infrastructure
+
+    - 100% Power Back-up ensuring uninterrupted business continuity
+
+    - HVAC with VRF System (up to AHU provision) for optimal climate control
+
+    - Unfinished Toilets provided at each floor for user-specific fit-outs
+
+    - Fire Alarm System installed as per safety norms
+
+    - Provision for Fire Fighting Systems and necessary approvals
+
+    - Elevator Access, security systems, and essential MEP provisions
+  sub-heading: "Warm shell "
 location:
   heading: Brookefield, ITPL Road.
   sub-heading: Where residential comfort and commercial convenience combine.
