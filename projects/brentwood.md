@@ -15,7 +15,7 @@ cover:
   logo: /media/uploads/brentwood-project-logo.png
   background: /media/uploads/brentwood-featured-image-6.jpg
 overview:
-  heading: Superbly Located
+  heading: Where spaces breathe - and so do you
   sub-heading: ""
   description: >+
     Located in the vibrant heart of Bengaluru’s Whitefield, Vaswani Brentwood
