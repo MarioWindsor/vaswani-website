@@ -78,7 +78,7 @@ location:
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 progress:
   heading: Under Construction
-  sub-heading: "Ready for Fit Outs - April 2026 "
+  sub-heading: "Ready for Fit Outs - July 2026 "
 banner:
   feature-1:
     align-text: left
