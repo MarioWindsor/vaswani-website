@@ -48,60 +48,41 @@ overview:
     - image: /media/uploads/reserve-Picture10908-0.jpg
 amenities:
   sub-heading: Where Everyday Living Turns Effortless
-  description: >-
-    At Vaswani Reserve, every amenity is designed to elevate daily life into
-    something quieter, richer, and more refined. Thoughtfully planned spaces,
-    modern comforts, and lifestyle conveniences come together to create a
-    community that feels both exclusive and deeply familiar. Here, luxury isn’t
-    loud - it’s lived in the details.
-
-
-    List for Icons:
-
-
-    Elegant clubhouse with curated lifestyle spaces
-
-
-    Fully equipped gym & dedicated yoga studio
-
-
-    Swimming pool with sun deck + separate kids’ pool
-
-
-    Landscaped gardens, courtyards & quiet sit-out zones
-
-
-    Indoor games lounge (table tennis, carrom, chess)
-
-
-    Multi-purpose hall for private events
-
-
-    Children’s outdoor play zone
-
-
-    Badminton court & basketball half-court
-
-
-    Jogging/walking track amid green pockets
-
-
-    Steam, sauna & wellness areas
-
-
-    Library/reading lounge
-
-
-    Senior citizens’ seating corners
-
-
-    Outdoor party area
-
-
-    24/7 security with CCTV surveillance
-
-
-    Power backup for common areas & apartments
+  description: At Vaswani Reserve, every amenity is designed to elevate daily life
+    into something quieter, richer, and more refined. Thoughtfully planned
+    spaces, modern comforts, and lifestyle conveniences come together to create
+    a community that feels both exclusive and deeply familiar. Here, luxury
+    isn’t loud - it’s lived in the details.
+  amenity:
+    - name: Elegant Clubhouse with Curated Lifestyle Spaces
+      icon: /media/uploads/mini-icon-cocktail.png
+    - name: Fully Equipped Gym & Dedicated Yoga Studio
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: Swimming Pool with Sun Deck + Separate Kids’ Pool
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Landscaped Gardens, Courtyards & Quiet Sit-out Zones
+      icon: /media/uploads/mini-icon-florist.png
+    - name: Indoor Games Lounge (Table Tennis, Carrom, Chess)
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Multi-purpose Hall for Private Events
+      icon: /media/uploads/mini-icon-institution.png
+    - name: Children’s outdoor play zone
+    - name: Badminton Court & Basketball Half-court
+      icon: /media/uploads/mini-icon-shuttlecock.png
+    - name: Jogging/Walking Track amid Green Pockets
+      icon: /media/uploads/mini-icon-footsteps.png
+    - name: Steam, Sauna & Wellness Areas
+      icon: /media/uploads/mini-icon-thermometer.png
+    - name: Library/Reading Lounge
+      icon: /media/uploads/mini-icon-book.png
+    - name: Senior Citizens’ Seating Corners
+      icon: /media/uploads/mini-icon-bench.png
+    - name: Outdoor Party Area
+      icon: /media/uploads/mini-party.png
+    - name: 24/7 Security with CCTV Surveillance
+      icon: /media/uploads/mini-icon-cctv.png
+    - name: Power Backup for Common Areas & Apartments
+      icon: /media/uploads/mini-icon-bolt.png
 location:
   heading: Marathahalli - Sarjapur, ORR
   sub-heading: Vaswani Reserve sits within one of Bengaluru’s most strategic and
