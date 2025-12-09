@@ -356,6 +356,17 @@ collections:
           - { label: "Title", name: "title", widget: "string", default: "Corporate Social Responsibility"}
           - { label: "Layout", name: "layout", widget: "string", default: "layouts/csr.liquid" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Entry"
+            name: "entry"
+            widget: "list"
+            required: false
+            minimize_collapsed: true
+            summary: '{{fields.title}}'
+            fields:
+              - { label: Title, name: title, widget: string, required: false, hint: "Traffic Park, St. Marks Road : Where Education Meets Civic Sense" }
+              - { label: "Image", name: "image", widget: "image", required: false, choose_url: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
       - name: "home"
         label: "Home"
         file: "_data/home.json"
