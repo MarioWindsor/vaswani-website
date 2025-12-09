@@ -67,6 +67,7 @@ amenities:
     - name: Multi-purpose Hall for Private Events
       icon: /media/uploads/mini-icon-institution.png
     - name: Children’s outdoor play zone
+      icon: /media/uploads/mini-icon-parent-child.png
     - name: Badminton Court & Basketball Half-court
       icon: /media/uploads/mini-icon-shuttlecock.png
     - name: Jogging/Walking Track amid Green Pockets
