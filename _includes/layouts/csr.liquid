@@ -31,6 +31,12 @@
 		/*display: grid;*/
 		/*gap: var(--space-50);*/
 		/*grid-template-columns: repeat(1, 1fr);*/
+
+		.info p {
+			font-size: var(--label);
+			padding-top: var(--space-25);
+			white-space: pre-line;
+		}
 	}
 	.csr-section .csr .card {
 		display: grid;
@@ -63,17 +69,30 @@
 	<div class="row">
 		<div class="container">
 			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
-				<label class="section-label">Better Community</label>
-				<h2 class="section-heading text-neutral-20 w-600">A Legacy of Responsibility</h2>
-				<!-- <h6 class="section-sub-heading text-primary space-25-vertical">Our mission extends beyond just crafting iconic buildings.</h6> -->
-				<h6 class="section-sub-heading text-primary space-25-vertical">Building communities, not just spaces.</h6>
-				<p class="description space-25-top">We are dedicated to shaping a better future for Bengaluru by investing in the communities and environment that make it extraordinary. Our commitment to social responsibility and sustainable development is the foundation of our legacy, ensuring every project contributes to a thriving, vibrant city for generations to come.</p>
+				<label class="section-label">{{ csr.label }}</label>
+				<h2 class="section-heading text-neutral-20 w-600">{{ csr.heading }}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{{ csr.sub-heading }}</h6>
+				<p class="description space-25-top">{{ csr.description }}</p>
 			</div>
 		</div>
 	</div>
 	<div class="row space-100-top">
 		<div class="container">
 			<div class="csr columns small-12">
+				{% for entry in csr.entry %}
+				<div class="card space-50">
+					<div class="thumbnail">
+						<img loading="lazy" class="radius-min block" src="{{ entry.image }}" alt="">
+					</div>
+					<div class="info">
+						<h5 class="h5 w-600 space-25-bottom">{{ entry.title }}</h5>
+						{% if entry.video %}
+						<a class="block p fill-dark text-primary text-uppercase strong space-25-vertical space-50-horizontal radius-min" href="https://youtu.be/{{ entry.video }}" style="display: flex; align-items: center; justify-content: space-between;" target="_blank"><span class="inline">Watch the Film</span> <i class='inline bx bxl-youtube' style="transform: scale(1.5); transform-origin: right center;"></i></a>
+						{% endif %}
+						<p>{{ entry.description | newline_to_br }}</p>
+					</div>
+				</div>
+				{% endfor %}
 				<div class="card space-50">
 					<div class="thumbnail">
 						<img loading="lazy" class="radius-min block" src="media/genai-traffic-park.png" alt="">
