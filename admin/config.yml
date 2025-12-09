@@ -351,7 +351,7 @@ collections:
     files:
       - name: "csr"
         label: "CSR"
-        file: "csr.md"
+        file: "_data/csr.json"
         fields:
           - { label: "Label", name: "label", widget: "string", required: false}
           - { label: "Heading", name: "heading", widget: "string", required: false}
