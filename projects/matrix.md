@@ -56,18 +56,31 @@ amenities:
 
     Services & Infrastructure
 
-    - 100% Power Back-up ensuring uninterrupted business continuity
+    - 
 
-    - HVAC with VRF System (up to AHU provision) for optimal climate control
+    - 
 
-    - Unfinished Toilets provided at each floor for user-specific fit-outs
+    - 
 
-    - Fire Alarm System installed as per safety norms
+    - 
 
-    - Provision for Fire Fighting Systems and necessary approvals
+    - 
 
-    - Elevator Access, security systems, and essential MEP provisions
+    - 
   sub-heading: "Warm shell "
+  amenity:
+    - name: 100% Power Back-up Ensuring Uninterrupted Business Continuity
+      icon: /media/uploads/mini-icon-bolt.png
+    - name: HVAC with VRF System (up to AHU Provision) for Optimal Climate Control
+      icon: /media/uploads/mini-icon-air-conditioner.png
+    - name: Unfinished Toilets Provided at each Floor for User-specific fit-outs
+      icon: /media/uploads/mini-icon-toilet-roll.png
+    - name: Fire Alarm System Installed as per Safety Norms
+      icon: /media/uploads/mini-icon-smoke-alarm.png
+    - name: Provision for Fire Fighting Systems & Necessary Approvals
+      icon: /media/uploads/mini-icon-fire-extinguisher.png
+    - name: Elevator Access, Security Systems, and Essential MEP Provisions
+      icon: /media/uploads/mini-icon-universal-access.png
 location:
   heading: Brookefield, ITPL Road.
   sub-heading: Where residential comfort and commercial convenience combine.
