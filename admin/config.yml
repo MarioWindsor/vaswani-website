@@ -361,7 +361,7 @@ collections:
             name: "entry"
             widget: "list"
             required: false
-            minimize_collapsed: true
+            minimize_collapsed: false
             summary: '{{fields.title}}'
             fields:
               - { label: Title, name: title, widget: string, required: false, hint: "Traffic Park, St. Marks Road : Where Education Meets Civic Sense" }
