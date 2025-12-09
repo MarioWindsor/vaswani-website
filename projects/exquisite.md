@@ -73,43 +73,40 @@ siteplan:
 amenities:
   heading: Where Luxury Lives in the Details
   sub-heading: ""
-  description: >
-    At Vaswani Exquisite, every amenity is crafted to bring ease, balance, and
-    refinement into everyday living. Thoughtfully designed indoor spaces,
-    landscaped outdoors, and wellness-led experiences come together to create a
-    lifestyle that feels elevated yet effortless - exactly what a premium
-    Whitefield address deserves.
-
-
-    For icons: 
-
-    Contemporary clubhouse with curated lifestyle spaces
-
-    Fully equipped gymnasium
-
-    Yoga & meditation studio
-
-    Swimming pool with deck + kids’ pool
-
-    Indoor badminton court
-
-    Multipurpose hall for gatherings
-
-    Indoor games lounge (table tennis, carrom, chess)
-
-    Children’s outdoor play area
-
-    Landscaped gardens & quiet sit-outs
-
-    Jogging/walking track
-
-    Senior citizens’ corner
-
-    24/7 security with CCTV
-
-    Intercom & access-controlled entry
-
-    Power backup for common areas & apartments
+  description: At Vaswani Exquisite, every amenity is crafted to bring ease,
+    balance, and refinement into everyday living. Thoughtfully designed indoor
+    spaces, landscaped outdoors, and wellness-led experiences come together to
+    create a lifestyle that feels elevated yet effortless - exactly what a
+    premium Whitefield address deserves.
+  amenity:
+    - name: Contemporary Clubhouse with Curated Lifestyle Spaces
+      icon: /media/uploads/mini-icon-cocktail.png
+    - name: Fully Equipped Gymnasium
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: Yoga & Meditation Studio
+      icon: /media/uploads/mini-icon-spa.png
+    - name: Swimming Pool with Deck + Kids’ Pool
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Indoor Badminton Court
+      icon: /media/uploads/mini-icon-shuttlecock.png
+    - name: Multipurpose Hall for Gatherings
+      icon: /media/uploads/mini-icon-institution.png
+    - name: Indoor Games Lounge (Table Tennis, Carrom, Chess)
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Children’s Outdoor Play Area
+      icon: /media/uploads/mini-icon-parent-child.png
+    - name: Landscaped Gardens & Quiet Sit-outs
+      icon: /media/uploads/mini-icon-florist.png
+    - name: Jogging/Walking Track
+      icon: /media/uploads/mini-icon-footsteps.png
+    - name: Senior Citizens’ Corner
+      icon: /media/uploads/mini-icon-bench.png
+    - name: 24/7 Security with CCTV
+      icon: /media/uploads/mini-icon-cctv.png
+    - name: Intercom & Access-controlled Entry
+      icon: /media/uploads/mini-icon-universal-access.png
+    - name: Power Backup for Common Areas & Apartments
+      icon: /media/uploads/mini-icon-bolt.png
 location:
   heading: Prime Whitefield Location with Unmatched Connectivity
   sub-heading: Located in the highly sought-after Whitefield neighbourhood,
