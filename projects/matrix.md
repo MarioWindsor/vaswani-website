@@ -39,34 +39,11 @@ overview:
     - image: /media/uploads/matrix-draft-3d-2.jpeg
 amenities:
   heading: "Handover Condition "
-  description: >-
-    Office Building Structure
-
-    - Ground + 3 Floors with Single Basement
-
-    - Warm Shell Handover Condition for custom-fit interior planning
-
-    - Premium-grade construction with efficient floor plates
-
-
-    A thoughtfully designed commercial address built for efficiency, flexibility, and seamless business operations.
-
-
-    Icons : 
-
-    Services & Infrastructure
-
-    - 
-
-    - 
-
-    - 
-
-    - 
-
-    - 
-
-    - 
+  description: Office Building Structure comprised of Ground + 3 Floors with
+    Single Basement. Warm Shell in Handover Condition Ready for Custom-fit
+    Interior Planning. Premium-grade construction with efficient floor plates. A
+    thoughtfully designed commercial address built for efficiency, flexibility,
+    and seamless business operations.
   sub-heading: "Warm shell "
   amenity:
     - name: 100% Power Back-up Ensuring Uninterrupted Business Continuity
