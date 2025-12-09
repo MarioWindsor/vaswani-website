@@ -78,7 +78,7 @@ amenities:
     - name: Senior Citizens’ Seating Corners
       icon: /media/uploads/mini-icon-bench.png
     - name: Outdoor Party Area
-      icon: /media/uploads/mini-party.png
+      icon: /media/uploads/mini-icon-party.png
     - name: 24/7 Security with CCTV Surveillance
       icon: /media/uploads/mini-icon-cctv.png
     - name: Power Backup for Common Areas & Apartments
