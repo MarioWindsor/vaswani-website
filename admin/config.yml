@@ -353,9 +353,6 @@ collections:
         label: "CSR"
         file: "csr.md"
         fields:
-          - { label: "Title", name: "title", widget: "string", default: "Corporate Social Responsibility"}
-          - { label: "Layout", name: "layout", widget: "string", default: "layouts/csr.liquid" }
-          - { label: "Body", name: "body", widget: "markdown" }
           - label: "Entry"
             name: "entry"
             widget: "list"
