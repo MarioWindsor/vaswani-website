@@ -128,8 +128,8 @@ banner:
     background: /media/uploads/7.jpg
     heading: Home -  as it should be
     align-text: left
-    position-text: center
-    background-fix: center center
+    position-text: bottom
+    background-fix: left bottom
     description: >-
       Where nothing feels excessive, and everything feels considered.
 
