@@ -177,7 +177,7 @@ location:
           distance: 2.3 Km
 progress:
   heading: Construction in Full Swing
-  sub-heading: Updates Coming Soon
+  sub-heading: ""
 banner:
   feature-1:
     heading: A Private Home Office with Every Unit
@@ -185,22 +185,20 @@ banner:
     position-text: top
     background: /media/uploads/starlight_banner_bg_home_office_01.png
     background-fix: right bottom
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    description: At Vaswani Starlight, every residence is thoughtfully designed with
+      a dedicated home office provision. Whether it’s focused workdays, virtual
+      meetings, or quiet creative time, this flexible space allows you to work
+      comfortably from home without intruding on your living areas. It’s a
+      reflection of modern living, where productivity and everyday life find the
+      right balance.
   feature-2:
-    heading: 70% Green Spaces at Vaswani Starlight
+    heading: Space to Move. Space to Breathe.
     align-text: right
     position-text: top
     background: /media/uploads/starlight_banner_bg_jogging_man_01.png
     background-fix: center center
+    description: Not every walk needs a destination. Sometimes, it’s just about
+      stepping out, clearing your head, and moving freely. With expansive open
+      spaces and walkable pathways, daily walks and runs become a simple,
+      grounding ritual.
 ---
