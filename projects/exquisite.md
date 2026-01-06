@@ -15,7 +15,7 @@ metadata:
 cover:
   logo: /media/uploads/exquisite_project-logo.png
   background: /media/uploads/exquisite_DSC_8174.jpg
-  video: JytdFRIACTU
+  video: ""
   link: ""
 overview:
   heading: Live Life Sky High
