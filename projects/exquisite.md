@@ -109,11 +109,9 @@ amenities:
       icon: /media/uploads/mini-icon-bolt.png
 location:
   heading: Prime Whitefield Location with Unmatched Connectivity
-  sub-heading: Located in the highly sought-after Whitefield neighbourhood,
-    Vaswani Exquisite offers seamless connectivity to major IT parks, hospitals,
-    shopping centres, and top schools. Its strategic location ensures shorter
-    commutes, quick access to the metro, and a vibrant lifestyle with every
-    convenience within easy reach.
+  sub-heading: Located inStrategic location ensures shorter commutes, quick access
+    to the metro, and a vibrant lifestyle with every convenience within easy
+    reach.
   map-link: https://maps.app.goo.gl/wy8TQ1JtBY1LpCtXA
   map-embed: <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.877635299528!2d77.7242795!3d12.98979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb58a62769%3A0xd9d2d75e3426ebe!2sVaswani%20Exquisite!5e0!3m2!1sen!2sin!4v1762450541796!5m2!1sen!2sin"
@@ -125,7 +123,7 @@ progress:
   entry: []
 banner:
   feature-1:
-    background: /media/uploads/7.jpg
+    background: /media/uploads/2.jpg
     heading: Home -  as it should be
     align-text: left
     position-text: bottom
