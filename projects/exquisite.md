@@ -49,8 +49,8 @@ overview:
     - image: /media/uploads/exquisite_DSC_8045.jpg
 film:
   video: ""
-  heading: Where Luxury Meets Location
-  sub-heading: Come Explore the Paradise
+  heading: ""
+  sub-heading: ""
 siteplan:
   heading: A Class Apart
   sub-heading: 4 Towers each with Ground + 23 floors
@@ -123,4 +123,15 @@ progress:
   heading: ""
   sub-heading: ""
   entry: []
+banner:
+  feature-1:
+    background: /media/uploads/7.jpg
+    heading: Home -  as it should be
+    align-text: left
+    position-text: center
+    background-fix: center center
+    description: >-
+      Where nothing feels excessive, and everything feels considered.
+
+      From the way rooms open up to the way light moves through the day, every choice is made to feel easy, intuitive, and lived-in.
 ---
