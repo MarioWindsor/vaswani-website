@@ -15,8 +15,8 @@ metadata:
 cover:
   logo: /media/uploads/exquisite_project-logo.png
   background: /media/uploads/exquisite_DSC_8174.jpg
-  video: ""
-  link: ""
+  video: c3JpE5EF04Y
+  link: https://www.youtube.com/watch?v=c3JpE5EF04Y&t=19s
 overview:
   heading: Live Life Sky High
   sub-heading: A piece of sky, in the palm of your hand
@@ -48,7 +48,7 @@ overview:
     - image: /media/uploads/exquisite_1673935423942.jpg
     - image: /media/uploads/exquisite_DSC_8045.jpg
 film:
-  video: c3JpE5EF04Y
+  video: ""
   heading: Where Luxury Meets Location
   sub-heading: Come Explore the Paradise
 siteplan:
