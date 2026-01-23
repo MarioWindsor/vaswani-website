@@ -104,7 +104,7 @@ banner:
       Whitefield. It’s a hotel, yes, but also a pause, a little exhale, and a
       space that can be your own.
     background: /media/uploads/img_2564.jpg
-    heading: We Who Knows Every Guest's Coffee Order!
+    heading: We Know Every Guest's Coffee Order!
   feature-2:
     align-text: left
     position-text: top
