@@ -95,8 +95,8 @@ location:
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 banner:
   feature-1:
-    align-text: left
-    position-text: top
+    align-text: right
+    position-text: bottom
     background-fix: center center
     description: But what truly makes it special isn’t the building. It’s the way
       our team makes sure you feel welcome, whether it’s remembering how you
