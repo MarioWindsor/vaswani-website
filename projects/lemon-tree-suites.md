@@ -106,7 +106,7 @@ banner:
     background: /media/uploads/img_2564.jpg
     heading: We Know Your Coffee.
   feature-2:
-    align-text: left
+    align-text: right
     position-text: top
     background-fix: center center
     heading: Pet-Friendly Stays
