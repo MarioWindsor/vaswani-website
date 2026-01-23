@@ -97,7 +97,7 @@ banner:
   feature-1:
     align-text: right
     position-text: bottom
-    background-fix: center center
+    background-fix: right bottom
     description: But what truly makes it special isn’t the building. It’s the way
       our team makes sure you feel welcome, whether it’s remembering how you
       like your morning coffee or helping you discover the hidden gems of
