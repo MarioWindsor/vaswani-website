@@ -96,15 +96,15 @@ location:
 banner:
   feature-1:
     align-text: right
-    position-text: bottom
-    background-fix: right bottom
+    position-text: top
+    background-fix: center center
     description: But what truly makes it special isn’t the building. It’s the way
       our team makes sure you feel welcome, whether it’s remembering how you
       like your morning coffee or helping you discover the hidden gems of
       Whitefield. It’s a hotel, yes, but also a pause, a little exhale, and a
       space that can be your own.
     background: /media/uploads/img_2564.jpg
-    heading: We Know Every Guest's Coffee Order!
+    heading: We Know Your Coffee.
   feature-2:
     align-text: left
     position-text: top
