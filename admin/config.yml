@@ -386,7 +386,7 @@ collections:
               - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
               - { label: "Description", name: "description", widget: "text", required: false }
       - name: "about"
-        label: "About"
+        label: "About Us"
         file: "about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
