@@ -376,6 +376,15 @@ collections:
               - { label: "Image", name: "image", widget: "image", required: false, choose_url: false }
               - { label: "Description", name: "description", widget: "text", required: false }
               - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+          - label: "Partner Section"
+            name: "partner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
       - name: "about"
         label: "About"
         file: "about.md"

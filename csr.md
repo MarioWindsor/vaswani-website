@@ -41,4 +41,9 @@ entry:
       Through hands-on training, mentorship, and the creation of collective enterprises, the programme enables women to develop entrepreneurial skills, diversify income sources, and access learning opportunities that extend beyond immediate relief. The emphasis is not only on recovery, but on confidence, capability, and continuity.
       This partnership reflects our belief that meaningful social impact is created when education, livelihoods, and community support come together, enabling individuals to shape their own futures with resilience and purpose.
     image: /media/uploads/woman-teaching-classroom.jpg
+partner:
+  label: Partner with Us
+  heading: Our Ongoing Commitment
+  sub-heading: We're continually looking for ways to innovate and contribute.
+  description: If you share our vision for a sustainable and equitable future, we invite you to explore partnership opportunities with us. We're keen to collaborate on new sustainable development initiatives and welcome partners to work with us on our social and educational community welfare programs. Reach out and connect with our dedicated team to discuss your ideas on how we can build a better tomorrow, together.
 ---
