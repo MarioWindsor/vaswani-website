@@ -30,37 +30,27 @@
 	<div class="row">
 		<div class="container">
 			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
-				<label class="section-label">Meet the Visionaries</label>
-				<h2 class="section-heading text-neutral-20 w-600">Leadership that Inspires</h2>
-				<h6 class="section-sub-heading space-25-vertical">Driving innovation and excellence in Luxury Real Estate market with <span class="text-primary">decades of unparalleled expertise.</span></h6>
+				<label class="section-label">{{ leadership.label }}</label>
+				<h2 class="section-heading text-neutral-20 w-600">{{ leadership.heading }}</h2>
+				<h6 class="section-sub-heading space-25-vertical">{{ leadership.sub-heading }}</h6>
 			</div>
 		</div>
 	</div>
 	<div class="row space-100-top">
 		<div class="container">
 			<div class="leadership columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
+				{% for leader in leadership.profiles %}
 				<div class="leader">
 					<div class="photo">
-						<!-- <img loading="lazy" class="radius-min block box-shadow" src="media/neville-vaswani-profile-photo.png" alt=""> -->
-						<img loading="lazy" class="radius-min block box-shadow" src="https://img.freepik.com/premium-photo/confident-professional-man-smiling_53876-563709.jpg?w=740" width="800" height="800" alt="" style="width: 100%; height: var(--card); max-height: none; object-fit: cover;">
+						<img loading="lazy" class="radius-min block box-shadow" src="{{ leader.image }}" width="800" height="800" alt="{{ leader.name }}" style="width: 100%; height: var(--card); max-height: none; object-fit: cover;">
 					</div>
 					<div class="info space-25">
-						<div class="name h5 text-primary">Neville Vaswani</div>
-						<small class="role text-neutral-30 strong">Managing Director</small>
-						<p class="description small space-25-top">Neville has been the driving force behind Vaswani Group for over three decades. With an eye for detail and a deep belief that spaces should feel human, he has guided the group through its journey of creating homes, offices, and communities across cities. His approach has always been simple: build with integrity, and build with empathy.</p>
+						<div class="name h5 text-primary">{{ leader.name }}</div>
+						<small class="role text-neutral-30 strong">{{ leader.role }}</small>
+						<p class="description small space-25-top">{{ leader.description }}</p>
 					</div>
 				</div>
-				<div class="leader">
-					<div class="photo">
-						<img loading="lazy" class="radius-min block box-shadow" src="https://img.freepik.com/premium-photo/confident-mature-indian-businessman-business-attire_1225540-2270.jpg?w=740" width="800" height="800" alt="" style="width: 100%; height: var(--card); max-height: none; object-fit: cover;">
-						<!-- <img loading="lazy" class="radius-min block box-shadow" src="media/arun-advani-profile-photo.png" alt=""> -->
-					</div>
-					<div class="info space-25">
-						<div class="name h5 text-primary">Arun Advani</div>
-						<small class="role text-neutral-30 strong">Joint Managing Director</small>
-						<p class="description small space-25-top">Arun brings with him a sharp focus on strategy and execution. His strength lies in turning ideas into reality with clarity and consistency. Over the years, he has played a key role in shaping the group’s projects and ensuring that promises made to customers are delivered with care.</p>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>

@@ -376,6 +376,27 @@ collections:
               - { label: "Image", name: "image", widget: "image", required: false, choose_url: false }
               - { label: "Description", name: "description", widget: "text", required: false }
               - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+      - name: "about"
+        label: "About"
+        file: "about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/about.liquid" }
+          - label: "Leadership"
+            name: "leadership"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - label: "Profiles"
+                name: "profiles"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image", choose_url: false }
+                  - { label: "Description", name: "description", widget: "text" }
       - name: "home"
         label: "Home"
         file: "index.md"
