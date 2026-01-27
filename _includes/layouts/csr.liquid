@@ -38,27 +38,32 @@
 			white-space: pre-line;
 		}
 	}
+
 	.csr-section .csr .card {
 		display: grid;
 		gap: var(--space-50);
 		grid-template-columns: repeat(1, 1fr);
 		margin-bottom: var(--space-50);
 	}
-	@media( min-width: 500px )  {
+
+	@media(min-width: 500px) {
 		.csr-section .csr .card {
 			/*grid-template-columns: repeat(2, 1fr);*/
 		}
 	}
-	@media( min-width: 1000px ) {
+
+	@media(min-width: 1000px) {
 		.csr-section .csr {
 			/*grid-template-columns: repeat(2, 1fr);*/
 			columns: 2;
 		}
+
 		.csr-section .csr .card {
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
-	@media( min-width: 1500px ) {
+
+	@media(min-width: 1500px) {
 		.csr-section .csr {
 			/*grid-template-columns: repeat(3, 1fr);*/
 			columns: 3;
@@ -68,26 +73,31 @@
 <section id="csr-section" class="csr-section gap">
 	<div class="row">
 		<div class="container">
-			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
-				<label class="section-label">{{ csr.label }}</label>
-				<h2 class="section-heading text-neutral-20 w-600">{{ csr.heading }}</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">{{ csr.sub-heading }}</h6>
-				<p class="description space-25-top">{{ csr.description }}</p>
+			<div
+				class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
+				<label class="section-label">{{ label }}</label>
+				<h2 class="section-heading text-neutral-20 w-600">{{ heading }}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{{ sub-heading }}</h6>
+				<p class="description space-25-top">{{ description }}</p>
 			</div>
 		</div>
 	</div>
 	<div class="row space-100-top">
 		<div class="container">
 			<div class="csr columns small-12">
-				{% for entry in csr.entry reversed %}
+				{% for entry in entry reversed %}
 				<div class="card space-50">
 					<div class="thumbnail">
-						<img loading="lazy" class="radius-min block" src="{{ entry.image }}" alt="">
+						<img loading="lazy" class="radius-min box-shadow block" src="{{ entry.image }}" alt="">
 					</div>
 					<div class="info">
 						<h5 class="h5 w-600 space-25-bottom">{{ entry.title }}</h5>
 						{% if entry.video %}
-						<a class="block p fill-dark text-primary text-uppercase strong space-25-vertical space-50-horizontal radius-min" href="https://youtu.be/{{ entry.video }}" style="display: flex; align-items: center; justify-content: space-between;" target="_blank"><span class="inline">Watch the Film</span> <i class='inline bx bxl-youtube' style="transform: scale(1.5); transform-origin: right center;"></i></a>
+						<a class="block p fill-dark text-primary text-uppercase strong space-25-vertical space-50-horizontal radius-min"
+							href="https://youtu.be/{{ entry.video }}"
+							style="display: flex; align-items: center; justify-content: space-between;"
+							target="_blank"><span class="inline">Watch the Film</span> <i class='inline bx bxl-youtube'
+								style="transform: scale(1.5); transform-origin: right center;"></i></a>
 						{% endif %}
 						<p>{{ entry.description | newline_to_br }}</p>
 					</div>
@@ -98,13 +108,19 @@
 	</div>
 	<div class="row space-200-top">
 		<div class="container">
-			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
+			<div
+				class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
 				<label class="section-label">Partner with Us</label>
 				<h2 class="section-heading text-neutral-20 w-600">Our Ongoing Commitment</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">We're continually looking for ways to innovate and contribute.</h6>
+				<h6 class="section-sub-heading text-primary space-25-vertical">We're continually looking for ways to
+					innovate and contribute.</h6>
 			</div>
 			<div class="title columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2 text-center">
-				<p class="description space-25-top">If you share our vision for a sustainable and equitable future, we invite you to explore partnership opportunities with us. We're keen to collaborate on new sustainable development initiatives and welcome partners to work with us on our social and educational community welfare programs. Reach out and connect with our dedicated team to discuss your ideas on how we can build a better tomorrow, together.</p>
+				<p class="description space-25-top">If you share our vision for a sustainable and equitable future, we
+					invite you to explore partnership opportunities with us. We're keen to collaborate on new
+					sustainable development initiatives and welcome partners to work with us on our social and
+					educational community welfare programs. Reach out and connect with our dedicated team to discuss
+					your ideas on how we can build a better tomorrow, together.</p>
 			</div>
 		</div>
 	</div>

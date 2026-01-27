@@ -351,8 +351,16 @@ collections:
     files:
       - name: "csr"
         label: "CSR"
-        file: "_data/csr.json"
+        file: "csr.md"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/csr.liquid" }
+          - label: "Cover"
+            name: "cover"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Background Image", name: "background", widget: "image", choose_url: false, required: false }
           - { label: "Label", name: "label", widget: "string", required: false}
           - { label: "Heading", name: "heading", widget: "string", required: false}
           - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false}
