@@ -18,19 +18,19 @@
 			<div class="foot-set columns small-12 large-4 xlarge-3">
 				<div class="foot contact">
 					<h6 class="title">Bengaluru Contact</h6>
-					<a class="link" href="tel: +918747987479">+9187479-87479</a><br>
-					<a class="link" href="mailto: sales@vaswanigroup.com">sales@vaswanigroup.com</a><br>
+					<a class="link" href="tel: {{ contact.phone.number }}">{{ contact.phone.display }}</a><br>
+					<a class="link" href="mailto: {{ contact.email }}">{{ contact.email }}</a><br>
 				</div>
 				<div class="foot address">
-					<h6 class="title">Bengaluru Address</h6>
-					<p class="h6 text-primary">Vaswani Victoria, #30, Victoria Road, Bengaluru - 560 047 Karnataka, India.</p>
+					<h6 class="title">{{ address.title }}</h6>
+					<p class="h6 text-primary">{{ address.line }}</p>
 				</div>
 				<div class="foot social small-bottom">
 					<h6 class="title">Follow us</h6>
-					<a class="social-link" href=""><i class='bx bxl-instagram'></i><span class="visuallyhidden">Instagram</span></a>
-					<a class="social-link" href=""><i class='bx bxl-youtube'></i><span class="visuallyhidden">YouTube</span></a>
-					<a class="social-link" href=""><i class='bx bxl-facebook'></i><span class="visuallyhidden">Facebook</span></a>
-					<a class="social-link" href=""><i class='bx bxl-linkedin'></i><span class="visuallyhidden">LinkedIn</span></a>
+					{% if socials.instagram != blank %}<a class="social-link" href="{{ socials.instagram }}" target="_blank"><i class='bx bxl-instagram'></i><span class="visuallyhidden">Instagram</span></a>{% endif %}
+					{% if socials.youtube != blank %}<a class="social-link" href="{{ socials.youtube }}" target="_blank"><i class='bx bxl-youtube'></i><span class="visuallyhidden">YouTube</span></a>{% endif %}
+					{% if socials.facebook != blank %}<a class="social-link" href="{{ socials.facebook }}" target="_blank"><i class='bx bxl-facebook'></i><span class="visuallyhidden">Facebook</span></a>{% endif %}
+					{% if socials.linkedin != blank %}<a class="social-link" href="{{ socials.linkedin }}" target="_blank"><i class='bx bxl-linkedin'></i><span class="visuallyhidden">LinkedIn</span></a>{% endif %}
 				</div>
 			</div>
 
@@ -174,9 +174,9 @@
 </style>
 <aside class="sticky-cta-section space-50-vertical">
 	<div class="sticky-cta">
-		<a class="button box-shadow" href="tel: +918747987479"><i class='h6 bx bx-phone'></i><span>Call</span></a>
+		<a class="button box-shadow" href="tel: {{ contact.phone.number }}"><i class='h6 bx bx-phone'></i><span>Call</span></a>
 		<a id="sticky-cta-contact" class="button box-shadow" href="{{ page.url }}#contact-form-section"><i class='h6 bx bx-support'></i><span>Enquire</span></a>
-		<a class="button box-shadow" href="https://wa.me/918747987479" target="_blank"><i class='h5 bx bxl-whatsapp'></i><span>WhatsApp</span></a>
+		{% if contact.whatsapp.number != blank %}<a class="button box-shadow" href="https://wa.me/{{ contact.whatsapp.number }}" target="_blank"><i class='h5 bx bxl-whatsapp'></i><span>WhatsApp</span></a>{% endif %}
 	</div>
 	<script>
 		const contact_cta_relative = document.getElementById('contact-form-section');

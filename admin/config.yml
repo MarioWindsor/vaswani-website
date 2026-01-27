@@ -413,8 +413,8 @@ collections:
               - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: cQnebxxGXCs)" }
               - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/cQnebxxGXCs" }
               - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false, required: false }
-  - name: "menu"
-    label: "Menu"
+  - name: "settings"
+    label: "Settings"
     editor:
       preview: false
     files:
@@ -429,6 +429,38 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Path", name: "path", widget: "string" }
+      - name: "contact"
+        label: "Contact Details"
+        file: "_data/contact.json"
+        fields:
+          - label: "Phone"
+            name: "phone"
+            widget: "object"
+            fields:
+              - { label: "Display", name: "display", widget: "string", hint: "Eg: +91 87479-87479" }
+              - { label: "Number", name: "number", widget: "string", hint: "Eg: +918747987479 (No Spaces)" }
+              - { label: "Help Desk Timings", name: "timings", widget: "string", hint: "Eg: between 10am to 7pm IST" }
+          - label: "WhatsApp"
+            name: "whatsapp"
+            widget: "object"
+            fields:
+              - { label: "Display", name: "display", widget: "string", hint: "Eg: +91 87479-87479" }
+              - { label: "Number", name: "number", widget: "string", hint: "Eg: 918747987479 (No + symbol)" }
+          - { label: "Email", name: "email", widget: "string" }
+      - name: "address"
+        label: "Address"
+        file: "_data/address.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Line", name: "line", widget: "string" }
+      - name: "socials"
+        label: "Social Media"
+        file: "_data/socials.json"
+        fields:
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "YouTube", name: "youtube", widget: "string", required: false }
+          - { label: "Facebook", name: "facebook", widget: "string", required: false }
+          - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
   - name: "sections"
     label: "Sections"
     editor:
