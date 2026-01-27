@@ -391,6 +391,16 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/about.liquid" }
+          - label: "Introduction"
+            name: "intro"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Video ID", name: "video_id", widget: "string", required: false, hint: "YouTube Video ID" }
           - label: "Leadership"
             name: "leadership"
             widget: "object"
@@ -406,6 +416,15 @@ collections:
                   - { label: "Role", name: "role", widget: "string" }
                   - { label: "Image", name: "image", widget: "image", choose_url: false }
                   - { label: "Description", name: "description", widget: "text" }
+          - label: "Ethos"
+            name: "ethos"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
       - name: "careers"
         label: "Careers"
         file: "careers.md"

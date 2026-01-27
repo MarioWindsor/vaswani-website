@@ -36,18 +36,17 @@
 		<div class="about-intro">
 			<div class="container">
 				<div class="text-center columns small-12">
-					<label class="section-label">Since 1985</label>
-					<h2 class="section-heading text-neutral-20 w-600">Crafting Landmarks</h2>
-					<h6 class="section-sub-heading text-primary space-25-vertical">A Legacy Built on Trust & Vision</h6>
+					<label class="section-label">{{ intro.label }}</label>
+					<h2 class="section-heading text-neutral-20 w-600">{{ intro.heading }}</h2>
+					<h6 class="section-sub-heading text-primary space-25-vertical">{{ intro.sub-heading }}</h6>
 				</div>
 				<div class="description text-center columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3">
-					<p>For over four decades, Vaswani Group has been shaping the way people live, work, and grow - creating spaces that feel personal, purposeful, and enduring. What started as a belief that good design can transform everyday life has today become a trusted name across Bangalore, Mumbai, Pune, and Goa.</p>
-					<p>Our portfolio spans residential, commercial and hospitality developments, each guided by a simple principle: build with integrity, design with intention, and deliver with consistency. Every project begins with the people who will inhabit it -  families seeking comfort and belonging, businesses charting their next phase, and communities that will take root and thrive.</p>
+					<p>{{ intro.description | newline_to_br }}</p>
 				</div>
 				<div id="brand-film" class="text-center columns small-12 medium-10 xlarge-8 medium-offset-1 xlarge-offset-2 space-75-top">
 					<small class="block text-uppercase text-primary space-50-bottom">Watch the Brand Film</small>
 					<div class="video-embed radius-min box-shadow">
-						<iframe class="" src="https://www.youtube-nocookie.com/embed/ivOPbCchSJs?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ intro.video_id }}?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>

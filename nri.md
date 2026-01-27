@@ -24,14 +24,14 @@ steps:
   list:
     - title: 1. Discover Your Property
       description: Explore our exclusive collection of luxury 3 & 4 BHK apartments, strategically designed for the global citizen.
-      image: /media/uploads/genai-v-brentwood.png
+      image: /media/genai-v-brentwood.png
     - title: 2. Understand the Framework
       description: We provide a comprehensive guide on navigating the technical landscape for NRIs, including RERA and RBI regulations for property acquisition.
-      image: /media/uploads/genai-rera-regulation.png
+      image: /media/genai-rera-regulation.png
     - title: 3. Secure Your Finances
       description: Get a clear breakdown of all costs. We also communicate available home loan facilities for NRIs.
-      image: /media/uploads/genai-bank-fianace.png
+      image: /media/genai-bank-fianace.png
     - title: 4. Effortless Ownership
       description: Our commitment extends beyond the sale. With timely Occupancy Certificate and a Hassle-free ownership experience.
-      image: /media/uploads/genai-key-handover.png
+      image: /media/genai-key-handover.png
 ---

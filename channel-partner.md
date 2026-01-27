@@ -10,7 +10,7 @@ intro:
   description: Every good partnership begins with trust — at Vaswani Group, we believe that our Channel Partners are an essential part of our journey. Your trust, commitment, and expertise help us take our developments to the people who will one day call them home or take their businesses forward. This hub is designed as your dedicated space - simple, transparent, and supportive to help you work seamlessly with us.
 benefits:
   label: Channel Partner Benefits
-  image: /media/uploads/genai-channel-partnership.png
+  image: /media/genai-channel-partnership.png
   list:
     - title: Timely Payments, Every Time
       description: We value the effort you put into every lead and every closure. Our structured and efficient payment process ensures that your commissions are disbursed promptly without delays or follow-ups.
