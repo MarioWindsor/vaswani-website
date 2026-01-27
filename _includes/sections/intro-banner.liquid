@@ -2,7 +2,8 @@
 	.intro-banner-section {
 		position: relative;
 		width: 100vw;
-		padding-top: 85vw;
+		/* padding-top: 85vw; */
+		height: 85vw;
 	}
 	.intro-banner-section input {
 		position: absolute;
@@ -13,7 +14,8 @@
 		top: 0;
 		left: 50%;
 		width: 100vw;
-		padding-top: 85vw;
+		/* padding-top: 85vw; */
+		height: 85vw;
 		transform: translateX(-50%);
 		overflow: clip;
 		border-radius: 0;
@@ -26,7 +28,8 @@
 		top: 0;
 		left: 50%;
 		width: 100vw;
-		padding-top: 85vw;
+		/* padding-top: 85vw; */
+		height: 85vw;
 		transform: translateX(-50%);
 		background-size: cover;
 		background-position: center center;
@@ -137,7 +140,8 @@
 		.intro-banner-section ,
 		.intro-banner-section .intro-video-wrapper ,
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
-			padding-top: 66vw;
+			/* padding-top: 66vw; */
+			height: 66vw;
 		}
 		.intro-banner-section .intro-video-wrapper .page-title {
 			top: 40%;
@@ -147,7 +151,8 @@
 		.intro-banner-section ,
 		.intro-banner-section .intro-video-wrapper ,
 		.intro-banner-section .intro-video-wrapper .intro-video-width {
-			padding-top: 50vw;
+			/* padding-top: 50vw; */
+			height: 50vw;
 		}
 		.intro-banner-section .intro-video-wrapper .project-logo {
 			width: calc(var(--card)*1.5);
@@ -183,8 +188,8 @@
 					{% endif %}
 				{% endif %}
 				{% if cover.video != blank %}
-				<div class="video-embed-cover" style="position: relative; z-index: 1;">
-					<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ cover.video }}?playlist={{ cover.video }}&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="video-embed-cover" style="position: absolute; top: 0; left:0; z-index: 10;">
+					<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ cover.video }}?playlist={{ cover.video }}&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 				</div>
 				{% endif %}
 			</div>

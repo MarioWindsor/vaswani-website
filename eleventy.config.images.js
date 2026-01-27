@@ -15,9 +15,7 @@ module.exports = function (eleventyConfig) {
     // wsrv.nl requires a public URL. We use the GitHub raw URL.
     const baseUrl = "https://vaswani.netlify.app";
 
-    // Clean up the src path (remove leading slash if present)
-    const cleanSrc = src.startsWith('/') ? src : '/' + src;
-    const imageUrl = `${baseUrl}${cleanSrc}`;
+    const imageUrl = `${baseUrl}${src}`;
 
     // 3. Define Breakpoints (Widths)
     // 800: Mobile (covers iPhone SE @ 750px, Androids @ ~720px, iPhone 12/13/14 @ ~780px)

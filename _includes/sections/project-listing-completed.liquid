@@ -35,7 +35,13 @@
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url({% if project.data.cover.background != blank %}'{{ project.data.cover.background }}'{% else %}'media/fallback.jpg'{% endif %}); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="position: relative; overflow: hidden; padding-top: 80%;">
+								{% if project.data.cover.background != blank %}
+									{% image project.data.cover.background, "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" %}
+								{% else %}
+									{% image "media/fallback.jpg", "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" %}
+								{% endif %}
+							</div>
 							{% if project.data.metadata.status-label != blank %}
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
 							{% endif %}
@@ -81,7 +87,13 @@
 				<div class="project carousel-list-item">
 					<a class="card space-50" href="{{ project.url }}" style="height: 100%; display: flex ; flex-direction: column;">
 						<div class="thumbnail position-relative">
-							<div class="img-cover radius-min box-shadow" style="background-image: url({% if project.data.cover.background != blank %}'{{ project.data.cover.background }}'{% else %}'media/fallback.jpg'{% endif %}); padding-top: 80%;"></div>
+							<div class="img-cover radius-min box-shadow" style="position: relative; overflow: hidden; padding-top: 80%;">
+								{% if project.data.cover.background != blank %}
+									{% image project.data.cover.background, "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" %}
+								{% else %}
+									{% image "media/fallback.jpg", "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" %}
+								{% endif %}
+							</div>
 							{% if project.data.metadata.status-label != blank %}
 							<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
 							{% endif %}
