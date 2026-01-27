@@ -47,7 +47,7 @@
 					<div class="info space-25">
 						<div class="name h5 text-primary">{{ leader.name }}</div>
 						<small class="role text-neutral-30 strong">{{ leader.role }}</small>
-						<p class="description small space-25-top">{{ leader.description }}</p>
+						<p class="description small space-25-top">{{ leader.description | newline_to_br }}</p>
 					</div>
 				</div>
 				{% endfor %}
