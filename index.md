@@ -2,7 +2,7 @@
 layout: layouts/home.liquid
 title: Welcome
 cover:
-  video: ivOPbCchSJsZZZ
-  link: https://youtu.be/ivOPbCchSJsZZZ
+  video: ivOPbCchSJs
+  link: https://youtu.be/ivOPbCchSJs
   link-external: true
 ---
