@@ -673,8 +673,8 @@ select.button {
 	width: calc(var(--p) * 3);
 	line-height: calc(var(--p) * 3);
 	color: var(--hue-primary);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 	background: color-mix(in srgb, var(--hue-light) 75%, transparent);
 	transition: background-color var(--transition-speed) var(--transition-ease), border var(--transition-speed) var(--transition-ease);
 
@@ -685,6 +685,7 @@ select.button {
 	&:hover {
 		background-color: var(--hue-light);
 		border: var(--border-width) solid var(--hue-primary);
+		filter: none;
 	}
 }
 

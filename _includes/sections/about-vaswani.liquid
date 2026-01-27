@@ -47,7 +47,7 @@
 			<div class="columns small-12 medium-7 medium-offset-1 xlarge-6 inline-middle">
 				<div class="summary">
 					<h2 class="heading h6 text-primary space-50-bottom">{{ sections.about.heading }}</h2>
-					<p class="description small space-50-bottom">{{ sections.about.description }}</p>
+					<p class="description small space-50-bottom">{{ sections.about.description |  newline_to_br }}</p>
 					<a href="{{ sections.about.link.url }}" class="button fill-dark">{{ sections.about.link.text }}</a>
 				</div>
 			</div>
