@@ -370,8 +370,7 @@ collections:
               - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
       - name: "home"
         label: "Home"
-        file: "index.liquid"
-        format: "frontmatter"
+        file: "index.md"
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.liquid" }
           - { label: "Title", name: "title", widget: "string" }
