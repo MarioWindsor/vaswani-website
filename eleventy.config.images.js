@@ -4,15 +4,16 @@ module.exports = function (eleventyConfig) {
     // NOTE: For the purpose of this test, we are forcing the 'production' logic
     // if a specific flag is set, or defaulting to local to be safe.
     // Replace 'true' with process.env.ELEVENTY_ENV === 'production' later.
-    const isProduction = true; // FORCE ENABLE FOR TESTING
+    const isProduction = process.env.ELEVENTY_ENV === 'production';
 
     if (!isProduction) {
-      return `<img src="${src}" alt="${alt}" class="${className}" loading="${loading}">`;
+      // Pass styles through to local images too
+      return `<img src="${src}" alt="${alt}" class="${className}" loading="${loading}" style="${style}">`;
     }
 
     // 2. Base URL Construction
     // wsrv.nl requires a public URL. We use the GitHub raw URL.
-    const baseUrl = "https://raw.githubusercontent.com/MarioWindsor/vaswani-website/main";
+    const baseUrl = "https://vaswani.netlify.app";
 
     // Clean up the src path (remove leading slash if present)
     const cleanSrc = src.startsWith('/') ? src : '/' + src;
@@ -46,7 +47,7 @@ module.exports = function (eleventyConfig) {
         loading="${loading}"
         decoding="async"
         width="1500" 
-        height="auto"
+        height="auto" 
         style="${style}"
       >
     `;
