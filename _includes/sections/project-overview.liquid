@@ -15,7 +15,8 @@
 			<div class="carousel-list">
 				{% for gallery in overview.gallery %}
 				<div class="carousel-list-item" style="position: relative;">
-					<img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt="">
+					<!-- <img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt=""> -->
+					{% image gallery.image, "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "radius-25 box-shadow" %}
 					<a class="button box-shadow zoom-icon" href="{{ gallery.image }}" target="_blank">
 						<span class="visuallyhidden">Zoom In</span>
 						<i class='h6 bx bx-zoom-in'></i>

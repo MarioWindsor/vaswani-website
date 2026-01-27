@@ -91,7 +91,8 @@
 			</div>
 			<div class="reasoning columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2 text-center">
 				<div class="thumbnail">
-					<img loading="lazy" class="block radius-25 box-shadow" src="media/genai-v-reserve.png" alt="">
+					<!-- <img loading="lazy" class="block radius-25 box-shadow" src="media/genai-v-reserve.png" alt=""> -->
+					{% image "media/genai-v-reserve.png", "", "(min-width: 1000px) 50vw, 100vw", "lazy", "block radius-25 box-shadow" %}
 					<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
 				</div>
 				<div class="row reasons">
@@ -122,7 +123,10 @@
 			<div class="steps columns small-12 space-50-top">
 				{% for step in steps.list %}
 				<div class="step card space-50">
-					<div class="thumbnail"><img loading="lazy" class="block radius-25 box-shadow" src="{{ step.image }}" alt=""></div>
+					<div class="thumbnail">
+						<!-- <img loading="lazy" class="block radius-25 box-shadow" src="{{ step.image }}" alt=""> -->
+						{% image step.image, "", "(min-width: 1000px) 25vw, (min-width: 500px) 50vw, 100vw", "lazy", "block radius-25 box-shadow" %}
+					</div>
 					<div class="info">
 						<div class="h6 w-600">{{ step.title }}</div>
 						<p class="space-25-top">{{ step.description }}</p>

@@ -36,7 +36,8 @@
 				<p class="p">{{ ethos.description | newline_to_br }}</p>
 			</div>
 			<div class="columns small-12 space-25-top medium-6 medium-offset-1 large-5 xlarge-4">
-				<img loading="lazy" class="radius-min block img-cover box-shadow" style="background-image: url('{{ ethos.image }}'); padding-top: 100%;"></div>
+				<!-- <img loading="lazy" class="radius-min block img-cover box-shadow" style="background-image: url('{{ ethos.image }}'); padding-top: 100%;"> -->
+				{% image ethos.image, "", "(min-width: 1000px) 50vw, 100vw", "lazy", "radius-min block img-cover box-shadow" %}</div>
 			</div>
 		</div>
 		<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">

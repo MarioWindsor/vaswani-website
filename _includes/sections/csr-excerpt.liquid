@@ -29,7 +29,8 @@
 				<a class="button fill-dark" href="{{ sections.csr.link.url }}">{{ sections.csr.link.text }}</a>
 			</div>
 			<div class="columns small-12 space-25-top medium-6 medium-offset-1 large-5 xlarge-4">
-				<img loading="lazy" class="radius-min block box-shadow" src="{{ sections.csr.image }}" alt="">
+				<!-- <img loading="lazy" class="radius-min block box-shadow" src="{{ sections.csr.image }}" alt=""> -->
+				{% image sections.csr.image, "", "(min-width: 1000px) 50vw, 100vw", "lazy", "radius-min block box-shadow" %}
 			</div>
 		</div>
 		<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">

@@ -45,7 +45,8 @@
 					{% comment %}
 						<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
 					{% endcomment %}
-					<img loading="lazy" class="block" src="{{ siteplan.image }}" alt="">
+					<!-- <img loading="lazy" class="block" src="{{ siteplan.image }}" alt=""> -->
+					{% image siteplan.image, "", "100vw", "lazy", "block" %}
 					<a class="button box-shadow zoom-icon" href="{{ siteplan.image }}" target="_blank">
 						<span class="visuallyhidden">Zoom In</span>
 						<i class='h6 bx bx-zoom-in'></i>
@@ -72,7 +73,8 @@
 					{% comment %}
 						<iframe src="https://indis.co.in/leaflet-map?id=PBELCity-MasterPlan-21jul2022" frameborder="0"></iframe>
 					{% endcomment %}
-					<img loading="lazy" class="block" src="{{ siteplan.image }}" alt="">
+					<!-- <img loading="lazy" class="block" src="{{ siteplan.image }}" alt=""> -->
+					{% image siteplan.image, "", "100vw", "lazy", "block" %}
 					<a class="button box-shadow zoom-icon" href="{{ siteplan.image }}" target="_blank">
 						<span class="visuallyhidden">Zoom In</span>
 						<i class='h6 bx bx-zoom-in'></i>
