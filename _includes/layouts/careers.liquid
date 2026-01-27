@@ -63,10 +63,10 @@
 	<div class="row">
 		<div class="container">
 			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
-				<label class="section-label">Join Us</label>
-				<h2 class="section-heading text-neutral-20 w-600">Our People are Our Strength</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">At our core, we are a family of visionaries and craftsmen.</h6>
-				<p class="description space-25-top">We believe a company is only as strong as its team, nurturing a culture built on trust, respect, and collaboration — where every individual is valued and empowered to grow.</p>
+				<label class="section-label">{{ intro.label }}</label>
+				<h2 class="section-heading text-neutral-20 w-600">{{ intro.heading }}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{{ intro.sub-heading }}</h6>
+				<p class="description space-25-top">{{ intro.description }}</p>
 			</div>
 		</div>
 	</div>
@@ -80,9 +80,9 @@
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
-				<label class="section-label">Send in your resume to</label>
-				<a class="button w-500" href="mailto: careers@vaswanigroup.com" style="text-transform: none;">careers@vaswanigroup.com</a>
-				<p class="space-50-top">We have a place for those who are passionate about their craft. Whether you're a seasoned professional or just starting your journey, explore how you can contribute to our vision.</p>
+				<label class="section-label">{{ cta.label }}</label>
+				<a class="button w-500" href="mailto: {{ cta.email }}" style="text-transform: none;">{{ cta.email }}</a>
+				<p class="space-50-top">{{ cta.description }}</p>
 			</div>
 		</div>
 	</div>
@@ -92,11 +92,13 @@
 
 
 <!-- Careers Section -->
+<!-- Careers Section -->
+{% if opportunities.list.size > 0 %}
 <section id="careers-section" class="careers-section row small-gap">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 text-center space-50-bottom">
-				<label class="section-label">Explore Opportunities</label>
+				<label class="section-label">{{ opportunities.heading }}</label>
 			</div>
 			<div class="opportunities columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2 text-center">
 				<div class="thumbnail">
@@ -104,26 +106,19 @@
 					<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green.svg" alt="">
 				</div>
 				<div class="careers">
+					{% for job in opportunities.list %}
 					<div class="career card space-50">
-						<h5 class="text-neutral-50">Architects of Our Future</h5>
-						<small class="block w-600 text-primary">Roles: Architects, Design Managers.</small>
-						<p class="label space-25-top">For those who dream in blueprints and see beauty in detail. Come shape our award-winning designs and help us create spaces that inspire awe.</p>
+						<h5 class="text-neutral-50">{{ job.title }}</h5>
+						<small class="block w-600 text-primary">{{ job.roles }}</small>
+						<p class="label space-25-top">{{ job.description }}</p>
 					</div>
-					<div class="career card space-50">
-						<h5 class="text-neutral-50">Builders of Our Vision</h5>
-						<small class="block w-600 text-primary">Roles: Project Managers, Engineers.</small>
-						<p class="label space-25-top">If you’re passionate about bringing a vision to life, this is your path. Join us in the meticulous, day-to-day work of turning dreams into tangible reality.</p>
-					</div>
-					<div class="career card space-50">
-						<h5 class="text-neutral-50">Voices of Our Brand</h5>
-						<small class="block w-600 text-primary">Roles: Marketing Specialists, Sales Executives.</small>
-						<p class="label space-25-top">For those who have a knack for storytelling. Help us share the magic of a Vaswani home with the world, connecting with people and helping them begin their journey.</p>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+{% endif %}
 <!-- End: Careers Section -->
 
 
