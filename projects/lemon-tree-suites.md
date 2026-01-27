@@ -46,7 +46,7 @@ overview:
     - image: /media/uploads/lemon_tree_suites_Main%20Porch.jpg
     - image: /media/uploads/lemon_tree_suites_Tangerine%20Garden%20(Round%20Table).JPG
 amenities:
-  heading: ""
+
   sub-heading: Amenities That Make the Stay Easy
   description: >-
     It’s the small comforts that make a big difference. At Lemon Tree Suites,

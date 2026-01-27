@@ -9,10 +9,10 @@ metadata:
   status: completed
   project-label: Grade A Commercial Office Space
   status-label: Completed 2018
-  rera-number: ""
+
   location-label: Near Embassy Golf Links Business Park
 cover:
-  logo: ""
+
   background: /media/uploads/augusta_IMG_1848.jpg
 overview:
   gallery:
@@ -47,8 +47,7 @@ siteplan:
       image: /media/uploads/augusta_SF.jpg
     - title: Third Floor
       image: /media/uploads/augusta_TF.jpg
-  masterplan: []
-  sub-heading: ""
+
   heading: Commercial Floor plans
 location:
   map-link: https://maps.app.goo.gl/5BF7uUmETZ3fmk866

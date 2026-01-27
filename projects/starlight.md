@@ -167,7 +167,7 @@ location:
           distance: 2.3 Km
 progress:
   heading: Construction in Full Swing
-  sub-heading: ""
+
 banner:
   feature-1:
     heading: A Private Home Office with Every Unit

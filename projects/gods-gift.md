@@ -12,6 +12,5 @@ metadata:
   project-label: 3 BHK Apartments
   unit-size: 2265sqft Apartments
 cover:
-  logo: ""
   background: /media/uploads/gods_gift_01.png
 ---

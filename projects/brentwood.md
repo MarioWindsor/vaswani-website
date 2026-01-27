@@ -16,7 +16,7 @@ cover:
   background: /media/uploads/brentwood-featured-image-6.jpg
 overview:
   heading: Where spaces breathe - and so do you
-  sub-heading: ""
+
   description: >+
     Located in the vibrant heart of Bengaluru’s Whitefield, Vaswani Brentwood
     stands as a thoughtfully designed residential community that blends comfort,

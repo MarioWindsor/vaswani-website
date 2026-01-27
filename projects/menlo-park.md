@@ -58,7 +58,7 @@ overview:
     - image: /media/uploads/menlo-park-gallery-IMG_20230115_195914.jpg
 amenities:
   heading: Amenities Designed for Everyday Living
-  sub-heading: ""
+
   description: Vaswani Menlo Park offers a thoughtful selection of amenities that
     bring convenience and balance into daily life. Whether it’s fitness,
     leisure, or time spent with family, the community’s spaces have been curated
