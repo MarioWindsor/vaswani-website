@@ -439,6 +439,55 @@ collections:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Roles", name: "roles", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
+      - name: "nri"
+        label: "NRI Customers"
+        file: "nri.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/nri.liquid" }
+          - label: "Cover"
+            name: "cover"
+            widget: "object"
+            fields:
+              - { label: "Background Image", name: "background", widget: "image", choose_url: false, required: false }
+          - label: "Intro Section"
+            name: "intro"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+          - label: "Reasons Section"
+            name: "reasons"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - label: "List"
+                name: "list"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          - label: "Steps Section"
+            name: "steps"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - label: "List"
+                name: "list"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image", choose_url: false }
       - name: "home"
         label: "Home"
         file: "index.md"
