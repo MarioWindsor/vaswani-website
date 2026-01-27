@@ -1,8 +1,8 @@
 ---
-title: Welcome
 layout: layouts/home.liquid
+title: Welcome
 cover:
-  video: ivOPbCchSJs
-  link: https://youtu.be/ivOPbCchSJs
+  video: ivOPbCchSJsZZZ
+  link: https://youtu.be/ivOPbCchSJsZZZ
   link-external: true
 ---
