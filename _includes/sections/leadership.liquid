@@ -7,6 +7,10 @@
 		display: grid;
 		gap: var(--space-25);
 	}
+	.photo {
+		min-height: var(--card);
+		height: 100%;
+	}
 	@media( min-width: 500px )  {
 		.leadership-section .leadership {
 			gap: var(--space-125);
@@ -43,7 +47,7 @@
 				<div class="leader">
 					<div class="photo">
 						<!-- <img loading="lazy" class="radius-min block box-shadow" src="{{ leader.image }}" width="800" height="800" alt="{{ leader.name }}" style="width: 100%; height: var(--card); max-height: none; object-fit: cover;"> -->
-						{% image leader.image, leader.name, "(min-width: 500px) 50vw, 100vw", "lazy", "radius-min block box-shadow", "width: 100%; min-height: var(--card); height: 100%; max-height: none; object-fit: cover;" %}
+						{% image leader.image, leader.name, "(min-width: 500px) 50vw, 100vw", "lazy", "radius-min block box-shadow", "width: 100%; height: 100%; object-fit: cover;" %}
 					</div>
 					<div class="info space-25">
 						<div class="name h5 text-primary">{{ leader.name }}</div>

@@ -22,7 +22,7 @@ leadership:
   profiles:
     - name: Neville Vaswani
       role: Managing Director
-      image: https://img.freepik.com/premium-photo/confident-professional-man-smiling_53876-563709.jpg?w=740
+      image: /media/leader-1.jpg
       description: >-
         Neville Vaswani leads the Vaswani Group with a clear focus on long-term
         strategy, sustainable growth, and disciplined expansion. He plays a
@@ -40,7 +40,7 @@ leadership:
         Neville holds a Bachelor’s degree in Economics and Finance from Bombay University and an MBA from California State University, USA.
     - name: Arun Advani
       role: Joint Managing Director
-      image: https://img.freepik.com/premium-photo/confident-mature-indian-businessman-business-attire_1225540-2270.jpg?w=740
+      image: /media/leader-2.jpg
       description: >-
         Arun Advani oversees the execution of the Group’s construction
         portfolio, bringing rigor, precision, and on-ground leadership to every
