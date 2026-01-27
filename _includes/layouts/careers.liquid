@@ -10,9 +10,18 @@
 
 
 <style>
-	.careers-section .thumbnail { position: relative; }
-	.careers-section .thumbnail img { position: relative; z-index: 1; }
-	.careers-section .thumbnail .dotmatrix { display: none; }
+	.careers-section .thumbnail {
+		position: relative;
+	}
+
+	.careers-section .thumbnail img {
+		position: relative;
+		z-index: 1;
+	}
+
+	.careers-section .thumbnail .dotmatrix {
+		display: none;
+	}
 
 	.careers-section .opportunities {
 		display: inline-grid;
@@ -25,35 +34,42 @@
 		gap: var(--space-50);
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.careers-section .careers .career {
 
-	}
-	@media( min-width: 500px ) {
+	.careers-section .careers .career {}
+	.careers-section .careers .career * { pointer-events: none; }
+
+	@media(min-width: 500px) {
 		.careers-section .careers {
-			grid-template-columns: repeat(3, 1fr);
-		}
-	}
-	@media( min-width: 1000px ) {
-		.careers-section .opportunities {
 			grid-template-columns: repeat(2, 1fr);
 		}
+	}
+
+	@media(min-width: 1000px) {
+		.careers-section .opportunities {
+			grid-template-columns: repeat(5, 1fr);
+		}
+
 		.careers-section .careers {
 			text-align: left;
 			grid-template-columns: repeat(1, 1fr);
+			grid-column: span 3;
+		}
+
+		.careers-section .thumbnail {
+			grid-column: span 2;
 		}
 
 		.careers-section .thumbnail .dotmatrix {
-					display: block;
-					position: absolute;
-					z-index: -1;
-					bottom: 0;
-					right: 100%;
-					width: calc(var(--card)/1.5);
-					opacity: 66.666%;
-					transform: translate(50%, 0%);
-				}
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 100%;
+			width: calc(var(--card)/1.5);
+			opacity: 66.666%;
+			transform: translate(50%, 100%);
+		}
 	}
-
 </style>
 
 
@@ -62,7 +78,8 @@
 <section id="careers-intro-section" class="careers-intro-section gap">
 	<div class="row">
 		<div class="container">
-			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
+			<div
+				class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
 				<label class="section-label">{{ intro.label }}</label>
 				<h2 class="section-heading text-neutral-20 w-600">{{ intro.heading }}</h2>
 				<h6 class="section-sub-heading text-primary space-25-vertical">{{ intro.sub-heading }}</h6>
@@ -79,7 +96,8 @@
 <section id="careers-cta-section" class="careers-cta-section small-gap fill-dark space-100-vertical">
 	<div class="row">
 		<div class="container">
-			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
+			<div
+				class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
 				<label class="section-label">{{ cta.label }}</label>
 				<a class="button w-500" href="mailto: {{ cta.email }}" style="text-transform: none;">{{ cta.email }}</a>
 				<p class="space-50-top">{{ cta.description }}</p>
@@ -107,11 +125,18 @@
 				</div>
 				<div class="careers">
 					{% for job in opportunities.list %}
-					<div class="career card space-50">
+					<a class="career card space-50 text-dark"
+						href="mailto:{{ cta.email }}?subject=Application for {{ job.title | url_encode }}&body=Hi%2C%0D%0A%0D%0AI%20would%20like%20to%20apply%20for%20the%20position%20of%20{{ job.title | url_encode }}."
+						target="_blank">
 						<h5 class="text-neutral-50">{{ job.title }}</h5>
-						<small class="block w-600 text-primary">{{ job.roles }}</small>
-						<p class="label space-25-top">{{ job.description }}</p>
-					</div>
+						<small class="label block w-600 text-primary space-25-top"
+							style="letter-spacing: calc(var(--label) / 32);">Role: {{ job.roles }}</small>
+						<p class=" label space-25-top">{{ job.description }}</p>
+						<label class="label inline fill-light text-uppercase text-primary w-600 space-25-top"
+							style="letter-spacing: calc(var(--label) / 16);">
+							Apply Now
+						</label>
+					</a>
 					{% endfor %}
 				</div>
 			</div>

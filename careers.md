@@ -16,12 +16,12 @@ opportunities:
   heading: Explore Opportunities
   list:
     - title: Architects of Our Future
-      roles: "Roles: Architects, Design Managers."
+      roles: "Architects, Design Managers"
       description: For those who dream in blueprints and see beauty in detail. Come shape our award-winning designs and help us create spaces that inspire awe.
     - title: Builders of Our Vision
-      roles: "Roles: Project Managers, Engineers."
+      roles: "Project Managers, Engineers"
       description: If you’re passionate about bringing a vision to life, this is your path. Join us in the meticulous, day-to-day work of turning dreams into tangible reality.
     - title: Voices of Our Brand
-      roles: "Roles: Marketing Specialists, Sales Executives."
+      roles: "Marketing Specialists, Sales Executives"
       description: For those who have a knack for storytelling. Help us share the magic of a Vaswani home with the world, connecting with people and helping them begin their journey.
 ---
