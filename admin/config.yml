@@ -392,9 +392,8 @@ collections:
               - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: cQnebxxGXCs)" }
               - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/cQnebxxGXCs" }
               - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false, required: false }
-  - name: "settings"
-    label: "Settings"
-    icon: settings
+  - name: "menu"
+    label: "Menu"
     editor:
       preview: false
     files:
@@ -409,6 +408,11 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Path", name: "path", widget: "string" }
+  - name: "sections"
+    label: "Sections"
+    editor:
+      preview: false
+    files:
       - name: "sections"
         label: "Sections"
         file: "_data/sections.json"
