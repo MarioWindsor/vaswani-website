@@ -409,4 +409,45 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Path", name: "path", widget: "string" }
+      - name: "sections"
+        label: "Sections"
+        file: "_data/sections.json"
+        fields:
+          - label: "About Vaswani"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Link"
+                name: "link"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+          - label: "Ethos"
+            name: "ethos"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+          - label: "CSR"
+            name: "csr"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+              - label: "Link"
+                name: "link"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
 

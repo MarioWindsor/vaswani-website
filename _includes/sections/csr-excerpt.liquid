@@ -21,15 +21,15 @@
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 large-10 large-offset-1 xlarge-8 xlarge-offset-2">
-				<label class="section-label">Beyond Buildings</label>
-				<h2 class="section-heading text-neutral-20 w-600 space-25-bottom">Building a Better Bengaluru</h2>
+				<label class="section-label">{{ sections.csr.label }}</label>
+				<h2 class="section-heading text-neutral-20 w-600 space-25-bottom">{{ sections.csr.heading }}</h2>
 			</div>
 			<div class="columns small-12 space-50-vertical medium-5 large-4 large-offset-1 xlarge-3 xlarge-offset-2">
-				<p class="h6 space-50-bottom">Vaswani Group's commitment to sustainable development and community welfare, ensures a positive impact in Bengaluru.</p>				
-				<a class="button fill-dark" href="/csr">Explore Our CSR initiatives</a>
+				<p class="h6 space-50-bottom">{{ sections.csr.description }}</p>				
+				<a class="button fill-dark" href="{{ sections.csr.link.url }}">{{ sections.csr.link.text }}</a>
 			</div>
 			<div class="columns small-12 space-25-top medium-6 medium-offset-1 large-5 xlarge-4">
-				<img loading="lazy" class="radius-min block box-shadow" src="media/traffic-park.png" alt="">
+				<img loading="lazy" class="radius-min block box-shadow" src="{{ sections.csr.image }}" alt="">
 			</div>
 		</div>
 		<img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-yellow.svg" alt="">

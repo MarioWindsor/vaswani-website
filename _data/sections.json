@@ -1,0 +1,26 @@
+{
+    "about": {
+        "heading": "Over the last 40 years, we have developed residential and commercial real estate across Bengaluru, Mumbai, Pune and Goa.",
+        "description": "In 1985, we embarked on a journey to offer global-standard residential solutions for the discerning home buyer as well as turnkey commercial solutions for Indian and multinational firms. From resplendent housing to upscale commercial, our equity is strengthened with a proven and credible track record having developed close to 8 million square feet of built up area in the verticals of Residential, Commercial, Retail and Hospitality. We are committed to constantly refining our skills with an ever present emphasis on transparency.",
+        "link": {
+            "text": "More about us",
+            "url": "/about"
+        }
+    },
+    "ethos": {
+        "label": "Our Ethos",
+        "heading": "The Vaswani Experience",
+        "description": "Across the years, our commitment to quality, timely delivery, transparent processes, and strong governance has earned us a reputation built on trust. From thoughtful master planning to future-ready infrastructure, we approach every detail with care, accountability, and the quiet confidence of experience.\n\nBut beyond everything we build, what truly defines us is what our spaces make possible: warm homes, inspiring workplaces, and environments where aspirations find room to breathe.\n\nAt Vaswani Group, we don’t just create buildings. We create places where life comes together — gracefully, thoughtfully, and with a sense of belonging.",
+        "image": "/media/construction-stock-01.png"
+    },
+    "csr": {
+        "label": "Beyond Buildings",
+        "heading": "Building a Better Bengaluru",
+        "description": "Vaswani Group's commitment to sustainable development and community welfare, ensures a positive impact in Bengaluru.",
+        "image": "/media/traffic-park.png",
+        "link": {
+            "text": "Explore Our CSR initiatives",
+            "url": "/csr"
+        }
+    }
+}
