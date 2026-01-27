@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
+const eleventyImageConfig = require("./eleventy.config.images");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("media");
 	eleventyConfig.addPassthroughCopy("admin");
@@ -12,5 +13,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
 	});
+
+	eleventyConfig.addPlugin(eleventyImageConfig);
 
 };
