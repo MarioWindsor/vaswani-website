@@ -53,10 +53,10 @@
 	<div class="row">
 		<div class="container">
 			<div class="title columns small-12 medium-10 medium-offset-1 large-8 large-offset-2 xlarge-6 xlarge-offset-3 text-center">
-				<label class="section-label">Lets Grow Together</label>
-				<h2 class="section-heading text-neutral-20 w-600">Partnerships that go beyond just Business</h2>
-				<h6 class="section-sub-heading text-primary space-25-vertical">Great partnerships aren’t built in a day, they’re built every day.</h6>
-				<p class="description space-25-top">Every good partnership begins with trust — at Vaswani Group, we believe that our Channel Partners are an essential part of our journey. Your trust, commitment, and expertise help us take our developments to the people who will one day call them home or take their businesses forward. This hub is designed as your dedicated space - simple, transparent, and supportive to help you work seamlessly with us.</p>
+				<label class="section-label">{{ intro.label }}</label>
+				<h2 class="section-heading text-neutral-20 w-600">{{ intro.heading }}</h2>
+				<h6 class="section-sub-heading text-primary space-25-vertical">{{ intro.sub-heading }}</h6>
+				<p class="description space-25-top">{{ intro.description }}</p>
 			</div>
 		</div>
 	</div>
@@ -70,30 +70,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 text-center space-50-bottom">
-				<label class="section-label">Channel Partner Benefits</label>
+				<label class="section-label">{{ benefits.label }}</label>
 			</div>
 			<div class="channel-benefits columns small-12 text-center">
 				<div class="thumbnail">
-					<img loading="lazy" class="block radius-25 box-shadow" src="media/genai-channel-partnership.png" alt="">
+					<img loading="lazy" class="block radius-25 box-shadow" src="{{ benefits.image }}" alt="">
 					<!-- <img loading="lazy" class="dotmatrix" src="media/dot-matrix-large-green-tall.svg" alt=""> -->
 				</div>
 				<div class="row benefits">
+					{% for benefit in benefits.list %}
 					<div class="benefit card space-50">
-						<h5 class="text-neutral-50">Timely Payments, Every Time</h5>
-						<p class="space-25-top">We value the effort you put into every lead and every closure. Our structured and efficient payment process ensures that your commissions are disbursed promptly without delays or follow-ups.</p>
+						<h5 class="text-neutral-50">{{ benefit.title }}</h5>
+						<p class="space-25-top">{{ benefit.description }}</p>
 					</div>
-					<div class="benefit card space-50">
-						<h5 class="text-neutral-50">Full Transparency on Leads</h5>
-						<p class="space-25-top">Your registered leads remain your leads. We maintain a clear, trackable, and secure system where every registered lead is acknowledged and updated, ensuring complete trust and clarity at every stage.</p>
-					</div>
-					<div class="benefit card space-50">
-						<h5 class="text-neutral-50">Respect in Every Interaction</h5>
-						<p class="space-25-top">Every partner, every conversation, every effort is treated with respect. We believe in relationships built on dignity, courtesy, and professionalism because great work happens when people feel valued.</p>
-					</div>
-					<div class="benefit card space-50">
-						<h5 class="text-neutral-50">A Partnership-First Approach</h5>
-						<p class="space-25-top">We don’t just work with you -  <span class="text-primary">we work for your success</span>. Whether it’s quick support, project information, or assistance on the field, our teams are aligned to empower you and make your job smoother.</p>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -108,9 +98,9 @@
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3 text-center">
-				<label class="section-label">Get started, Apply Now.</label>
-				<a class="button w-500" href="mailto: presales@vaswanigroup.com" style="text-transform: none;">presales@vaswanigroup.com</a>
-				<p class="space-50-top">We see this as more than a business arrangement. It’s about growing together, celebrating wins, and creating value for everyone involved.</p>
+				<label class="section-label">{{ cta.label }}</label>
+				<a class="button w-500" href="mailto: {{ cta.email }}" style="text-transform: none;">{{ cta.email }}</a>
+				<p class="space-50-top">{{ cta.description }}</p>
 			</div>
 		</div>
 	</div>

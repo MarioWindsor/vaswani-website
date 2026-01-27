@@ -497,6 +497,48 @@ collections:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
                   - { label: "Image", name: "image", widget: "image", choose_url: false }
+      - name: "channel-partner"
+        label: "Channel Partner"
+        file: "channel-partner.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/channel-partner.liquid" }
+          - label: "Cover"
+            name: "cover"
+            widget: "object"
+            fields:
+              - { label: "Background Image", name: "background", widget: "image", choose_url: false, required: false }
+          - label: "Intro Section"
+            name: "intro"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+          - label: "Benefits Section"
+            name: "benefits"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+              - label: "List"
+                name: "list"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
       - name: "home"
         label: "Home"
         file: "index.md"
