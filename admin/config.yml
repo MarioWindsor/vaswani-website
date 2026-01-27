@@ -370,11 +370,18 @@ collections:
               - { label: "Video ID", name: "video", widget: "string", required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
       - name: "home"
         label: "Home"
-        file: "_data/home.json"
+        file: "index.liquid"
         fields:
-          - { label: "Intro Video YouTube ID", name: "introvideoid", widget: "string" }
-          - { label: "Brand Video YouTube ID", name: "brandvideoid", widget: "string" }
-          - { label: "Helpdesk Timing", name: "helpdesktiming", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - label: "Cover"
+            name: "cover"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
+              - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/ivOPbCchSJs" }
+              - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false, required: false }
   - name: "settings"
     label: "Settings"
     icon: settings
