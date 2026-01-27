@@ -371,7 +371,9 @@ collections:
       - name: "home"
         label: "Home"
         file: "index.liquid"
+        format: "frontmatter"
         fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.liquid" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text", required: false }
           - label: "Cover"
@@ -380,8 +382,8 @@ collections:
             widget: "object"
             collapsed: false
             fields:
-              - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: 3OyRc5eczbc)" }
-              - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/ivOPbCchSJs" }
+              - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: cQnebxxGXCs)" }
+              - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/cQnebxxGXCs" }
               - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false, required: false }
   - name: "settings"
     label: "Settings"
