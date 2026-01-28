@@ -63,6 +63,7 @@ amenities:
     bring convenience and balance into daily life. Whether it’s fitness,
     leisure, or time spent with family, the community’s spaces have been curated
     with care.
+  cover-image: /media/uploads/menlo_park_amenities_cover.jpg
   amenity:
     - name: Swimming pool
       icon: /media/uploads/mini-icon-swimming-pool.png

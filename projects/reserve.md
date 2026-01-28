@@ -53,6 +53,7 @@ amenities:
     spaces, modern comforts, and lifestyle conveniences come together to create
     a community that feels both exclusive and deeply familiar. Here, luxury
     isn’t loud - it’s lived in the details.
+  cover-image: /media/uploads/reserve_amenities_cover.jpg
   amenity:
     - name: Elegant Clubhouse with Curated Lifestyle Spaces
       icon: /media/uploads/mini-icon-cocktail.png

@@ -75,6 +75,7 @@ amenities:
     spaces, landscaped outdoors, and wellness-led experiences come together to
     create a lifestyle that feels elevated yet effortless - exactly what a
     premium Whitefield address deserves.
+  cover-image: /media/uploads/exquisite_amenities_cover.jpg
   amenity:
     - name: Contemporary Clubhouse with Curated Lifestyle Spaces
       icon: /media/uploads/mini-icon-cocktail.png

@@ -31,6 +31,7 @@ amenities:
   heading: Life, beautifully elevated.
   description: Whispering Palms brings together amenities designed for leisure,
     wellness, and everyday comfort.
+  cover-image: /media/uploads/whispering_palms_amenities_cover.jpg
 location:
   map-link: https://maps.app.goo.gl/7JfFJAEnrib7VZYB6
   map-embed: <iframe

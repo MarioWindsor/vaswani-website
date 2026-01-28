@@ -33,6 +33,8 @@ overview:
     - image: /media/uploads/astoria_IMG_E6198.jpg
     - image: /media/uploads/astoria_IMG_E6184.jpg
     - image: /media/uploads/astoria_IMG_E6194.jpg
+amenities:
+  cover-image: /media/uploads/astoria_amenities_cover.jpg
 location:
   heading: Off Sarjapur Outer Ring Road
   sub-heading: located just a stone throw away from the major tech parks and

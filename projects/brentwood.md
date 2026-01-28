@@ -54,6 +54,7 @@ amenities:
 
     Each space has been created to bring people together, encourage an active lifestyle, and add ease to everyday living.
   sub-heading: Spaces That Bring Life Together
+  cover-image: /media/uploads/brentwood_amenities_cover.jpg
   amenity:
     - name: A well-appointed Clubhouse
       icon: /media/uploads/mini-icon-cocktail.png
