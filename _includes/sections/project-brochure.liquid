@@ -81,12 +81,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
-				<div class="project-brochure img-cover radius-25 box-shadow" style="background-image: url({% if brochure.background != blank %}'{{ brochure.background }}'{% else %}'media/fallback-brochure.png'{% endif %}); background-position: 90% 50%; height: calc(var(--card)*1.5); width: 100%;">
-					<div class="heading text-dark">
+				<div class="project-brochure img-cover radius-25 box-shadow" style="position: relative; overflow: hidden; background: none; height: calc(var(--card)*1.5); width: 100%;">
+					{% if brochure.background != blank %}
+						{% image brochure.background, "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 90% 50%; z-index: 0;" %}
+					{% else %}
+						{% image "media/fallback-brochure.png", "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 90% 50%; z-index: 0;" %}
+					{% endif %}
+					<div class="heading text-dark" style="position: relative; z-index: 1;">
 						<h5 class="w-600">Want More Details?</h5>
 						<h6 class="space-50-bottom">Download the PDF Brochure.</h6>
 					</div>
-					<div class="cta">
+					<div class="cta" style="position: relative; z-index: 1;">
 						<label for="toggle-brochure-form" class="button" style="margin-left: calc(var(--space-min) * -0.5);">Download Now</a>
 					</div>
 					<input type="checkbox" id="toggle-brochure-form" class="visuallyhidden">

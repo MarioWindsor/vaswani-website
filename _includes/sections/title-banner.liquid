@@ -2,7 +2,8 @@
 	.title-banner-section {
 		position: relative;
 		width: 100vw;
-		padding-top: 56vw;
+		/* padding-top: 56vw; */
+		height: 56vw;
 	}
 	.title-banner-section input {
 		position: absolute;
@@ -12,7 +13,8 @@
 		top: 0;
 		left: 50%;
 		width: 100vw;
-		padding-top: 56vw;
+		/* padding-top: 56vw; */
+		height: 56vw;
 		transform: translateX(-50%);
 		overflow: clip;
 		border-radius: 0;
@@ -23,7 +25,8 @@
 		top: 0;
 		left: 50%;
 		width: 100vw;
-		padding-top: 56vw;
+		/* padding-top: 56vw; */
+		height: 56vw;
 		transform: translateX(-50%);
 	}
 	.title-banner-section .intro-banner-wrapper .intro-banner-width .page-title {
@@ -45,14 +48,16 @@
 		.title-banner-section ,
 		.title-banner-section .intro-banner-wrapper ,
 		.title-banner-section .intro-banner-wrapper .intro-banner-width {
-			padding-top: 35vw;
+			/* padding-top: 35vw; */
+			height: 35vw;
 		}
 	}
 	@media( min-width: 1000px ) {
 		.title-banner-section ,
 		.title-banner-section .intro-banner-wrapper ,
 		.title-banner-section .intro-banner-wrapper .intro-banner-width {
-			padding-top: 25vw;
+			/* padding-top: 25vw; */
+			height: 25vw;
 		}
 		.title-banner-section .intro-banner-wrapper .intro-banner-width .page-title {
 			font-size: var(--h3);
@@ -67,8 +72,13 @@
 	<div class="row">
 		<input id="intro-image-clip" class="visuallyhidden" type="checkbox">
 		<div class="intro-banner-wrapper">
-			<div class="intro-banner-width img-cover fill-dark" style="background-blend-mode: overlay; background-image: url({% if cover.background != blank %}'{{ cover.background }}'{% else %}'media/fallback.jpg'{% endif %});">
-				<h1 class="page-title w-500 text-uppercase text-light">{{ title }}</h1>
+			<div class="intro-banner-width fill-dark" style="position: relative; overflow: hidden;">
+				{% if cover.background != blank %}
+					{% image cover.background, "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; mix-blend-mode: luminosity; opacity: 0.5;" %}
+				{% else %}
+					{% image "media/fallback.jpg", "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; mix-blend-mode: luminosity; opacity: 0.5;" %}
+				{% endif %}
+				<h1 class="page-title w-500 text-uppercase text-light" style="position: relative; z-index: 1;">{{ title }}</h1>
 			</div>
 		</div>			
 	</div>

@@ -4,7 +4,9 @@ module.exports = function (eleventyConfig) {
     // NOTE: For the purpose of this test, we are forcing the 'production' logic
     // if a specific flag is set, or defaulting to local to be safe.
     // Replace 'true' with process.env.ELEVENTY_ENV === 'production' later.
-    const isProduction = process.env.ELEVENTY_ENV === 'production';
+    // 1. Environment Check: Use local images in dev, wsrv.nl in production
+    // We check multiple flags to be safe. Netlify sets CONTEXT to 'production'.
+    const isProduction = process.env.ELEVENTY_ENV === 'production' || process.env.NODE_ENV === 'production' || process.env.CONTEXT === 'production';
 
     if (!isProduction) {
       // Pass styles through to local images too
