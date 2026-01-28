@@ -13,7 +13,8 @@ module.exports = function (eleventyConfig) {
 
     // 2. Base URL Construction
     // wsrv.nl requires a public URL. We use the GitHub raw URL.
-    const baseUrl = "https://vaswani.netlify.app";
+    // Use Netlify's URL env var if available, otherwise fallback (for local dev mostly)
+    const baseUrl = process.env.URL || "https://vaswani" + ".netlify.app";
 
     const imageUrl = `${baseUrl}${src}`;
 

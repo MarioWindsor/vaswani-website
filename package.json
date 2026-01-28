@@ -12,8 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "fs-extra": "^11.3.2",
-    "glob": "^11.0.3",
-    "sharp": "^0.34.4"
+    "fs-extra": "^11.3.2"
   }
 }
