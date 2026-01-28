@@ -50,11 +50,7 @@ amenities:
     to bring ease, balance, and joy into daily life. From quiet green corners to
     active leisure spaces, every element has been thoughtfully planned to
     complement the calm of the community.
-
-
-
-
-
+  cover-image: /media/uploads/walnut_creek_amenities_cover.jpg
 
   amenity:
     - name: Landscaped Gardens and lush green pockets
