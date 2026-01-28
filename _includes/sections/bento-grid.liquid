@@ -99,6 +99,7 @@
 	.bento.b3 .image {
 		position: absolute;
 		inset: 0;
+		height: 100%;
 	}
 	@media( min-width: 500px )  {
 		.bento.b3 {
@@ -167,6 +168,7 @@
 	.bento.b5 .image {
 		position: absolute;
 		inset: 0;
+		height: 100%;
 	}
 	/* b6 */
 	.bento.b6 .text {
@@ -246,14 +248,18 @@
 					</div>
 				</div>
 				<div class="bento b3 card hide-small hide-medium">
-					<div class="image img-cover" style="background-image: url('img/DSC_8083-1000w.jpg');"></div>
+					<div class="image img-cover" style="position: relative; overflow: hidden;">
+						{% image "media/DSC_8083.jpg", "Bento Grid Image", "50vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" %}
+					</div>
 				</div>
 				<div class="bento b4 card">
 					<div class="icon img-contain" style="background-image: url('media/icon-rowhouse.svg');"></div>
 					<div class="text h5 text-uppercase">Pioneered <br><span class="text-primary">row house</span> in <br>Bengaluru</div>
 				</div>
 				<div class="bento b5 card">
-					<div class="image img-cover" style="background-image: url('img/interior-designer-clients-discussing-drawings-1000w.jpg');"></div>
+					<div class="image img-cover" style="position: relative; overflow: hidden;">
+						{% image "media/interior-designer-clients-discussing-drawings.jpg", "Interior Design Discussion", "(min-width: 1000px) 25vw, 50vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" %}
+					</div>
 				</div>
 				<div class="bento b6 card">
 					<div class="text">
