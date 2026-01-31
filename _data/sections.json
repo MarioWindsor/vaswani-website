@@ -10,16 +10,16 @@
   "ethos": {
     "label": "Our Ethos",
     "heading": "The Vaswani Experience",
-    "description": "Across the years, our commitment to quality, timely delivery, transparent processes, and strong governance has earned us a reputation built on trust. From thoughtful master planning to future-ready infrastructure, we approach every detail with care, accountability, and the quiet confidence of experience.\n\nBut beyond everything we build, what truly defines us is what our spaces make possible: warm homes, inspiring workplaces, and environments where aspirations find room to breathe.\n\nAt Vaswani Group, we don’t just create buildings. We create places where life comes together — gracefully, thoughtfully, and with a sense of belonging.",
+    "description": "Across the years, our commitment to quality, timely delivery, transparent processes, and strong governance has earned us a reputation built on trust. From thoughtful master planning to future-ready infrastructure, we approach every detail with care, accountability, and the quiet confidence of experience.\n\nBut beyond everything we build, what truly defines us is what our spaces make possible: warm homes, inspiring workplaces, and environments where aspirations find room to breathe.\n\nAt Vaswani Group, we don’t just create buildings. We create places where life comes together - gracefully, thoughtfully, and with a sense of belonging.",
     "image": "/media/construction-stock-01.png"
   },
   "csr": {
     "label": "Beyond Buildings",
-    "heading": "Building a Better Bengaluru",
-    "description": "Vaswani Group's commitment to sustainable development and community welfare, ensures a positive impact in Bengaluru.",
+    "heading": "Caring for a Better Bengaluru",
+    "description": "Through responsible development and a deep commitment to community welfare, Vaswani Group continues to make a positive impact in Bengaluru.",
     "image": "/media/traffic-park.png",
     "link": {
-      "text": "Explore Our CSR initiatives",
+      "text": "Where Care Meets Commitment",
       "url": "/csr"
     }
   }
