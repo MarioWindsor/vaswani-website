@@ -312,37 +312,6 @@ collections:
       - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "testimonials"
-    label: "Testimonials"
-    folder: "testimonials"
-    icon: reviews
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    sortable_fields: ['date', 'title']
-    fields:
-      - { label: "Tags", name: "tags", widget: "hidden", default: ["testimonials"] }
-      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Name", name: "title", widget: "string" }
-      - { label: "Rating", name: "rating", widget: "number", min: 0, max: 5, value_type: "int" }
-      - { label: "Review", name: "review", widget: "text" }
-  - name: "awards"
-    label: "Awards"
-    folder: "awards"
-    icon: trophy
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    sortable_fields: ['date', 'title']
-    fields:
-      - { label: "Tags", name: "tags", widget: "hidden", default: ["awards"] }
-      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Award Title", name: "title", widget: "string" }
-      - { label: "Awarded To", name: "awardee", widget: "string", required: false }
-      - { label: "Awarded By", name: "awarder", widget: "string", required: false }
-      - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
   - name: "pages"
     label: "Pages"
     icon: news
@@ -574,6 +543,83 @@ collections:
               - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: cQnebxxGXCs)" }
               - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/cQnebxxGXCs" }
               - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false, required: false }
+  - name: "sections"
+    label: "Sections"
+    editor:
+      preview: false
+    files:
+      - name: "sections"
+        label: "Sections"
+        file: "_data/sections.json"
+        fields:
+          - label: "About Vaswani"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Link"
+                name: "link"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+          - label: "Ethos"
+            name: "ethos"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+          - label: "CSR"
+            name: "csr"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+              - label: "Link"
+                name: "link"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "testimonials"
+    icon: reviews
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    sortable_fields: ['date', 'title']
+    fields:
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["testimonials"] }
+      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Rating", name: "rating", widget: "number", min: 0, max: 5, value_type: "int" }
+      - { label: "Review", name: "review", widget: "text" }
+  - name: "awards"
+    label: "Awards"
+    folder: "awards"
+    icon: trophy
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    sortable_fields: ['date', 'title']
+    fields:
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["awards"] }
+      - { label: "Created Date", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Award Title", name: "title", widget: "string" }
+      - { label: "Awarded To", name: "awardee", widget: "string", required: false }
+      - { label: "Awarded By", name: "awarder", widget: "string", required: false }
+      - { label: "Award", name: "award", widget: "image", choose_url: false, required: false }
   - name: "settings"
     label: "Settings"
     editor:
@@ -622,50 +668,3 @@ collections:
           - { label: "YouTube", name: "youtube", widget: "string", required: false }
           - { label: "Facebook", name: "facebook", widget: "string", required: false }
           - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
-  - name: "sections"
-    label: "Sections"
-    editor:
-      preview: false
-    files:
-      - name: "sections"
-        label: "Sections"
-        file: "_data/sections.json"
-        fields:
-          - label: "About Vaswani"
-            name: "about"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Link"
-                name: "link"
-                widget: "object"
-                fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
-          - label: "Ethos"
-            name: "ethos"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", choose_url: false }
-          - label: "CSR"
-            name: "csr"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", choose_url: false }
-              - label: "Link"
-                name: "link"
-                widget: "object"
-                fields:
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
-
