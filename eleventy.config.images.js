@@ -47,8 +47,6 @@ module.exports = function (eleventyConfig) {
         class="${className}"
         loading="${loading}"
         decoding="async"
-        width="1500" 
-        height="auto" 
         style="${style}"
       >
     `;
