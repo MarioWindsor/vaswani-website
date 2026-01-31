@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addShortcode("image", function (src, alt, sizes, loading = "lazy", className = "", style = "height: auto;") {
+  eleventyConfig.addShortcode("image", function (src, alt, sizes, loading = "lazy", className = "", style = "") {
     // 1. Environment Check: Use local images in dev, wsrv.nl in production
     // NOTE: For the purpose of this test, we are forcing the 'production' logic
     // if a specific flag is set, or defaulting to local to be safe.
