@@ -17,25 +17,10 @@ overview:
   heading: At the Center of It All
   sub-heading: Discover the New Center for Business which aligns with your
     Strategic Vision for a Commercial Space.
-  description: >-
-    A prestigious address on Langford Road isn't just a location; it's a
-    statement. Vaswani Centropolis is a Grade A commercial hub in Bengaluru's
+  description: A prestigious address on Langford Road isn't just a location; it's
+    a statement. Vaswani Centropolis is a Grade A commercial hub in Bengaluru's
     Central Business District, designed to be more than an office - it's an
     ecosystem for productivity and growth.
-
-
-    - Striking glass façade with modern design language
-
-    - Flexible floor plates suited for varied business sizes
-
-    - Ample parking for tenants and visitors
-
-    - Landscaped surroundings for a touch of calm
-
-    - Round-the-clock security and building management.
-
-
-    Available for lease.
   gallery:
     - image: /media/uploads/centropolis_Building_Design_Vaswani_Centropolis_01.jpg
     - image: /media/uploads/centropolis_Building_Design_Vaswani_Centropolis_05.jpg
@@ -54,6 +39,11 @@ amenities:
       icon: /media/uploads/mini-icon-car.png
     - name: CCTV surveillance
       icon: /media/uploads/mini-icon-cctv.png
+  cover-image: /media/uploads/beautiful-shot-modern-style-open-space-office-interior.jpg
+  description: Designed to support modern businesses, Vaswani Centropolis offers a
+    comprehensive suite of best-in-class amenities that ensure efficiency,
+    safety, and everyday convenience - creating a professional environment where
+    work flows seamlessly.
 location:
   heading: Strategic Location
   sub-heading: Situated on Langford Road with excellent connectivity to major
@@ -65,4 +55,15 @@ location:
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 progress:
   heading: Ready for Fit outs
+banner:
+  feature-1:
+    description: Vaswani Centropolis is defined by a striking glass façade that
+      reflects a contemporary design language and a progressive business
+      outlook. Inside, flexible floor plates cater to organisations of varied
+      sizes, allowing workspaces to evolve with ease. Ample parking ensures
+      everyday convenience for tenants and visitors alike, while landscaped
+      surroundings introduce a welcome sense of calm. Supported by
+      round-the-clock security and professional building management, Centropolis
+      offers a workplace that is efficient, secure, and thoughtfully designed.
+    background: /media/uploads/silhouette-asian-woman-walking-street-wireless-headphones-holding-smartphone.jpg
 ---
