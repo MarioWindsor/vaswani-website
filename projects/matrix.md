@@ -12,7 +12,7 @@ metadata:
   location-label: Brookefield, Bengaluru
   starting-price: "Ready for Fit outs - July 2026 "
 cover:
-  background: /media/uploads/matrix-draft-3d-2.jpeg
+  background: /media/uploads/view_1.jpg
 overview:
   heading: Visible, Connected, Efficient
   sub-heading: Finds the balance between Efficiency and Ease
@@ -25,8 +25,9 @@ overview:
     layouts to efficient services, every element comes together to create an
     environment where businesses can thrive.
   gallery:
-    - image: /media/uploads/matrix-draft-3d-1.jpeg
-    - image: /media/uploads/matrix-draft-3d-2.jpeg
+    - image: /media/uploads/view_1.jpg
+    - image: /media/uploads/view_2.jpg
+    - image: /media/uploads/view_3.jpg
 amenities:
   heading: "Handover Condition "
   description: Office Building Structure comprised of Ground + 3 Floors with
