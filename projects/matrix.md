@@ -58,6 +58,7 @@ amenities:
       icon: /media/uploads/mini-icon-fire-extinguisher.png
     - name: Elevator Access, Security Systems, and Essential MEP Provisions
       icon: /media/uploads/mini-icon-universal-access.png
+  cover-image: /media/uploads/silhouette-young-business-woman-beige-suit-walking-city-center-posing-near-office-buildings.jpg
 location:
   heading: Brookefield, ITPL Road.
   sub-heading: Where residential comfort and commercial convenience combine.
@@ -74,8 +75,10 @@ banner:
     align-text: left
     position-text: top
     background-fix: center center
+    background: /media/uploads/modern-luxury-hotel-office-reception-lounge-with-meeting-room.jpg
   feature-2:
     align-text: left
     position-text: top
     background-fix: center center
+    background: /media/uploads/relax-area-hotel.jpg
 ---
