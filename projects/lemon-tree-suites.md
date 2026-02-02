@@ -108,11 +108,10 @@ banner:
     align-text: right
     position-text: top
     background-fix: center center
-    heading: Pet-Friendly Stays
+    heading: ""
     background: /media/uploads/yawn-jack-russell-terrier-lying-dog-bed.jpg
-    description: Travelling with your furry plus-one? We’ve got that covered. At
-      Lemon Tree Suites, Whitefield, we’re happy to welcome your pets too. We
-      know they’re part of the family, and travel feels easier when they’re by
-      your side. With open spaces, a relaxed environment, and a caring team,
-      your furry companions are just as comfortable here as you are.
+    description: >-
+      Pet-Friendly Stays
+
+      Travelling with your furry plus-one? We’ve got that covered. At Lemon Tree Suites, Whitefield, we’re happy to welcome your pets too. We know they’re part of the family, and travel feels easier when they’re by your side. With open spaces, a relaxed environment, and a caring team, your furry companions are just as comfortable here as you are.
 ---
