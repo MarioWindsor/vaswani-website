@@ -10,7 +10,6 @@ metadata:
   rera-number: PRM/KA/RERA/1251/446/PR/171015/000784
   status-label: Limited Units Available
   type: residential
-
   location-label: ITPL Main Road, Whitefield
 cover:
   logo: /media/uploads/exquisite_project-logo.png
@@ -47,7 +46,6 @@ overview:
     - image: /media/uploads/exquisite_DSC_8071.jpg
     - image: /media/uploads/exquisite_1673935423942.jpg
     - image: /media/uploads/exquisite_DSC_8045.jpg
-
 siteplan:
   heading: A Class Apart
   sub-heading: 4 Towers each with Ground + 23 floors
@@ -69,7 +67,6 @@ siteplan:
       image: /media/uploads/exquisite_floorplan_D1-4-BHK-2860.jpg
 amenities:
   heading: Where Luxury Lives in the Details
-
   description: At Vaswani Exquisite, every amenity is crafted to bring ease,
     balance, and refinement into everyday living. Thoughtfully designed indoor
     spaces, landscaped outdoors, and wellness-led experiences come together to
@@ -115,11 +112,10 @@ location:
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.877635299528!2d77.7242795!3d12.98979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb58a62769%3A0xd9d2d75e3426ebe!2sVaswani%20Exquisite!5e0!3m2!1sen!2sin!4v1762450541796!5m2!1sen!2sin"
     style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
-
 banner:
   feature-1:
     background: /media/uploads/2.jpg
-    heading: Home -  as it should be
+    heading: ""
     align-text: left
     position-text: bottom
     background-fix: left bottom
