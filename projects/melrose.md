@@ -11,7 +11,7 @@ metadata:
   project-label: 3 Bedroom Row Houses
   location-label: Marathahalli - Sarjapur, ORR
   unit-size: 2500 sqft to 2800 sqft
-  hide_from_listing: true
+  hide_from_listing: false
   disable_page: true
   starting-price: "Completed and Handed Over "
 cover:

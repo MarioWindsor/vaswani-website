@@ -10,7 +10,7 @@ metadata:
   project-label: Exclusive Commercial Spaces
   location-label: Off Marathahalli - Sarjapur, ORR
   status-label: Completed 2011
-  hide_from_listing: true
+  hide_from_listing: false
   disable_page: true
 cover:
   background: /media/uploads/presidio_IMG_20161013_132043.jpg

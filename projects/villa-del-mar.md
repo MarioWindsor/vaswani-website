@@ -11,7 +11,7 @@ metadata:
   project-label: 3 & 4 BHK Row Houses
   unit-size: 2740 sqft to 3750 sqft
   location-label: Sarjapur Road, Bellandur
-  hide_from_listing: true
+  hide_from_listing: false
   disable_page: true
   starting-price: Completed and Sold Out
 cover:

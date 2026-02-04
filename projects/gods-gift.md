@@ -11,7 +11,7 @@ metadata:
   location-label: Ulsoor
   project-label: 3 BHK Apartments
   unit-size: 2265sqft Apartments
-  hide_from_listing: true
+  hide_from_listing: false
   disable_page: true
 cover:
   background: /media/uploads/gods_gift_01.png
