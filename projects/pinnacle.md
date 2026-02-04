@@ -69,7 +69,7 @@ amenities:
     and much more
   cover-image: /media/uploads/pool-2-.jpg
 brochure:
-  pdf: /media/uploads/vaswani-pinnacle-c802.pdf
+  pdf: ""
 location:
   map-link: https://maps.app.goo.gl/rxX9kehAtZAHjZLh7
   map-embed: <iframe
