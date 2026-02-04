@@ -33,8 +33,6 @@ collections:
         collapsed: true
         fields:
           - { label: "Prefix Name with Vaswani", name: "prefix-name", widget: "boolean", default: true }
-          - { label: "Hide from Project Listing", name: "hide_from_listing", widget: "boolean", default: false, required: false }
-          - { label: "Disable Single Project Page", name: "disable_page", widget: "boolean", default: false, required: false }
           - label: "Project Type"
             name: "type"
             widget: "select"
@@ -58,6 +56,8 @@ collections:
           - { label: "Unit Size", name: "unit-size", widget: "string", required: false, hint: "Eg: 1970sqft to 2730sqft Apartments" }
           - { label: "Location Label (Area, City)", name: "location-label", widget: "string", required: false, hint: "Eg: ECC Main Road, Whitefield" }
           - { label: "RERA Number", name: "rera-number", widget: "string", required: false, hint: "Eg: PRM/KA/RERA/1251/446/PR/180424/006808" }
+          - { label: "Disable Single Project Page", name: "disable_page", widget: "boolean", default: false, required: false }
+          - { label: "Hide from Project Listing", name: "hide_from_listing", widget: "boolean", default: false, required: false }
       - label: "Cover"
         name: "cover"
         widget: "object"
