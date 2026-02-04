@@ -44,32 +44,27 @@ amenities:
     Thoughtfully designed to cater to the needs of families and modern
     professionals alike. It supports a balanced and fulfilling lifestyle right
     at your doorstep.
-
-
-    Add: 
-
-    - Club House
-
-    Children’s Play Area
-
-    Swimming Pool
-
-    Gymnasium
-
-    Indoor Games Room
-
-    Elders’ Park
-
-    24×7 Security
-
-    Power Backup
-
-    Rainwater Harvesting
-
-    and much more
   cover-image: /media/uploads/pool-2-.jpg
-brochure:
-  pdf: ""
+  amenity:
+    - name: Club House
+      icon: /media/uploads/mini-icon-institution.png
+    - name: Children’s Play Area
+      icon: /media/uploads/mini-icon-ball-throw.png
+    - name: Swimming Pool
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Gymnasium
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: Indoor Games Room
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Elders’ Park
+      icon: /media/uploads/mini-icon-bench.png
+    - name: 24×7 Security
+      icon: /media/uploads/mini-icon-cctv.png
+    - name: Power Backup
+      icon: /media/uploads/mini-icon-bolt.png
+    - name: Rainwater Harvesting
+      icon: /media/uploads/mini-icon-leaf.png
+
 location:
   map-link: https://maps.app.goo.gl/rxX9kehAtZAHjZLh7
   map-embed: <iframe

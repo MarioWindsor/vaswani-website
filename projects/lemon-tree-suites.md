@@ -53,37 +53,26 @@ amenities:
     Whitefield, our amenities are designed to quietly support your day  -
     whether you’re heading out early, settling in after work, or staying in for
     a slower evening.
-
-
-    - Spacious executive rooms and suites with thoughtful layouts
-
-
-    - Fully equipped kitchenettes for everyday convenience
-
-
-    - High-speed Wi-Fi for work, calls, and everything in between
-
-
-    - Fitness centre to keep your routine on track
-
-
-    - In-house dining options for easy, comforting meals
-
-
-    - Laundry and housekeeping services for longer stays
-
-
-    - Outdoor Lawn 
-
-
-    - Games Area
-
-
-    - Ample parking and round-the-clock security
-
-
-    Everything here is meant to feel simple, comfortable, and just right so you can focus on what brought you to the city, and enjoy the moments in between.
   cover-image: /media/uploads/img_2387.jpg
+  amenity:
+    - name: Spacious executive rooms and suites with thoughtful layouts
+      icon: /media/uploads/mini-icon-business.png
+    - name: Fully equipped kitchenettes for everyday convenience
+      icon: /media/uploads/mini-icon-burger-alt.png
+    - name: High-speed Wi-Fi for work, calls, and everything in between
+      icon: /media/uploads/mini-icon-bolt.png
+    - name: Fitness centre to keep your routine on track
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: In-house dining options for easy, comforting meals
+      icon: /media/uploads/mini-icon-cocktail.png
+    - name: Laundry and housekeeping services for longer stays
+      icon: /media/uploads/mini-icon-sparkles-alt.png
+    - name: Outdoor Lawn
+      icon: /media/uploads/mini-icon-trees.png
+    - name: Games Area
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Ample parking and round-the-clock security
+      icon: /media/uploads/mini-icon-car.png
 location:
   heading: Whitefield Main Road
   sub-heading: At the end of the day, it’s not just where you stay - it’s how you

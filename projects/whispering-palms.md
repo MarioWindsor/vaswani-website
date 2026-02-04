@@ -35,29 +35,26 @@ amenities:
     fully-equipped gym and tranquil landscaped gardens to recreation zones
     including a clubhouse, swimming pool, basketball court and play areas, the
     community encourages active and balanced lifestyles.
-
-
-    - Swimming Pool
-
-    Gymnasium
-
-    Indoor Games Room
-
-    Children’s Play Area
-
-    Jogging & Strolling Track
-
-    Landscaped Garden & Common Green Spaces
-
-    24×7 Security
-
-    Power Backup
-
-    Rainwater Harvesting
-
-
-    and a lot more
   cover-image: /media/uploads/whispering_palms_amenities_cover.jpg
+  amenity:
+    - name: Swimming Pool
+      icon: /media/uploads/mini-icon-swimming-pool.png
+    - name: Gymnasium
+      icon: /media/uploads/mini-icon-dumbbell.png
+    - name: Indoor Games Room
+      icon: /media/uploads/mini-icon-chess-knight.png
+    - name: Children’s Play Area
+      icon: /media/uploads/mini-icon-ball-throw.png
+    - name: Jogging & Strolling Track
+      icon: /media/uploads/mini-icon-running.png
+    - name: Landscaped Garden & Common Green Spaces
+      icon: /media/uploads/mini-icon-florist.png
+    - name: 24×7 Security
+      icon: /media/uploads/mini-icon-shield-alt-2.png
+    - name: Power Backup
+      icon: /media/uploads/mini-icon-bolt.png
+    - name: Rainwater Harvesting
+      icon: /media/uploads/mini-icon-leaf.png
 location:
   map-link: https://maps.app.goo.gl/7JfFJAEnrib7VZYB6
   map-embed: <iframe
