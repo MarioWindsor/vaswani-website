@@ -33,6 +33,8 @@ collections:
         collapsed: true
         fields:
           - { label: "Prefix Name with Vaswani", name: "prefix-name", widget: "boolean", default: true }
+          - { label: "Hide from Project Listing", name: "hide_from_listing", widget: "boolean", default: false, required: false }
+          - { label: "Disable Single Project Page", name: "disable_page", widget: "boolean", default: false, required: false }
           - label: "Project Type"
             name: "type"
             widget: "select"
