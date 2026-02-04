@@ -38,8 +38,36 @@ overview:
     - image: /media/uploads/pinnacle_Picture3-10.jpg
 amenities:
   heading: Designed around your everyday.
-  description: Amenities at Pinnacle are built to make daily life smoother,
-    healthier, and more enjoyable
+  description: >-
+    Vaswani Pinnacle offers a curated range of lifestyle, wellness, and
+    convenience-focused amenities set in the heart of Whitefield, Bangalore.
+    Thoughtfully designed to cater to the needs of families and modern
+    professionals alike. It supports a balanced and fulfilling lifestyle right
+    at your doorstep.
+
+
+    Add: 
+
+    - Club House
+
+    Children’s Play Area
+
+    Swimming Pool
+
+    Gymnasium
+
+    Indoor Games Room
+
+    Elders’ Park
+
+    24×7 Security
+
+    Power Backup
+
+    Rainwater Harvesting
+
+    and much more
+  cover-image: /media/uploads/pool-2-.jpg
 brochure:
   pdf: /media/uploads/vaswani-pinnacle-c802.pdf
 location:
