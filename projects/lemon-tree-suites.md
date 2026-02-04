@@ -9,11 +9,12 @@ metadata:
   status: ongoing
   status-label: All Suite Hotel
   location-label: Whitefield Main Road
+  unit-size: Studios and Suites
 cover:
   background: /media/uploads/lemon_tree_suites_Facade%20(day%20shot).jpg
 overview:
   heading: A Little Pause of Comfort
-  sub-heading: in the heart of Whitefield
+  sub-heading: Settle In. We’ll Take Care of the Rest.
   description: >-
     When you’re away from home, what you miss most are the little things - space
     to stretch out, a warm smile at check-in, a kitchen that feels like your
@@ -102,7 +103,7 @@ banner:
       like your morning coffee or helping you discover the hidden gems of
       Whitefield. It’s a hotel, yes, but also a pause, a little exhale, and a
       space that can be your own.
-    background: /media/uploads/img_2564.jpg
+    background: /media/uploads/people-serve-beautiful-fresh-relax-morning-coffee-cup-set.jpg
     heading: ""
   feature-2:
     align-text: right
