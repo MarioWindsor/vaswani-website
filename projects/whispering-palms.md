@@ -29,8 +29,34 @@ overview:
 
 amenities:
   heading: Life, beautifully elevated.
-  description: Whispering Palms brings together amenities designed for leisure,
-    wellness, and everyday comfort.
+  description: >
+    Vaswani Whispering Palms offers a thoughtfully curated suite of amenities
+    designed to elevate everyday living. From wellness-focused facilities like a
+    fully-equipped gym and tranquil landscaped gardens to recreation zones
+    including a clubhouse, swimming pool, basketball court and play areas, the
+    community encourages active and balanced lifestyles.
+
+
+    - Swimming Pool
+
+    Gymnasium
+
+    Indoor Games Room
+
+    Children’s Play Area
+
+    Jogging & Strolling Track
+
+    Landscaped Garden & Common Green Spaces
+
+    24×7 Security
+
+    Power Backup
+
+    Rainwater Harvesting
+
+
+    and a lot more
   cover-image: /media/uploads/whispering_palms_amenities_cover.jpg
 location:
   map-link: https://maps.app.goo.gl/7JfFJAEnrib7VZYB6
