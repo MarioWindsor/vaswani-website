@@ -16,7 +16,7 @@
 	<div class="hospitality-list">
 		<div class="projects pair-content residential row">
 			{% for project in ongoing_hospitality_projects %}
-			<div class="project space-100-vertical" {% unless project.url %}style="opacity: 0.5; filter: grayscale(1); pointer-events: none;"{% endunless %}>
+			<div class="project space-100-vertical" {% unless project.url %}style="opacity: 0.85; filter: grayscale(0.85); pointer-events: none;"{% endunless %}>
 				<div class="container">
 					<a class="project-title columns small-12 medium-7 large-8 inline-bottom" href="{{ project.url }}">
 						<h6 class="heading text-primary">{% if project.data.metadata.project-label != blank %}{{ project.data.metadata.project-label }}{% endif %}</h6>
