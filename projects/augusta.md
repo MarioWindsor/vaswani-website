@@ -9,10 +9,8 @@ metadata:
   status: completed
   project-label: Grade A Commercial Office Space
   status-label: Completed 2018
-
   location-label: Near Embassy Golf Links Business Park
 cover:
-
   background: /media/uploads/augusta_IMG_1848.jpg
 overview:
   gallery:
@@ -36,18 +34,7 @@ overview:
 
     Average Floor Plate size : 8000 square feet.
 siteplan:
-  floorplan:
-    - title: Ground Floor
-      image: /media/uploads/augusta_GF.jpg
-    - title: Mezzanine Floor
-      image: /media/uploads/augusta_MF.jpg
-    - title: First Floor
-      image: /media/uploads/augusta_FF.jpg
-    - title: Second Floor
-      image: /media/uploads/augusta_SF.jpg
-    - title: Third Floor
-      image: /media/uploads/augusta_TF.jpg
-
+  floorplan: []
   heading: Commercial Floor plans
 location:
   map-link: https://maps.app.goo.gl/5BF7uUmETZ3fmk866
