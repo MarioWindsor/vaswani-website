@@ -35,7 +35,7 @@ overview:
     Average Floor Plate size : 8000 square feet.
 siteplan:
   floorplan: []
-  heading: Commercial Floor plans
+  heading: ""
 location:
   map-link: https://maps.app.goo.gl/5BF7uUmETZ3fmk866
   map-embed: <iframe
@@ -43,5 +43,6 @@ location:
     allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
   heading: Vaswani Augusta
-  sub-heading: Near Embassy Golf Business Park
+  sub-heading: Near Embassy Golf Business Park, Vaswani Augusta enjoys a prime
+    business location with excellent connectivity across Bengaluru.
 ---
