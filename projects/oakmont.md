@@ -14,19 +14,13 @@ cover:
   background: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38-1.jpeg
 overview:
   heading: The Space for What's Next
-  sub-heading: Your workspace is more than a productive environment - it
-    symbolizes your brand aspirations. Designed for the future you are building,
-    offering an address that just works.
+  sub-heading: Where Business Meets Brilliance
   description: >
-    Vaswani Oakmont offers a combination of character, convenience, and
-    unparalleled infrastructure. Overlooking the KGA Championship Golf Course,
-    it is a space designed to elevate your brand, attract top talent, and leave
-    a lasting impression on everyone who walks through your doors.
-
-
-    Development size : 30,000 square feet.
-
-    Average Floor Plate size : 7500 square feet.
+    Welcome to Vaswani Oakmont, a premier commercial workspace crafted for
+    forward-thinking businesses and dynamic teams. Strategically designed to
+    inspire productivity, foster collaboration, and elevate your brand presence,
+    Oakmont blends contemporary architecture with best-in-class amenities -
+    creating an address where businesses don’t just operate, they thrive.
   gallery:
     - image: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38.jpeg
     - image: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38-1.jpeg
@@ -39,6 +33,25 @@ location:
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9498.051752918736!2d77.6441036!3d12.9508369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae147355854c09%3A0xd11214217b95371a!2sVaswani%20Oakmont!5e1!3m2!1sen!2sin!4v1756760528469!5m2!1sen!2sin"
     allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
-  heading: Vaswani Oakmont
-  sub-heading: Near Embassy Golf Links Business Park, Domlur, Bengaluru.
+  heading: Be at the Center of What’s Next
+  sub-heading: "Step into a space where ambition is supported by design,
+    infrastructure, and location. "
+banner:
+  feature-1:
+    background: /media/uploads/3d-rendering-business-meeting-working-room-office-building.jpg
+    heading: Talent & Opportunity
+    description: Positioned in a well-established commercial belt, Oakmont gives you
+      direct access to a large, skilled workforce and proximity to residential
+      neighborhoods that make daily commuting easier for your talent pool. This
+      strategic advantage helps companies attract and retain the best people.
+  feature-2:
+    background: /media/uploads/teacher-teaches-children-play-golf-bali-indonesia.jpg
+    heading: Overlooking the KGA Golf Course
+    description: One of Oakmont’s most distinguished advantages is its rare frontage
+      facing the prestigious Karnataka Golf Association (KGA) Golf Course.
+      Expansive green views replace the usual urban skyline, offering a serene
+      and refined business environment. The golf course outlook not only
+      enhances workplace wellbeing but also lends the building an unmatched
+      sense of openness, exclusivity, and prestige - an address that truly
+      stands apart.
 ---
