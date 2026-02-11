@@ -20,8 +20,7 @@ overview:
     - image: /media/uploads/augusta_IMG_1869.jpg
     - image: /media/uploads/augusta_IMG_1866.jpg
   heading: Brimming in the Lap of Nature
-  sub-heading: Imagine a stylish structure with greenery so pristine that you can
-    hear the Earth sing.
+  sub-heading: A Complete Corporate Ecosystem
   description: >
     Welcome to Vaswani Augusta, a contemporary commercial address located near
     the prestigious Embassy Golf Links (EGL) Business Park, Bengaluru. Designed
