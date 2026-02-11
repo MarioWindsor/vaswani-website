@@ -23,23 +23,30 @@ overview:
   sub-heading: Imagine a stylish structure with greenery so pristine that you can
     hear the Earth sing.
   description: >
-    Directly overlooking the Karnataka Golf Association’s Championship Golf
-    Course, Vaswani Augusta is a workspace created to revolutionize the idea of
-    an office. A Grade 'A' Commercial Office Space Development near the Embassy
-    Golf Business Park and Hotel Hilton, Bengaluru with state-of-the-art
-    architecture & design.
+    Welcome to Vaswani Augusta, a contemporary commercial address located near
+    the prestigious Embassy Golf Links (EGL) Business Park, Bengaluru. Designed
+    for modern enterprises, Augusta combines strategic location, efficient
+    planning, and a vibrant corporate ecosystem offering businesses a workplace
+    that is both high-performing and future-ready.
 
 
-    Development size : 34,400 square feet.
-
-    Average Floor Plate size : 8000 square feet.
+    At Augusta, every detail supports productivity, collaboration, and long-term growth.
 location:
   map-link: https://maps.app.goo.gl/5BF7uUmETZ3fmk866
   map-embed: <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3353.083447860389!2d77.6471148!3d12.9492528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1474a8b3bb85%3A0x53e54c249ebd6074!2sVaswani%20Augusta!5e1!3m2!1sen!2sin!4v1756757993146!5m2!1sen!2sin"
     allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
-  heading: Vaswani Augusta
-  sub-heading: Near Embassy Golf Business Park, Vaswani Augusta enjoys a prime
-    business location with excellent connectivity across Bengaluru.
+  heading: A Location That Moves with You
+  sub-heading: Vaswani Augusta places your business among global corporates,
+    leading technology firms, and multinational enterprises.
+banner:
+  feature-1:
+    background: /media/uploads/golf-cart-parked-bali-indonesia.jpg
+    heading: Overlooking the Karnataka Golf Association (KGA)
+    description: Adding to its distinction, Vaswani Augusta benefits from the
+      proximity and green expanse of the Karnataka Golf Association (KGA). The
+      surrounding golf course landscape introduces rare openness within a
+      bustling business district -  offering refreshing views, natural light,
+      and a sense of calm that enhances the everyday work environment.
 ---
