@@ -26,33 +26,67 @@
 		<div id="entry-{{ entry.title | slugify }}" class="entry {{ entry.title | slugify }}">
 			<!-- Carousel -->
 			{% if entry.gallery != blank or entry.video != blank %}
-			<div class="carousel gallery space-50-top">
-				<div class="carousel-list">
-					{% if entry.video != blank %}
-						<div class="carousel-list-item">
-							<div class="video-embed radius-min box-shadow" style="padding: 0; height: 100%; width: calc(var(--card)*1.7777);">
-								<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ entry.video }}?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			{% assign gallery_size = entry.gallery | size %}
+			{% assign video_present = 0 %}
+			{% if entry.video != blank %}
+				{% assign video_present = 1 %}
+			{% endif %}
+			{% assign total_items = gallery_size | plus: video_present %}
+
+			{% if total_items == 1 %}
+				<!-- Single Item View -->
+				<div class="single-item-view space-50-top text-center">
+					<div class="row">
+						<div class="container">
+							<div class="columns small-12 large-11 xlarge-9">
+								{% if entry.video != blank %}
+									<div class="video-embed radius-min box-shadow">
+										<iframe src="https://www.youtube-nocookie.com/embed/{{ entry.video }}?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+								{% elsif entry.gallery != blank %}
+									{% assign single_image = entry.gallery[0] %}
+									<div class="single-image" style="position: relative;">
+										{% image single_image.image, "", "(min-width: 1000px) 66vw, 100vw", "lazy", "radius-25 box-shadow" %}
+										<a class="button box-shadow zoom-icon" href="{{ single_image.image }}" target="_blank" style="position: absolute; bottom: 20px; right: 20px;">
+											<span class="visuallyhidden">Zoom In</span>
+											<i class='h6 bx bx-zoom-in'></i>
+										</a>
+									</div>
+								{% endif %}
 							</div>
 						</div>
-					{% endif %}
-					{% for gallery in entry.gallery %}
-					<div class="carousel-list-item" style="position: relative;">
-						<!-- <img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt=""> -->
-						{% image gallery.image, "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "radius-25 box-shadow" %}
-						<a class="button box-shadow zoom-icon" href="{{ gallery.image }}" target="_blank">
-							<span class="visuallyhidden">Zoom In</span>
-							<i class='h6 bx bx-zoom-in'></i>
-						</a>
-					</div>
-					{% endfor %}
-				</div>
-				<div class="row">
-					<div class="carousel-controls container">
-						<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
-						<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
 					</div>
 				</div>
-			</div>
+			{% else %}
+				<!-- Carousel View (Multiple Items) -->
+				<div class="carousel gallery space-50-top">
+					<div class="carousel-list">
+						{% if entry.video != blank %}
+							<div class="carousel-list-item">
+								<div class="video-embed radius-min box-shadow" style="padding: 0; height: 100%; width: calc(var(--card)*1.7777);">
+									<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ entry.video }}?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+							</div>
+						{% endif %}
+						{% for gallery in entry.gallery %}
+						<div class="carousel-list-item" style="position: relative;">
+							<!-- <img loading="lazy" class="radius-25 box-shadow" src="{{ gallery.image }}" alt=""> -->
+							{% image gallery.image, "", "(min-width: 1000px) 33vw, (min-width: 500px) 50vw, 100vw", "lazy", "radius-25 box-shadow" %}
+							<a class="button box-shadow zoom-icon" href="{{ gallery.image }}" target="_blank">
+								<span class="visuallyhidden">Zoom In</span>
+								<i class='h6 bx bx-zoom-in'></i>
+							</a>
+						</div>
+						{% endfor %}
+					</div>
+					<div class="row">
+						<div class="carousel-controls container">
+							<div class="scroll-button scroll-left inline" data-dir="left" tabindex="-1"><i class='bx bx-chevron-left h3 text-primary' ></i></div>
+							<div class="scroll-button scroll-right inline" data-dir="right" tabindex="-1"><i class='bx bx-chevron-right h3 text-primary' ></i></div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
 			{% endif %}
 			{% if entry.heading != blank or entry.description != blank %}
 			<div class="container text-center space-50-top">
