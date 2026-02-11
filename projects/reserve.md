@@ -16,7 +16,7 @@ cover:
   background: /media/uploads/reserve-cover_01.jpg
   video: PPuilGI9HV8
 overview:
-  heading: Community Living
+  heading: Reserved for Friends
   sub-heading: Where thoughtful design grows into lasting community.
   description: >-
     Vaswani Reserve was envisioned as a residential address where design,
@@ -26,10 +26,7 @@ overview:
     community that lives here today.
 
 
-    With 232 residences in carefully planned 3, 4 and 5-bedroom apartments and duplex formats, Vaswani Reserve offers generous layouts, well-defined spaces, and thoughtful detailing that support modern urban living. Sky lounges, landscaped walkways, and palm-lined internal roads add a sense of openness and movement across the development.
-
-
-    The project has been completed and handed over, and today stands as a well-established, vibrant community shaped by the people who call it home.
+    With 232 residences in carefully planned 3-, 4-, and 5-bedroom apartments and duplexes, Vaswani Reserve offers generous layouts, well-defined spaces, and thoughtful detailing that support modern urban living. Sky lounges, landscaped walkways, and palm-lined internal roads add a sense of openness and movement across the development. The project has been completed and handed over, and today stands as a well-established, vibrant community shaped by the people who call it home.
   gallery:
     - image: /media/uploads/reserve-Picture6.jpg
     - image: /media/uploads/reserve-Picture7.jpg
