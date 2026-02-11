@@ -85,7 +85,7 @@
 					{% if brochure.background != blank %}
 						{% image brochure.background, "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 90% 50%; z-index: 0;" %}
 					{% else %}
-						{% image "media/fallback-brochure.png", "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 90% 50%; z-index: 0;" %}
+						{% image "/media/fallback-brochure.png", "", "100vw", "lazy", "", "position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 90% 50%; z-index: 0;" %}
 					{% endif %}
 					<div class="heading text-dark" style="position: relative; z-index: 1;">
 						<h5 class="w-600">Want More Details?</h5>

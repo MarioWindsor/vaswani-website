@@ -62,7 +62,7 @@
 								{% if project.data.cover.background != blank %}
 									{% image project.data.cover.background, "", "(max-width: 500px) 100vw, (max-width: 1000px) 60vw, 30vw", "lazy", "radius-25 box-shadow" %}
 								{% else %}
-									{% image "media/fallback.jpg", "", "(max-width: 500px) 100vw, (max-width: 1000px) 60vw, 30vw", "lazy", "radius-25 box-shadow" %}
+									{% image "/media/fallback.jpg", "", "(max-width: 500px) 100vw, (max-width: 1000px) 60vw, 30vw", "lazy", "radius-25 box-shadow" %}
 								{% endif %}
 								{% if project.data.metadata.status-label != blank %}
 								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
@@ -131,7 +131,7 @@
 								{% if project.data.cover.background != blank %}
 									{% image project.data.cover.background, "", "(max-width: 500px) 100vw, (max-width: 1000px) 60vw, 30vw", "lazy", "radius-25 box-shadow" %}
 								{% else %}
-									{% image "media/fallback.jpg", "", "(max-width: 500px) 100vw, (max-width: 1000px) 60vw, 30vw", "lazy", "radius-25 box-shadow" %}
+									{% image "/media/fallback.jpg", "", "(max-width: 500px) 100vw, (max-width: 1000px) 60vw, 30vw", "lazy", "radius-25 box-shadow" %}
 								{% endif %}
 								{% if project.data.metadata.status-label != blank %}
 								<small class="text-uppercase position-absolute space-min space-50-horizontal fill-secondary box-shadow" style="bottom: 15%; left: 0; border-top-right-radius: var(--space-min); border-bottom-right-radius: var(--space-min);">{{ project.data.metadata.status-label }}</small>
