@@ -1,16 +1,16 @@
 {
-    "sales_phone": {
-        "display": "+91 87479-87479",
-        "number": "+918747987479",
-        "timings": "between 10am to 7pm IST"
-    },
-    "office_phone": {
-        "display": "+91 80 4660 7777",
-        "number": "+918046607777"
-    },
-    "whatsapp": {
-        "display": "+91 87479-87479",
-        "number": "918747987479"
-    },
-    "email": "sales@vaswanigroup.com"
+  "sales_phone": {
+    "display": "+91 87479-87479",
+    "number": "+918747987479",
+    "timings": "between 10am to 7pm IST"
+  },
+  "office_phone": {
+    "display": "080 4040-0000",
+    "number": "080-4040-0000"
+  },
+  "whatsapp": {
+    "display": "+91 87479-87479",
+    "number": "918747987479"
+  },
+  "email": "sales@vaswanigroup.com"
 }
