@@ -72,7 +72,7 @@ entry:
       sustain their families through enterprise and resilience, we aim to
       support livelihoods that are self-reliant, secure, and rooted in community
       strength.
-    image: /media/uploads/portrait-old-indian-woman.jpg
+    image: /media/uploads/cc_54455668802_0c857e0bd5_o_cropped.jpg
   - title: Livelihoods & Learning for Women
     description: Vaswani Group partners with Headstreams to support women from
       socio-economically vulnerable households through livelihood development
