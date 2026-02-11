@@ -180,6 +180,7 @@ progress:
 
         Whether you’re already part of the Starlight community or exploring new homes in Whitefield, follow along as we share the journey of this landmark development.
       heading: Vaswani Starlight | Construction Update - January 2026
+      title: Feb 2026
 banner:
   feature-1:
     heading: A Private Home Office with Every Unit
