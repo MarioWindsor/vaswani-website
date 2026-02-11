@@ -17,13 +17,16 @@
 		<div class="footer container">
 			<div class="foot-set columns small-12 large-4 xlarge-3">
 				<div class="foot contact">
-					<h6 class="title">Bengaluru Contact</h6>
-					<a class="link" href="tel: {{ contact.phone.number }}">{{ contact.phone.display }}</a><br>
-					<a class="link" href="mailto: {{ contact.email }}">{{ contact.email }}</a><br>
+					<h6 class="title">Sales Enquiries</h6>
+					<a class="link" href="tel: {{ contact.sales_phone.number }}"><i class='bx bx-support inline-middle space-min box-shadow radius-50' style="margin-left: calc( var(--space-min) * -1 ); margin-right: var(--space-min);"></i><span class="inline-middle">{{ contact.sales_phone.display }}</span></a><br>
+					<a class="link" href="mailto: {{ contact.email }}"><i class='bx bx-envelope inline-middle space-min box-shadow radius-50' style="margin-left: calc( var(--space-min) * -1 ); margin-right: var(--space-min);"></i><span class="inline-middle">{{ contact.email }}</span></a><br>
 				</div>
 				<div class="foot address">
 					<h6 class="title">{{ address.title }}</h6>
 					<p class="h6 text-primary">{{ address.line }}</p>
+					{% if contact.office_phone.display != blank %}
+					<a class="link" href="tel: {{ contact.office_phone.number }}"><i class='bx bx-phone inline-middle space-min box-shadow radius-50' style="margin-left: calc( var(--space-min) * -1 ); margin-right: var(--space-min);"></i><span class="inline-middle">{{ contact.office_phone.display }}</span></a><br>
+					{% endif %}
 				</div>
 				<div class="foot social small-bottom">
 					<h6 class="title">Follow us</h6>
@@ -43,9 +46,11 @@
 				</div>
 				<div class="foot residential">
 					<h6 class="title">Residential</h6>
+					<small class="inline text-uppercase w-600 text-neutral-40" style="letter-spacing: calc(var(--label) / 16);">Ongoing Projects</small><br>
 					{% for project in ongoing_residential_projects %}
 					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 					{% endfor %}
+					<small class="inline text-uppercase w-600 text-neutral-40 space-25-top" style="letter-spacing: calc(var(--label) / 16);">Completed Projects</small><br>
 					{% for project in completed_residential_projects %}
 					<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 					{% endfor %}
@@ -53,9 +58,11 @@
 				<div class="foot commercial">
 					<div class="com-1">
 						<h6 class="title">Commercial</h6>
+						<small class="inline text-uppercase w-600 text-neutral-40" style="letter-spacing: calc(var(--label) / 16);">Ongoing Projects</small><br>
 						{% for project in ongoing_commercial_projects %}
 						<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 						{% endfor %}
+						<small class="inline text-uppercase w-600 text-neutral-40 space-25-top" style="letter-spacing: calc(var(--label) / 16);">Completed Projects</small><br>
 						{% for project in completed_commercial_projects %}
 						<a class="link" href="{{ project.url }}">{% if project.data.metadata.prefix-name == true %}Vaswani {% endif %}{{ project.data.name }}</a><br>
 						{% endfor %}
@@ -174,7 +181,7 @@
 </style>
 <aside class="sticky-cta-section space-50-vertical">
 	<div class="sticky-cta">
-		<a class="button box-shadow" href="tel: {{ contact.phone.number }}"><i class='h6 bx bx-phone'></i><span>Call</span></a>
+		<a class="button box-shadow" href="tel: {{ contact.sales_phone.number }}"><i class='h6 bx bx-phone'></i><span>Call</span></a>
 		<a id="sticky-cta-contact" class="button box-shadow" href="{{ page.url }}#contact-form-section"><i class='h6 bx bx-support'></i><span>Enquire</span></a>
 		{% if contact.whatsapp.number != blank %}<a class="button box-shadow" href="https://wa.me/{{ contact.whatsapp.number }}" target="_blank"><i class='h5 bx bxl-whatsapp'></i><span>WhatsApp</span></a>{% endif %}
 	</div>

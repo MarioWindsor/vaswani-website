@@ -642,13 +642,19 @@ collections:
         label: "Contact Details"
         file: "_data/contact.json"
         fields:
-          - label: "Phone"
-            name: "phone"
+          - label: "Sales Phone"
+            name: "sales_phone"
             widget: "object"
             fields:
               - { label: "Display", name: "display", widget: "string", hint: "Eg: +91 87479-87479" }
               - { label: "Number", name: "number", widget: "string", hint: "Eg: +918747987479 (No Spaces)" }
               - { label: "Help Desk Timings", name: "timings", widget: "string", hint: "Eg: between 10am to 7pm IST" }
+          - label: "Office Phone"
+            name: "office_phone"
+            widget: "object"
+            fields:
+              - { label: "Display", name: "display", widget: "string", hint: "Eg: +91 80 4660 7777" }
+              - { label: "Number", name: "number", widget: "string", hint: "Eg: +918046607777 (No Spaces)" }
           - label: "WhatsApp"
             name: "whatsapp"
             widget: "object"
