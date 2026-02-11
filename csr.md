@@ -87,7 +87,7 @@ entry:
       impact is created when education, livelihoods, and community support come
       together, enabling individuals to shape their own futures with resilience
       and purpose.
-    image: /media/uploads/woman-teaching-classroom.jpg
+    image: /media/uploads/cc_51412637647_d542e18076_k.jpg
 partner:
   label: Partner with Us
   heading: Our Ongoing Commitment
