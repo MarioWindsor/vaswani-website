@@ -14,7 +14,7 @@ metadata:
 cover:
   logo: /media/uploads/reserve-project-logo.png
   background: /media/uploads/reserve-cover_01.jpg
-  video: PPuilGI9HV8
+  video: sv8g1CGOU07tNNRu
 overview:
   heading: Reserved for Friends
   sub-heading: Where thoughtful design grows into lasting community.
