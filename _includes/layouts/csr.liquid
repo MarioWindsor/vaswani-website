@@ -88,7 +88,7 @@
 				{% for entry in entry %}
 				<div class="card space-50">
 					<div class="thumbnail">
-						<img loading="lazy" class="radius-min box-shadow block" src="{{ entry.image }}" alt="">
+						{% image entry.image, "", "(min-width: 1000px) 50vw, 100vw", "lazy", "radius-min box-shadow block" %}
 					</div>
 					<div class="info">
 						<h5 class="h5 w-600 space-25-bottom">{{ entry.title }}</h5>
