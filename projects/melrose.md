@@ -4,16 +4,16 @@ tags:
 date: 2003-01-01T19:03:00.000+05:30
 name: Melrose
 metadata:
+  project-label: 3 Bedroom Row Houses
   prefix-name: true
-  type: residential
+  disable_page: true
+  unit-size: 2500 sqft to 2800 sqft
+  hide_from_listing: true
   status: completed
   status-label: Completed 2003
-  project-label: 3 Bedroom Row Houses
-  location-label: Marathahalli - Sarjapur, ORR
-  unit-size: 2500 sqft to 2800 sqft
-  hide_from_listing: false
-  disable_page: true
+  type: residential
   starting-price: "Completed and Handed Over "
+  location-label: Marathahalli - Sarjapur, ORR
 cover:
   background: /media/uploads/melrose_01.png
 overview:
