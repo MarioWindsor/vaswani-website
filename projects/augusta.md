@@ -33,9 +33,6 @@ overview:
     Development size : 34,400 square feet.
 
     Average Floor Plate size : 8000 square feet.
-siteplan:
-  floorplan: []
-  heading: ""
 location:
   map-link: https://maps.app.goo.gl/5BF7uUmETZ3fmk866
   map-embed: <iframe
