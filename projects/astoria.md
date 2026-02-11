@@ -3,14 +3,16 @@ tags: projects
 date: 2013-01-01T18:59:00.000+05:30
 name: Astoria
 metadata:
-  prefix-name: true
-  type: residential
   project-label: 2 & 3 Bedroom Apartment
+  prefix-name: true
+  disable_page: true
+  unit-size: 1984 sqft to 2123 sqft Apartments
+  hide_from_listing: true
   status: completed
   status-label: Completed 2006
-  unit-size: 1984 sqft to 2123 sqft Apartments
-  location-label: Off Sarjapur, Outer Ring Road
+  type: residential
   starting-price: Completed and Sold Out
+  location-label: Off Sarjapur, Outer Ring Road
 cover:
   background: /media/uploads/astoria_IMG_E6317.jpg
 overview:
