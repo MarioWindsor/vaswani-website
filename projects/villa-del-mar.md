@@ -4,16 +4,16 @@ tags:
 date: 1996-01-01T20:23:00.000+05:30
 name: Villa Del Mar
 metadata:
+  project-label: 3 & 4 BHK Row Houses
   prefix-name: true
-  type: residential
+  disable_page: true
+  unit-size: 2740 sqft to 3750 sqft
+  hide_from_listing: true
   status: completed
   status-label: Completed 1996
-  project-label: 3 & 4 BHK Row Houses
-  unit-size: 2740 sqft to 3750 sqft
-  location-label: Sarjapur Road, Bellandur
-  hide_from_listing: false
-  disable_page: true
+  type: residential
   starting-price: Completed and Sold Out
+  location-label: Sarjapur Road, Bellandur
 cover:
   background: /media/uploads/villa_del_mar_01.png
 overview:
