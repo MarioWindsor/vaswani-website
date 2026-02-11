@@ -15,9 +15,8 @@ cover:
   logo: /media/uploads/brentwood-project-logo.png
   background: /media/uploads/brentwood-featured-image-6.jpg
 overview:
-  heading: Where spaces breathe - and so do you
-
-  description: >+
+  heading: Where spaces breathe and so do you
+  description: >-
     Located in the vibrant heart of Bengaluru’s Whitefield, Vaswani Brentwood
     stands as a thoughtfully designed residential community that blends comfort,
     convenience, and contemporary living. The project is successfully completed,
@@ -26,10 +25,6 @@ overview:
 
 
     Set amidst serene landscaping and generous open spaces, Brentwood offers elegantly designed 2 & 3 BHK apartments spread across 4 towers of G+14 floors that maximise natural light, ventilation, and everyday ease. With premium amenities, secure infrastructure, and excellent connectivity to IT hubs, schools, shopping, and entertainment, the community continues to offer residents a lifestyle that feels both relaxed and well-connected.
-
-
-    A completed development that has matured beautifully over time, Vaswani Brentwood remains one of Whitefield’s most cherished residential addresses - where families have built homes, created memories, and grown together.
-
   gallery:
     - image: /media/uploads/brentwood-BeautyPlus_20170615165622_save.jpg
     - image: /media/uploads/brentwood-BeautyPlus_20170615165558_save.jpg

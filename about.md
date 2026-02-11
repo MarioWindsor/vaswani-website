@@ -9,7 +9,7 @@ intro:
     For over four decades, Vaswani Group has been shaping the way people live,
     work, and grow - creating spaces that feel personal, purposeful, and
     enduring. What started as a belief that good design can transform everyday
-    life has today become a trusted name across Bangalore, Mumbai, Pune, and
+    life has today become a trusted name across Bengaluru, Mumbai, Pune, and
     Goa.
 
     Our portfolio spans residential, commercial and hospitality developments, each guided by a simple principle: build with integrity, design with intention, and deliver with consistency. Every project begins with the people who will inhabit it -  families seeking comfort and belonging, businesses charting their next phase, and communities that will take root and thrive.

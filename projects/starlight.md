@@ -174,13 +174,11 @@ progress:
         is manifesting - guided by thoughtful planning, quality-led execution,
         and attention to detail.
 
-
         Located in Whitefield, Bengaluru, Vaswani Starlight is envisioned as a contemporary residential address designed for long-term value, comfort, and everyday living.
-
 
         Whether you’re already part of the Starlight community or exploring new homes in Whitefield, follow along as we share the journey of this landmark development.
       heading: Construction at Vaswani Starlight is Steadily Taking Shape
-      title: Jan 2026
+      title: Januray 2026
 banner:
   feature-1:
     heading: A Private Home Office with Every Unit
