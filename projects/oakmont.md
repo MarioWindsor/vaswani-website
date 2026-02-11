@@ -28,7 +28,6 @@ overview:
 
     Average Floor Plate size : 7500 square feet.
   gallery:
-    - image: /media/uploads/oakmont_Vaswani-Oakmont_Oct-2021.jpeg
     - image: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38.jpeg
     - image: /media/uploads/oakmont_WhatsApp-Image-2021-10-28-at-17.45.38-1.jpeg
     - image: /media/uploads/oakmont_IMG_20230912_191504.jpg
