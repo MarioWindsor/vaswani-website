@@ -14,7 +14,7 @@ metadata:
 cover:
   logo: /media/uploads/reserve-project-logo.png
   background: /media/uploads/reserve-cover_01.jpg
-  video: ""
+  video: TNYFpTqtvbA
   link: ""
 overview:
   heading: Reserved for Friends
