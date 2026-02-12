@@ -15,7 +15,8 @@ cover:
   logo: /media/uploads/reserve-project-logo.png
   background: /media/uploads/reserve-cover_01.jpg
   video: TNYFpTqtvbA
-  link: ""
+  link: https://youtu.be/TNYFpTqtvbA?si=64Zl9C9ZIx-ygund
+  link-external: true
 overview:
   heading: Reserved for Friends
   sub-heading: Where thoughtful design grows into lasting community.
