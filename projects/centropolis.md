@@ -15,8 +15,8 @@ cover:
   background: /media/uploads/centropolis_Building_Design_Vaswani_Centropolis_05.jpg
 overview:
   heading: At the Center of It All
-  sub-heading: Discover the New Center for Business which aligns with your
-    Strategic Vision for a Commercial Space.
+  sub-heading: Discover the Center for Business which aligns with your Strategic
+    Vision for a Commercial Space.
   description: A prestigious address on Langford Road isn't just a location; it's
     a statement. Vaswani Centropolis is a Grade A commercial hub in Bengaluru's
     Central Business District, designed to be more than an office - it's an
@@ -26,7 +26,7 @@ overview:
     - image: /media/uploads/centropolis_Building_Design_Vaswani_Centropolis_05.jpg
     - image: /media/uploads/centropolis_Building_Design_Vaswani_Centropolis_04.jpg
 amenities:
-  heading: Best-in-Class Amenities
+  heading: Elevated Essentials
   sub-heading: Our Grade A office spaces offer a complete suite of professional amenities.
   amenity:
     - name: 24/7 Security
