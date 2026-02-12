@@ -122,5 +122,9 @@ banner:
     description: >-
       Where nothing feels excessive, and everything feels considered.
 
-      A place to walk without hurry, breathe without distraction, and let the day soften around you.
+      An unhurried path designed for the in-between moments before the day begins, or after it slows.
+
+      Here, you can walk at your own pace, clear your thoughts, and let the stillness do its quiet work.
+
+      Because sometimes, the smallest rituals are what make a home feel complete.
 ---
