@@ -44,6 +44,8 @@ overview:
     - image: /media/uploads/reserve-Picture1098.jpg
     - image: /media/uploads/reserve-Picture1980.jpg
     - image: /media/uploads/reserve-Picture10908-0.jpg
+film:
+  video: ""
 amenities:
   sub-heading: Where Everyday Living Turns Effortless
   description: At Vaswani Reserve, every amenity is designed to elevate daily life
