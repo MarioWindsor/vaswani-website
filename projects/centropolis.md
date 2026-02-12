@@ -65,5 +65,6 @@ banner:
       surroundings introduce a welcome sense of calm. Supported by
       round-the-clock security and professional building management, Centropolis
       offers a workplace that is efficient, secure, and thoughtfully designed.
-    background: /media/uploads/silhouette-asian-woman-walking-street-wireless-headphones-holding-smartphone.jpg
+    background: /media/uploads/two-women-looking-mobile-phone.jpg
+    heading: Workspaces, Well Supported
 ---
