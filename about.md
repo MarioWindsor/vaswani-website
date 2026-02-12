@@ -13,7 +13,7 @@ intro:
     Goa.
 
     Our portfolio spans residential, commercial and hospitality developments, each guided by a simple principle: build with integrity, design with intention, and deliver with consistency. Every project begins with the people who will inhabit it -  families seeking comfort and belonging, businesses charting their next phase, and communities that will take root and thrive.
-  video_id: ivOPbCchSJs
+  video_id: cQnebxxGXCs
 leadership:
   label: Meet the Visionaries
   heading: Leadership that Inspires
