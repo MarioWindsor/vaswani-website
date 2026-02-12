@@ -67,4 +67,6 @@ banner:
       offers a workplace that is efficient, secure, and thoughtfully designed.
     background: /media/uploads/two-women-looking-mobile-phone.jpg
     heading: Workspaces, Well Supported
+    align-text: right
+    position-text: top
 ---
