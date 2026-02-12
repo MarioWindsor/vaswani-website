@@ -114,13 +114,13 @@ location:
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 banner:
   feature-1:
-    background: /media/uploads/2.jpg
-    heading: ""
+    background: /media/uploads/young-woman-jogging-park.jpg
+    heading: Space to Breathe
     align-text: left
     position-text: bottom
     background-fix: left bottom
     description: >-
       Where nothing feels excessive, and everything feels considered.
 
-      From the way rooms open up to the way light moves through the day, every choice is made to feel easy, intuitive, and lived-in.
+      A place to walk without hurry, breathe without distraction, and let the day soften around you.
 ---
