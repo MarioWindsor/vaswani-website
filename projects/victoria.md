@@ -14,14 +14,14 @@ metadata:
 cover:
   background: /media/uploads/victoria_WhatsApp-Image-2021-10-19-at-16.35.53-1.jpeg
 overview:
-  heading: The Prestige of Victoria Road
+  heading: The Power of a Central Address
   sub-heading: Vaswani Victoria is a landmark destination offering a strategic advantage
   description: Your business belongs in the heart of Bengaluru, Vaswani Victoria
     offers spacious and skillfully designed commercial office spaces. With its
     warm sense of CBD and only moments to shops, eateries, and transport the
-    property provides all the elements for comfortable office space for
-    working. Being on the main road, the property enjoys the benefits of
-    excellent connectivity.
+    property provides all the elements for comfortable office space for working.
+    Being on the main road, the property enjoys the benefits of excellent
+    connectivity.
   gallery:
     - image: /media/uploads/victoria_WhatsApp-Image-2021-10-19-at-16.35.53.jpeg
     - image: /media/uploads/victoria_WhatsApp-Image-2021-10-19-at-16.35.50-1.jpeg
