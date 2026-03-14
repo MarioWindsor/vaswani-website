@@ -43,12 +43,14 @@
 				<div class="description text-center columns small-12 medium-10 large-8 xlarge-6 medium-offset-1 large-offset-2 xlarge-offset-3">
 					<p>{{ intro.description | newline_to_br }}</p>
 				</div>
+				{% if intro.video_id %}
 				<div id="brand-film" class="text-center columns small-12 medium-10 xlarge-8 medium-offset-1 xlarge-offset-2 space-75-top">
 					<small class="block text-uppercase text-primary space-50-bottom">Watch the Brand Film</small>
 					<div class="video-embed radius-min box-shadow">
 						<iframe class="" src="https://www.youtube-nocookie.com/embed/{{ intro.video_id }}?html5=1&color=white&disablekb=0&fs=1&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=0&controls=1" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
 				</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>
