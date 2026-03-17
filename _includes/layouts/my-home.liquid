@@ -1,0 +1,110 @@
+{% include 'parts/head.liquid' %}
+{% include 'parts/header.liquid' %}
+
+
+
+<!-- My Home Section -->
+<style>
+.my-home-section {
+	.my-home {
+		display: inline-grid;
+		gap: var(--space-100);
+		grid-template-columns: repeat(1, 1fr);
+
+		@media( min-width: 1000px ) {
+			gap: var(--space-150);
+		}
+
+		.thumbnail {
+			img {
+				aspect-ratio: 3/1;
+				object-fit: cover;
+
+				@media( min-width: 1000px ) {
+					aspect-ratio: 3/2;
+				}
+			}
+		}
+
+		@media( min-width: 1000px ) {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+
+			.cta-button {
+				margin-left: calc(var(--space-min) * -1);
+			}
+		}
+
+		.my-home-content {
+			@media( min-width: 1000px ) {
+				text-align: left;
+			}
+		}
+	}
+
+	.my-home-features {
+
+		.features {
+			display: grid;
+			gap: var(--space-50);
+			grid-template-columns: repeat(1, 1fr);
+
+			@media( min-width: 500px ) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media( min-width: 1000px ) {
+				grid-template-columns: repeat(3, 1fr);
+				gap: var(--space-100);
+			}
+		}
+	}
+}
+
+.my-home-section .thumbnail { position: relative; }
+.my-home-section .thumbnail img { position: relative; z-index: 1; }
+</style>
+<section class="my-home-section row small-gap">
+	<div class="container">
+		<div class="row">
+			<div class="my-home columns small-12 xlarge-10 xlarge-offset-1 text-center">
+				<div class="thumbnail">
+					{% image features.image, "", "(min-width: 1000px) 33vw, 100vw", "lazy", "block radius-25 box-shadow" %}
+				</div>
+				<div class="row my-home-content text-center">
+					<div class="intro space-50-bottom">
+						<div class="columns small-8 large-12">
+							<h2 class="section-heading text-neutral-20 w-600">MyHome</h2>
+							<label class="section-label">at Vaswani</label>
+							<h6 class="section-sub-heading text-primary space-25-vertical">Everything about your home, in one place.</h6>
+						</div>
+						<div class="columns small-12 medium-10 large-12">
+							<p class="description space-25-top space-50-bottom">MyHome is a secure, all-in-one platform designed to streamline your experience from booking through handover. It centralizes project information, payment management, and support into one accessible space.</p>
+							<a href="/my-home/account" class="cta-button button">Login to MyHome at Vaswani</a>
+							<p class="block text-neutral-30 space-50-top">Because we are here for you long after the Booking</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="my-home-features columns small-12 xlarge-10 xlarge-offset-1 text-center small-gap">
+				<label class="block section-label">Key Features</label>
+				<div class="features space-50-vertical">
+					{% for feature in features.list %}
+					<div class="feature card space-50">
+						<i class='bx {{ feature.icon }} h4 text-primary block'></i>
+						<h5 class="text-neutral-50">{{ feature.title }}</h5>
+						<h6 class="space-25-top">{{ feature.description }}</h6>
+					</div>
+					{% endfor %}
+				</div>
+				<p class="text-primary space-50">With MyHome at Vaswani, every detail of your home journey stays Organised, Transparent, and always within Easy Reach.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: My Home Section -->
+
+
+
+{% include 'parts/footer.liquid' %}
+{% include 'parts/foot.liquid' %}
