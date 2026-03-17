@@ -103,6 +103,13 @@ entry:
       initiative, we aim to support early, life-saving care and the well-being
       of families during their most critical moments.
     image: /media/uploads/newborn-baby.jpg
+  - title: Enabling the Gift of Sight
+    description: >-
+      Vaswani Group supports the Sri Sathya Sai Trust in enabling access to
+      essential eye care, including free cataract surgeries for those who may
+      otherwise go without treatment.
+
+      For many, the loss of vision is not just a medical condition; it impacts independence, livelihood, and everyday dignity. Through this initiative, we hope to play a small part in restoring not just sight, but confidence and quality of life for individuals and their families.
 partner:
   label: Partner with Us
   heading: Our Ongoing Commitment
