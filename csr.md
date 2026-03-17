@@ -103,6 +103,13 @@ entry:
 
       Through this initiative, we aim to nurture young individuals and strengthen the communities they belong to.
     image: /media/uploads/building-interior.jpg
+  - title: Supporting Critical Care for Newborns
+    description: Vaswani Group supports the Neonates Critical Care Foundation,
+      contributing towards critical care for vulnerable newborns and
+      strengthening access to timely medical intervention. Through this
+      initiative, we aim to support early, life-saving care and the well-being
+      of families during their most critical moments.
+    image: /media/uploads/newborn-baby.jpg
 partner:
   label: Partner with Us
   heading: Our Ongoing Commitment
