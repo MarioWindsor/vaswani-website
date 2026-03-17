@@ -545,6 +545,45 @@ collections:
               - { label: Video ID, name: video, widget: string, required: false, hint: "YouTube Video ID (Eg: cQnebxxGXCs)" }
               - { label: Link, name: link, widget: string, required: false, hint: "Eg: https://youtu.be/cQnebxxGXCs" }
               - { label: "Open Link in New Tab", name: "link-external", widget: "boolean", default: false, required: false }
+      - name: "my-home"
+        label: "MyHome"
+        file: "my-home/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/my-home.liquid" }
+          - label: "Intro Section"
+            name: "intro"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Sub Heading", name: "sub-heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Footer Text", name: "footer-text", widget: "string", required: false }
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+          - label: "Features"
+            name: "features"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", choose_url: false }
+              - { label: "Footer Text", name: "footer-text", widget: "string", required: false }
+              - label: "List"
+                name: "list"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Icon", name: "icon", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
   - name: "sections"
     label: "Sections"
     editor:
