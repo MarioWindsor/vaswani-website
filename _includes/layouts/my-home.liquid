@@ -74,20 +74,20 @@
 				<div class="row my-home-content text-center">
 					<div class="intro space-50-bottom">
 						<div class="columns small-8 large-12">
-							<h2 class="section-heading text-neutral-20 w-600">MyHome</h2>
-							<label class="section-label">at Vaswani</label>
-							<h6 class="section-sub-heading text-primary space-25-vertical">Everything about your home, in one place.</h6>
+							<h2 class="section-heading text-neutral-20 w-600">{{ intro.heading }}</h2>
+							<label class="section-label">{{ intro.label }}</label>
+							<h6 class="section-sub-heading text-primary space-25-vertical">{{ intro.sub-heading }}</h6>
 						</div>
 						<div class="columns small-12 medium-10 large-12">
-							<p class="description space-25-top space-50-bottom">MyHome is a secure, all-in-one platform designed to streamline your experience from booking through handover. It centralizes project information, payment management, and support into one accessible space.</p>
-							<a href="/my-home/account" class="cta-button button">Login to MyHome at Vaswani</a>
-							<p class="block text-neutral-30 space-50-top">Because we are here for you long after the Booking</p>
+							<p class="description space-25-top space-50-bottom">{{ intro.description }}</p>
+							<a href="{{ cta.link }}" class="cta-button button">{{ cta.label }}</a>
+							<p class="block text-neutral-30 space-50-top">{{ intro.footer-text }}</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="my-home-features columns small-12 xlarge-10 xlarge-offset-1 text-center small-gap">
-				<label class="block section-label">Key Features</label>
+				<label class="block section-label">{{ features.label }}</label>
 				<div class="features space-50-vertical">
 					{% for feature in features.list %}
 					<div class="feature card space-50">
@@ -97,7 +97,7 @@
 					</div>
 					{% endfor %}
 				</div>
-				<p class="text-primary space-50">With MyHome at Vaswani, every detail of your home journey stays Organised, Transparent, and always within Easy Reach.</p>
+				<p class="text-primary space-50">{{ features.footer-text }}</p>
 			</div>
 		</div>
 	</div>
