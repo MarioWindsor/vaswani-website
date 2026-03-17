@@ -88,6 +88,24 @@ entry:
       together, enabling individuals to shape their own futures with resilience
       and purpose.
     image: /media/uploads/cc_51412637647_d542e18076_k.jpg
+  - title: Supporting Access to Cancer Care
+    description: >-
+      As part of our ongoing commitment to community well-being, Vaswani Group
+      extends its support to the Humanist Centre for Medicine, an institution
+      dedicated to providing compassionate and accessible cancer care.
+
+      Cancer treatment often brings with it not just medical challenges, but emotional and financial strain for patients and their families. Our contribution is to enable care that is dignified, empathetic, and accessible, ensuring individuals receive the support they need at every stage of treatment.
+
+      The Centre’s approach places equal emphasis on clinical care and human connection, recognising that healing extends beyond medicine alone. By supporting such initiatives, we hope to contribute, in a small yet meaningful way, to easing the journey of those affected.
+
+      For us, responsibility lies not only in what we build, but in how we stand beside communities, especially in moments that matter most.
+    image: /media/uploads/child-suffering-from-cancer.jpg
+  - title: Supporting the Development of a Youth Centre
+    description: Vaswani Group supported the development of a Youth Centre at the
+      Sri Ramakrishna Ashrama, Mysuru - envisioned as a space for learning,
+      engagement, and value-based growth. Through this initiative, we aim to
+      nurture young individuals and strengthen the communities they belong to.
+    image: /media/uploads/building-interior.jpg
 partner:
   label: Partner with Us
   heading: Our Ongoing Commitment
