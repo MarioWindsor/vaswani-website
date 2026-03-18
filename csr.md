@@ -110,6 +110,7 @@ entry:
       otherwise go without treatment.
 
       For many, the loss of vision is not just a medical condition; it impacts independence, livelihood, and everyday dignity. Through this initiative, we hope to play a small part in restoring not just sight, but confidence and quality of life for individuals and their families.
+    image: /media/uploads/ophthalmologist-reviews-eyesight-with-optical-light-tool-consultation.jpg
 partner:
   label: Partner with Us
   heading: Our Ongoing Commitment
