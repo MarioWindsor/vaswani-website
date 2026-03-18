@@ -208,9 +208,9 @@
 						<span class="h4 block text-uppercase w-600 text-neutral-80 letter-spacing-loose-loose">Bengaluru</span>
 					</div>
 					<div class="video-embed" style="padding-top: 75%;">
-						<iframe class="" style="height: 200%;" src="https://www.youtube-nocookie.com/embed/LHILNoXZpBk?playlist=LHILNoXZpBk&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe class="" style="height: 200%;" src="https://www.youtube-nocookie.com/embed/{{ site.city_selector.bengaluru.video_id }}?playlist={{ site.city_selector.bengaluru.video_id }}&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
-					<img loading="lazy" class="hidden block" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+					<img loading="lazy" class="hidden block" src="{{ site.city_selector.bengaluru.image | default: 'https://placeholdit.com/1200x800/F1F1F1/999999' }}" alt="">
 					<div class="cta label text-uppercase w-600 text-primary letter-spacing-loose space-50">Enter</div>
 				</label>
 				<a href="{{ site.mumbai_url }}" target="_blank" class="block card text-center">
@@ -219,9 +219,9 @@
 						<span class="h4 block text-uppercase w-600 text-neutral-80 letter-spacing-loose-loose">Mumbai</span>
 					</div>
 					<div class="video-embed" style="padding-top: 75%;">
-						<iframe class="" style="height: 200%;" src="https://www.youtube-nocookie.com/embed/8hOw0tJrz2I?playlist=8hOw0tJrz2I&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe class="" style="height: 200%;" src="https://www.youtube-nocookie.com/embed/{{ site.city_selector.mumbai.video_id }}?playlist={{ site.city_selector.mumbai.video_id }}&html5=1&color=white&disablekb=0&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=1&enablejsapi=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
-					<img loading="lazy" class="hidden block" src="https://placeholdit.com/1200x800/F1F1F1/999999" alt="">
+					<img loading="lazy" class="hidden block" src="{{ site.city_selector.mumbai.image | default: 'https://placeholdit.com/1200x800/F1F1F1/999999' }}" alt="">
 					<div class="cta label text-uppercase w-600 text-primary letter-spacing-loose space-50">Enter</div>
 				</a>
 			</div>

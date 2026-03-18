@@ -674,6 +674,23 @@ collections:
           - { label: "Robots", name: "robots", widget: "hidden", default: "/robots.txt" }
           - { label: "Site Map", name: "siteMap", widget: "hidden", default: "/sitemap.xml" }
           - { label: "Mumbai Website URL", name: "mumbai_url", widget: "string", required: false, default: "https://www.google.com/search?q=vaswani+group+mumbai" }
+          - label: "City Selector"
+            name: "city_selector"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Bengaluru"
+                name: "bengaluru"
+                widget: "object"
+                fields:
+                  - { label: "Video ID", name: "video_id", widget: "string", required: false, hint: "YouTube Video ID (Eg: LHILNoXZpBk)" }
+                  - { label: "Fallback Image", name: "image", widget: "image", choose_url: false, required: false }
+              - label: "Mumbai"
+                name: "mumbai"
+                widget: "object"
+                fields:
+                  - { label: "Video ID", name: "video_id", widget: "string", required: false, hint: "YouTube Video ID (Eg: 8hOw0tJrz2I)" }
+                  - { label: "Fallback Image", name: "image", widget: "image", choose_url: false, required: false }
       - name: "menu"
         label: "Menu"
         file: "_data/menu.json"

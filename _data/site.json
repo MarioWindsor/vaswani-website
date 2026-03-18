@@ -2,5 +2,15 @@
   "baseUrl": "https://vaswanigroup.com/",
   "robots": "/robots.txt",
   "siteMap": "/sitemap.xml",
-  "mumbai_url": "https://www.google.com/search?q=vaswani+group+mumbai"
+  "mumbai_url": "https://www.google.com/search?q=vaswani+group+mumbai",
+  "city_selector": {
+    "bengaluru": {
+      "video_id": "LHILNoXZpBk",
+      "image": ""
+    },
+    "mumbai": {
+      "video_id": "8hOw0tJrz2I",
+      "image": ""
+    }
+  }
 }
