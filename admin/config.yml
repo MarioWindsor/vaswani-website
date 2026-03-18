@@ -666,6 +666,14 @@ collections:
     editor:
       preview: false
     files:
+      - name: "site"
+        label: "Site Settings"
+        file: "_data/site.json"
+        fields:
+          - { label: "Base URL", name: "baseUrl", widget: "string" }
+          - { label: "Robots", name: "robots", widget: "hidden", default: "/robots.txt" }
+          - { label: "Site Map", name: "siteMap", widget: "hidden", default: "/sitemap.xml" }
+          - { label: "Mumbai Website URL", name: "mumbai_url", widget: "string", required: false, default: "https://www.google.com/search?q=vaswani+group+mumbai" }
       - name: "menu"
         label: "Menu"
         file: "_data/menu.json"
