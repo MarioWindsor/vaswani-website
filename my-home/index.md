@@ -5,7 +5,9 @@ intro:
   heading: MyHome
   label: at Vaswani
   sub-heading: Everything about your home, in one place.
-  description: MyHome is a secure, all-in-one platform designed to streamline your experience from booking through handover. It centralizes project information, payment management, and support into one accessible space.
+  description: MyHome is a secure, all-in-one platform designed to streamline your
+    experience from booking through handover. It centralizes project
+    information, payment management, and support into one accessible space.
   footer-text: Because we are here for you long after the Booking
 cta:
   label: Login to MyHome at Vaswani
@@ -13,11 +15,12 @@ cta:
 features:
   label: Key Features
   image: /media/my-home-2.jpg
-  footer-text: With MyHome at Vaswani, every detail of your home journey stays Organised, Transparent, and always within Easy Reach.
+  footer-text: With MyHome at Vaswani, every detail of your home journey stays
+    Organised, Transparent, and always within Easy Reach.
   list:
-    - title: Updates & FAQs
+    - title: "Updates "
       icon: bx-info-circle
-      description: Access frequently asked questions and project updates.
+      description: Access to project updates.
     - title: Payments
       icon: bx-wallet
       description: View payment schedules and outstanding dues effortlessly.
